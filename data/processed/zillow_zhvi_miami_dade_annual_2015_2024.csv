@@ -1,0 +1,11 @@
+state,county_fips,county_name,year,typical_home_value,zillow_months_available,home_value_source,home_value_year_method
+FL,12086,Miami-Dade County,2015,241982.36,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2016,265783.17,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2017,284672.11,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2018,302849.18,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2019,315348.69,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2020,331997.44,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2021,375233.19,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2022,456865.59,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2023,499175.22,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2024,535536.1,12,Zillow ZHVI county,annual_mean_zhvi
