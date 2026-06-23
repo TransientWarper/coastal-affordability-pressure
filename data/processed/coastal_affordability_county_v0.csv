@@ -1,0 +1,11 @@
+state,county_fips,county_name,year,median_household_income,typical_home_value,home_value_to_income_ratio,income_source,home_value_source,home_value_year_method,zillow_months_available,notes
+FL,12086,Miami-Dade County,2015,43129,241982.36,5.6107,ACS 2015 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2016,44224,265783.17,6.0099,ACS 2016 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2017,46338,284672.11,6.1434,ACS 2017 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2018,48982,302849.18,6.1829,ACS 2018 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2019,51347,315348.69,6.1415,ACS 2019 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2020,53975,331997.44,6.1509,ACS 2020 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2021,57815,375233.19,6.4902,ACS 2021 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2022,64215,456865.59,7.1146,ACS 2022 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2023,68694,499175.22,7.2666,ACS 2023 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study
+FL,12086,Miami-Dade County,2024,71753,535536.1,7.4636,ACS 2024 5-year B19013,Zillow ZHVI county,annual_mean_zhvi,12,V0 single-county case study

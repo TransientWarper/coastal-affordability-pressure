@@ -34,4 +34,23 @@ Zillow ZHVI county-level typical home value.
 
 ## Current Status
 
-Project foundation created. Data ingestion and transformation not yet started.
+The Miami-Dade V0 analytical pipeline is complete through final dataset generation.
+
+Pipeline stages:
+
+1. **Acquisition** — fetch ACS income (`src/fetch_acs_income.py`) and Zillow county ZHVI (`src/fetch_zillow_zhvi.py`)
+2. **Transformation** — annualize Miami-Dade ZHVI from monthly values (`src/transform_zillow_zhvi.py`)
+3. **Join and validation** — merge income and home value on county FIPS and year with input checks (`src/build_affordability_table.py`)
+4. **Output** — write the validated county-year affordability table
+
+Final output:
+
+`data/processed/coastal_affordability_county_v0.csv`
+
+Rebuild the final table from the repository root:
+
+```bash
+.venv/bin/python src/build_affordability_table.py
+```
+
+Mapping, statewide Florida expansion, and geospatial analysis are not part of V0 and are not complete.
