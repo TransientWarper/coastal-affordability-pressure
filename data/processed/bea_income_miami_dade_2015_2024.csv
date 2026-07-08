@@ -1,0 +1,11 @@
+county_fips,county_name,year,personal_income,personal_income_thousands,unit,unit_mult,code,line_code
+12086,Miami-Dade,2015,117580298000,117580298,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2016,118217501000,118217501,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2017,131018638000,131018638,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2018,143041608000,143041608,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2019,149596954000,149596954,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2020,152086751000,152086751,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2021,174624719000,174624719,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2022,192276032000,192276032,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2023,209804988000,209804988,Thousands of dollars,3,CAINC1-1,1
+12086,Miami-Dade,2024,223009590000,223009590,Thousands of dollars,3,CAINC1-1,1
