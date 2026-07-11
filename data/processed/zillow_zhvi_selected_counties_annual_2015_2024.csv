@@ -1,0 +1,31 @@
+state,county_fips,county_name,year,typical_home_value,zillow_months_available,home_value_source,home_value_year_method
+FL,12011,Broward County,2015,204647.46,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2016,222016.15,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2017,243302.96,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2018,264668.32,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2019,277838.18,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2020,291895.14,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2021,330889.02,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2022,399151.76,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2023,430773.2,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12011,Broward County,2024,450513.66,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2015,241982.36,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2016,265783.17,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2017,284672.11,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2018,302849.18,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2019,315348.69,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2020,331997.44,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2021,375233.19,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2022,456865.59,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2023,499175.22,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12086,Miami-Dade County,2024,535536.1,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2015,228877.03,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2016,250669.89,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2017,268125.21,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2018,284982.8,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2019,296798.62,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2020,310484.2,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2021,359848.03,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2022,455632.68,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2023,481410.87,12,Zillow ZHVI county,annual_mean_zhvi
+FL,12099,Palm Beach County,2024,495138.0,12,Zillow ZHVI county,annual_mean_zhvi

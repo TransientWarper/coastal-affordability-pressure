@@ -1,5 +1,83 @@
 # Data Dictionary
 
+## manual/selected_counties.csv
+
+Manual county selection list used to drive pipeline geography. County FIPS—not
+county name—is the authoritative join and selection key across pipeline stages.
+
+| Field | Type | Description |
+|---|---|---|
+| state | string | Two-letter state abbreviation (e.g. `FL`) |
+| county_fips | string | Five-character county FIPS code (state + county, zero-padded), e.g. `12086` |
+| county_name | string | County name for project metadata and output labeling |
+| selection_phase | integer | Selection phase number (1 = V0 case study; 2 = first expansion pilot) |
+| selection_reason | string | Brief rationale for county inclusion |
+| include_v0 | boolean | When true, county is part of the validated Miami-Dade V0 proof of concept |
+| include_pipeline | boolean | When true, county is included in the FIPS-based pipeline expansion outputs |
+| notes | string | Optional project notes for the selected county |
+
+### Selection flags
+
+- **`include_v0`** — Marks counties consumed by the original single-county V0
+  affordability pipeline. Exactly one county (`12086`, Miami-Dade) has
+  `include_v0=true`. Downstream V0 scripts require this constraint.
+- **`include_pipeline`** — Marks counties included in multi-county processed
+  outputs. The first expansion pilot sets `include_pipeline=true` for Miami-Dade,
+  Broward (`12011`), and Palm Beach (`12099`).
+
+A county may have `include_pipeline=true` without `include_v0=true` (expansion
+counties). Miami-Dade has both flags set to true.
+
+---
+
+## processed/zillow_zhvi_selected_counties_annual_2015_2024.csv
+
+FIPS-based annualized Zillow ZHVI for the first Florida pipeline expansion pilot.
+One row per county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation from `selected_counties.csv` |
+| county_fips | string | — | Five-character county FIPS code; authoritative selection and join key |
+| county_name | string | — | County name from `selected_counties.csv` (not Zillow `RegionName`) |
+| year | integer | calendar year | Reference year for the county-year observation |
+| typical_home_value | float | US dollars | Arithmetic mean of monthly county ZHVI within the calendar year |
+| zillow_months_available | integer | count (months) | Number of monthly ZHVI observations used in the annual mean |
+| home_value_source | string | — | Source label (`Zillow ZHVI county`) |
+| home_value_year_method | string | — | Annualization method (`annual_mean_zhvi`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Selection key:** five-digit `county_fips` matched to Zillow
+  `StateCodeFIPS` + `MunicipalCodeFIPS`; county name is not used for selection
+
+### Annualization method
+
+Monthly ZHVI is converted to an annual value using the **arithmetic mean** of
+all available monthly county ZHVI values within each calendar year. Missing
+months are not interpolated.
+
+### Selected counties (pilot)
+
+| county_fips | county_name |
+|---|---|
+| 12086 | Miami-Dade County |
+| 12011 | Broward County |
+| 12099 | Palm Beach County |
+
+### Validated record
+
+- Geography: three pipeline counties listed above
+- Years: 2015–2024 per county
+- Row count: 30 (10 per county)
+- Nulls: 0
+- Duplicate county-year keys: 0
+- Miami-Dade rows match `zillow_zhvi_miami_dade_annual_2015_2024.csv`
+
+---
+
 ## processed/coastal_affordability_county_v0.csv
 
 Final V0 output for Miami-Dade County. One row per county per year.

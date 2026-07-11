@@ -1,2 +1,4 @@
-state,county_fips,county_name,selection_phase,selection_reason,include_v0,notes
-FL,12086,Miami-Dade County,1,Large coastal Florida county with strong capital-inflow and affordability-pressure narrative,true,V0 single-county case study
+state,county_fips,county_name,selection_phase,selection_reason,include_v0,include_pipeline,notes
+FL,12086,Miami-Dade County,1,Large coastal Florida county with strong capital-inflow and affordability-pressure narrative,true,true,V0 single-county case study
+FL,12011,Broward County,2,Adjacent southeast Florida coastal county; pipeline expansion pilot,false,true,First Florida expansion county alongside Miami-Dade and Palm Beach
+FL,12099,Palm Beach County,2,Adjacent southeast Florida coastal county; pipeline expansion pilot,false,true,First Florida expansion county alongside Miami-Dade and Broward
