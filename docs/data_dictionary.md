@@ -78,6 +78,63 @@ months are not interpolated.
 
 ---
 
+## processed/acs_b19013_selected_counties_2015_2024.csv
+
+FIPS-based ACS 5-year median household income for the first Florida pipeline
+expansion pilot. One row per county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation from `selected_counties.csv` |
+| county_fips | string | — | Five-character county FIPS code; authoritative selection and join key |
+| county_name | string | — | County name from `selected_counties.csv` |
+| year | integer | ACS release year | ACS 5-year estimate release year (2015–2024) |
+| median_household_income | integer | US dollars | ACS table B19013 variable `B19013_001E` |
+| income_source | string | — | Source label (`ACS {year} 5-year B19013`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Selection dependency:** counties with `include_pipeline=true` in
+  `data/manual/selected_counties.csv`
+
+### ACS concept
+
+- **Table / variable:** B19013 / `B19013_001E`
+- **Concept:** median household income in the past 12 months
+- **Years:** 2015–2024 ACS 5-year release years
+
+Each `year` value is an ACS **release year** for a 5-year pooled estimate, not a
+single-year point-in-time measurement.
+
+### Selected counties (pilot)
+
+| county_fips | county_name |
+|---|---|
+| 12086 | Miami-Dade County |
+| 12011 | Broward County |
+| 12099 | Palm Beach County |
+
+### Relationship to legacy Miami-Dade output
+
+The preserved legacy file
+`data/raw/acs_income/acs_b19013_miami_dade_2015_2024.csv` contains Miami-Dade
+(`12086`) rows derived from the same acquisition snapshot. Miami-Dade rows in
+this processed file match the legacy file on `year`, `county_fips`,
+`median_household_income`, and source labeling (`income_source` here vs
+`source` in the legacy file).
+
+### Validated record
+
+- Geography: three pipeline counties listed above
+- Years: 2015–2024 per county
+- Row count: 30 (10 per county)
+- Nulls: 0
+- Duplicate county-year keys: 0
+
+---
+
 ## processed/coastal_affordability_county_v0.csv
 
 Final V0 output for Miami-Dade County. One row per county per year.
