@@ -447,6 +447,67 @@ Missing home values are never imputed, interpolated, or replaced with zero.
 
 ---
 
+## processed/florida_affordability_2015_2024.gpkg
+
+QGIS-ready GeoPackage joining the statewide Florida affordability table to
+authoritative Census county geometry.
+
+| Property | Value |
+|---|---|
+| **Path** | `data/processed/florida_affordability_2015_2024.gpkg` |
+| **Layer** | `florida_affordability_county_year` |
+| **Feature grain** | county-year (one geometry-bearing feature per county per year) |
+| **Feature count** | 670 |
+| **Primary key** | (`county_fips`, `year`) |
+| **Join key** | `county_fips` (analytical) = `GEOID` (TIGER) |
+| **Boundary source** | `data/raw/census_tiger/cb_2023_us_county_500k.zip` |
+| **TIGER vintage** | 2023 |
+| **CRS** | EPSG:4269 (NAD83) |
+| **Geometry type** | county polygons (`Polygon`, `MultiPolygon`) |
+
+### Analytical attributes
+
+Each feature retains the statewide affordability fields:
+
+- `state`, `county_fips`, `county_name`, `year`
+- `typical_home_value`, `median_household_income`, `home_value_to_income_ratio`
+- `zillow_months_available`, `zillow_data_status`
+- `home_value_source`, `home_value_year_method`, `income_source`
+- `geometry`
+
+Redundant TIGER attributes are not retained. `county_fips` is the analytical
+join key and matches TIGER `GEOID`; a duplicate GEOID column is not exported.
+
+### Geometry note
+
+County geometry is repeated for each year: 67 county polygons × 10 years =
+670 features. The 2023 TIGER boundaries represent a consistent current geometry
+for all years 2015–2024; they do not represent year-specific historical
+boundaries.
+
+### Monroe County 2015 null treatment
+
+Monroe County (`12087`) 2015 retains geometry with:
+
+- null `typical_home_value`
+- null `home_value_to_income_ratio`
+- populated `median_household_income`
+- `zillow_data_status = source_data_unavailable`
+
+No imputation is applied.
+
+### Intended QGIS usage
+
+Load the layer `florida_affordability_county_year` for statewide choropleth or
+filtered mapping by `year`, `home_value_to_income_ratio`, or
+`zillow_data_status`. Style and layout work are out of scope for this artifact.
+
+### Source table
+
+Built from `data/processed/coastal_affordability_florida_2015_2024.csv`.
+
+---
+
 ## processed/coastal_affordability_county_v0.csv
 
 Final V0 output for Miami-Dade County. One row per county per year.
