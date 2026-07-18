@@ -365,6 +365,88 @@ row per county per year.
 
 ---
 
+## processed/coastal_affordability_florida_2015_2024.csv
+
+Statewide Florida affordability table joining validated Zillow home values and
+ACS median household income. One row per county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation (`FL`) |
+| county_fips | string | — | Five-character county FIPS code; authoritative join key |
+| county_name | string | — | County name from `data/manual/florida_counties.csv` |
+| year | integer | calendar year | Reference year for the county-year observation |
+| typical_home_value | float | US dollars | Annualized Zillow ZHVI typical home value; null when source months are unavailable |
+| median_household_income | integer | US dollars | ACS 5-year median household income (table B19013) |
+| home_value_to_income_ratio | float | ratio (unitless) | `typical_home_value / median_household_income`; null when home value is null |
+| zillow_months_available | integer | count (months) | Number of monthly ZHVI observations used in the annual mean |
+| zillow_data_status | string | — | Zillow month-coverage status from the Florida ZHVI input |
+| home_value_source | string | — | Source label for the home value estimate (`Zillow ZHVI county`) |
+| home_value_year_method | string | — | Annualization method (`annual_mean_zhvi`) |
+| income_source | string | — | Source label for the income estimate (`ACS {year} 5-year B19013`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Expected scale:** 670 rows (67 counties × 10 years)
+- **Join keys:** `county_fips` and `year` only; county name is not used for joining
+
+### Source inputs
+
+- `data/processed/zillow_zhvi_florida_counties_annual_2015_2024.csv`
+- `data/processed/acs_b19013_florida_counties_2015_2024.csv`
+- `data/manual/florida_counties.csv` (authoritative 67-county FIPS reference)
+
+### Ratio formula
+
+```
+home_value_to_income_ratio = typical_home_value / median_household_income
+```
+
+The ratio is stored rounded to four decimal places. It is a unitless multiple:
+home value expressed as a multiple of median household income. When
+`typical_home_value` is null, the ratio is left null.
+
+### Monroe County 2015 null policy
+
+Monroe County (`12087`) 2015 retains the documented Zillow source-data exception.
+That county-year row is kept in the 670-row panel with:
+
+- null `typical_home_value`
+- null `home_value_to_income_ratio`
+- populated `median_household_income`
+- `zillow_data_status = source_data_unavailable`
+
+Missing home values are never imputed, interpolated, or replaced with zero.
+
+### Zillow status distribution (validated)
+
+| zillow_data_status | row count |
+|---|---|
+| `complete_12_months` | 668 |
+| `partial_10_11_months` | 1 |
+| `source_data_unavailable` | 1 |
+
+### Relationship to V0 and pilot outputs
+
+- Miami-Dade rows match `coastal_affordability_county_v0.csv` on comparable
+  analytical columns; the V0 file retains a `notes` column and does not include
+  `zillow_data_status`
+- Broward, Miami-Dade, and Palm Beach rows match a direct join of the statewide
+  Zillow and ACS input files
+
+### Validated record
+
+- Geography: all 67 Florida counties
+- Years: 2015–2024 per county
+- Row count: 670
+- Null home values: 1 (Monroe 2015 only)
+- Null ratios: 1 (Monroe 2015 only)
+- Duplicate county-year keys: 0
+
+---
+
 ## processed/coastal_affordability_county_v0.csv
 
 Final V0 output for Miami-Dade County. One row per county per year.
