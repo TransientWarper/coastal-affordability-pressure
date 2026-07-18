@@ -1,5 +1,5 @@
 """
-Transform Zillow county ZHVI data for Miami-Dade County and selected counties.
+Transform Zillow county ZHVI data for Miami-Dade County, selected counties, and Florida.
 
 Input:
 - data/raw/zillow_zhvi/zillow_zhvi_county_raw.csv
@@ -8,6 +8,7 @@ Input:
 Outputs:
 - data/processed/zillow_zhvi_miami_dade_annual_2015_2024.csv  (V0, unchanged behavior)
 - data/processed/zillow_zhvi_selected_counties_annual_2015_2024.csv  (pipeline expansion)
+- data/processed/zillow_zhvi_florida_counties_annual_2015_2024.csv  (statewide expansion)
 """
 
 from pathlib import Path
@@ -28,6 +29,12 @@ SELECTED_OUTPUT_PATH = (
     / "processed"
     / "zillow_zhvi_selected_counties_annual_2015_2024.csv"
 )
+FLORIDA_OUTPUT_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "zillow_zhvi_florida_counties_annual_2015_2024.csv"
+)
 
 START_YEAR = 2015
 END_YEAR = 2024
@@ -35,6 +42,18 @@ EXPECTED_YEARS = set(range(START_YEAR, END_YEAR + 1))
 EXPECTED_PIPELINE_FIPS = {"12011", "12086", "12099"}
 EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_PIPELINE_ROWS = 30
+EXPECTED_FL_COUNTIES = 67
+EXPECTED_FL_ROWS = 670
+MIN_COMPARABLE_MONTHS = 10
+FULL_YEAR_MONTHS = 12
+
+SOURCE_EXCEPTION_FIPS = "12087"
+SOURCE_EXCEPTION_YEAR = 2015
+SOURCE_EXCEPTION_NAME = "Monroe County"
+
+STATUS_COMPLETE = "complete_12_months"
+STATUS_PARTIAL = "partial_10_11_months"
+STATUS_UNAVAILABLE = "source_data_unavailable"
 
 OUTPUT_COLUMNS = [
     "state",
@@ -46,6 +65,8 @@ OUTPUT_COLUMNS = [
     "home_value_source",
     "home_value_year_method",
 ]
+
+FLORIDA_OUTPUT_COLUMNS = OUTPUT_COLUMNS + ["zillow_data_status"]
 
 ID_COLUMNS = [
     "RegionID",
@@ -231,6 +252,192 @@ def build_selected_counties(
     return pd.concat(records, ignore_index=True)
 
 
+def build_florida_counties(raw_df: pd.DataFrame) -> pd.DataFrame:
+    """Annualize ZHVI for all Florida counties using FIPS-based selection."""
+    raw = raw_df[raw_df["State"] == "FL"].copy()
+    raw["county_fips"] = construct_zillow_county_fips(raw)
+
+    county_fips = sorted(normalize_county_fips(raw["county_fips"]).unique())
+    if len(county_fips) != EXPECTED_FL_COUNTIES:
+        raise ValueError(
+            f"Expected {EXPECTED_FL_COUNTIES} Florida counties in Zillow raw data, "
+            f"found {len(county_fips)}."
+        )
+
+    records = []
+    for fips in county_fips:
+        matches = raw[normalize_county_fips(raw["county_fips"]) == fips]
+
+        if matches.empty:
+            raise ValueError(f"Florida county FIPS {fips} is absent from Zillow raw data.")
+
+        if len(matches) > 1:
+            raise ValueError(
+                f"Florida county FIPS {fips} maps to {len(matches)} Zillow rows; "
+                "exactly one is expected."
+            )
+
+        row = matches.iloc[0]
+        annual = annualize_county_rows(matches)
+        records.append(
+            format_annual_output(
+                annual,
+                state=row["State"],
+                county_fips=fips,
+                county_name=row["RegionName"],
+            )
+        )
+
+    florida = pd.concat(records, ignore_index=True)
+    return apply_florida_data_status(florida)
+
+
+def is_source_exception_row(df: pd.DataFrame) -> pd.Series:
+    """Identify the approved Monroe County 2015 source-data exception row."""
+    return (
+        normalize_county_fips(df["county_fips"]) == SOURCE_EXCEPTION_FIPS
+    ) & (df["year"] == SOURCE_EXCEPTION_YEAR)
+
+
+def apply_florida_data_status(florida: pd.DataFrame) -> pd.DataFrame:
+    """Assign zillow_data_status and apply the Monroe 2015 null exception."""
+    df = florida.copy()
+    months = normalize_months_series(df["zillow_months_available"])
+
+    df["zillow_data_status"] = STATUS_COMPLETE
+    df.loc[months.between(MIN_COMPARABLE_MONTHS, FULL_YEAR_MONTHS - 1), "zillow_data_status"] = (
+        STATUS_PARTIAL
+    )
+
+    exception_mask = is_source_exception_row(df)
+    if not exception_mask.any():
+        raise ValueError(
+            f"Florida output is missing required county-year row "
+            f"({SOURCE_EXCEPTION_FIPS}, {SOURCE_EXCEPTION_YEAR})."
+        )
+
+    exception_row = df.loc[exception_mask].iloc[0]
+    exception_months = int(exception_row["zillow_months_available"])
+
+    if exception_months >= MIN_COMPARABLE_MONTHS:
+        print(
+            f"[INFO] Previously documented source-data exception for "
+            f"{SOURCE_EXCEPTION_FIPS} {SOURCE_EXCEPTION_NAME} {SOURCE_EXCEPTION_YEAR} "
+            f"is no longer needed ({exception_months} months available)."
+        )
+        df.loc[exception_mask, "zillow_data_status"] = (
+            STATUS_COMPLETE if exception_months == FULL_YEAR_MONTHS else STATUS_PARTIAL
+        )
+        return df[FLORIDA_OUTPUT_COLUMNS].sort_values(["county_fips", "year"]).reset_index(
+            drop=True
+        )
+
+    if exception_months != 0:
+        raise ValueError(
+            f"Approved source exception ({SOURCE_EXCEPTION_FIPS}, {SOURCE_EXCEPTION_YEAR}) "
+            f"has {exception_months} months; only 0 months is permitted."
+        )
+
+    if pd.notna(exception_row["typical_home_value"]):
+        raise ValueError(
+            f"Approved source exception ({SOURCE_EXCEPTION_FIPS}, {SOURCE_EXCEPTION_YEAR}) "
+            "must have null typical_home_value when zillow_months_available is 0."
+        )
+
+    df.loc[exception_mask, "typical_home_value"] = pd.NA
+    df.loc[exception_mask, "zillow_data_status"] = STATUS_UNAVAILABLE
+
+    return df[FLORIDA_OUTPUT_COLUMNS].sort_values(["county_fips", "year"]).reset_index(drop=True)
+
+
+def normalize_months_series(series: pd.Series) -> pd.Series:
+    """Coerce zillow_months_available to integer month counts."""
+    months = series.copy()
+    if not pd.api.types.is_integer_dtype(months):
+        months = pd.to_numeric(months, errors="raise").astype(int)
+    return months
+
+
+def print_month_coverage_distribution(df: pd.DataFrame) -> None:
+    """Print county-year counts by monthly observation coverage."""
+    months = normalize_months_series(df["zillow_months_available"])
+    print("Month coverage distribution:")
+    for month_count in [12, 11, 10]:
+        print(f"  {month_count} months: {(months == month_count).sum()} rows")
+    print(f"  fewer than 10 months: {(months < MIN_COMPARABLE_MONTHS).sum()} rows")
+
+
+def validate_zillow_month_coverage(df: pd.DataFrame, output_label: str) -> None:
+    """Enforce comparable annual-average month coverage before output write."""
+    months = normalize_months_series(df["zillow_months_available"])
+    print_month_coverage_distribution(df)
+
+    partial = df.loc[
+        months.between(MIN_COMPARABLE_MONTHS, FULL_YEAR_MONTHS - 1)
+    ].copy()
+    if not partial.empty:
+        print(
+            f"[WARN] {output_label}: {len(partial)} county-year row(s) have "
+            f"{MIN_COMPARABLE_MONTHS}-11 months (annual mean uses partial coverage):"
+        )
+        for _, row in partial.sort_values(["county_fips", "year"]).iterrows():
+            print(
+                f"[WARN]   {row['county_fips']} {row['county_name']} "
+                f"{int(row['year'])}: {int(row['zillow_months_available'])} months"
+            )
+
+    insufficient = df.loc[months < MIN_COMPARABLE_MONTHS].copy()
+    if not insufficient.empty:
+        details = []
+        for _, row in insufficient.sort_values(["county_fips", "year"]).iterrows():
+            details.append(
+                f"  {row['county_fips']} {row['county_name']} "
+                f"{int(row['year'])}: {int(row['zillow_months_available'])} months"
+            )
+        raise ValueError(
+            f"{output_label}: {len(insufficient)} county-year row(s) have fewer than "
+            f"{MIN_COMPARABLE_MONTHS} monthly observations:\n" + "\n".join(details)
+        )
+
+
+def load_committed_selected_counties() -> pd.DataFrame:
+    """Load the committed selected-counties output for regression comparison."""
+    if not SELECTED_OUTPUT_PATH.exists():
+        raise FileNotFoundError(
+            f"Committed selected-counties output not found: {SELECTED_OUTPUT_PATH}"
+        )
+
+    committed = pd.read_csv(
+        SELECTED_OUTPUT_PATH,
+        dtype={"county_fips": "string"},
+    )
+    committed["county_fips"] = normalize_county_fips(committed["county_fips"])
+    return committed.sort_values(["county_fips", "year"]).reset_index(drop=True)
+
+
+def validate_pipeline_subset_regression(
+    florida_df: pd.DataFrame,
+    selected_reference: pd.DataFrame,
+) -> None:
+    """Confirm pipeline counties match the committed selected-counties output."""
+    florida_subset = (
+        florida_df.loc[
+            normalize_county_fips(florida_df["county_fips"]).isin(EXPECTED_PIPELINE_FIPS)
+        ]
+        .sort_values(["county_fips", "year"])
+        .reset_index(drop=True)
+    )
+
+    pd.testing.assert_frame_equal(
+        florida_subset[OUTPUT_COLUMNS],
+        selected_reference[OUTPUT_COLUMNS],
+        check_dtype=False,
+        check_exact=False,
+        rtol=1e-12,
+        atol=1e-9,
+    )
+
+
 def validate_selected_output(selected_final: pd.DataFrame, miami_v0: pd.DataFrame) -> None:
     """Validate the selected-counties output and Miami-Dade regression."""
     if len(selected_final) != EXPECTED_PIPELINE_ROWS:
@@ -262,12 +469,10 @@ def validate_selected_output(selected_final: pd.DataFrame, miami_v0: pd.DataFram
     if not (selected_final["typical_home_value"] > 0).all():
         raise ValueError("typical_home_value must be greater than zero.")
 
-    months = selected_final["zillow_months_available"]
-    if not pd.api.types.is_integer_dtype(months):
-        months = pd.to_numeric(months, errors="raise").astype(int)
-
-    if not months.between(1, 12).all():
-        raise ValueError("zillow_months_available must be between 1 and 12.")
+    validate_zillow_month_coverage(
+        selected_final,
+        "selected-counties output",
+    )
 
     for county_fips in sorted(EXPECTED_PIPELINE_FIPS):
         county = selected_final[selected_final["county_fips"] == county_fips]
@@ -299,6 +504,221 @@ def validate_selected_output(selected_final: pd.DataFrame, miami_v0: pd.DataFram
     )
 
 
+def validate_florida_month_coverage(florida_final: pd.DataFrame) -> None:
+    """Enforce month coverage with the approved Monroe 2015 null exception."""
+    months = normalize_months_series(florida_final["zillow_months_available"])
+    print_month_coverage_distribution(florida_final)
+
+    zero_month_rows = florida_final.loc[months == 0].copy()
+    exception_mask = is_source_exception_row(florida_final)
+
+    if len(zero_month_rows) > 1:
+        raise ValueError(
+            f"Florida output has {len(zero_month_rows)} zero-month county-year rows; "
+            "only one approved exception is permitted."
+        )
+
+    if len(zero_month_rows) == 1:
+        zero_row = zero_month_rows.iloc[0]
+        if not (
+            normalize_county_fips(pd.Series([zero_row["county_fips"]])).iloc[0]
+            == SOURCE_EXCEPTION_FIPS
+            and int(zero_row["year"]) == SOURCE_EXCEPTION_YEAR
+        ):
+            raise ValueError(
+                "Unapproved zero-month county-year row: "
+                f"{zero_row['county_fips']} {zero_row['county_name']} "
+                f"{int(zero_row['year'])}."
+            )
+
+    if exception_mask.any():
+        exception_row = florida_final.loc[exception_mask].iloc[0]
+        exception_months = int(exception_row["zillow_months_available"])
+        if exception_months == 0:
+            if pd.notna(exception_row["typical_home_value"]):
+                raise ValueError(
+                    f"{SOURCE_EXCEPTION_FIPS} {SOURCE_EXCEPTION_YEAR} has a non-null "
+                    "typical_home_value with zero source months."
+                )
+            if exception_row["zillow_data_status"] != STATUS_UNAVAILABLE:
+                raise ValueError(
+                    f"{SOURCE_EXCEPTION_FIPS} {SOURCE_EXCEPTION_YEAR} must have "
+                    f"zillow_data_status={STATUS_UNAVAILABLE}."
+                )
+            print(
+                f"[WARN] documented source-data exception: {SOURCE_EXCEPTION_FIPS} "
+                f"{SOURCE_EXCEPTION_NAME} {SOURCE_EXCEPTION_YEAR}\n"
+                "       0 months; typical_home_value left null; no imputation"
+            )
+        elif 0 < exception_months < MIN_COMPARABLE_MONTHS:
+            raise ValueError(
+                f"{SOURCE_EXCEPTION_FIPS} {SOURCE_EXCEPTION_YEAR} has "
+                f"{exception_months} months; values below 10 are not permitted."
+            )
+
+    insufficient = florida_final.loc[months < MIN_COMPARABLE_MONTHS].copy()
+    unapproved = insufficient.loc[~is_source_exception_row(insufficient)]
+    if not unapproved.empty:
+        details = []
+        for _, row in unapproved.sort_values(["county_fips", "year"]).iterrows():
+            details.append(
+                f"  {row['county_fips']} {row['county_name']} "
+                f"{int(row['year'])}: {int(row['zillow_months_available'])} months"
+            )
+        raise ValueError(
+            "Unapproved county-year row(s) have fewer than "
+            f"{MIN_COMPARABLE_MONTHS} monthly observations:\n" + "\n".join(details)
+        )
+
+    partial = florida_final.loc[
+        months.between(MIN_COMPARABLE_MONTHS, FULL_YEAR_MONTHS - 1)
+    ].copy()
+    for _, row in partial.sort_values(["county_fips", "year"]).iterrows():
+        print(
+            f"[WARN] partial annual coverage: {row['county_fips']} {row['county_name']} "
+            f"{int(row['year'])}\n"
+            f"       {int(row['zillow_months_available'])} months; "
+            "annual mean calculated from available months"
+        )
+
+    print("[PASS] no unapproved county-year has fewer than 10 months")
+
+
+def validate_florida_output(florida_final: pd.DataFrame) -> None:
+    """Validate Florida output structure and month coverage before write."""
+    if list(florida_final.columns) != FLORIDA_OUTPUT_COLUMNS:
+        raise ValueError(
+            f"Unexpected Florida output columns: {list(florida_final.columns)}"
+        )
+
+    if len(florida_final) != EXPECTED_FL_ROWS:
+        raise ValueError(
+            f"Expected {EXPECTED_FL_ROWS} Florida county-year rows, found {len(florida_final)}."
+        )
+
+    florida_fips = set(normalize_county_fips(florida_final["county_fips"]))
+    if len(florida_fips) != EXPECTED_FL_COUNTIES:
+        raise ValueError(
+            f"Expected {EXPECTED_FL_COUNTIES} Florida county FIPS codes, "
+            f"found {len(florida_fips)}."
+        )
+
+    if not all(str(fips).startswith("12") for fips in florida_fips):
+        raise ValueError("Florida output contains non-Florida county_fips values.")
+
+    if set(florida_final["year"]) != EXPECTED_YEARS:
+        raise ValueError(
+            f"Expected years {sorted(EXPECTED_YEARS)}, "
+            f"found {sorted(set(florida_final['year']))}."
+        )
+
+    if florida_final.duplicated(["county_fips", "year"]).any():
+        raise ValueError("Duplicate county_fips/year keys in Florida output.")
+
+    validate_florida_month_coverage(florida_final)
+
+    null_rows = florida_final[florida_final["typical_home_value"].isna()]
+    if len(null_rows) != 1:
+        raise ValueError(
+            f"Expected exactly one null typical_home_value row, found {len(null_rows)}."
+        )
+
+    null_row = null_rows.iloc[0]
+    if not (
+        normalize_county_fips(pd.Series([null_row["county_fips"]])).iloc[0]
+        == SOURCE_EXCEPTION_FIPS
+        and int(null_row["year"]) == SOURCE_EXCEPTION_YEAR
+    ):
+        raise ValueError(
+            "Null typical_home_value is only permitted for the approved "
+            f"({SOURCE_EXCEPTION_FIPS}, {SOURCE_EXCEPTION_YEAR}) exception."
+        )
+
+    non_null = florida_final[florida_final["typical_home_value"].notna()]
+    if not pd.api.types.is_numeric_dtype(non_null["typical_home_value"]):
+        raise ValueError("typical_home_value is not numeric for non-null rows.")
+
+    if not (non_null["typical_home_value"] > 0).all():
+        raise ValueError("typical_home_value must be greater than zero for non-null rows.")
+
+    required_non_null = [
+        "state",
+        "county_fips",
+        "county_name",
+        "year",
+        "zillow_months_available",
+        "zillow_data_status",
+        "home_value_source",
+        "home_value_year_method",
+    ]
+    null_counts = florida_final[required_non_null].isna().sum()
+    if null_counts.any():
+        raise ValueError(
+            "Null values in required non-value Florida columns:\n"
+            f"{null_counts[null_counts > 0]}"
+        )
+
+    status_counts = florida_final["zillow_data_status"].value_counts().to_dict()
+    expected_status_counts = {
+        STATUS_COMPLETE: 668,
+        STATUS_PARTIAL: 1,
+        STATUS_UNAVAILABLE: 1,
+    }
+    if status_counts != expected_status_counts:
+        raise ValueError(
+            f"Unexpected zillow_data_status counts: {status_counts}; "
+            f"expected {expected_status_counts}."
+        )
+
+    unavailable = florida_final[florida_final["zillow_data_status"] == STATUS_UNAVAILABLE]
+    if len(unavailable) != 1 or not is_source_exception_row(unavailable).all():
+        raise ValueError("source_data_unavailable is only permitted for the approved exception.")
+
+    partial = florida_final[florida_final["zillow_data_status"] == STATUS_PARTIAL]
+    if len(partial) != 1:
+        raise ValueError("Expected exactly one partial_10_11_months row.")
+    partial_row = partial.iloc[0]
+    if not (
+        normalize_county_fips(pd.Series([partial_row["county_fips"]])).iloc[0]
+        == SOURCE_EXCEPTION_FIPS
+        and int(partial_row["year"]) == SOURCE_EXCEPTION_YEAR + 1
+        and int(partial_row["zillow_months_available"]) == 11
+    ):
+        raise ValueError(
+            "partial_10_11_months row must be Monroe County 2016 with 11 months."
+        )
+
+    for county_fips in sorted(florida_fips):
+        county = florida_final[
+            normalize_county_fips(florida_final["county_fips"]) == county_fips
+        ]
+        if len(county) != len(EXPECTED_YEARS):
+            raise ValueError(
+                f"County FIPS {county_fips} has {len(county)} rows; "
+                f"expected {len(EXPECTED_YEARS)}."
+            )
+        if set(county["year"]) != EXPECTED_YEARS:
+            raise ValueError(
+                f"County FIPS {county_fips} years must be exactly "
+                f"{START_YEAR} through {END_YEAR}."
+            )
+
+    for year in sorted(EXPECTED_YEARS):
+        year_rows = florida_final[florida_final["year"] == year]
+        if len(year_rows) != EXPECTED_FL_COUNTIES:
+            raise ValueError(
+                f"Year {year} has {len(year_rows)} counties; "
+                f"expected {EXPECTED_FL_COUNTIES}."
+            )
+
+    usable_values = florida_final["typical_home_value"].notna().sum()
+    print(
+        f"[PASS] Florida county-year panel: {EXPECTED_FL_ROWS} rows, "
+        f"{EXPECTED_FL_COUNTIES} counties, {START_YEAR}-{END_YEAR}"
+    )
+    print(f"[PASS] usable annual Zillow values: {usable_values}")
+
+
 def main() -> None:
     """Annualize Zillow ZHVI for Miami-Dade V0 and selected pipeline counties."""
     print(f"Reading {INPUT_PATH}")
@@ -312,8 +732,22 @@ def main() -> None:
     selection = load_pipeline_selection()
     selected_final = build_selected_counties(raw_df, selection)
     validate_selected_output(selected_final, miami_v0)
+    committed_selected = load_committed_selected_counties()
 
-    selected_final.to_csv(SELECTED_OUTPUT_PATH, index=False)
+    pipeline_months = (
+        selected_final.sort_values(["county_fips", "year"])["zillow_months_available"]
+        .reset_index(drop=True)
+    )
+    committed_months = (
+        committed_selected.sort_values(["county_fips", "year"])["zillow_months_available"]
+        .reset_index(drop=True)
+    )
+    pd.testing.assert_series_equal(
+        pipeline_months,
+        committed_months,
+        check_dtype=False,
+        check_names=False,
+    )
 
     print(
         f"[PASS] pipeline counties: {EXPECTED_PIPELINE_COUNTIES} "
@@ -325,7 +759,16 @@ def main() -> None:
     )
     print("[PASS] keys, nulls, home values, and month coverage validated")
     print("[PASS] Miami-Dade rows match V0 output")
-    print(f"[PASS] output path written: {SELECTED_OUTPUT_PATH}")
+    print("[PASS] pipeline month counts match committed selected-counties output")
+
+    florida_final = build_florida_counties(raw_df)
+    validate_florida_output(florida_final)
+    validate_pipeline_subset_regression(florida_final, selected_final)
+
+    florida_final.to_csv(FLORIDA_OUTPUT_PATH, index=False)
+
+    print("[PASS] pipeline subset matches in-memory selected-counties output")
+    print(f"[PASS] Florida output path written: {FLORIDA_OUTPUT_PATH}")
 
 
 if __name__ == "__main__":

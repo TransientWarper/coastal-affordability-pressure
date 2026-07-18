@@ -30,6 +30,56 @@ counties). Miami-Dade has both flags set to true.
 
 ---
 
+## raw/zillow_zhvi/zillow_zhvi_county_raw.csv
+
+County-level Zillow ZHVI monthly source file used by `src/transform_zillow_zhvi.py`
+and `src/fetch_zillow_zhvi.py`.
+
+### Active source vintage
+
+| Property | Value |
+|---|---|
+| **Path** | `data/raw/zillow_zhvi/zillow_zhvi_county_raw.csv` |
+| **Retrieval date** | 2026-07-18 |
+| **Source URL** | `https://files.zillowstatic.com/research/public_csvs/zhvi/County_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv` |
+| **MD5** | `4c1a295bb2cd26fed8e7f02ac3cb3c66` |
+| **Size** | 13,465,693 bytes |
+| **Rows** | 3,071 county records |
+
+### Archived prior vintage
+
+| Property | Value |
+|---|---|
+| **Path** | `data/raw/zillow_zhvi/archive/zillow_zhvi_county_raw_2026-06-11.csv` |
+| **File modification date** | 2026-06-11 |
+| **MD5** | `cb42706be9f8afef1286417742aa4941` |
+| **Size** | 13,347,520 bytes |
+| **Rows** | 3,072 county records |
+
+The archived file is a byte-identical preservation of the prior active raw
+source. It is not overwritten by fetch runs.
+
+### Source-vintage effects
+
+Zillow may revise historical ZHVI values when a new county-level export is
+published. After the 2026-07-18 refresh:
+
+- `data/processed/zillow_zhvi_miami_dade_annual_2015_2024.csv` was regenerated
+  from the active raw source and differs from the prior committed version
+- `data/processed/coastal_affordability_county_v0.csv` was regenerated accordingly
+  because it joins the refreshed Miami-Dade ZHVI series
+- `data/processed/zillow_zhvi_selected_counties_annual_2015_2024.csv` was **not**
+  overwritten; it remains the prior committed three-county pilot output
+- `data/processed/zillow_zhvi_florida_counties_annual_2015_2024.csv` is built
+  from the active raw source; its Broward, Miami-Dade, and Palm Beach rows match
+  a freshly generated in-memory three-county subset from the same vintage
+
+Missing Zillow months are never imputed. Monroe County (`12087`) 2015 retains a
+documented null source exception when the active source supplies 0 monthly
+observations (see Florida processed output section below).
+
+---
+
 ## processed/zillow_zhvi_selected_counties_annual_2015_2024.csv
 
 FIPS-based annualized Zillow ZHVI for the first Florida pipeline expansion pilot.
@@ -75,6 +125,95 @@ months are not interpolated.
 - Nulls: 0
 - Duplicate county-year keys: 0
 - Miami-Dade rows match `zillow_zhvi_miami_dade_annual_2015_2024.csv`
+
+---
+
+## processed/zillow_zhvi_florida_counties_annual_2015_2024.csv
+
+FIPS-based annualized Zillow ZHVI for all 67 Florida counties. One row per
+county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation (`FL`) |
+| county_fips | string | — | Five-character county FIPS code; authoritative selection and join key |
+| county_name | string | — | County name from Zillow `RegionName` |
+| year | integer | calendar year | Reference year for the county-year observation |
+| typical_home_value | float | US dollars | Arithmetic mean of monthly county ZHVI within the calendar year; null when source months are unavailable |
+| zillow_months_available | integer | count (months) | Number of monthly ZHVI observations used in the annual mean |
+| zillow_data_status | string | — | Month-coverage status (`complete_12_months`, `partial_10_11_months`, `source_data_unavailable`) |
+| home_value_source | string | — | Source label (`Zillow ZHVI county`) |
+| home_value_year_method | string | — | Annualization method (`annual_mean_zhvi`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Selection key:** five-digit `county_fips` matched to Zillow
+  `StateCodeFIPS` + `MunicipalCodeFIPS`
+
+### Validated record
+
+- Geography: all 67 Florida counties
+- Years: 2015–2024 per county
+- Row count: 670 (67 counties × 10 years)
+- Duplicate county-year keys: 0
+- Usable annual Zillow values: 669
+- Pipeline subset (Broward, Miami-Dade, Palm Beach) matches a freshly generated
+  in-memory three-county subset from the same active raw source vintage on all
+  non-status columns; month counts also match the committed
+  `zillow_zhvi_selected_counties_annual_2015_2024.csv` pilot file
+
+### zillow_data_status
+
+| Value | Meaning |
+|---|---|
+| `complete_12_months` | All 12 monthly ZHVI observations present for the calendar year |
+| `partial_10_11_months` | Annual mean calculated from 10 or 11 available months; no imputation |
+| `source_data_unavailable` | Approved source-data exception only; no annual value calculated |
+
+### Month-coverage policy
+
+- **12 months:** complete annual mean; `complete_12_months`
+- **10–11 months:** annual mean from available months only; `partial_10_11_months`
+- **Fewer than 10 months:** fail validation, except for the single approved
+  exception below
+
+Missing months are never imputed, interpolated, backfilled, or forward-filled.
+
+### Monroe County source-data exception
+
+Confirmed against the live Zillow county file retrieved on **2026-07-18**:
+
+- Monroe County (`12087`), **2015**: 0 of 12 source months populated
+- Monroe County (`12087`), **2016**: 11 of 12 source months populated
+- All other Florida county-years (2015–2024): 12 source months populated
+
+Approved exception tuple: (`12087`, `2015`).
+
+For that county-year only:
+
+- the row is retained in the 670-row panel
+- `zillow_months_available = 0`
+- `typical_home_value` is null
+- `zillow_data_status = source_data_unavailable`
+- no home value is manually supplied or imputed
+
+Monroe County **2016** is not exempted. Its annual mean is calculated from the
+11 available months (`2016-02-29` through `2016-12-31`; missing `2016-01-31`)
+and is labeled `partial_10_11_months`.
+
+If a future Zillow vintage supplies 10 or more source months for Monroe County
+2015, the annual value is calculated normally and the exception is no longer
+applied.
+
+### Status distribution (validated)
+
+| zillow_data_status | row count |
+|---|---|
+| `complete_12_months` | 668 |
+| `partial_10_11_months` | 1 |
+| `source_data_unavailable` | 1 |
 
 ---
 
