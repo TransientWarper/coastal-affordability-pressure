@@ -30,6 +30,34 @@ counties). Miami-Dade has both flags set to true.
 
 ---
 
+## manual/florida_counties.csv
+
+Source-neutral authoritative reference for all 67 Florida counties used by
+statewide pipeline stages. County FIPS—not county name—is the authoritative join
+and selection key.
+
+| Field | Type | Description |
+|---|---|---|
+| state | string | Two-letter state abbreviation (`FL`) |
+| county_fips | string | Five-character county GEOID/FIPS code (state + county, zero-padded), e.g. `12086` |
+| county_name | string | Census cartographic county label (`NAMELSAD`) |
+
+### Provenance
+
+- **Source:** US Census Bureau Cartographic Boundary File, county level, 500k
+  resolution, vintage 2023
+- **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
+- **Row count:** 67 (one row per Florida county)
+- **FIPS rule:** five-character strings matching `^12\d{3}$`
+
+### Role
+
+Shared geographic reference for statewide pipelines. ACS acquisition loads this
+file directly and does **not** depend on processed Zillow outputs. County names
+are used for output labeling only; joins and validation use `county_fips`.
+
+---
+
 ## raw/zillow_zhvi/zillow_zhvi_county_raw.csv
 
 County-level Zillow ZHVI monthly source file used by `src/transform_zillow_zhvi.py`
@@ -269,6 +297,69 @@ this processed file match the legacy file on `year`, `county_fips`,
 - Geography: three pipeline counties listed above
 - Years: 2015–2024 per county
 - Row count: 30 (10 per county)
+- Nulls: 0
+- Duplicate county-year keys: 0
+
+---
+
+## processed/acs_b19013_florida_counties_2015_2024.csv
+
+FIPS-based ACS 5-year median household income for all 67 Florida counties. One
+row per county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation (`FL`) |
+| county_fips | string | — | Five-character county FIPS code; authoritative selection and join key |
+| county_name | string | — | County name from the established Florida county reference panel |
+| year | integer | ACS release year | ACS 5-year estimate release year (2015–2024) |
+| median_household_income | integer | US dollars | ACS table B19013 variable `B19013_001E` |
+| income_source | string | — | Source label (`ACS {year} 5-year B19013`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Expected scale:** 670 rows (67 counties × 10 years)
+- **County reference:** five-digit `county_fips` values and labels from
+  `data/manual/florida_counties.csv` (Census TIGER 2023); county name is not
+  used for selection or joins
+
+### Census acquisition
+
+- **Dataset:** ACS 5-year (`acs/acs5`)
+- **Variable:** B19013 / `B19013_001E` (median household income)
+- **Request pattern:** one Florida-wide request per release year:
+  - `get=NAME,B19013_001E`
+  - `for=county:*`
+  - `in=state:12`
+- **Total requests:** 10 (2015–2024)
+- **FIPS construction:** `state` (2-digit) + `county` (3-digit), zero-padded to
+  five characters
+
+### Validation rules
+
+- Each annual response must contain exactly 67 Florida counties
+- Returned FIPS must exactly match the authoritative Florida county reference
+- Fail on duplicate keys, missing county-years, unexpected FIPS, null or
+  nonnumeric income, nonpositive income, and Census suppression sentinels
+- No imputation or manual value entry
+
+### Relationship to legacy and pilot outputs
+
+- Miami-Dade legacy file
+  `data/raw/acs_income/acs_b19013_miami_dade_2015_2024.csv` is regenerated from
+  the same acquisition snapshot; Miami-Dade rows match on income fields
+- Three-county pilot file
+  `data/processed/acs_b19013_selected_counties_2015_2024.csv` is **not**
+  overwritten; Broward, Miami-Dade, and Palm Beach rows in this Florida output
+  match the committed pilot file on all comparable ACS fields
+
+### Validated record
+
+- Geography: all 67 Florida counties
+- Years: 2015–2024 per county
+- Row count: 670
 - Nulls: 0
 - Duplicate county-year keys: 0
 
