@@ -580,6 +580,84 @@ Built by `src/fetch_acs_income.py` from:
 
 ---
 
+## processed/coastal_affordability_pipeline_2015_2024.csv
+
+Four-state pipeline affordability table joining validated Zillow home values and
+ACS median household income. One row per county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation from `pipeline_counties.csv` |
+| county_fips | string | — | Five-character county FIPS code; authoritative join key |
+| county_name | string | — | County name from `pipeline_counties.csv` |
+| year | integer | calendar year | Reference year for the county-year observation |
+| typical_home_value | float | US dollars | Annualized Zillow ZHVI typical home value; null when source months are unavailable |
+| median_household_income | integer | US dollars | ACS 5-year median household income (table B19013) |
+| home_value_to_income_ratio | float | ratio (unitless) | `typical_home_value / median_household_income`; null when home value is null |
+| zillow_months_available | integer | count (months) | Number of monthly ZHVI observations used in the annual mean |
+| zillow_data_status | string | — | Zillow month-coverage status from the pipeline ZHVI input |
+| acs_data_status | string | — | ACS availability status from the pipeline income input |
+| affordability_data_status | string | — | Combined affordability availability status (see below) |
+| home_value_source | string | — | Source label for the home value estimate (`Zillow ZHVI county`) |
+| home_value_year_method | string | — | Annualization method (`annual_mean_zhvi`) |
+| income_source | string | — | Source label for the income estimate (`ACS {year} 5-year B19013`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Expected scale:** 3,720 rows (372 counties × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100)
+- **Years:** 2015–2024
+- **Join keys:** `county_fips` and `year` only; county name is not used for joining
+
+### Source inputs
+
+- `data/processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv`
+- `data/processed/acs_b19013_pipeline_counties_2015_2024.csv`
+- `data/manual/pipeline_counties.csv` (authoritative county labels)
+
+### Ratio formula
+
+```
+home_value_to_income_ratio = typical_home_value / median_household_income
+```
+
+The ratio is stored rounded to four decimal places. It is a unitless multiple:
+home value expressed as a multiple of median household income. It is not stored
+as a percentage. When `typical_home_value` is null, the ratio is left null.
+
+Baseline-change and growth-index fields are deferred to a later checkpoint.
+
+### affordability_data_status
+
+| Value | Meaning |
+|---|---|
+| `available_complete` | 12 Zillow months, ACS available, both values present, ratio calculated |
+| `available_partial` | Partial Zillow month coverage (1–11 months), ACS available, both values present, ratio calculated |
+| `source_data_unavailable` | Missing or unavailable Zillow and/or ACS value; ratio is null |
+
+Original `zillow_data_status` and `acs_data_status` columns are retained.
+
+### Missing-value policy
+
+Missing home values are never imputed, interpolated, forward-filled, or
+substituted. County-year rows with unavailable Zillow data are retained with
+null `typical_home_value` and null `home_value_to_income_ratio`.
+
+### Relationship to Florida output
+
+The Florida subset (`state = FL`) matches the committed
+`coastal_affordability_florida_2015_2024.csv` on shared analytical columns.
+Output labels use `pipeline_counties.csv`, which matches `florida_counties.csv`
+for Florida counties.
+
+### Generation
+
+Built by `src/build_pipeline_affordability_table.py`.
+
+---
+
 ## processed/coastal_affordability_florida_2015_2024.csv
 
 Statewide Florida affordability table joining validated Zillow home values and
