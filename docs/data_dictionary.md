@@ -510,6 +510,76 @@ row per county per year.
 
 ---
 
+## processed/acs_b19013_pipeline_counties_2015_2024.csv
+
+FIPS-based ACS 5-year median household income for the four-state southeastern
+pipeline reference (Florida, Georgia, South Carolina, North Carolina). One row
+per county per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation from `pipeline_counties.csv` |
+| county_fips | string | — | Five-character county FIPS code; authoritative selection and join key |
+| county_name | string | — | County name from `pipeline_counties.csv` (TIGER `NAMELSAD`) |
+| year | integer | ACS release year | ACS 5-year estimate release year (2015–2024) |
+| median_household_income | integer | US dollars | ACS table B19013 variable `B19013_001E`; null when unavailable |
+| income_source | string | — | Source label (`ACS {year} 5-year B19013`) |
+| acs_data_status | string | — | Availability status (`available`, `source_data_unavailable`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Expected scale:** 3,720 rows (372 counties × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100)
+- **Years:** 2015–2024
+- **County reference:** `data/manual/pipeline_counties.csv`
+
+### Census acquisition
+
+- **Dataset:** ACS 5-year (`acs/acs5`)
+- **Variable:** B19013 / `B19013_001E` (median household income)
+- **Request pattern:** one state-scoped request per release year for each
+  enabled state in `pipeline_states.csv`:
+  - `get=NAME,B19013_001E`
+  - `for=county:*`
+  - `in=state:{state_fips}`
+- **Total requests:** 40 (4 states × 10 years)
+- **FIPS construction:** `state` (2-digit) + `county` (3-digit), zero-padded to
+  five characters
+
+### acs_data_status
+
+| Value | Meaning |
+|---|---|
+| `available` | Valid positive median household income returned by ACS |
+| `source_data_unavailable` | Missing, suppressed, malformed, or absent ACS value; `median_household_income` is null |
+
+### Missing-value policy
+
+County-year rows are retained even when ACS returns suppression sentinels,
+missing values, malformed values, or omits the county from a response. Missing
+values are never imputed or interpolated.
+
+### Relationship to Florida output
+
+The Florida subset (`state = FL`) matches the committed
+`acs_b19013_florida_counties_2015_2024.csv` on analytical columns:
+`state`, `county_fips`, `year`, `median_household_income`, and
+`income_source`. Output labels use TIGER-based county names from
+`pipeline_counties.csv`, which may differ in spelling from
+`florida_counties.csv` for a small number of Florida counties.
+
+### Generation
+
+Built by `src/fetch_acs_income.py` from:
+
+- `data/manual/pipeline_states.csv`
+- `data/manual/pipeline_counties.csv`
+- Census ACS 5-year API (`acs/acs5`, table B19013)
+
+---
+
 ## processed/coastal_affordability_florida_2015_2024.csv
 
 Statewide Florida affordability table joining validated Zillow home values and
