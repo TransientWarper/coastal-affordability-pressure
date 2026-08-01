@@ -58,6 +58,78 @@ are used for output labeling only; joins and validation use `county_fips`.
 
 ---
 
+## manual/pipeline_states.csv
+
+State manifest for the multistate county-reference layer and future pipeline
+expansion. Defines which states are included in the southeastern pilot scope.
+
+| Field | Type | Description |
+|---|---|---|
+| state | string | Two-letter state abbreviation (e.g. `FL`) |
+| state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
+| include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
+
+### Validated record (southeastern pilot)
+
+| state | state_fips | include_pipeline |
+|---|---|---|
+| FL | 12 | true |
+| GA | 13 | true |
+| SC | 45 | true |
+| NC | 37 | true |
+
+Four enabled states; all rows currently have `include_pipeline=true`.
+
+---
+
+## manual/pipeline_counties.csv
+
+Authoritative multistate county reference for the four-state southeastern pilot
+(Florida, Georgia, South Carolina, North Carolina). County FIPS—not county
+name—is the authoritative join and selection key.
+
+| Field | Type | Description |
+|---|---|---|
+| state | string | Two-letter state abbreviation from TIGER `STUSPS` |
+| state_fips | string | Two-character Census state FIPS code from TIGER `STATEFP` |
+| county_fips | string | Five-character county GEOID/FIPS code from TIGER `GEOID` |
+| county_name | string | Census cartographic county label from TIGER `NAMELSAD` |
+
+### Provenance
+
+- **Source:** US Census Bureau Cartographic Boundary File, county level, 500k
+  resolution, vintage 2023
+- **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
+- **Generation script:** `src/build_pipeline_county_reference.py`
+- **State filter:** enabled `state_fips` values from `pipeline_states.csv`
+- **Row count:** 372 (one row per county in the enabled states)
+
+### Expected state counts
+
+| state | state_fips | counties |
+|---|---|---:|
+| FL | 12 | 67 |
+| GA | 13 | 159 |
+| SC | 45 | 46 |
+| NC | 37 | 100 |
+| **Total** | | **372** |
+
+### Role
+
+Shared geographic reference for multistate pipeline expansion. Generated
+deterministically from TIGER; not hand-edited. County names are used for output
+labeling only; joins and validation use `county_fips`.
+
+### Relationship to florida_counties.csv
+
+`pipeline_counties.csv` is the multistate successor reference for new pipeline
+stages. `florida_counties.csv` is preserved unchanged for existing Florida-only
+scripts and validated outputs. The Florida subset of `pipeline_counties.csv`
+must exactly match `florida_counties.csv` on `state`, `county_fips`, and
+`county_name`.
+
+---
+
 ## raw/zillow_zhvi/zillow_zhvi_county_raw.csv
 
 County-level Zillow ZHVI monthly source file used by `src/transform_zillow_zhvi.py`
@@ -242,6 +314,79 @@ applied.
 | `complete_12_months` | 668 |
 | `partial_10_11_months` | 1 |
 | `source_data_unavailable` | 1 |
+
+---
+
+## processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv
+
+FIPS-based annualized Zillow ZHVI for the four-state southeastern pipeline
+reference (Florida, Georgia, South Carolina, North Carolina). One row per county
+per year.
+
+| Field | Type | Units | Description |
+|---|---|---|---|
+| state | string | — | Two-letter state abbreviation from `pipeline_counties.csv` |
+| county_fips | string | — | Five-character county FIPS code; authoritative selection and join key |
+| county_name | string | — | County name from `pipeline_counties.csv` (TIGER `NAMELSAD`) |
+| year | integer | calendar year | Reference year for the county-year observation |
+| typical_home_value | float | US dollars | Arithmetic mean of monthly county ZHVI within the calendar year; null when source months are unavailable |
+| zillow_months_available | integer | count (months) | Number of monthly ZHVI observations used in the annual mean |
+| zillow_data_status | string | — | Month-coverage status (see below) |
+| home_value_source | string | — | Source label (`Zillow ZHVI county`) |
+| home_value_year_method | string | — | Annualization method (`annual_mean_zhvi`) |
+
+### Grain and key
+
+- **Grain:** county-year
+- **Primary key:** (`county_fips`, `year`)
+- **Expected scale:** 3,720 rows (372 counties × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100)
+- **Years:** 2015–2024
+- **County reference:** `data/manual/pipeline_counties.csv`
+- **Selection key:** five-digit `county_fips` matched to Zillow
+  `StateCodeFIPS` + `MunicipalCodeFIPS`; county name is not used for selection
+
+### Annualization method
+
+Monthly ZHVI is converted to an annual value using the **arithmetic mean** of
+all available monthly county ZHVI values within each calendar year. Missing
+months are not interpolated, imputed, or backfilled.
+
+### zillow_data_status
+
+| Value | Meaning |
+|---|---|
+| `complete_12_months` | All 12 monthly ZHVI observations present for the calendar year |
+| `partial_10_11_months` | Annual mean calculated from 10 or 11 available months |
+| `partial_1_9_months` | Annual mean calculated from 1–9 available months; retained when usable monthly values exist but coverage is below the Florida comparable threshold |
+| `source_data_unavailable` | No usable monthly observations (0 months); `typical_home_value` is null |
+
+### Counties absent from Zillow
+
+The pipeline builds a complete county-year panel from
+`pipeline_counties.csv`. Counties absent from the Zillow raw file retain all
+10 county-year rows with null `typical_home_value`, `zillow_months_available = 0`,
+and `zillow_data_status = source_data_unavailable`.
+
+### Relationship to Florida output
+
+The Florida subset (`state = FL`) matches the committed
+`zillow_zhvi_florida_counties_annual_2015_2024.csv` on analytical columns:
+`state`, `county_fips`, `year`, `typical_home_value`,
+`zillow_months_available`, `home_value_source`, `home_value_year_method`, and
+`zillow_data_status`. Output labels use TIGER-based county names from
+`pipeline_counties.csv`, which may differ in spelling from Zillow `RegionName`
+for a small number of Florida counties.
+
+The existing Florida output file is not overwritten by the pipeline build path
+beyond the unchanged Florida transformation stage.
+
+### Generation
+
+Built by `src/transform_zillow_zhvi.py` from:
+
+- `data/raw/zillow_zhvi/zillow_zhvi_county_raw.csv`
+- `data/manual/pipeline_counties.csv`
 
 ---
 

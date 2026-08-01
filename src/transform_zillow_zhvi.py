@@ -1,14 +1,17 @@
 """
-Transform Zillow county ZHVI data for Miami-Dade County, selected counties, and Florida.
+Transform Zillow county ZHVI data for Miami-Dade County, selected counties, Florida,
+and the four-state pipeline county reference.
 
 Input:
 - data/raw/zillow_zhvi/zillow_zhvi_county_raw.csv
 - data/manual/selected_counties.csv
+- data/manual/pipeline_counties.csv
 
 Outputs:
 - data/processed/zillow_zhvi_miami_dade_annual_2015_2024.csv  (V0, unchanged behavior)
 - data/processed/zillow_zhvi_selected_counties_annual_2015_2024.csv  (pipeline expansion)
 - data/processed/zillow_zhvi_florida_counties_annual_2015_2024.csv  (statewide expansion)
+- data/processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv  (four-state expansion)
 """
 
 from pathlib import Path
@@ -35,6 +38,15 @@ FLORIDA_OUTPUT_PATH = (
     / "processed"
     / "zillow_zhvi_florida_counties_annual_2015_2024.csv"
 )
+PIPELINE_COUNTY_REFERENCE_PATH = (
+    PROJECT_ROOT / "data" / "manual" / "pipeline_counties.csv"
+)
+PIPELINE_COUNTIES_OUTPUT_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "zillow_zhvi_pipeline_counties_annual_2015_2024.csv"
+)
 
 START_YEAR = 2015
 END_YEAR = 2024
@@ -44,6 +56,14 @@ EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_PIPELINE_ROWS = 30
 EXPECTED_FL_COUNTIES = 67
 EXPECTED_FL_ROWS = 670
+EXPECTED_PIPELINE_REF_COUNTIES = 372
+EXPECTED_PIPELINE_REF_ROWS = 3720
+EXPECTED_PIPELINE_STATE_COUNTS = {
+    "FL": 67,
+    "GA": 159,
+    "SC": 46,
+    "NC": 100,
+}
 MIN_COMPARABLE_MONTHS = 10
 FULL_YEAR_MONTHS = 12
 
@@ -53,7 +73,14 @@ SOURCE_EXCEPTION_NAME = "Monroe County"
 
 STATUS_COMPLETE = "complete_12_months"
 STATUS_PARTIAL = "partial_10_11_months"
+STATUS_PARTIAL_LOW = "partial_1_9_months"
 STATUS_UNAVAILABLE = "source_data_unavailable"
+APPROVED_PIPELINE_STATUSES = {
+    STATUS_COMPLETE,
+    STATUS_PARTIAL,
+    STATUS_PARTIAL_LOW,
+    STATUS_UNAVAILABLE,
+}
 
 OUTPUT_COLUMNS = [
     "state",
@@ -67,6 +94,17 @@ OUTPUT_COLUMNS = [
 ]
 
 FLORIDA_OUTPUT_COLUMNS = OUTPUT_COLUMNS + ["zillow_data_status"]
+PIPELINE_OUTPUT_COLUMNS = FLORIDA_OUTPUT_COLUMNS
+FLORIDA_REGRESSION_COLUMNS = [
+    "state",
+    "county_fips",
+    "year",
+    "typical_home_value",
+    "zillow_months_available",
+    "home_value_source",
+    "home_value_year_method",
+    "zillow_data_status",
+]
 
 ID_COLUMNS = [
     "RegionID",
@@ -719,6 +757,396 @@ def validate_florida_output(florida_final: pd.DataFrame) -> None:
     print(f"[PASS] usable annual Zillow values: {usable_values}")
 
 
+def pass_line(message: str) -> None:
+    print(f"[PASS] {message}")
+
+
+def load_pipeline_county_reference() -> pd.DataFrame:
+    """Load and validate the four-state pipeline county reference."""
+    if not PIPELINE_COUNTY_REFERENCE_PATH.exists():
+        raise FileNotFoundError(
+            f"Pipeline county reference not found: {PIPELINE_COUNTY_REFERENCE_PATH}"
+        )
+
+    reference = pd.read_csv(
+        PIPELINE_COUNTY_REFERENCE_PATH,
+        dtype={
+            "state": "string",
+            "state_fips": "string",
+            "county_fips": "string",
+            "county_name": "string",
+        },
+    )
+
+    expected_columns = ["state", "state_fips", "county_fips", "county_name"]
+    if list(reference.columns) != expected_columns:
+        raise ValueError(
+            f"Unexpected pipeline_counties.csv columns: {list(reference.columns)}"
+        )
+
+    reference["county_fips"] = normalize_county_fips(reference["county_fips"])
+    reference["state_fips"] = (
+        reference["state_fips"].astype(str).str.replace(r"\.0$", "", regex=True).str.zfill(2)
+    )
+
+    if len(reference) != EXPECTED_PIPELINE_REF_COUNTIES:
+        raise ValueError(
+            f"Expected exactly {EXPECTED_PIPELINE_REF_COUNTIES} pipeline reference counties, "
+            f"found {len(reference)}."
+        )
+
+    if reference["county_fips"].nunique() != EXPECTED_PIPELINE_REF_COUNTIES:
+        raise ValueError(
+            f"Expected {EXPECTED_PIPELINE_REF_COUNTIES} unique county_fips values, "
+            f"found {reference['county_fips'].nunique()}."
+        )
+
+    if reference.duplicated(["county_fips"]).any():
+        raise ValueError("Duplicate county_fips values in pipeline_counties.csv.")
+
+    if not reference["county_fips"].str.fullmatch(r"\d{5}").all():
+        raise ValueError("county_fips in pipeline_counties.csv must match ^\\d{5}$.")
+
+    if not (reference["county_fips"].str[:2] == reference["state_fips"]).all():
+        raise ValueError(
+            "state_fips must match the first two characters of county_fips "
+            "in pipeline_counties.csv."
+        )
+
+    for column in ["state", "county_name"]:
+        if reference[column].isna().any():
+            raise ValueError(f"Null {column} values in pipeline_counties.csv.")
+        if reference[column].astype(str).str.strip().eq("").any():
+            raise ValueError(f"Blank {column} values in pipeline_counties.csv.")
+
+    state_counts = reference.groupby("state").size().to_dict()
+    if state_counts != EXPECTED_PIPELINE_STATE_COUNTS:
+        raise ValueError(
+            f"Unexpected pipeline county counts by state: {state_counts}; "
+            f"expected {EXPECTED_PIPELINE_STATE_COUNTS}."
+        )
+
+    pass_line(f"pipeline reference loaded: {EXPECTED_PIPELINE_REF_COUNTIES} counties")
+    return reference.sort_values(["state_fips", "county_fips"]).reset_index(drop=True)
+
+
+def apply_pipeline_data_status(pipeline: pd.DataFrame) -> pd.DataFrame:
+    """Assign zillow_data_status for the multistate pipeline output."""
+    df = pipeline.copy()
+    months = normalize_months_series(df["zillow_months_available"])
+
+    df["zillow_data_status"] = STATUS_COMPLETE
+    df.loc[months.between(MIN_COMPARABLE_MONTHS, FULL_YEAR_MONTHS - 1), "zillow_data_status"] = (
+        STATUS_PARTIAL
+    )
+    df.loc[months.between(1, MIN_COMPARABLE_MONTHS - 1), "zillow_data_status"] = (
+        STATUS_PARTIAL_LOW
+    )
+    df.loc[months == 0, "zillow_data_status"] = STATUS_UNAVAILABLE
+    df.loc[months == 0, "typical_home_value"] = pd.NA
+
+    return df[PIPELINE_OUTPUT_COLUMNS].sort_values(["county_fips", "year"]).reset_index(drop=True)
+
+
+def build_pipeline_counties(
+    raw_df: pd.DataFrame,
+    reference: pd.DataFrame,
+) -> pd.DataFrame:
+    """Annualize ZHVI for pipeline reference counties using FIPS-based selection."""
+    raw = raw_df.copy()
+    raw["county_fips"] = construct_zillow_county_fips(raw)
+
+    annual_records = []
+    for county_fips in reference["county_fips"]:
+        matches = raw[normalize_county_fips(raw["county_fips"]) == county_fips]
+
+        if len(matches) > 1:
+            raise ValueError(
+                f"Pipeline county FIPS {county_fips} maps to {len(matches)} Zillow rows; "
+                "exactly one is expected."
+            )
+
+        if matches.empty:
+            annual_records.append(
+                pd.DataFrame(
+                    {
+                        "county_fips": county_fips,
+                        "year": sorted(EXPECTED_YEARS),
+                        "typical_home_value": pd.NA,
+                        "zillow_months_available": 0,
+                        "home_value_source": "Zillow ZHVI county",
+                        "home_value_year_method": "annual_mean_zhvi",
+                    }
+                )
+            )
+            continue
+
+        annual = annualize_county_rows(matches)
+        annual_records.append(
+            annual[
+                [
+                    "county_fips",
+                    "year",
+                    "typical_home_value",
+                    "zillow_months_available",
+                    "home_value_source",
+                    "home_value_year_method",
+                ]
+            ].copy()
+        )
+
+    annual_panel = pd.concat(annual_records, ignore_index=True)
+    annual_panel["county_fips"] = normalize_county_fips(annual_panel["county_fips"])
+
+    years = pd.DataFrame({"year": sorted(EXPECTED_YEARS)})
+    skeleton = reference.merge(years, how="cross")
+
+    merged = skeleton.merge(
+        annual_panel,
+        on=["county_fips", "year"],
+        how="left",
+        validate="one_to_one",
+    )
+
+    if merged["home_value_source"].isna().any():
+        raise ValueError("Pipeline panel is missing annualized Zillow rows after merge.")
+
+    final = pd.DataFrame(
+        {
+            "state": merged["state"],
+            "county_fips": merged["county_fips"],
+            "county_name": merged["county_name"],
+            "year": merged["year"],
+            "typical_home_value": merged["typical_home_value"],
+            "zillow_months_available": merged["zillow_months_available"],
+            "home_value_source": merged["home_value_source"],
+            "home_value_year_method": merged["home_value_year_method"],
+        }
+    )
+    final["county_fips"] = normalize_county_fips(final["county_fips"])
+
+    return apply_pipeline_data_status(final)
+
+
+def load_committed_florida_counties() -> pd.DataFrame:
+    """Load the committed Florida output for regression comparison."""
+    if not FLORIDA_OUTPUT_PATH.exists():
+        raise FileNotFoundError(
+            f"Committed Florida output not found: {FLORIDA_OUTPUT_PATH}"
+        )
+
+    committed = pd.read_csv(
+        FLORIDA_OUTPUT_PATH,
+        dtype={"county_fips": "string"},
+    )
+    committed["county_fips"] = normalize_county_fips(committed["county_fips"])
+    return committed.sort_values(["county_fips", "year"]).reset_index(drop=True)
+
+
+def validate_pipeline_florida_regression(
+    pipeline_final: pd.DataFrame,
+    committed_florida: pd.DataFrame,
+) -> None:
+    """Confirm Florida subset matches the committed Florida Zillow output."""
+    pipeline_fl = (
+        pipeline_final.loc[pipeline_final["state"] == "FL"]
+        .sort_values(["county_fips", "year"])
+        .reset_index(drop=True)
+    )
+    committed_fl = committed_florida.sort_values(["county_fips", "year"]).reset_index(drop=True)
+
+    if len(pipeline_fl) != EXPECTED_FL_ROWS:
+        raise ValueError(
+            f"Expected {EXPECTED_FL_ROWS} Florida rows in pipeline output, "
+            f"found {len(pipeline_fl)}."
+        )
+
+    pd.testing.assert_frame_equal(
+        pipeline_fl[FLORIDA_REGRESSION_COLUMNS],
+        committed_fl[FLORIDA_REGRESSION_COLUMNS],
+        check_dtype=False,
+        check_exact=False,
+        rtol=1e-12,
+        atol=1e-9,
+    )
+
+    pass_line(
+        "Florida regression comparison "
+        "(state, county_fips, year, values, months, sources, status)"
+    )
+
+
+def print_pipeline_coverage_summary(
+    reference: pd.DataFrame,
+    raw_df: pd.DataFrame,
+    pipeline_final: pd.DataFrame,
+) -> None:
+    """Print Zillow coverage and status summary for the pipeline output."""
+    raw = raw_df.copy()
+    raw["county_fips"] = construct_zillow_county_fips(raw)
+    raw_fips = set(normalize_county_fips(raw["county_fips"]))
+    ref_fips = set(reference["county_fips"])
+    found = ref_fips & raw_fips
+    absent = ref_fips - raw_fips
+
+    print("\nPipeline Zillow coverage summary:")
+    print(f"  reference counties found in Zillow raw: {len(found)}")
+    print(f"  reference counties absent from Zillow raw: {len(absent)}")
+    if absent:
+        absent_by_state = (
+            reference.loc[reference["county_fips"].isin(absent)]
+            .groupby("state")
+            .size()
+            .sort_index()
+        )
+        print("  absent counties by state:")
+        for state, count in absent_by_state.items():
+            print(f"    {state}: {count}")
+
+    status_counts = pipeline_final["zillow_data_status"].value_counts().sort_index()
+    print("  county-years by zillow_data_status:")
+    for status, count in status_counts.items():
+        print(f"    {status}: {count}")
+
+    null_count = int(pipeline_final["typical_home_value"].isna().sum())
+    print(f"  county-years with null typical_home_value: {null_count}")
+
+    months = normalize_months_series(pipeline_final["zillow_months_available"])
+    low_months = pipeline_final.loc[months.between(1, MIN_COMPARABLE_MONTHS - 1)].copy()
+    print(f"  county-years with 1-9 available months: {len(low_months)}")
+    if not low_months.empty:
+        for _, row in low_months.sort_values(["county_fips", "year"]).iterrows():
+            print(
+                f"    {row['county_fips']} {row['county_name']} "
+                f"{int(row['year'])}: {int(row['zillow_months_available'])} months "
+                f"({row['zillow_data_status']})"
+            )
+
+    non_null = pipeline_final["typical_home_value"].dropna()
+    print(
+        "  non-null typical_home_value range: "
+        f"{non_null.min():.2f} to {non_null.max():.2f}"
+    )
+    print(f"  output path: {PIPELINE_COUNTIES_OUTPUT_PATH}")
+
+
+def validate_pipeline_counties_output(
+    pipeline_final: pd.DataFrame,
+    reference: pd.DataFrame,
+) -> None:
+    """Validate the four-state pipeline Zillow output before write."""
+    if list(pipeline_final.columns) != PIPELINE_OUTPUT_COLUMNS:
+        raise ValueError(
+            f"Unexpected pipeline output columns: {list(pipeline_final.columns)}"
+        )
+
+    if len(pipeline_final) != EXPECTED_PIPELINE_REF_ROWS:
+        raise ValueError(
+            f"Expected {EXPECTED_PIPELINE_REF_ROWS} pipeline county-year rows, "
+            f"found {len(pipeline_final)}."
+        )
+
+    pass_line(f"final panel coverage: {EXPECTED_PIPELINE_REF_ROWS} rows")
+
+    if not pipeline_final.groupby("county_fips").size().eq(len(EXPECTED_YEARS)).all():
+        raise ValueError("Each pipeline county must have exactly 10 county-year rows.")
+
+    pass_line("10 rows for every county")
+
+    if not pipeline_final.groupby("year").size().eq(EXPECTED_PIPELINE_REF_COUNTIES).all():
+        raise ValueError("Each year must have exactly 372 county rows.")
+
+    pass_line("372 rows for every year")
+
+    if set(pipeline_final["year"]) != EXPECTED_YEARS:
+        raise ValueError(
+            f"Expected years {sorted(EXPECTED_YEARS)}, "
+            f"found {sorted(set(pipeline_final['year']))}."
+        )
+
+    pass_line(f"years exactly {START_YEAR}-{END_YEAR}")
+
+    if pipeline_final.duplicated(["county_fips", "year"]).any():
+        raise ValueError("Duplicate county_fips/year keys in pipeline output.")
+
+    pass_line("unique key: county_fips + year")
+
+    if not pipeline_final["county_fips"].str.fullmatch(r"\d{5}").all():
+        raise ValueError("county_fips values must be exactly five digits.")
+
+    pass_line("county_fips values exactly five digits")
+
+    required_non_null = ["state", "county_fips", "county_name", "year"]
+    if pipeline_final[required_non_null].isna().any().any():
+        raise ValueError("Null values found in required pipeline label columns.")
+
+    pass_line("no null state, county_fips, county_name, or year")
+
+    non_null = pipeline_final["typical_home_value"].dropna()
+    if not non_null.gt(0).all():
+        raise ValueError("Non-null typical_home_value values must be positive.")
+
+    pass_line("home values positive where non-null")
+
+    months = normalize_months_series(pipeline_final["zillow_months_available"])
+    if not months.between(0, FULL_YEAR_MONTHS).all():
+        raise ValueError("zillow_months_available must be between 0 and 12.")
+
+    pass_line("zillow_months_available between 0 and 12")
+
+    null_value_rows = pipeline_final["typical_home_value"].isna()
+    if not months.loc[null_value_rows].eq(0).all():
+        raise ValueError("Null typical_home_value rows must have zero available months.")
+
+    pass_line("null typical_home_value rows have zero available months")
+
+    unavailable = pipeline_final["zillow_data_status"] == STATUS_UNAVAILABLE
+    if not pipeline_final.loc[unavailable, "typical_home_value"].isna().all():
+        raise ValueError("source_data_unavailable rows must have null typical_home_value.")
+
+    pass_line("source_data_unavailable rows have null typical_home_value")
+
+    complete = pipeline_final["zillow_data_status"] == STATUS_COMPLETE
+    if not months.loc[complete].eq(FULL_YEAR_MONTHS).all():
+        raise ValueError("complete_12_months rows must have exactly 12 months.")
+
+    pass_line("complete_12_months rows have exactly 12 months")
+
+    partial = pipeline_final["zillow_data_status"] == STATUS_PARTIAL
+    if not months.loc[partial].isin([10, 11]).all():
+        raise ValueError("partial_10_11_months rows must have 10 or 11 months.")
+
+    pass_line("partial_10_11_months rows have 10 or 11 months")
+
+    partial_low = pipeline_final["zillow_data_status"] == STATUS_PARTIAL_LOW
+    if not months.loc[partial_low].between(1, MIN_COMPARABLE_MONTHS - 1).all():
+        raise ValueError("partial_1_9_months rows must have 1-9 months.")
+
+    if not set(pipeline_final["zillow_data_status"]).issubset(APPROVED_PIPELINE_STATUSES):
+        raise ValueError("Pipeline output contains unapproved zillow_data_status values.")
+
+    pass_line("status values belong to the approved set")
+
+    output_fips = set(normalize_county_fips(pipeline_final["county_fips"]))
+    reference_fips = set(reference["county_fips"])
+    if output_fips != reference_fips:
+        raise ValueError("Pipeline output county_fips must match pipeline_counties.csv.")
+
+    pass_line("every output county exists in pipeline_counties.csv")
+
+    reference_labels = reference.set_index("county_fips")[["state", "county_name"]]
+    output_labels = (
+        pipeline_final.drop_duplicates("county_fips")
+        .set_index("county_fips")[["state", "county_name"]]
+    )
+    if not output_labels.equals(reference_labels):
+        raise ValueError(
+            "Pipeline output state and county names must match pipeline_counties.csv."
+        )
+
+    pass_line("output state and county names match pipeline_counties.csv")
+
+
 def main() -> None:
     """Annualize Zillow ZHVI for Miami-Dade V0 and selected pipeline counties."""
     print(f"Reading {INPUT_PATH}")
@@ -769,6 +1197,16 @@ def main() -> None:
 
     print("[PASS] pipeline subset matches in-memory selected-counties output")
     print(f"[PASS] Florida output path written: {FLORIDA_OUTPUT_PATH}")
+
+    pipeline_reference = load_pipeline_county_reference()
+    pipeline_final = build_pipeline_counties(raw_df, pipeline_reference)
+    validate_pipeline_counties_output(pipeline_final, pipeline_reference)
+    committed_florida = load_committed_florida_counties()
+    validate_pipeline_florida_regression(pipeline_final, committed_florida)
+    print_pipeline_coverage_summary(pipeline_reference, raw_df, pipeline_final)
+
+    pipeline_final.to_csv(PIPELINE_COUNTIES_OUTPUT_PATH, index=False)
+    pass_line(f"pipeline output path written ({PIPELINE_COUNTIES_OUTPUT_PATH})")
 
 
 if __name__ == "__main__":
