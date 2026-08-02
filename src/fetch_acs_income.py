@@ -11,7 +11,7 @@ Inputs:
 Outputs:
 - data/raw/acs_income/acs_b19013_miami_dade_2015_2024.csv  (legacy Miami-Dade)
 - data/processed/acs_b19013_florida_counties_2015_2024.csv  (statewide expansion)
-- data/processed/acs_b19013_pipeline_counties_2015_2024.csv  (four-state expansion)
+- data/processed/acs_b19013_pipeline_counties_2015_2024.csv  (eight-state expansion)
 """
 
 from pathlib import Path
@@ -54,16 +54,20 @@ EXPECTED_PIPELINE_FIPS = {"12011", "12086", "12099"}
 EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_FL_COUNTIES = 67
 EXPECTED_FL_ROWS = 670
-EXPECTED_PIPELINE_REF_COUNTIES = 372
-EXPECTED_PIPELINE_REF_ROWS = 3720
+EXPECTED_PIPELINE_REF_COUNTIES = 553
+EXPECTED_PIPELINE_REF_ROWS = 5530
 EXPECTED_PIPELINE_STATE_COUNTS = {
     "FL": 67,
     "GA": 159,
     "SC": 46,
     "NC": 100,
+    "VA": 133,
+    "MD": 24,
+    "DE": 3,
+    "NJ": 21,
 }
-EXPECTED_ENABLED_STATES = {"FL", "GA", "SC", "NC"}
-EXPECTED_STATE_YEAR_REQUESTS = 40
+EXPECTED_ENABLED_STATES = {"DE", "FL", "GA", "MD", "NJ", "NC", "SC", "VA"}
+EXPECTED_STATE_YEAR_REQUESTS = 80
 MIAMI_LEGACY_FIPS = "12086"
 MIAMI_LEGACY_MD5 = "ef5b8d6f5e911b9bafc087862238ebbf"
 
@@ -519,7 +523,7 @@ def load_pipeline_states() -> pd.DataFrame:
 
 
 def load_pipeline_county_reference() -> pd.DataFrame:
-    """Load and validate the four-state pipeline county reference."""
+    """Load and validate the eight-state pipeline county reference."""
     if not PIPELINE_COUNTY_REFERENCE_PATH.exists():
         raise FileNotFoundError(
             f"Pipeline county reference not found: {PIPELINE_COUNTY_REFERENCE_PATH}"
@@ -685,7 +689,7 @@ def build_pipeline_output(
     reference: pd.DataFrame,
     acs_records: list[dict],
 ) -> pd.DataFrame:
-    """Build the four-state pipeline ACS panel from reference and parsed responses."""
+    """Build the eight-state pipeline ACS panel from reference and parsed responses."""
     years = pd.DataFrame({"year": YEARS})
     skeleton = reference.merge(years, how="cross")
 
@@ -787,7 +791,7 @@ def validate_pipeline_output(
     pipeline: pd.DataFrame,
     reference: pd.DataFrame,
 ) -> None:
-    """Validate the four-state pipeline ACS output before write."""
+    """Validate the eight-state pipeline ACS output before write."""
     if list(pipeline.columns) != PIPELINE_COLUMNS:
         raise ValueError(f"Unexpected pipeline output columns: {list(pipeline.columns)}")
 
@@ -805,9 +809,9 @@ def validate_pipeline_output(
     pass_line("every county has 10 rows")
 
     if not pipeline.groupby("year").size().eq(EXPECTED_PIPELINE_REF_COUNTIES).all():
-        raise ValueError("Each year must have exactly 372 county rows.")
+        raise ValueError("Each year must have exactly 553 county rows.")
 
-    pass_line("every year has 372 rows")
+    pass_line("every year has 553 rows")
 
     state_year_counts = pipeline.groupby("state").size().to_dict()
     expected_state_year_counts = {

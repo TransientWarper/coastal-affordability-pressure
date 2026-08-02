@@ -553,9 +553,11 @@ row per county per year.
 
 ## processed/acs_b19013_pipeline_counties_2015_2024.csv
 
-FIPS-based ACS 5-year median household income for the four-state southeastern
-pipeline reference (Florida, Georgia, South Carolina, North Carolina). One row
-per county per year.
+FIPS-based ACS 5-year median household income for the eight-state Atlantic
+pipeline reference (Florida, Georgia, South Carolina, North Carolina,
+Virginia, Maryland, Delaware, and New Jersey). One row per county equivalent
+per year. Virginia independent cities and Baltimore city (`24510`) are included
+as county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -571,8 +573,8 @@ per county per year.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 3,720 rows (372 counties × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100)
+- **Expected scale:** 5,530 rows (553 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 
@@ -585,7 +587,7 @@ per county per year.
   - `get=NAME,B19013_001E`
   - `for=county:*`
   - `in=state:{state_fips}`
-- **Total requests:** 40 (4 states × 10 years)
+- **Total requests:** 80 (8 states × 10 years)
 - **FIPS construction:** `state` (2-digit) + `county` (3-digit), zero-padded to
   five characters
 
@@ -602,6 +604,17 @@ County-year rows are retained even when ACS returns suppression sentinels,
 missing values, malformed values, or omits the county from a response. Missing
 values are never imputed or interpolated.
 
+### Status distribution (validated)
+
+| acs_data_status | row count |
+|---|---:|
+| `available` | 5,530 |
+| `source_data_unavailable` | 0 |
+
+All 553 reference county equivalents returned valid income for every release
+year (2015–2024). No suppressed or unavailable county-years in the current
+output.
+
 ### Relationship to Florida output
 
 The Florida subset (`state = FL`) matches the committed
@@ -610,6 +623,11 @@ The Florida subset (`state = FL`) matches the committed
 `income_source`. Output labels use TIGER-based county names from
 `pipeline_counties.csv`, which may differ in spelling from
 `florida_counties.csv` for a small number of Florida counties.
+
+### Relationship to prior four-state output
+
+The FL, GA, SC, and NC subset (3,720 rows) is unchanged from the committed
+four-state pipeline ACS output prior to the eight-state expansion.
 
 ### Generation
 

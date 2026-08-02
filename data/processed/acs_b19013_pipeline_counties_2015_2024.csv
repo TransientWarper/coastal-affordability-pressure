@@ -1,4 +1,34 @@
 state,county_fips,county_name,year,median_household_income,income_source,acs_data_status
+DE,10001,Kent County,2015,54976,ACS 2015 5-year B19013,available
+DE,10001,Kent County,2016,55184,ACS 2016 5-year B19013,available
+DE,10001,Kent County,2017,57647,ACS 2017 5-year B19013,available
+DE,10001,Kent County,2018,58775,ACS 2018 5-year B19013,available
+DE,10001,Kent County,2019,60910,ACS 2019 5-year B19013,available
+DE,10001,Kent County,2020,60117,ACS 2020 5-year B19013,available
+DE,10001,Kent County,2021,63715,ACS 2021 5-year B19013,available
+DE,10001,Kent County,2022,69278,ACS 2022 5-year B19013,available
+DE,10001,Kent County,2023,72872,ACS 2023 5-year B19013,available
+DE,10001,Kent County,2024,74477,ACS 2024 5-year B19013,available
+DE,10003,New Castle County,2015,65476,ACS 2015 5-year B19013,available
+DE,10003,New Castle County,2016,66283,ACS 2016 5-year B19013,available
+DE,10003,New Castle County,2017,68336,ACS 2017 5-year B19013,available
+DE,10003,New Castle County,2018,70996,ACS 2018 5-year B19013,available
+DE,10003,New Castle County,2019,73892,ACS 2019 5-year B19013,available
+DE,10003,New Castle County,2020,75275,ACS 2020 5-year B19013,available
+DE,10003,New Castle County,2021,78428,ACS 2021 5-year B19013,available
+DE,10003,New Castle County,2022,85309,ACS 2022 5-year B19013,available
+DE,10003,New Castle County,2023,89901,ACS 2023 5-year B19013,available
+DE,10003,New Castle County,2024,91166,ACS 2024 5-year B19013,available
+DE,10005,Sussex County,2015,53751,ACS 2015 5-year B19013,available
+DE,10005,Sussex County,2016,54218,ACS 2016 5-year B19013,available
+DE,10005,Sussex County,2017,57901,ACS 2017 5-year B19013,available
+DE,10005,Sussex County,2018,60853,ACS 2018 5-year B19013,available
+DE,10005,Sussex County,2019,63162,ACS 2019 5-year B19013,available
+DE,10005,Sussex County,2020,64905,ACS 2020 5-year B19013,available
+DE,10005,Sussex County,2021,68886,ACS 2021 5-year B19013,available
+DE,10005,Sussex County,2022,75406,ACS 2022 5-year B19013,available
+DE,10005,Sussex County,2023,78162,ACS 2023 5-year B19013,available
+DE,10005,Sussex County,2024,81497,ACS 2024 5-year B19013,available
 FL,12001,Alachua County,2015,43073,ACS 2015 5-year B19013,available
 FL,12001,Alachua County,2016,44702,ACS 2016 5-year B19013,available
 FL,12001,Alachua County,2017,45478,ACS 2017 5-year B19013,available
@@ -2259,6 +2289,456 @@ GA,13321,Worth County,2021,54791,ACS 2021 5-year B19013,available
 GA,13321,Worth County,2022,56496,ACS 2022 5-year B19013,available
 GA,13321,Worth County,2023,57201,ACS 2023 5-year B19013,available
 GA,13321,Worth County,2024,58694,ACS 2024 5-year B19013,available
+MD,24001,Allegany County,2015,40551,ACS 2015 5-year B19013,available
+MD,24001,Allegany County,2016,41559,ACS 2016 5-year B19013,available
+MD,24001,Allegany County,2017,42771,ACS 2017 5-year B19013,available
+MD,24001,Allegany County,2018,44065,ACS 2018 5-year B19013,available
+MD,24001,Allegany County,2019,45893,ACS 2019 5-year B19013,available
+MD,24001,Allegany County,2020,49449,ACS 2020 5-year B19013,available
+MD,24001,Allegany County,2021,51090,ACS 2021 5-year B19013,available
+MD,24001,Allegany County,2022,55248,ACS 2022 5-year B19013,available
+MD,24001,Allegany County,2023,57393,ACS 2023 5-year B19013,available
+MD,24001,Allegany County,2024,59603,ACS 2024 5-year B19013,available
+MD,24003,Anne Arundel County,2015,89860,ACS 2015 5-year B19013,available
+MD,24003,Anne Arundel County,2016,91918,ACS 2016 5-year B19013,available
+MD,24003,Anne Arundel County,2017,94502,ACS 2017 5-year B19013,available
+MD,24003,Anne Arundel County,2018,97810,ACS 2018 5-year B19013,available
+MD,24003,Anne Arundel County,2019,100798,ACS 2019 5-year B19013,available
+MD,24003,Anne Arundel County,2020,103225,ACS 2020 5-year B19013,available
+MD,24003,Anne Arundel County,2021,108048,ACS 2021 5-year B19013,available
+MD,24003,Anne Arundel County,2022,116009,ACS 2022 5-year B19013,available
+MD,24003,Anne Arundel County,2023,120324,ACS 2023 5-year B19013,available
+MD,24003,Anne Arundel County,2024,124911,ACS 2024 5-year B19013,available
+MD,24005,Baltimore County,2015,67095,ACS 2015 5-year B19013,available
+MD,24005,Baltimore County,2016,68989,ACS 2016 5-year B19013,available
+MD,24005,Baltimore County,2017,71810,ACS 2017 5-year B19013,available
+MD,24005,Baltimore County,2018,74127,ACS 2018 5-year B19013,available
+MD,24005,Baltimore County,2019,76866,ACS 2019 5-year B19013,available
+MD,24005,Baltimore County,2020,78724,ACS 2020 5-year B19013,available
+MD,24005,Baltimore County,2021,81846,ACS 2021 5-year B19013,available
+MD,24005,Baltimore County,2022,88157,ACS 2022 5-year B19013,available
+MD,24005,Baltimore County,2023,90904,ACS 2023 5-year B19013,available
+MD,24005,Baltimore County,2024,91768,ACS 2024 5-year B19013,available
+MD,24009,Calvert County,2015,95828,ACS 2015 5-year B19013,available
+MD,24009,Calvert County,2016,96808,ACS 2016 5-year B19013,available
+MD,24009,Calvert County,2017,100350,ACS 2017 5-year B19013,available
+MD,24009,Calvert County,2018,104301,ACS 2018 5-year B19013,available
+MD,24009,Calvert County,2019,109313,ACS 2019 5-year B19013,available
+MD,24009,Calvert County,2020,112696,ACS 2020 5-year B19013,available
+MD,24009,Calvert County,2021,120295,ACS 2021 5-year B19013,available
+MD,24009,Calvert County,2022,128078,ACS 2022 5-year B19013,available
+MD,24009,Calvert County,2023,132059,ACS 2023 5-year B19013,available
+MD,24009,Calvert County,2024,133922,ACS 2024 5-year B19013,available
+MD,24011,Caroline County,2015,52465,ACS 2015 5-year B19013,available
+MD,24011,Caroline County,2016,50830,ACS 2016 5-year B19013,available
+MD,24011,Caroline County,2017,52469,ACS 2017 5-year B19013,available
+MD,24011,Caroline County,2018,54956,ACS 2018 5-year B19013,available
+MD,24011,Caroline County,2019,58638,ACS 2019 5-year B19013,available
+MD,24011,Caroline County,2020,59042,ACS 2020 5-year B19013,available
+MD,24011,Caroline County,2021,63027,ACS 2021 5-year B19013,available
+MD,24011,Caroline County,2022,65326,ACS 2022 5-year B19013,available
+MD,24011,Caroline County,2023,66368,ACS 2023 5-year B19013,available
+MD,24011,Caroline County,2024,68457,ACS 2024 5-year B19013,available
+MD,24013,Carroll County,2015,85385,ACS 2015 5-year B19013,available
+MD,24013,Carroll County,2016,87060,ACS 2016 5-year B19013,available
+MD,24013,Carroll County,2017,90510,ACS 2017 5-year B19013,available
+MD,24013,Carroll County,2018,93363,ACS 2018 5-year B19013,available
+MD,24013,Carroll County,2019,96769,ACS 2019 5-year B19013,available
+MD,24013,Carroll County,2020,99569,ACS 2020 5-year B19013,available
+MD,24013,Carroll County,2021,104708,ACS 2021 5-year B19013,available
+MD,24013,Carroll County,2022,111672,ACS 2022 5-year B19013,available
+MD,24013,Carroll County,2023,115876,ACS 2023 5-year B19013,available
+MD,24013,Carroll County,2024,118211,ACS 2024 5-year B19013,available
+MD,24015,Cecil County,2015,66396,ACS 2015 5-year B19013,available
+MD,24015,Cecil County,2016,67938,ACS 2016 5-year B19013,available
+MD,24015,Cecil County,2017,70516,ACS 2017 5-year B19013,available
+MD,24015,Cecil County,2018,72845,ACS 2018 5-year B19013,available
+MD,24015,Cecil County,2019,76887,ACS 2019 5-year B19013,available
+MD,24015,Cecil County,2020,79415,ACS 2020 5-year B19013,available
+MD,24015,Cecil County,2021,81817,ACS 2021 5-year B19013,available
+MD,24015,Cecil County,2022,86869,ACS 2022 5-year B19013,available
+MD,24015,Cecil County,2023,91146,ACS 2023 5-year B19013,available
+MD,24015,Cecil County,2024,92007,ACS 2024 5-year B19013,available
+MD,24017,Charles County,2015,90607,ACS 2015 5-year B19013,available
+MD,24017,Charles County,2016,91373,ACS 2016 5-year B19013,available
+MD,24017,Charles County,2017,93973,ACS 2017 5-year B19013,available
+MD,24017,Charles County,2018,95924,ACS 2018 5-year B19013,available
+MD,24017,Charles County,2019,100003,ACS 2019 5-year B19013,available
+MD,24017,Charles County,2020,103678,ACS 2020 5-year B19013,available
+MD,24017,Charles County,2021,107808,ACS 2021 5-year B19013,available
+MD,24017,Charles County,2022,116882,ACS 2022 5-year B19013,available
+MD,24017,Charles County,2023,120592,ACS 2023 5-year B19013,available
+MD,24017,Charles County,2024,122816,ACS 2024 5-year B19013,available
+MD,24019,Dorchester County,2015,47093,ACS 2015 5-year B19013,available
+MD,24019,Dorchester County,2016,47907,ACS 2016 5-year B19013,available
+MD,24019,Dorchester County,2017,50532,ACS 2017 5-year B19013,available
+MD,24019,Dorchester County,2018,52145,ACS 2018 5-year B19013,available
+MD,24019,Dorchester County,2019,52917,ACS 2019 5-year B19013,available
+MD,24019,Dorchester County,2020,52799,ACS 2020 5-year B19013,available
+MD,24019,Dorchester County,2021,55652,ACS 2021 5-year B19013,available
+MD,24019,Dorchester County,2022,57490,ACS 2022 5-year B19013,available
+MD,24019,Dorchester County,2023,60495,ACS 2023 5-year B19013,available
+MD,24019,Dorchester County,2024,61839,ACS 2024 5-year B19013,available
+MD,24021,Frederick County,2015,83700,ACS 2015 5-year B19013,available
+MD,24021,Frederick County,2016,85715,ACS 2016 5-year B19013,available
+MD,24021,Frederick County,2017,88502,ACS 2017 5-year B19013,available
+MD,24021,Frederick County,2018,91999,ACS 2018 5-year B19013,available
+MD,24021,Frederick County,2019,97730,ACS 2019 5-year B19013,available
+MD,24021,Frederick County,2020,100685,ACS 2020 5-year B19013,available
+MD,24021,Frederick County,2021,106129,ACS 2021 5-year B19013,available
+MD,24021,Frederick County,2022,115724,ACS 2022 5-year B19013,available
+MD,24021,Frederick County,2023,120458,ACS 2023 5-year B19013,available
+MD,24021,Frederick County,2024,122002,ACS 2024 5-year B19013,available
+MD,24023,Garrett County,2015,45432,ACS 2015 5-year B19013,available
+MD,24023,Garrett County,2016,46277,ACS 2016 5-year B19013,available
+MD,24023,Garrett County,2017,48174,ACS 2017 5-year B19013,available
+MD,24023,Garrett County,2018,49619,ACS 2018 5-year B19013,available
+MD,24023,Garrett County,2019,52617,ACS 2019 5-year B19013,available
+MD,24023,Garrett County,2020,54542,ACS 2020 5-year B19013,available
+MD,24023,Garrett County,2021,58011,ACS 2021 5-year B19013,available
+MD,24023,Garrett County,2022,64447,ACS 2022 5-year B19013,available
+MD,24023,Garrett County,2023,69031,ACS 2023 5-year B19013,available
+MD,24023,Garrett County,2024,67688,ACS 2024 5-year B19013,available
+MD,24025,Harford County,2015,80465,ACS 2015 5-year B19013,available
+MD,24025,Harford County,2016,81052,ACS 2016 5-year B19013,available
+MD,24025,Harford County,2017,83445,ACS 2017 5-year B19013,available
+MD,24025,Harford County,2018,85942,ACS 2018 5-year B19013,available
+MD,24025,Harford County,2019,89147,ACS 2019 5-year B19013,available
+MD,24025,Harford County,2020,94003,ACS 2020 5-year B19013,available
+MD,24025,Harford County,2021,98495,ACS 2021 5-year B19013,available
+MD,24025,Harford County,2022,106417,ACS 2022 5-year B19013,available
+MD,24025,Harford County,2023,111317,ACS 2023 5-year B19013,available
+MD,24025,Harford County,2024,112265,ACS 2024 5-year B19013,available
+MD,24027,Howard County,2015,110238,ACS 2015 5-year B19013,available
+MD,24027,Howard County,2016,113800,ACS 2016 5-year B19013,available
+MD,24027,Howard County,2017,115576,ACS 2017 5-year B19013,available
+MD,24027,Howard County,2018,117730,ACS 2018 5-year B19013,available
+MD,24027,Howard County,2019,121160,ACS 2019 5-year B19013,available
+MD,24027,Howard County,2020,124042,ACS 2020 5-year B19013,available
+MD,24027,Howard County,2021,129549,ACS 2021 5-year B19013,available
+MD,24027,Howard County,2022,140971,ACS 2022 5-year B19013,available
+MD,24027,Howard County,2023,146982,ACS 2023 5-year B19013,available
+MD,24027,Howard County,2024,149763,ACS 2024 5-year B19013,available
+MD,24029,Kent County,2015,58147,ACS 2015 5-year B19013,available
+MD,24029,Kent County,2016,55028,ACS 2016 5-year B19013,available
+MD,24029,Kent County,2017,56638,ACS 2017 5-year B19013,available
+MD,24029,Kent County,2018,56009,ACS 2018 5-year B19013,available
+MD,24029,Kent County,2019,58598,ACS 2019 5-year B19013,available
+MD,24029,Kent County,2020,60208,ACS 2020 5-year B19013,available
+MD,24029,Kent County,2021,64451,ACS 2021 5-year B19013,available
+MD,24029,Kent County,2022,71635,ACS 2022 5-year B19013,available
+MD,24029,Kent County,2023,74402,ACS 2023 5-year B19013,available
+MD,24029,Kent County,2024,80147,ACS 2024 5-year B19013,available
+MD,24031,Montgomery County,2015,99435,ACS 2015 5-year B19013,available
+MD,24031,Montgomery County,2016,100352,ACS 2016 5-year B19013,available
+MD,24031,Montgomery County,2017,103178,ACS 2017 5-year B19013,available
+MD,24031,Montgomery County,2018,106287,ACS 2018 5-year B19013,available
+MD,24031,Montgomery County,2019,108820,ACS 2019 5-year B19013,available
+MD,24031,Montgomery County,2020,111812,ACS 2020 5-year B19013,available
+MD,24031,Montgomery County,2021,117345,ACS 2021 5-year B19013,available
+MD,24031,Montgomery County,2022,125583,ACS 2022 5-year B19013,available
+MD,24031,Montgomery County,2023,128733,ACS 2023 5-year B19013,available
+MD,24031,Montgomery County,2024,132450,ACS 2024 5-year B19013,available
+MD,24033,Prince George's County,2015,74260,ACS 2015 5-year B19013,available
+MD,24033,Prince George's County,2016,75925,ACS 2016 5-year B19013,available
+MD,24033,Prince George's County,2017,78607,ACS 2017 5-year B19013,available
+MD,24033,Prince George's County,2018,81969,ACS 2018 5-year B19013,available
+MD,24033,Prince George's County,2019,84920,ACS 2019 5-year B19013,available
+MD,24033,Prince George's County,2020,86994,ACS 2020 5-year B19013,available
+MD,24033,Prince George's County,2021,91124,ACS 2021 5-year B19013,available
+MD,24033,Prince George's County,2022,97935,ACS 2022 5-year B19013,available
+MD,24033,Prince George's County,2023,100708,ACS 2023 5-year B19013,available
+MD,24033,Prince George's County,2024,101798,ACS 2024 5-year B19013,available
+MD,24035,Queen Anne's County,2015,85963,ACS 2015 5-year B19013,available
+MD,24035,Queen Anne's County,2016,85891,ACS 2016 5-year B19013,available
+MD,24035,Queen Anne's County,2017,89241,ACS 2017 5-year B19013,available
+MD,24035,Queen Anne's County,2018,92167,ACS 2018 5-year B19013,available
+MD,24035,Queen Anne's County,2019,97034,ACS 2019 5-year B19013,available
+MD,24035,Queen Anne's County,2020,96467,ACS 2020 5-year B19013,available
+MD,24035,Queen Anne's County,2021,99597,ACS 2021 5-year B19013,available
+MD,24035,Queen Anne's County,2022,108332,ACS 2022 5-year B19013,available
+MD,24035,Queen Anne's County,2023,113347,ACS 2023 5-year B19013,available
+MD,24035,Queen Anne's County,2024,112826,ACS 2024 5-year B19013,available
+MD,24037,St. Mary's County,2015,86987,ACS 2015 5-year B19013,available
+MD,24037,St. Mary's County,2016,86810,ACS 2016 5-year B19013,available
+MD,24037,St. Mary's County,2017,86508,ACS 2017 5-year B19013,available
+MD,24037,St. Mary's County,2018,90438,ACS 2018 5-year B19013,available
+MD,24037,St. Mary's County,2019,89845,ACS 2019 5-year B19013,available
+MD,24037,St. Mary's County,2020,95864,ACS 2020 5-year B19013,available
+MD,24037,St. Mary's County,2021,102859,ACS 2021 5-year B19013,available
+MD,24037,St. Mary's County,2022,113668,ACS 2022 5-year B19013,available
+MD,24037,St. Mary's County,2023,114580,ACS 2023 5-year B19013,available
+MD,24037,St. Mary's County,2024,119446,ACS 2024 5-year B19013,available
+MD,24039,Somerset County,2015,35154,ACS 2015 5-year B19013,available
+MD,24039,Somerset County,2016,35886,ACS 2016 5-year B19013,available
+MD,24039,Somerset County,2017,39239,ACS 2017 5-year B19013,available
+MD,24039,Somerset County,2018,42165,ACS 2018 5-year B19013,available
+MD,24039,Somerset County,2019,37803,ACS 2019 5-year B19013,available
+MD,24039,Somerset County,2020,44980,ACS 2020 5-year B19013,available
+MD,24039,Somerset County,2021,48661,ACS 2021 5-year B19013,available
+MD,24039,Somerset County,2022,52149,ACS 2022 5-year B19013,available
+MD,24039,Somerset County,2023,52462,ACS 2023 5-year B19013,available
+MD,24039,Somerset County,2024,64943,ACS 2024 5-year B19013,available
+MD,24041,Talbot County,2015,58228,ACS 2015 5-year B19013,available
+MD,24041,Talbot County,2016,61395,ACS 2016 5-year B19013,available
+MD,24041,Talbot County,2017,65595,ACS 2017 5-year B19013,available
+MD,24041,Talbot County,2018,67204,ACS 2018 5-year B19013,available
+MD,24041,Talbot County,2019,73547,ACS 2019 5-year B19013,available
+MD,24041,Talbot County,2020,73102,ACS 2020 5-year B19013,available
+MD,24041,Talbot County,2021,79349,ACS 2021 5-year B19013,available
+MD,24041,Talbot County,2022,81667,ACS 2022 5-year B19013,available
+MD,24041,Talbot County,2023,84378,ACS 2023 5-year B19013,available
+MD,24041,Talbot County,2024,84811,ACS 2024 5-year B19013,available
+MD,24043,Washington County,2015,56228,ACS 2015 5-year B19013,available
+MD,24043,Washington County,2016,56316,ACS 2016 5-year B19013,available
+MD,24043,Washington County,2017,58260,ACS 2017 5-year B19013,available
+MD,24043,Washington County,2018,59719,ACS 2018 5-year B19013,available
+MD,24043,Washington County,2019,60860,ACS 2019 5-year B19013,available
+MD,24043,Washington County,2020,63510,ACS 2020 5-year B19013,available
+MD,24043,Washington County,2021,67349,ACS 2021 5-year B19013,available
+MD,24043,Washington County,2022,73017,ACS 2022 5-year B19013,available
+MD,24043,Washington County,2023,74157,ACS 2023 5-year B19013,available
+MD,24043,Washington County,2024,77747,ACS 2024 5-year B19013,available
+MD,24045,Wicomico County,2015,52278,ACS 2015 5-year B19013,available
+MD,24045,Wicomico County,2016,53508,ACS 2016 5-year B19013,available
+MD,24045,Wicomico County,2017,54493,ACS 2017 5-year B19013,available
+MD,24045,Wicomico County,2018,56608,ACS 2018 5-year B19013,available
+MD,24045,Wicomico County,2019,56956,ACS 2019 5-year B19013,available
+MD,24045,Wicomico County,2020,60366,ACS 2020 5-year B19013,available
+MD,24045,Wicomico County,2021,63610,ACS 2021 5-year B19013,available
+MD,24045,Wicomico County,2022,69421,ACS 2022 5-year B19013,available
+MD,24045,Wicomico County,2023,72861,ACS 2023 5-year B19013,available
+MD,24045,Wicomico County,2024,76210,ACS 2024 5-year B19013,available
+MD,24047,Worcester County,2015,56773,ACS 2015 5-year B19013,available
+MD,24047,Worcester County,2016,57227,ACS 2016 5-year B19013,available
+MD,24047,Worcester County,2017,59458,ACS 2017 5-year B19013,available
+MD,24047,Worcester County,2018,61145,ACS 2018 5-year B19013,available
+MD,24047,Worcester County,2019,63499,ACS 2019 5-year B19013,available
+MD,24047,Worcester County,2020,65396,ACS 2020 5-year B19013,available
+MD,24047,Worcester County,2021,71262,ACS 2021 5-year B19013,available
+MD,24047,Worcester County,2022,76689,ACS 2022 5-year B19013,available
+MD,24047,Worcester County,2023,81455,ACS 2023 5-year B19013,available
+MD,24047,Worcester County,2024,81745,ACS 2024 5-year B19013,available
+MD,24510,Baltimore city,2015,42241,ACS 2015 5-year B19013,available
+MD,24510,Baltimore city,2016,44262,ACS 2016 5-year B19013,available
+MD,24510,Baltimore city,2017,46641,ACS 2017 5-year B19013,available
+MD,24510,Baltimore city,2018,48840,ACS 2018 5-year B19013,available
+MD,24510,Baltimore city,2019,50379,ACS 2019 5-year B19013,available
+MD,24510,Baltimore city,2020,52164,ACS 2020 5-year B19013,available
+MD,24510,Baltimore city,2021,54124,ACS 2021 5-year B19013,available
+MD,24510,Baltimore city,2022,58349,ACS 2022 5-year B19013,available
+MD,24510,Baltimore city,2023,59623,ACS 2023 5-year B19013,available
+MD,24510,Baltimore city,2024,62177,ACS 2024 5-year B19013,available
+NJ,34001,Atlantic County,2015,54461,ACS 2015 5-year B19013,available
+NJ,34001,Atlantic County,2016,55456,ACS 2016 5-year B19013,available
+NJ,34001,Atlantic County,2017,57514,ACS 2017 5-year B19013,available
+NJ,34001,Atlantic County,2018,59989,ACS 2018 5-year B19013,available
+NJ,34001,Atlantic County,2019,62110,ACS 2019 5-year B19013,available
+NJ,34001,Atlantic County,2020,63680,ACS 2020 5-year B19013,available
+NJ,34001,Atlantic County,2021,66473,ACS 2021 5-year B19013,available
+NJ,34001,Atlantic County,2022,73113,ACS 2022 5-year B19013,available
+NJ,34001,Atlantic County,2023,76819,ACS 2023 5-year B19013,available
+NJ,34001,Atlantic County,2024,78050,ACS 2024 5-year B19013,available
+NJ,34003,Bergen County,2015,85806,ACS 2015 5-year B19013,available
+NJ,34003,Bergen County,2016,88487,ACS 2016 5-year B19013,available
+NJ,34003,Bergen County,2017,91572,ACS 2017 5-year B19013,available
+NJ,34003,Bergen County,2018,95837,ACS 2018 5-year B19013,available
+NJ,34003,Bergen County,2019,101144,ACS 2019 5-year B19013,available
+NJ,34003,Bergen County,2020,104623,ACS 2020 5-year B19013,available
+NJ,34003,Bergen County,2021,109497,ACS 2021 5-year B19013,available
+NJ,34003,Bergen County,2022,118714,ACS 2022 5-year B19013,available
+NJ,34003,Bergen County,2023,123715,ACS 2023 5-year B19013,available
+NJ,34003,Bergen County,2024,124884,ACS 2024 5-year B19013,available
+NJ,34005,Burlington County,2015,78621,ACS 2015 5-year B19013,available
+NJ,34005,Burlington County,2016,80034,ACS 2016 5-year B19013,available
+NJ,34005,Burlington County,2017,82839,ACS 2017 5-year B19013,available
+NJ,34005,Burlington County,2018,84992,ACS 2018 5-year B19013,available
+NJ,34005,Burlington County,2019,87416,ACS 2019 5-year B19013,available
+NJ,34005,Burlington County,2020,90329,ACS 2020 5-year B19013,available
+NJ,34005,Burlington County,2021,95935,ACS 2021 5-year B19013,available
+NJ,34005,Burlington County,2022,102615,ACS 2022 5-year B19013,available
+NJ,34005,Burlington County,2023,105271,ACS 2023 5-year B19013,available
+NJ,34005,Burlington County,2024,108111,ACS 2024 5-year B19013,available
+NJ,34007,Camden County,2015,62185,ACS 2015 5-year B19013,available
+NJ,34007,Camden County,2016,63028,ACS 2016 5-year B19013,available
+NJ,34007,Camden County,2017,65037,ACS 2017 5-year B19013,available
+NJ,34007,Camden County,2018,67118,ACS 2018 5-year B19013,available
+NJ,34007,Camden County,2019,70451,ACS 2019 5-year B19013,available
+NJ,34007,Camden County,2020,70957,ACS 2020 5-year B19013,available
+NJ,34007,Camden County,2021,75485,ACS 2021 5-year B19013,available
+NJ,34007,Camden County,2022,82005,ACS 2022 5-year B19013,available
+NJ,34007,Camden County,2023,86384,ACS 2023 5-year B19013,available
+NJ,34007,Camden County,2024,88755,ACS 2024 5-year B19013,available
+NJ,34009,Cape May County,2015,57637,ACS 2015 5-year B19013,available
+NJ,34009,Cape May County,2016,59338,ACS 2016 5-year B19013,available
+NJ,34009,Cape May County,2017,62332,ACS 2017 5-year B19013,available
+NJ,34009,Cape May County,2018,63690,ACS 2018 5-year B19013,available
+NJ,34009,Cape May County,2019,67074,ACS 2019 5-year B19013,available
+NJ,34009,Cape May County,2020,72385,ACS 2020 5-year B19013,available
+NJ,34009,Cape May County,2021,76237,ACS 2021 5-year B19013,available
+NJ,34009,Cape May County,2022,83870,ACS 2022 5-year B19013,available
+NJ,34009,Cape May County,2023,88046,ACS 2023 5-year B19013,available
+NJ,34009,Cape May County,2024,91128,ACS 2024 5-year B19013,available
+NJ,34011,Cumberland County,2015,49984,ACS 2015 5-year B19013,available
+NJ,34011,Cumberland County,2016,49537,ACS 2016 5-year B19013,available
+NJ,34011,Cumberland County,2017,50000,ACS 2017 5-year B19013,available
+NJ,34011,Cumberland County,2018,52593,ACS 2018 5-year B19013,available
+NJ,34011,Cumberland County,2019,54149,ACS 2019 5-year B19013,available
+NJ,34011,Cumberland County,2020,55709,ACS 2020 5-year B19013,available
+NJ,34011,Cumberland County,2021,58397,ACS 2021 5-year B19013,available
+NJ,34011,Cumberland County,2022,62310,ACS 2022 5-year B19013,available
+NJ,34011,Cumberland County,2023,64499,ACS 2023 5-year B19013,available
+NJ,34011,Cumberland County,2024,67436,ACS 2024 5-year B19013,available
+NJ,34013,Essex County,2015,53976,ACS 2015 5-year B19013,available
+NJ,34013,Essex County,2016,54860,ACS 2016 5-year B19013,available
+NJ,34013,Essex County,2017,57365,ACS 2017 5-year B19013,available
+NJ,34013,Essex County,2018,59302,ACS 2018 5-year B19013,available
+NJ,34013,Essex County,2019,61510,ACS 2019 5-year B19013,available
+NJ,34013,Essex County,2020,63959,ACS 2020 5-year B19013,available
+NJ,34013,Essex County,2021,67826,ACS 2021 5-year B19013,available
+NJ,34013,Essex County,2022,73785,ACS 2022 5-year B19013,available
+NJ,34013,Essex County,2023,76712,ACS 2023 5-year B19013,available
+NJ,34013,Essex County,2024,80789,ACS 2024 5-year B19013,available
+NJ,34015,Gloucester County,2015,76727,ACS 2015 5-year B19013,available
+NJ,34015,Gloucester County,2016,78592,ACS 2016 5-year B19013,available
+NJ,34015,Gloucester County,2017,81489,ACS 2017 5-year B19013,available
+NJ,34015,Gloucester County,2018,85160,ACS 2018 5-year B19013,available
+NJ,34015,Gloucester County,2019,87283,ACS 2019 5-year B19013,available
+NJ,34015,Gloucester County,2020,89056,ACS 2020 5-year B19013,available
+NJ,34015,Gloucester County,2021,93208,ACS 2021 5-year B19013,available
+NJ,34015,Gloucester County,2022,99668,ACS 2022 5-year B19013,available
+NJ,34015,Gloucester County,2023,102807,ACS 2023 5-year B19013,available
+NJ,34015,Gloucester County,2024,105115,ACS 2024 5-year B19013,available
+NJ,34017,Hudson County,2015,59741,ACS 2015 5-year B19013,available
+NJ,34017,Hudson County,2016,60894,ACS 2016 5-year B19013,available
+NJ,34017,Hudson County,2017,62681,ACS 2017 5-year B19013,available
+NJ,34017,Hudson County,2018,66289,ACS 2018 5-year B19013,available
+NJ,34017,Hudson County,2019,71189,ACS 2019 5-year B19013,available
+NJ,34017,Hudson County,2020,75062,ACS 2020 5-year B19013,available
+NJ,34017,Hudson County,2021,79795,ACS 2021 5-year B19013,available
+NJ,34017,Hudson County,2022,86854,ACS 2022 5-year B19013,available
+NJ,34017,Hudson County,2023,90032,ACS 2023 5-year B19013,available
+NJ,34017,Hudson County,2024,91795,ACS 2024 5-year B19013,available
+NJ,34019,Hunterdon County,2015,105444,ACS 2015 5-year B19013,available
+NJ,34019,Hunterdon County,2016,108177,ACS 2016 5-year B19013,available
+NJ,34019,Hunterdon County,2017,110969,ACS 2017 5-year B19013,available
+NJ,34019,Hunterdon County,2018,112535,ACS 2018 5-year B19013,available
+NJ,34019,Hunterdon County,2019,115379,ACS 2019 5-year B19013,available
+NJ,34019,Hunterdon County,2020,117858,ACS 2020 5-year B19013,available
+NJ,34019,Hunterdon County,2021,123373,ACS 2021 5-year B19013,available
+NJ,34019,Hunterdon County,2022,133534,ACS 2022 5-year B19013,available
+NJ,34019,Hunterdon County,2023,139453,ACS 2023 5-year B19013,available
+NJ,34019,Hunterdon County,2024,141715,ACS 2024 5-year B19013,available
+NJ,34021,Mercer County,2015,72804,ACS 2015 5-year B19013,available
+NJ,34021,Mercer County,2016,73966,ACS 2016 5-year B19013,available
+NJ,34021,Mercer County,2017,77027,ACS 2017 5-year B19013,available
+NJ,34021,Mercer County,2018,79990,ACS 2018 5-year B19013,available
+NJ,34021,Mercer County,2019,81057,ACS 2019 5-year B19013,available
+NJ,34021,Mercer County,2020,83306,ACS 2020 5-year B19013,available
+NJ,34021,Mercer County,2021,85687,ACS 2021 5-year B19013,available
+NJ,34021,Mercer County,2022,92697,ACS 2022 5-year B19013,available
+NJ,34021,Mercer County,2023,96333,ACS 2023 5-year B19013,available
+NJ,34021,Mercer County,2024,100645,ACS 2024 5-year B19013,available
+NJ,34023,Middlesex County,2015,79593,ACS 2015 5-year B19013,available
+NJ,34023,Middlesex County,2016,80716,ACS 2016 5-year B19013,available
+NJ,34023,Middlesex County,2017,83133,ACS 2017 5-year B19013,available
+NJ,34023,Middlesex County,2018,85954,ACS 2018 5-year B19013,available
+NJ,34023,Middlesex County,2019,89533,ACS 2019 5-year B19013,available
+NJ,34023,Middlesex County,2020,91731,ACS 2020 5-year B19013,available
+NJ,34023,Middlesex County,2021,96883,ACS 2021 5-year B19013,available
+NJ,34023,Middlesex County,2022,105206,ACS 2022 5-year B19013,available
+NJ,34023,Middlesex County,2023,109028,ACS 2023 5-year B19013,available
+NJ,34023,Middlesex County,2024,111549,ACS 2024 5-year B19013,available
+NJ,34025,Monmouth County,2015,85242,ACS 2015 5-year B19013,available
+NJ,34025,Monmouth County,2016,87297,ACS 2016 5-year B19013,available
+NJ,34025,Monmouth County,2017,91807,ACS 2017 5-year B19013,available
+NJ,34025,Monmouth County,2018,95699,ACS 2018 5-year B19013,available
+NJ,34025,Monmouth County,2019,99733,ACS 2019 5-year B19013,available
+NJ,34025,Monmouth County,2020,103523,ACS 2020 5-year B19013,available
+NJ,34025,Monmouth County,2021,110356,ACS 2021 5-year B19013,available
+NJ,34025,Monmouth County,2022,118527,ACS 2022 5-year B19013,available
+NJ,34025,Monmouth County,2023,122727,ACS 2023 5-year B19013,available
+NJ,34025,Monmouth County,2024,124845,ACS 2024 5-year B19013,available
+NJ,34027,Morris County,2015,100214,ACS 2015 5-year B19013,available
+NJ,34027,Morris County,2016,102798,ACS 2016 5-year B19013,available
+NJ,34027,Morris County,2017,107034,ACS 2017 5-year B19013,available
+NJ,34027,Morris County,2018,111316,ACS 2018 5-year B19013,available
+NJ,34027,Morris County,2019,115527,ACS 2019 5-year B19013,available
+NJ,34027,Morris County,2020,117298,ACS 2020 5-year B19013,available
+NJ,34027,Morris County,2021,123727,ACS 2021 5-year B19013,available
+NJ,34027,Morris County,2022,130808,ACS 2022 5-year B19013,available
+NJ,34027,Morris County,2023,134929,ACS 2023 5-year B19013,available
+NJ,34027,Morris County,2024,137326,ACS 2024 5-year B19013,available
+NJ,34029,Ocean County,2015,61994,ACS 2015 5-year B19013,available
+NJ,34029,Ocean County,2016,63108,ACS 2016 5-year B19013,available
+NJ,34029,Ocean County,2017,65771,ACS 2017 5-year B19013,available
+NJ,34029,Ocean County,2018,68021,ACS 2018 5-year B19013,available
+NJ,34029,Ocean County,2019,70909,ACS 2019 5-year B19013,available
+NJ,34029,Ocean County,2020,72679,ACS 2020 5-year B19013,available
+NJ,34029,Ocean County,2021,76644,ACS 2021 5-year B19013,available
+NJ,34029,Ocean County,2022,82379,ACS 2022 5-year B19013,available
+NJ,34029,Ocean County,2023,86411,ACS 2023 5-year B19013,available
+NJ,34029,Ocean County,2024,89863,ACS 2024 5-year B19013,available
+NJ,34031,Passaic County,2015,59739,ACS 2015 5-year B19013,available
+NJ,34031,Passaic County,2016,61664,ACS 2016 5-year B19013,available
+NJ,34031,Passaic County,2017,63339,ACS 2017 5-year B19013,available
+NJ,34031,Passaic County,2018,66476,ACS 2018 5-year B19013,available
+NJ,34031,Passaic County,2019,69688,ACS 2019 5-year B19013,available
+NJ,34031,Passaic County,2020,73562,ACS 2020 5-year B19013,available
+NJ,34031,Passaic County,2021,78386,ACS 2021 5-year B19013,available
+NJ,34031,Passaic County,2022,84465,ACS 2022 5-year B19013,available
+NJ,34031,Passaic County,2023,87137,ACS 2023 5-year B19013,available
+NJ,34031,Passaic County,2024,87522,ACS 2024 5-year B19013,available
+NJ,34033,Salem County,2015,61831,ACS 2015 5-year B19013,available
+NJ,34033,Salem County,2016,61341,ACS 2016 5-year B19013,available
+NJ,34033,Salem County,2017,63934,ACS 2017 5-year B19013,available
+NJ,34033,Salem County,2018,64309,ACS 2018 5-year B19013,available
+NJ,34033,Salem County,2019,66842,ACS 2019 5-year B19013,available
+NJ,34033,Salem County,2020,64234,ACS 2020 5-year B19013,available
+NJ,34033,Salem County,2021,67898,ACS 2021 5-year B19013,available
+NJ,34033,Salem County,2022,73378,ACS 2022 5-year B19013,available
+NJ,34033,Salem County,2023,78412,ACS 2023 5-year B19013,available
+NJ,34033,Salem County,2024,79960,ACS 2024 5-year B19013,available
+NJ,34035,Somerset County,2015,100667,ACS 2015 5-year B19013,available
+NJ,34035,Somerset County,2016,102405,ACS 2016 5-year B19013,available
+NJ,34035,Somerset County,2017,106046,ACS 2017 5-year B19013,available
+NJ,34035,Somerset County,2018,111772,ACS 2018 5-year B19013,available
+NJ,34035,Somerset County,2019,113611,ACS 2019 5-year B19013,available
+NJ,34035,Somerset County,2020,116510,ACS 2020 5-year B19013,available
+NJ,34035,Somerset County,2021,121695,ACS 2021 5-year B19013,available
+NJ,34035,Somerset County,2022,131948,ACS 2022 5-year B19013,available
+NJ,34035,Somerset County,2023,135960,ACS 2023 5-year B19013,available
+NJ,34035,Somerset County,2024,140374,ACS 2024 5-year B19013,available
+NJ,34037,Sussex County,2015,86565,ACS 2015 5-year B19013,available
+NJ,34037,Sussex County,2016,87388,ACS 2016 5-year B19013,available
+NJ,34037,Sussex County,2017,89238,ACS 2017 5-year B19013,available
+NJ,34037,Sussex County,2018,90520,ACS 2018 5-year B19013,available
+NJ,34037,Sussex County,2019,94520,ACS 2019 5-year B19013,available
+NJ,34037,Sussex County,2020,96222,ACS 2020 5-year B19013,available
+NJ,34037,Sussex County,2021,101645,ACS 2021 5-year B19013,available
+NJ,34037,Sussex County,2022,111094,ACS 2022 5-year B19013,available
+NJ,34037,Sussex County,2023,114316,ACS 2023 5-year B19013,available
+NJ,34037,Sussex County,2024,116186,ACS 2024 5-year B19013,available
+NJ,34039,Union County,2015,69594,ACS 2015 5-year B19013,available
+NJ,34039,Union County,2016,70476,ACS 2016 5-year B19013,available
+NJ,34039,Union County,2017,73376,ACS 2017 5-year B19013,available
+NJ,34039,Union County,2018,77095,ACS 2018 5-year B19013,available
+NJ,34039,Union County,2019,80198,ACS 2019 5-year B19013,available
+NJ,34039,Union County,2020,82644,ACS 2020 5-year B19013,available
+NJ,34039,Union County,2021,87369,ACS 2021 5-year B19013,available
+NJ,34039,Union County,2022,95000,ACS 2022 5-year B19013,available
+NJ,34039,Union County,2023,100117,ACS 2023 5-year B19013,available
+NJ,34039,Union County,2024,103202,ACS 2024 5-year B19013,available
+NJ,34041,Warren County,2015,70471,ACS 2015 5-year B19013,available
+NJ,34041,Warren County,2016,72999,ACS 2016 5-year B19013,available
+NJ,34041,Warren County,2017,75500,ACS 2017 5-year B19013,available
+NJ,34041,Warren County,2018,78145,ACS 2018 5-year B19013,available
+NJ,34041,Warren County,2019,81307,ACS 2019 5-year B19013,available
+NJ,34041,Warren County,2020,83497,ACS 2020 5-year B19013,available
+NJ,34041,Warren County,2021,85163,ACS 2021 5-year B19013,available
+NJ,34041,Warren County,2022,92620,ACS 2022 5-year B19013,available
+NJ,34041,Warren County,2023,99596,ACS 2023 5-year B19013,available
+NJ,34041,Warren County,2024,100869,ACS 2024 5-year B19013,available
 NC,37001,Alamance County,2015,41814,ACS 2015 5-year B19013,available
 NC,37001,Alamance County,2016,43209,ACS 2016 5-year B19013,available
 NC,37001,Alamance County,2017,44281,ACS 2017 5-year B19013,available
@@ -3719,3 +4199,1333 @@ SC,45091,York County,2021,72234,ACS 2021 5-year B19013,available
 SC,45091,York County,2022,80158,ACS 2022 5-year B19013,available
 SC,45091,York County,2023,83060,ACS 2023 5-year B19013,available
 SC,45091,York County,2024,89095,ACS 2024 5-year B19013,available
+VA,51001,Accomack County,2015,39412,ACS 2015 5-year B19013,available
+VA,51001,Accomack County,2016,38503,ACS 2016 5-year B19013,available
+VA,51001,Accomack County,2017,42260,ACS 2017 5-year B19013,available
+VA,51001,Accomack County,2018,43210,ACS 2018 5-year B19013,available
+VA,51001,Accomack County,2019,46073,ACS 2019 5-year B19013,available
+VA,51001,Accomack County,2020,46178,ACS 2020 5-year B19013,available
+VA,51001,Accomack County,2021,50601,ACS 2021 5-year B19013,available
+VA,51001,Accomack County,2022,52694,ACS 2022 5-year B19013,available
+VA,51001,Accomack County,2023,57500,ACS 2023 5-year B19013,available
+VA,51001,Accomack County,2024,58993,ACS 2024 5-year B19013,available
+VA,51003,Albemarle County,2015,68449,ACS 2015 5-year B19013,available
+VA,51003,Albemarle County,2016,70342,ACS 2016 5-year B19013,available
+VA,51003,Albemarle County,2017,72265,ACS 2017 5-year B19013,available
+VA,51003,Albemarle County,2018,75394,ACS 2018 5-year B19013,available
+VA,51003,Albemarle County,2019,79880,ACS 2019 5-year B19013,available
+VA,51003,Albemarle County,2020,84643,ACS 2020 5-year B19013,available
+VA,51003,Albemarle County,2021,90568,ACS 2021 5-year B19013,available
+VA,51003,Albemarle County,2022,97708,ACS 2022 5-year B19013,available
+VA,51003,Albemarle County,2023,102617,ACS 2023 5-year B19013,available
+VA,51003,Albemarle County,2024,104392,ACS 2024 5-year B19013,available
+VA,51005,Alleghany County,2015,45007,ACS 2015 5-year B19013,available
+VA,51005,Alleghany County,2016,45538,ACS 2016 5-year B19013,available
+VA,51005,Alleghany County,2017,46020,ACS 2017 5-year B19013,available
+VA,51005,Alleghany County,2018,47794,ACS 2018 5-year B19013,available
+VA,51005,Alleghany County,2019,47673,ACS 2019 5-year B19013,available
+VA,51005,Alleghany County,2020,48513,ACS 2020 5-year B19013,available
+VA,51005,Alleghany County,2021,49705,ACS 2021 5-year B19013,available
+VA,51005,Alleghany County,2022,52546,ACS 2022 5-year B19013,available
+VA,51005,Alleghany County,2023,55160,ACS 2023 5-year B19013,available
+VA,51005,Alleghany County,2024,56188,ACS 2024 5-year B19013,available
+VA,51007,Amelia County,2015,56850,ACS 2015 5-year B19013,available
+VA,51007,Amelia County,2016,58269,ACS 2016 5-year B19013,available
+VA,51007,Amelia County,2017,58535,ACS 2017 5-year B19013,available
+VA,51007,Amelia County,2018,58526,ACS 2018 5-year B19013,available
+VA,51007,Amelia County,2019,57946,ACS 2019 5-year B19013,available
+VA,51007,Amelia County,2020,63918,ACS 2020 5-year B19013,available
+VA,51007,Amelia County,2021,57420,ACS 2021 5-year B19013,available
+VA,51007,Amelia County,2022,63438,ACS 2022 5-year B19013,available
+VA,51007,Amelia County,2023,66339,ACS 2023 5-year B19013,available
+VA,51007,Amelia County,2024,76717,ACS 2024 5-year B19013,available
+VA,51009,Amherst County,2015,47558,ACS 2015 5-year B19013,available
+VA,51009,Amherst County,2016,47002,ACS 2016 5-year B19013,available
+VA,51009,Amherst County,2017,49677,ACS 2017 5-year B19013,available
+VA,51009,Amherst County,2018,49170,ACS 2018 5-year B19013,available
+VA,51009,Amherst County,2019,52888,ACS 2019 5-year B19013,available
+VA,51009,Amherst County,2020,57368,ACS 2020 5-year B19013,available
+VA,51009,Amherst County,2021,60876,ACS 2021 5-year B19013,available
+VA,51009,Amherst County,2022,64454,ACS 2022 5-year B19013,available
+VA,51009,Amherst County,2023,67298,ACS 2023 5-year B19013,available
+VA,51009,Amherst County,2024,68724,ACS 2024 5-year B19013,available
+VA,51011,Appomattox County,2015,48823,ACS 2015 5-year B19013,available
+VA,51011,Appomattox County,2016,52134,ACS 2016 5-year B19013,available
+VA,51011,Appomattox County,2017,54875,ACS 2017 5-year B19013,available
+VA,51011,Appomattox County,2018,56176,ACS 2018 5-year B19013,available
+VA,51011,Appomattox County,2019,58696,ACS 2019 5-year B19013,available
+VA,51011,Appomattox County,2020,55457,ACS 2020 5-year B19013,available
+VA,51011,Appomattox County,2021,55268,ACS 2021 5-year B19013,available
+VA,51011,Appomattox County,2022,60041,ACS 2022 5-year B19013,available
+VA,51011,Appomattox County,2023,62337,ACS 2023 5-year B19013,available
+VA,51011,Appomattox County,2024,62853,ACS 2024 5-year B19013,available
+VA,51013,Arlington County,2015,105763,ACS 2015 5-year B19013,available
+VA,51013,Arlington County,2016,108706,ACS 2016 5-year B19013,available
+VA,51013,Arlington County,2017,112138,ACS 2017 5-year B19013,available
+VA,51013,Arlington County,2018,117374,ACS 2018 5-year B19013,available
+VA,51013,Arlington County,2019,120071,ACS 2019 5-year B19013,available
+VA,51013,Arlington County,2020,122604,ACS 2020 5-year B19013,available
+VA,51013,Arlington County,2021,128145,ACS 2021 5-year B19013,available
+VA,51013,Arlington County,2022,137387,ACS 2022 5-year B19013,available
+VA,51013,Arlington County,2023,140160,ACS 2023 5-year B19013,available
+VA,51013,Arlington County,2024,142114,ACS 2024 5-year B19013,available
+VA,51015,Augusta County,2015,54558,ACS 2015 5-year B19013,available
+VA,51015,Augusta County,2016,56802,ACS 2016 5-year B19013,available
+VA,51015,Augusta County,2017,59544,ACS 2017 5-year B19013,available
+VA,51015,Augusta County,2018,61305,ACS 2018 5-year B19013,available
+VA,51015,Augusta County,2019,62711,ACS 2019 5-year B19013,available
+VA,51015,Augusta County,2020,65076,ACS 2020 5-year B19013,available
+VA,51015,Augusta County,2021,69082,ACS 2021 5-year B19013,available
+VA,51015,Augusta County,2022,76124,ACS 2022 5-year B19013,available
+VA,51015,Augusta County,2023,79972,ACS 2023 5-year B19013,available
+VA,51015,Augusta County,2024,82049,ACS 2024 5-year B19013,available
+VA,51017,Bath County,2015,43646,ACS 2015 5-year B19013,available
+VA,51017,Bath County,2016,44985,ACS 2016 5-year B19013,available
+VA,51017,Bath County,2017,44483,ACS 2017 5-year B19013,available
+VA,51017,Bath County,2018,46137,ACS 2018 5-year B19013,available
+VA,51017,Bath County,2019,49738,ACS 2019 5-year B19013,available
+VA,51017,Bath County,2020,55481,ACS 2020 5-year B19013,available
+VA,51017,Bath County,2021,55807,ACS 2021 5-year B19013,available
+VA,51017,Bath County,2022,55699,ACS 2022 5-year B19013,available
+VA,51017,Bath County,2023,61709,ACS 2023 5-year B19013,available
+VA,51017,Bath County,2024,56184,ACS 2024 5-year B19013,available
+VA,51019,Bedford County,2015,56316,ACS 2015 5-year B19013,available
+VA,51019,Bedford County,2016,56725,ACS 2016 5-year B19013,available
+VA,51019,Bedford County,2017,59405,ACS 2017 5-year B19013,available
+VA,51019,Bedford County,2018,61541,ACS 2018 5-year B19013,available
+VA,51019,Bedford County,2019,64199,ACS 2019 5-year B19013,available
+VA,51019,Bedford County,2020,67136,ACS 2020 5-year B19013,available
+VA,51019,Bedford County,2021,70870,ACS 2021 5-year B19013,available
+VA,51019,Bedford County,2022,74773,ACS 2022 5-year B19013,available
+VA,51019,Bedford County,2023,77644,ACS 2023 5-year B19013,available
+VA,51019,Bedford County,2024,78937,ACS 2024 5-year B19013,available
+VA,51021,Bland County,2015,45294,ACS 2015 5-year B19013,available
+VA,51021,Bland County,2016,47800,ACS 2016 5-year B19013,available
+VA,51021,Bland County,2017,46927,ACS 2017 5-year B19013,available
+VA,51021,Bland County,2018,50511,ACS 2018 5-year B19013,available
+VA,51021,Bland County,2019,48531,ACS 2019 5-year B19013,available
+VA,51021,Bland County,2020,50365,ACS 2020 5-year B19013,available
+VA,51021,Bland County,2021,54556,ACS 2021 5-year B19013,available
+VA,51021,Bland County,2022,59901,ACS 2022 5-year B19013,available
+VA,51021,Bland County,2023,61375,ACS 2023 5-year B19013,available
+VA,51021,Bland County,2024,61216,ACS 2024 5-year B19013,available
+VA,51023,Botetourt County,2015,60454,ACS 2015 5-year B19013,available
+VA,51023,Botetourt County,2016,61470,ACS 2016 5-year B19013,available
+VA,51023,Botetourt County,2017,64733,ACS 2017 5-year B19013,available
+VA,51023,Botetourt County,2018,68410,ACS 2018 5-year B19013,available
+VA,51023,Botetourt County,2019,71110,ACS 2019 5-year B19013,available
+VA,51023,Botetourt County,2020,72719,ACS 2020 5-year B19013,available
+VA,51023,Botetourt County,2021,72941,ACS 2021 5-year B19013,available
+VA,51023,Botetourt County,2022,77680,ACS 2022 5-year B19013,available
+VA,51023,Botetourt County,2023,80467,ACS 2023 5-year B19013,available
+VA,51023,Botetourt County,2024,81213,ACS 2024 5-year B19013,available
+VA,51025,Brunswick County,2015,36919,ACS 2015 5-year B19013,available
+VA,51025,Brunswick County,2016,38858,ACS 2016 5-year B19013,available
+VA,51025,Brunswick County,2017,40871,ACS 2017 5-year B19013,available
+VA,51025,Brunswick County,2018,41927,ACS 2018 5-year B19013,available
+VA,51025,Brunswick County,2019,44434,ACS 2019 5-year B19013,available
+VA,51025,Brunswick County,2020,46111,ACS 2020 5-year B19013,available
+VA,51025,Brunswick County,2021,49597,ACS 2021 5-year B19013,available
+VA,51025,Brunswick County,2022,52678,ACS 2022 5-year B19013,available
+VA,51025,Brunswick County,2023,52978,ACS 2023 5-year B19013,available
+VA,51025,Brunswick County,2024,53084,ACS 2024 5-year B19013,available
+VA,51027,Buchanan County,2015,29679,ACS 2015 5-year B19013,available
+VA,51027,Buchanan County,2016,30335,ACS 2016 5-year B19013,available
+VA,51027,Buchanan County,2017,30828,ACS 2017 5-year B19013,available
+VA,51027,Buchanan County,2018,30806,ACS 2018 5-year B19013,available
+VA,51027,Buchanan County,2019,31956,ACS 2019 5-year B19013,available
+VA,51027,Buchanan County,2020,34302,ACS 2020 5-year B19013,available
+VA,51027,Buchanan County,2021,37093,ACS 2021 5-year B19013,available
+VA,51027,Buchanan County,2022,39591,ACS 2022 5-year B19013,available
+VA,51027,Buchanan County,2023,42216,ACS 2023 5-year B19013,available
+VA,51027,Buchanan County,2024,42886,ACS 2024 5-year B19013,available
+VA,51029,Buckingham County,2015,40331,ACS 2015 5-year B19013,available
+VA,51029,Buckingham County,2016,43514,ACS 2016 5-year B19013,available
+VA,51029,Buckingham County,2017,46610,ACS 2017 5-year B19013,available
+VA,51029,Buckingham County,2018,46261,ACS 2018 5-year B19013,available
+VA,51029,Buckingham County,2019,49025,ACS 2019 5-year B19013,available
+VA,51029,Buckingham County,2020,48603,ACS 2020 5-year B19013,available
+VA,51029,Buckingham County,2021,49841,ACS 2021 5-year B19013,available
+VA,51029,Buckingham County,2022,59894,ACS 2022 5-year B19013,available
+VA,51029,Buckingham County,2023,59199,ACS 2023 5-year B19013,available
+VA,51029,Buckingham County,2024,60828,ACS 2024 5-year B19013,available
+VA,51031,Campbell County,2015,47699,ACS 2015 5-year B19013,available
+VA,51031,Campbell County,2016,47005,ACS 2016 5-year B19013,available
+VA,51031,Campbell County,2017,48823,ACS 2017 5-year B19013,available
+VA,51031,Campbell County,2018,50258,ACS 2018 5-year B19013,available
+VA,51031,Campbell County,2019,49664,ACS 2019 5-year B19013,available
+VA,51031,Campbell County,2020,52319,ACS 2020 5-year B19013,available
+VA,51031,Campbell County,2021,53918,ACS 2021 5-year B19013,available
+VA,51031,Campbell County,2022,59022,ACS 2022 5-year B19013,available
+VA,51031,Campbell County,2023,62608,ACS 2023 5-year B19013,available
+VA,51031,Campbell County,2024,66165,ACS 2024 5-year B19013,available
+VA,51033,Caroline County,2015,59227,ACS 2015 5-year B19013,available
+VA,51033,Caroline County,2016,57294,ACS 2016 5-year B19013,available
+VA,51033,Caroline County,2017,60925,ACS 2017 5-year B19013,available
+VA,51033,Caroline County,2018,64715,ACS 2018 5-year B19013,available
+VA,51033,Caroline County,2019,65103,ACS 2019 5-year B19013,available
+VA,51033,Caroline County,2020,67901,ACS 2020 5-year B19013,available
+VA,51033,Caroline County,2021,76528,ACS 2021 5-year B19013,available
+VA,51033,Caroline County,2022,83562,ACS 2022 5-year B19013,available
+VA,51033,Caroline County,2023,86267,ACS 2023 5-year B19013,available
+VA,51033,Caroline County,2024,87407,ACS 2024 5-year B19013,available
+VA,51035,Carroll County,2015,35000,ACS 2015 5-year B19013,available
+VA,51035,Carroll County,2016,37048,ACS 2016 5-year B19013,available
+VA,51035,Carroll County,2017,41145,ACS 2017 5-year B19013,available
+VA,51035,Carroll County,2018,43532,ACS 2018 5-year B19013,available
+VA,51035,Carroll County,2019,44835,ACS 2019 5-year B19013,available
+VA,51035,Carroll County,2020,44518,ACS 2020 5-year B19013,available
+VA,51035,Carroll County,2021,45220,ACS 2021 5-year B19013,available
+VA,51035,Carroll County,2022,49113,ACS 2022 5-year B19013,available
+VA,51035,Carroll County,2023,52575,ACS 2023 5-year B19013,available
+VA,51035,Carroll County,2024,54484,ACS 2024 5-year B19013,available
+VA,51036,Charles City County,2015,49563,ACS 2015 5-year B19013,available
+VA,51036,Charles City County,2016,54167,ACS 2016 5-year B19013,available
+VA,51036,Charles City County,2017,55069,ACS 2017 5-year B19013,available
+VA,51036,Charles City County,2018,59192,ACS 2018 5-year B19013,available
+VA,51036,Charles City County,2019,57198,ACS 2019 5-year B19013,available
+VA,51036,Charles City County,2020,60096,ACS 2020 5-year B19013,available
+VA,51036,Charles City County,2021,59543,ACS 2021 5-year B19013,available
+VA,51036,Charles City County,2022,65573,ACS 2022 5-year B19013,available
+VA,51036,Charles City County,2023,70339,ACS 2023 5-year B19013,available
+VA,51036,Charles City County,2024,75417,ACS 2024 5-year B19013,available
+VA,51037,Charlotte County,2015,35079,ACS 2015 5-year B19013,available
+VA,51037,Charlotte County,2016,33837,ACS 2016 5-year B19013,available
+VA,51037,Charlotte County,2017,38350,ACS 2017 5-year B19013,available
+VA,51037,Charlotte County,2018,39212,ACS 2018 5-year B19013,available
+VA,51037,Charlotte County,2019,40573,ACS 2019 5-year B19013,available
+VA,51037,Charlotte County,2020,40924,ACS 2020 5-year B19013,available
+VA,51037,Charlotte County,2021,45567,ACS 2021 5-year B19013,available
+VA,51037,Charlotte County,2022,51548,ACS 2022 5-year B19013,available
+VA,51037,Charlotte County,2023,48892,ACS 2023 5-year B19013,available
+VA,51037,Charlotte County,2024,58000,ACS 2024 5-year B19013,available
+VA,51041,Chesterfield County,2015,72609,ACS 2015 5-year B19013,available
+VA,51041,Chesterfield County,2016,73869,ACS 2016 5-year B19013,available
+VA,51041,Chesterfield County,2017,76969,ACS 2017 5-year B19013,available
+VA,51041,Chesterfield County,2018,80214,ACS 2018 5-year B19013,available
+VA,51041,Chesterfield County,2019,82599,ACS 2019 5-year B19013,available
+VA,51041,Chesterfield County,2020,84645,ACS 2020 5-year B19013,available
+VA,51041,Chesterfield County,2021,88315,ACS 2021 5-year B19013,available
+VA,51041,Chesterfield County,2022,95757,ACS 2022 5-year B19013,available
+VA,51041,Chesterfield County,2023,98910,ACS 2023 5-year B19013,available
+VA,51041,Chesterfield County,2024,101931,ACS 2024 5-year B19013,available
+VA,51043,Clarke County,2015,71295,ACS 2015 5-year B19013,available
+VA,51043,Clarke County,2016,71986,ACS 2016 5-year B19013,available
+VA,51043,Clarke County,2017,72129,ACS 2017 5-year B19013,available
+VA,51043,Clarke County,2018,77936,ACS 2018 5-year B19013,available
+VA,51043,Clarke County,2019,80026,ACS 2019 5-year B19013,available
+VA,51043,Clarke County,2020,86154,ACS 2020 5-year B19013,available
+VA,51043,Clarke County,2021,86633,ACS 2021 5-year B19013,available
+VA,51043,Clarke County,2022,107475,ACS 2022 5-year B19013,available
+VA,51043,Clarke County,2023,114185,ACS 2023 5-year B19013,available
+VA,51043,Clarke County,2024,117111,ACS 2024 5-year B19013,available
+VA,51045,Craig County,2015,44330,ACS 2015 5-year B19013,available
+VA,51045,Craig County,2016,40500,ACS 2016 5-year B19013,available
+VA,51045,Craig County,2017,53526,ACS 2017 5-year B19013,available
+VA,51045,Craig County,2018,55484,ACS 2018 5-year B19013,available
+VA,51045,Craig County,2019,55708,ACS 2019 5-year B19013,available
+VA,51045,Craig County,2020,57792,ACS 2020 5-year B19013,available
+VA,51045,Craig County,2021,60283,ACS 2021 5-year B19013,available
+VA,51045,Craig County,2022,66286,ACS 2022 5-year B19013,available
+VA,51045,Craig County,2023,67778,ACS 2023 5-year B19013,available
+VA,51045,Craig County,2024,69057,ACS 2024 5-year B19013,available
+VA,51047,Culpeper County,2015,66697,ACS 2015 5-year B19013,available
+VA,51047,Culpeper County,2016,66160,ACS 2016 5-year B19013,available
+VA,51047,Culpeper County,2017,69693,ACS 2017 5-year B19013,available
+VA,51047,Culpeper County,2018,73116,ACS 2018 5-year B19013,available
+VA,51047,Culpeper County,2019,77935,ACS 2019 5-year B19013,available
+VA,51047,Culpeper County,2020,80663,ACS 2020 5-year B19013,available
+VA,51047,Culpeper County,2021,85274,ACS 2021 5-year B19013,available
+VA,51047,Culpeper County,2022,92359,ACS 2022 5-year B19013,available
+VA,51047,Culpeper County,2023,96098,ACS 2023 5-year B19013,available
+VA,51047,Culpeper County,2024,100049,ACS 2024 5-year B19013,available
+VA,51049,Cumberland County,2015,39301,ACS 2015 5-year B19013,available
+VA,51049,Cumberland County,2016,37489,ACS 2016 5-year B19013,available
+VA,51049,Cumberland County,2017,43020,ACS 2017 5-year B19013,available
+VA,51049,Cumberland County,2018,46221,ACS 2018 5-year B19013,available
+VA,51049,Cumberland County,2019,47469,ACS 2019 5-year B19013,available
+VA,51049,Cumberland County,2020,50565,ACS 2020 5-year B19013,available
+VA,51049,Cumberland County,2021,57568,ACS 2021 5-year B19013,available
+VA,51049,Cumberland County,2022,56497,ACS 2022 5-year B19013,available
+VA,51049,Cumberland County,2023,57057,ACS 2023 5-year B19013,available
+VA,51049,Cumberland County,2024,55325,ACS 2024 5-year B19013,available
+VA,51051,Dickenson County,2015,33624,ACS 2015 5-year B19013,available
+VA,51051,Dickenson County,2016,31226,ACS 2016 5-year B19013,available
+VA,51051,Dickenson County,2017,29916,ACS 2017 5-year B19013,available
+VA,51051,Dickenson County,2018,29226,ACS 2018 5-year B19013,available
+VA,51051,Dickenson County,2019,29932,ACS 2019 5-year B19013,available
+VA,51051,Dickenson County,2020,30116,ACS 2020 5-year B19013,available
+VA,51051,Dickenson County,2021,33905,ACS 2021 5-year B19013,available
+VA,51051,Dickenson County,2022,40143,ACS 2022 5-year B19013,available
+VA,51051,Dickenson County,2023,43831,ACS 2023 5-year B19013,available
+VA,51051,Dickenson County,2024,47254,ACS 2024 5-year B19013,available
+VA,51053,Dinwiddie County,2015,51397,ACS 2015 5-year B19013,available
+VA,51053,Dinwiddie County,2016,51579,ACS 2016 5-year B19013,available
+VA,51053,Dinwiddie County,2017,54640,ACS 2017 5-year B19013,available
+VA,51053,Dinwiddie County,2018,55880,ACS 2018 5-year B19013,available
+VA,51053,Dinwiddie County,2019,60346,ACS 2019 5-year B19013,available
+VA,51053,Dinwiddie County,2020,65485,ACS 2020 5-year B19013,available
+VA,51053,Dinwiddie County,2021,68918,ACS 2021 5-year B19013,available
+VA,51053,Dinwiddie County,2022,77225,ACS 2022 5-year B19013,available
+VA,51053,Dinwiddie County,2023,83898,ACS 2023 5-year B19013,available
+VA,51053,Dinwiddie County,2024,83704,ACS 2024 5-year B19013,available
+VA,51057,Essex County,2015,42760,ACS 2015 5-year B19013,available
+VA,51057,Essex County,2016,47527,ACS 2016 5-year B19013,available
+VA,51057,Essex County,2017,50629,ACS 2017 5-year B19013,available
+VA,51057,Essex County,2018,52681,ACS 2018 5-year B19013,available
+VA,51057,Essex County,2019,51954,ACS 2019 5-year B19013,available
+VA,51057,Essex County,2020,51125,ACS 2020 5-year B19013,available
+VA,51057,Essex County,2021,54375,ACS 2021 5-year B19013,available
+VA,51057,Essex County,2022,52335,ACS 2022 5-year B19013,available
+VA,51057,Essex County,2023,56481,ACS 2023 5-year B19013,available
+VA,51057,Essex County,2024,56520,ACS 2024 5-year B19013,available
+VA,51059,Fairfax County,2015,112552,ACS 2015 5-year B19013,available
+VA,51059,Fairfax County,2016,114329,ACS 2016 5-year B19013,available
+VA,51059,Fairfax County,2017,117515,ACS 2017 5-year B19013,available
+VA,51059,Fairfax County,2018,121133,ACS 2018 5-year B19013,available
+VA,51059,Fairfax County,2019,124831,ACS 2019 5-year B19013,available
+VA,51059,Fairfax County,2020,127866,ACS 2020 5-year B19013,available
+VA,51059,Fairfax County,2021,133974,ACS 2021 5-year B19013,available
+VA,51059,Fairfax County,2022,145165,ACS 2022 5-year B19013,available
+VA,51059,Fairfax County,2023,150113,ACS 2023 5-year B19013,available
+VA,51059,Fairfax County,2024,153637,ACS 2024 5-year B19013,available
+VA,51061,Fauquier County,2015,91609,ACS 2015 5-year B19013,available
+VA,51061,Fauquier County,2016,91221,ACS 2016 5-year B19013,available
+VA,51061,Fauquier County,2017,94775,ACS 2017 5-year B19013,available
+VA,51061,Fauquier County,2018,97469,ACS 2018 5-year B19013,available
+VA,51061,Fauquier County,2019,100783,ACS 2019 5-year B19013,available
+VA,51061,Fauquier County,2020,105665,ACS 2020 5-year B19013,available
+VA,51061,Fauquier County,2021,111368,ACS 2021 5-year B19013,available
+VA,51061,Fauquier County,2022,122785,ACS 2022 5-year B19013,available
+VA,51061,Fauquier County,2023,129495,ACS 2023 5-year B19013,available
+VA,51061,Fauquier County,2024,130189,ACS 2024 5-year B19013,available
+VA,51063,Floyd County,2015,48005,ACS 2015 5-year B19013,available
+VA,51063,Floyd County,2016,47288,ACS 2016 5-year B19013,available
+VA,51063,Floyd County,2017,48396,ACS 2017 5-year B19013,available
+VA,51063,Floyd County,2018,49729,ACS 2018 5-year B19013,available
+VA,51063,Floyd County,2019,51521,ACS 2019 5-year B19013,available
+VA,51063,Floyd County,2020,51250,ACS 2020 5-year B19013,available
+VA,51063,Floyd County,2021,51612,ACS 2021 5-year B19013,available
+VA,51063,Floyd County,2022,57146,ACS 2022 5-year B19013,available
+VA,51063,Floyd County,2023,61401,ACS 2023 5-year B19013,available
+VA,51063,Floyd County,2024,62191,ACS 2024 5-year B19013,available
+VA,51065,Fluvanna County,2015,63938,ACS 2015 5-year B19013,available
+VA,51065,Fluvanna County,2016,66425,ACS 2016 5-year B19013,available
+VA,51065,Fluvanna County,2017,67964,ACS 2017 5-year B19013,available
+VA,51065,Fluvanna County,2018,74931,ACS 2018 5-year B19013,available
+VA,51065,Fluvanna County,2019,76873,ACS 2019 5-year B19013,available
+VA,51065,Fluvanna County,2020,78885,ACS 2020 5-year B19013,available
+VA,51065,Fluvanna County,2021,82983,ACS 2021 5-year B19013,available
+VA,51065,Fluvanna County,2022,90766,ACS 2022 5-year B19013,available
+VA,51065,Fluvanna County,2023,91959,ACS 2023 5-year B19013,available
+VA,51065,Fluvanna County,2024,96768,ACS 2024 5-year B19013,available
+VA,51067,Franklin County,2015,46870,ACS 2015 5-year B19013,available
+VA,51067,Franklin County,2016,48720,ACS 2016 5-year B19013,available
+VA,51067,Franklin County,2017,51208,ACS 2017 5-year B19013,available
+VA,51067,Franklin County,2018,52639,ACS 2018 5-year B19013,available
+VA,51067,Franklin County,2019,56254,ACS 2019 5-year B19013,available
+VA,51067,Franklin County,2020,56779,ACS 2020 5-year B19013,available
+VA,51067,Franklin County,2021,59667,ACS 2021 5-year B19013,available
+VA,51067,Franklin County,2022,66275,ACS 2022 5-year B19013,available
+VA,51067,Franklin County,2023,68348,ACS 2023 5-year B19013,available
+VA,51067,Franklin County,2024,68849,ACS 2024 5-year B19013,available
+VA,51069,Frederick County,2015,69098,ACS 2015 5-year B19013,available
+VA,51069,Frederick County,2016,68929,ACS 2016 5-year B19013,available
+VA,51069,Frederick County,2017,71037,ACS 2017 5-year B19013,available
+VA,51069,Frederick County,2018,73250,ACS 2018 5-year B19013,available
+VA,51069,Frederick County,2019,78002,ACS 2019 5-year B19013,available
+VA,51069,Frederick County,2020,80011,ACS 2020 5-year B19013,available
+VA,51069,Frederick County,2021,84317,ACS 2021 5-year B19013,available
+VA,51069,Frederick County,2022,92443,ACS 2022 5-year B19013,available
+VA,51069,Frederick County,2023,95603,ACS 2023 5-year B19013,available
+VA,51069,Frederick County,2024,97606,ACS 2024 5-year B19013,available
+VA,51071,Giles County,2015,46390,ACS 2015 5-year B19013,available
+VA,51071,Giles County,2016,47675,ACS 2016 5-year B19013,available
+VA,51071,Giles County,2017,49734,ACS 2017 5-year B19013,available
+VA,51071,Giles County,2018,52478,ACS 2018 5-year B19013,available
+VA,51071,Giles County,2019,54520,ACS 2019 5-year B19013,available
+VA,51071,Giles County,2020,57279,ACS 2020 5-year B19013,available
+VA,51071,Giles County,2021,57911,ACS 2021 5-year B19013,available
+VA,51071,Giles County,2022,61987,ACS 2022 5-year B19013,available
+VA,51071,Giles County,2023,64819,ACS 2023 5-year B19013,available
+VA,51071,Giles County,2024,65691,ACS 2024 5-year B19013,available
+VA,51073,Gloucester County,2015,61121,ACS 2015 5-year B19013,available
+VA,51073,Gloucester County,2016,62878,ACS 2016 5-year B19013,available
+VA,51073,Gloucester County,2017,63881,ACS 2017 5-year B19013,available
+VA,51073,Gloucester County,2018,66701,ACS 2018 5-year B19013,available
+VA,51073,Gloucester County,2019,70537,ACS 2019 5-year B19013,available
+VA,51073,Gloucester County,2020,71649,ACS 2020 5-year B19013,available
+VA,51073,Gloucester County,2021,77733,ACS 2021 5-year B19013,available
+VA,51073,Gloucester County,2022,83750,ACS 2022 5-year B19013,available
+VA,51073,Gloucester County,2023,83689,ACS 2023 5-year B19013,available
+VA,51073,Gloucester County,2024,84306,ACS 2024 5-year B19013,available
+VA,51075,Goochland County,2015,79330,ACS 2015 5-year B19013,available
+VA,51075,Goochland County,2016,82326,ACS 2016 5-year B19013,available
+VA,51075,Goochland County,2017,86652,ACS 2017 5-year B19013,available
+VA,51075,Goochland County,2018,89741,ACS 2018 5-year B19013,available
+VA,51075,Goochland County,2019,93994,ACS 2019 5-year B19013,available
+VA,51075,Goochland County,2020,97146,ACS 2020 5-year B19013,available
+VA,51075,Goochland County,2021,100517,ACS 2021 5-year B19013,available
+VA,51075,Goochland County,2022,105600,ACS 2022 5-year B19013,available
+VA,51075,Goochland County,2023,118695,ACS 2023 5-year B19013,available
+VA,51075,Goochland County,2024,118931,ACS 2024 5-year B19013,available
+VA,51077,Grayson County,2015,29942,ACS 2015 5-year B19013,available
+VA,51077,Grayson County,2016,31002,ACS 2016 5-year B19013,available
+VA,51077,Grayson County,2017,32048,ACS 2017 5-year B19013,available
+VA,51077,Grayson County,2018,33969,ACS 2018 5-year B19013,available
+VA,51077,Grayson County,2019,36544,ACS 2019 5-year B19013,available
+VA,51077,Grayson County,2020,41558,ACS 2020 5-year B19013,available
+VA,51077,Grayson County,2021,43022,ACS 2021 5-year B19013,available
+VA,51077,Grayson County,2022,43348,ACS 2022 5-year B19013,available
+VA,51077,Grayson County,2023,42864,ACS 2023 5-year B19013,available
+VA,51077,Grayson County,2024,47730,ACS 2024 5-year B19013,available
+VA,51079,Greene County,2015,61550,ACS 2015 5-year B19013,available
+VA,51079,Greene County,2016,61615,ACS 2016 5-year B19013,available
+VA,51079,Greene County,2017,62952,ACS 2017 5-year B19013,available
+VA,51079,Greene County,2018,64979,ACS 2018 5-year B19013,available
+VA,51079,Greene County,2019,67398,ACS 2019 5-year B19013,available
+VA,51079,Greene County,2020,67266,ACS 2020 5-year B19013,available
+VA,51079,Greene County,2021,73844,ACS 2021 5-year B19013,available
+VA,51079,Greene County,2022,81338,ACS 2022 5-year B19013,available
+VA,51079,Greene County,2023,85268,ACS 2023 5-year B19013,available
+VA,51079,Greene County,2024,89808,ACS 2024 5-year B19013,available
+VA,51081,Greensville County,2015,38012,ACS 2015 5-year B19013,available
+VA,51081,Greensville County,2016,40559,ACS 2016 5-year B19013,available
+VA,51081,Greensville County,2017,42121,ACS 2017 5-year B19013,available
+VA,51081,Greensville County,2018,44534,ACS 2018 5-year B19013,available
+VA,51081,Greensville County,2019,50300,ACS 2019 5-year B19013,available
+VA,51081,Greensville County,2020,49756,ACS 2020 5-year B19013,available
+VA,51081,Greensville County,2021,53063,ACS 2021 5-year B19013,available
+VA,51081,Greensville County,2022,51823,ACS 2022 5-year B19013,available
+VA,51081,Greensville County,2023,56759,ACS 2023 5-year B19013,available
+VA,51081,Greensville County,2024,54668,ACS 2024 5-year B19013,available
+VA,51083,Halifax County,2015,35240,ACS 2015 5-year B19013,available
+VA,51083,Halifax County,2016,37001,ACS 2016 5-year B19013,available
+VA,51083,Halifax County,2017,39233,ACS 2017 5-year B19013,available
+VA,51083,Halifax County,2018,42289,ACS 2018 5-year B19013,available
+VA,51083,Halifax County,2019,42669,ACS 2019 5-year B19013,available
+VA,51083,Halifax County,2020,43714,ACS 2020 5-year B19013,available
+VA,51083,Halifax County,2021,45962,ACS 2021 5-year B19013,available
+VA,51083,Halifax County,2022,49145,ACS 2022 5-year B19013,available
+VA,51083,Halifax County,2023,49244,ACS 2023 5-year B19013,available
+VA,51083,Halifax County,2024,52013,ACS 2024 5-year B19013,available
+VA,51085,Hanover County,2015,78645,ACS 2015 5-year B19013,available
+VA,51085,Hanover County,2016,81170,ACS 2016 5-year B19013,available
+VA,51085,Hanover County,2017,84955,ACS 2017 5-year B19013,available
+VA,51085,Hanover County,2018,88652,ACS 2018 5-year B19013,available
+VA,51085,Hanover County,2019,89390,ACS 2019 5-year B19013,available
+VA,51085,Hanover County,2020,91444,ACS 2020 5-year B19013,available
+VA,51085,Hanover County,2021,96911,ACS 2021 5-year B19013,available
+VA,51085,Hanover County,2022,104678,ACS 2022 5-year B19013,available
+VA,51085,Hanover County,2023,109504,ACS 2023 5-year B19013,available
+VA,51085,Hanover County,2024,112805,ACS 2024 5-year B19013,available
+VA,51087,Henrico County,2015,61934,ACS 2015 5-year B19013,available
+VA,51087,Henrico County,2016,63699,ACS 2016 5-year B19013,available
+VA,51087,Henrico County,2017,66447,ACS 2017 5-year B19013,available
+VA,51087,Henrico County,2018,68572,ACS 2018 5-year B19013,available
+VA,51087,Henrico County,2019,70307,ACS 2019 5-year B19013,available
+VA,51087,Henrico County,2020,72295,ACS 2020 5-year B19013,available
+VA,51087,Henrico County,2021,76345,ACS 2021 5-year B19013,available
+VA,51087,Henrico County,2022,82424,ACS 2022 5-year B19013,available
+VA,51087,Henrico County,2023,86397,ACS 2023 5-year B19013,available
+VA,51087,Henrico County,2024,88783,ACS 2024 5-year B19013,available
+VA,51089,Henry County,2015,35293,ACS 2015 5-year B19013,available
+VA,51089,Henry County,2016,34992,ACS 2016 5-year B19013,available
+VA,51089,Henry County,2017,36779,ACS 2017 5-year B19013,available
+VA,51089,Henry County,2018,36683,ACS 2018 5-year B19013,available
+VA,51089,Henry County,2019,37952,ACS 2019 5-year B19013,available
+VA,51089,Henry County,2020,38511,ACS 2020 5-year B19013,available
+VA,51089,Henry County,2021,41103,ACS 2021 5-year B19013,available
+VA,51089,Henry County,2022,43694,ACS 2022 5-year B19013,available
+VA,51089,Henry County,2023,48445,ACS 2023 5-year B19013,available
+VA,51089,Henry County,2024,50760,ACS 2024 5-year B19013,available
+VA,51091,Highland County,2015,43914,ACS 2015 5-year B19013,available
+VA,51091,Highland County,2016,44877,ACS 2016 5-year B19013,available
+VA,51091,Highland County,2017,45094,ACS 2017 5-year B19013,available
+VA,51091,Highland County,2018,46147,ACS 2018 5-year B19013,available
+VA,51091,Highland County,2019,48587,ACS 2019 5-year B19013,available
+VA,51091,Highland County,2020,51831,ACS 2020 5-year B19013,available
+VA,51091,Highland County,2021,52901,ACS 2021 5-year B19013,available
+VA,51091,Highland County,2022,57070,ACS 2022 5-year B19013,available
+VA,51091,Highland County,2023,62946,ACS 2023 5-year B19013,available
+VA,51091,Highland County,2024,65625,ACS 2024 5-year B19013,available
+VA,51093,Isle of Wight County,2015,65741,ACS 2015 5-year B19013,available
+VA,51093,Isle of Wight County,2016,66835,ACS 2016 5-year B19013,available
+VA,51093,Isle of Wight County,2017,67767,ACS 2017 5-year B19013,available
+VA,51093,Isle of Wight County,2018,71376,ACS 2018 5-year B19013,available
+VA,51093,Isle of Wight County,2019,73991,ACS 2019 5-year B19013,available
+VA,51093,Isle of Wight County,2020,77870,ACS 2020 5-year B19013,available
+VA,51093,Isle of Wight County,2021,84673,ACS 2021 5-year B19013,available
+VA,51093,Isle of Wight County,2022,91680,ACS 2022 5-year B19013,available
+VA,51093,Isle of Wight County,2023,96118,ACS 2023 5-year B19013,available
+VA,51093,Isle of Wight County,2024,95241,ACS 2024 5-year B19013,available
+VA,51095,James City County,2015,75710,ACS 2015 5-year B19013,available
+VA,51095,James City County,2016,80226,ACS 2016 5-year B19013,available
+VA,51095,James City County,2017,80772,ACS 2017 5-year B19013,available
+VA,51095,James City County,2018,83048,ACS 2018 5-year B19013,available
+VA,51095,James City County,2019,87678,ACS 2019 5-year B19013,available
+VA,51095,James City County,2020,91675,ACS 2020 5-year B19013,available
+VA,51095,James City County,2021,94907,ACS 2021 5-year B19013,available
+VA,51095,James City County,2022,100711,ACS 2022 5-year B19013,available
+VA,51095,James City County,2023,107046,ACS 2023 5-year B19013,available
+VA,51095,James City County,2024,109985,ACS 2024 5-year B19013,available
+VA,51097,King and Queen County,2015,48292,ACS 2015 5-year B19013,available
+VA,51097,King and Queen County,2016,48852,ACS 2016 5-year B19013,available
+VA,51097,King and Queen County,2017,51495,ACS 2017 5-year B19013,available
+VA,51097,King and Queen County,2018,54516,ACS 2018 5-year B19013,available
+VA,51097,King and Queen County,2019,63982,ACS 2019 5-year B19013,available
+VA,51097,King and Queen County,2020,65385,ACS 2020 5-year B19013,available
+VA,51097,King and Queen County,2021,61672,ACS 2021 5-year B19013,available
+VA,51097,King and Queen County,2022,70147,ACS 2022 5-year B19013,available
+VA,51097,King and Queen County,2023,72851,ACS 2023 5-year B19013,available
+VA,51097,King and Queen County,2024,70469,ACS 2024 5-year B19013,available
+VA,51099,King George County,2015,81688,ACS 2015 5-year B19013,available
+VA,51099,King George County,2016,84342,ACS 2016 5-year B19013,available
+VA,51099,King George County,2017,84770,ACS 2017 5-year B19013,available
+VA,51099,King George County,2018,87321,ACS 2018 5-year B19013,available
+VA,51099,King George County,2019,94274,ACS 2019 5-year B19013,available
+VA,51099,King George County,2020,96711,ACS 2020 5-year B19013,available
+VA,51099,King George County,2021,101599,ACS 2021 5-year B19013,available
+VA,51099,King George County,2022,103264,ACS 2022 5-year B19013,available
+VA,51099,King George County,2023,110517,ACS 2023 5-year B19013,available
+VA,51099,King George County,2024,116884,ACS 2024 5-year B19013,available
+VA,51101,King William County,2015,62031,ACS 2015 5-year B19013,available
+VA,51101,King William County,2016,64297,ACS 2016 5-year B19013,available
+VA,51101,King William County,2017,67423,ACS 2017 5-year B19013,available
+VA,51101,King William County,2018,68720,ACS 2018 5-year B19013,available
+VA,51101,King William County,2019,66987,ACS 2019 5-year B19013,available
+VA,51101,King William County,2020,73284,ACS 2020 5-year B19013,available
+VA,51101,King William County,2021,74592,ACS 2021 5-year B19013,available
+VA,51101,King William County,2022,79398,ACS 2022 5-year B19013,available
+VA,51101,King William County,2023,85212,ACS 2023 5-year B19013,available
+VA,51101,King William County,2024,86056,ACS 2024 5-year B19013,available
+VA,51103,Lancaster County,2015,50374,ACS 2015 5-year B19013,available
+VA,51103,Lancaster County,2016,50118,ACS 2016 5-year B19013,available
+VA,51103,Lancaster County,2017,51495,ACS 2017 5-year B19013,available
+VA,51103,Lancaster County,2018,50739,ACS 2018 5-year B19013,available
+VA,51103,Lancaster County,2019,53711,ACS 2019 5-year B19013,available
+VA,51103,Lancaster County,2020,59736,ACS 2020 5-year B19013,available
+VA,51103,Lancaster County,2021,64460,ACS 2021 5-year B19013,available
+VA,51103,Lancaster County,2022,62674,ACS 2022 5-year B19013,available
+VA,51103,Lancaster County,2023,67169,ACS 2023 5-year B19013,available
+VA,51103,Lancaster County,2024,69713,ACS 2024 5-year B19013,available
+VA,51105,Lee County,2015,31086,ACS 2015 5-year B19013,available
+VA,51105,Lee County,2016,31577,ACS 2016 5-year B19013,available
+VA,51105,Lee County,2017,32590,ACS 2017 5-year B19013,available
+VA,51105,Lee County,2018,32718,ACS 2018 5-year B19013,available
+VA,51105,Lee County,2019,32888,ACS 2019 5-year B19013,available
+VA,51105,Lee County,2020,35006,ACS 2020 5-year B19013,available
+VA,51105,Lee County,2021,37574,ACS 2021 5-year B19013,available
+VA,51105,Lee County,2022,41619,ACS 2022 5-year B19013,available
+VA,51105,Lee County,2023,42269,ACS 2023 5-year B19013,available
+VA,51105,Lee County,2024,41827,ACS 2024 5-year B19013,available
+VA,51107,Loudoun County,2015,123453,ACS 2015 5-year B19013,available
+VA,51107,Loudoun County,2016,125672,ACS 2016 5-year B19013,available
+VA,51107,Loudoun County,2017,129588,ACS 2017 5-year B19013,available
+VA,51107,Loudoun County,2018,136268,ACS 2018 5-year B19013,available
+VA,51107,Loudoun County,2019,142299,ACS 2019 5-year B19013,available
+VA,51107,Loudoun County,2020,147111,ACS 2020 5-year B19013,available
+VA,51107,Loudoun County,2021,156821,ACS 2021 5-year B19013,available
+VA,51107,Loudoun County,2022,170463,ACS 2022 5-year B19013,available
+VA,51107,Loudoun County,2023,178707,ACS 2023 5-year B19013,available
+VA,51107,Loudoun County,2024,181765,ACS 2024 5-year B19013,available
+VA,51109,Louisa County,2015,57829,ACS 2015 5-year B19013,available
+VA,51109,Louisa County,2016,54662,ACS 2016 5-year B19013,available
+VA,51109,Louisa County,2017,56946,ACS 2017 5-year B19013,available
+VA,51109,Louisa County,2018,59343,ACS 2018 5-year B19013,available
+VA,51109,Louisa County,2019,60975,ACS 2019 5-year B19013,available
+VA,51109,Louisa County,2020,67027,ACS 2020 5-year B19013,available
+VA,51109,Louisa County,2021,70974,ACS 2021 5-year B19013,available
+VA,51109,Louisa County,2022,76594,ACS 2022 5-year B19013,available
+VA,51109,Louisa County,2023,80343,ACS 2023 5-year B19013,available
+VA,51109,Louisa County,2024,86689,ACS 2024 5-year B19013,available
+VA,51111,Lunenburg County,2015,39506,ACS 2015 5-year B19013,available
+VA,51111,Lunenburg County,2016,39911,ACS 2016 5-year B19013,available
+VA,51111,Lunenburg County,2017,39537,ACS 2017 5-year B19013,available
+VA,51111,Lunenburg County,2018,41868,ACS 2018 5-year B19013,available
+VA,51111,Lunenburg County,2019,44303,ACS 2019 5-year B19013,available
+VA,51111,Lunenburg County,2020,45884,ACS 2020 5-year B19013,available
+VA,51111,Lunenburg County,2021,47269,ACS 2021 5-year B19013,available
+VA,51111,Lunenburg County,2022,54438,ACS 2022 5-year B19013,available
+VA,51111,Lunenburg County,2023,54460,ACS 2023 5-year B19013,available
+VA,51111,Lunenburg County,2024,54842,ACS 2024 5-year B19013,available
+VA,51113,Madison County,2015,47736,ACS 2015 5-year B19013,available
+VA,51113,Madison County,2016,48271,ACS 2016 5-year B19013,available
+VA,51113,Madison County,2017,52287,ACS 2017 5-year B19013,available
+VA,51113,Madison County,2018,54197,ACS 2018 5-year B19013,available
+VA,51113,Madison County,2019,57895,ACS 2019 5-year B19013,available
+VA,51113,Madison County,2020,63482,ACS 2020 5-year B19013,available
+VA,51113,Madison County,2021,72349,ACS 2021 5-year B19013,available
+VA,51113,Madison County,2022,74586,ACS 2022 5-year B19013,available
+VA,51113,Madison County,2023,82972,ACS 2023 5-year B19013,available
+VA,51113,Madison County,2024,84323,ACS 2024 5-year B19013,available
+VA,51115,Mathews County,2015,63845,ACS 2015 5-year B19013,available
+VA,51115,Mathews County,2016,64049,ACS 2016 5-year B19013,available
+VA,51115,Mathews County,2017,63622,ACS 2017 5-year B19013,available
+VA,51115,Mathews County,2018,67009,ACS 2018 5-year B19013,available
+VA,51115,Mathews County,2019,64237,ACS 2019 5-year B19013,available
+VA,51115,Mathews County,2020,74489,ACS 2020 5-year B19013,available
+VA,51115,Mathews County,2021,73229,ACS 2021 5-year B19013,available
+VA,51115,Mathews County,2022,79054,ACS 2022 5-year B19013,available
+VA,51115,Mathews County,2023,75487,ACS 2023 5-year B19013,available
+VA,51115,Mathews County,2024,75880,ACS 2024 5-year B19013,available
+VA,51117,Mecklenburg County,2015,37356,ACS 2015 5-year B19013,available
+VA,51117,Mecklenburg County,2016,40040,ACS 2016 5-year B19013,available
+VA,51117,Mecklenburg County,2017,41126,ACS 2017 5-year B19013,available
+VA,51117,Mecklenburg County,2018,42025,ACS 2018 5-year B19013,available
+VA,51117,Mecklenburg County,2019,43207,ACS 2019 5-year B19013,available
+VA,51117,Mecklenburg County,2020,50224,ACS 2020 5-year B19013,available
+VA,51117,Mecklenburg County,2021,46378,ACS 2021 5-year B19013,available
+VA,51117,Mecklenburg County,2022,51265,ACS 2022 5-year B19013,available
+VA,51117,Mecklenburg County,2023,51691,ACS 2023 5-year B19013,available
+VA,51117,Mecklenburg County,2024,57045,ACS 2024 5-year B19013,available
+VA,51119,Middlesex County,2015,54654,ACS 2015 5-year B19013,available
+VA,51119,Middlesex County,2016,53093,ACS 2016 5-year B19013,available
+VA,51119,Middlesex County,2017,50483,ACS 2017 5-year B19013,available
+VA,51119,Middlesex County,2018,51917,ACS 2018 5-year B19013,available
+VA,51119,Middlesex County,2019,57438,ACS 2019 5-year B19013,available
+VA,51119,Middlesex County,2020,57060,ACS 2020 5-year B19013,available
+VA,51119,Middlesex County,2021,63782,ACS 2021 5-year B19013,available
+VA,51119,Middlesex County,2022,69389,ACS 2022 5-year B19013,available
+VA,51119,Middlesex County,2023,74154,ACS 2023 5-year B19013,available
+VA,51119,Middlesex County,2024,75060,ACS 2024 5-year B19013,available
+VA,51121,Montgomery County,2015,46663,ACS 2015 5-year B19013,available
+VA,51121,Montgomery County,2016,49712,ACS 2016 5-year B19013,available
+VA,51121,Montgomery County,2017,53424,ACS 2017 5-year B19013,available
+VA,51121,Montgomery County,2018,54641,ACS 2018 5-year B19013,available
+VA,51121,Montgomery County,2019,57977,ACS 2019 5-year B19013,available
+VA,51121,Montgomery County,2020,59126,ACS 2020 5-year B19013,available
+VA,51121,Montgomery County,2021,60666,ACS 2021 5-year B19013,available
+VA,51121,Montgomery County,2022,65270,ACS 2022 5-year B19013,available
+VA,51121,Montgomery County,2023,70769,ACS 2023 5-year B19013,available
+VA,51121,Montgomery County,2024,72715,ACS 2024 5-year B19013,available
+VA,51125,Nelson County,2015,47118,ACS 2015 5-year B19013,available
+VA,51125,Nelson County,2016,50994,ACS 2016 5-year B19013,available
+VA,51125,Nelson County,2017,53834,ACS 2017 5-year B19013,available
+VA,51125,Nelson County,2018,62446,ACS 2018 5-year B19013,available
+VA,51125,Nelson County,2019,64313,ACS 2019 5-year B19013,available
+VA,51125,Nelson County,2020,62203,ACS 2020 5-year B19013,available
+VA,51125,Nelson County,2021,67707,ACS 2021 5-year B19013,available
+VA,51125,Nelson County,2022,64028,ACS 2022 5-year B19013,available
+VA,51125,Nelson County,2023,68525,ACS 2023 5-year B19013,available
+VA,51125,Nelson County,2024,72589,ACS 2024 5-year B19013,available
+VA,51127,New Kent County,2015,73041,ACS 2015 5-year B19013,available
+VA,51127,New Kent County,2016,75303,ACS 2016 5-year B19013,available
+VA,51127,New Kent County,2017,78429,ACS 2017 5-year B19013,available
+VA,51127,New Kent County,2018,79698,ACS 2018 5-year B19013,available
+VA,51127,New Kent County,2019,87904,ACS 2019 5-year B19013,available
+VA,51127,New Kent County,2020,97688,ACS 2020 5-year B19013,available
+VA,51127,New Kent County,2021,101628,ACS 2021 5-year B19013,available
+VA,51127,New Kent County,2022,113120,ACS 2022 5-year B19013,available
+VA,51127,New Kent County,2023,120125,ACS 2023 5-year B19013,available
+VA,51127,New Kent County,2024,123314,ACS 2024 5-year B19013,available
+VA,51131,Northampton County,2015,35055,ACS 2015 5-year B19013,available
+VA,51131,Northampton County,2016,37011,ACS 2016 5-year B19013,available
+VA,51131,Northampton County,2017,41468,ACS 2017 5-year B19013,available
+VA,51131,Northampton County,2018,43553,ACS 2018 5-year B19013,available
+VA,51131,Northampton County,2019,47227,ACS 2019 5-year B19013,available
+VA,51131,Northampton County,2020,50819,ACS 2020 5-year B19013,available
+VA,51131,Northampton County,2021,50347,ACS 2021 5-year B19013,available
+VA,51131,Northampton County,2022,54693,ACS 2022 5-year B19013,available
+VA,51131,Northampton County,2023,55933,ACS 2023 5-year B19013,available
+VA,51131,Northampton County,2024,61632,ACS 2024 5-year B19013,available
+VA,51133,Northumberland County,2015,51885,ACS 2015 5-year B19013,available
+VA,51133,Northumberland County,2016,54440,ACS 2016 5-year B19013,available
+VA,51133,Northumberland County,2017,56677,ACS 2017 5-year B19013,available
+VA,51133,Northumberland County,2018,58677,ACS 2018 5-year B19013,available
+VA,51133,Northumberland County,2019,62632,ACS 2019 5-year B19013,available
+VA,51133,Northumberland County,2020,59437,ACS 2020 5-year B19013,available
+VA,51133,Northumberland County,2021,61291,ACS 2021 5-year B19013,available
+VA,51133,Northumberland County,2022,64655,ACS 2022 5-year B19013,available
+VA,51133,Northumberland County,2023,69500,ACS 2023 5-year B19013,available
+VA,51133,Northumberland County,2024,66480,ACS 2024 5-year B19013,available
+VA,51135,Nottoway County,2015,36284,ACS 2015 5-year B19013,available
+VA,51135,Nottoway County,2016,36849,ACS 2016 5-year B19013,available
+VA,51135,Nottoway County,2017,38410,ACS 2017 5-year B19013,available
+VA,51135,Nottoway County,2018,42869,ACS 2018 5-year B19013,available
+VA,51135,Nottoway County,2019,45535,ACS 2019 5-year B19013,available
+VA,51135,Nottoway County,2020,49983,ACS 2020 5-year B19013,available
+VA,51135,Nottoway County,2021,54614,ACS 2021 5-year B19013,available
+VA,51135,Nottoway County,2022,62366,ACS 2022 5-year B19013,available
+VA,51135,Nottoway County,2023,62161,ACS 2023 5-year B19013,available
+VA,51135,Nottoway County,2024,63261,ACS 2024 5-year B19013,available
+VA,51137,Orange County,2015,65166,ACS 2015 5-year B19013,available
+VA,51137,Orange County,2016,66990,ACS 2016 5-year B19013,available
+VA,51137,Orange County,2017,67196,ACS 2017 5-year B19013,available
+VA,51137,Orange County,2018,68481,ACS 2018 5-year B19013,available
+VA,51137,Orange County,2019,71548,ACS 2019 5-year B19013,available
+VA,51137,Orange County,2020,74446,ACS 2020 5-year B19013,available
+VA,51137,Orange County,2021,79211,ACS 2021 5-year B19013,available
+VA,51137,Orange County,2022,87309,ACS 2022 5-year B19013,available
+VA,51137,Orange County,2023,94175,ACS 2023 5-year B19013,available
+VA,51137,Orange County,2024,94008,ACS 2024 5-year B19013,available
+VA,51139,Page County,2015,43895,ACS 2015 5-year B19013,available
+VA,51139,Page County,2016,45030,ACS 2016 5-year B19013,available
+VA,51139,Page County,2017,46140,ACS 2017 5-year B19013,available
+VA,51139,Page County,2018,47951,ACS 2018 5-year B19013,available
+VA,51139,Page County,2019,51792,ACS 2019 5-year B19013,available
+VA,51139,Page County,2020,51878,ACS 2020 5-year B19013,available
+VA,51139,Page County,2021,53168,ACS 2021 5-year B19013,available
+VA,51139,Page County,2022,56760,ACS 2022 5-year B19013,available
+VA,51139,Page County,2023,59396,ACS 2023 5-year B19013,available
+VA,51139,Page County,2024,57037,ACS 2024 5-year B19013,available
+VA,51141,Patrick County,2015,33982,ACS 2015 5-year B19013,available
+VA,51141,Patrick County,2016,35999,ACS 2016 5-year B19013,available
+VA,51141,Patrick County,2017,37757,ACS 2017 5-year B19013,available
+VA,51141,Patrick County,2018,40486,ACS 2018 5-year B19013,available
+VA,51141,Patrick County,2019,43073,ACS 2019 5-year B19013,available
+VA,51141,Patrick County,2020,46941,ACS 2020 5-year B19013,available
+VA,51141,Patrick County,2021,47215,ACS 2021 5-year B19013,available
+VA,51141,Patrick County,2022,49180,ACS 2022 5-year B19013,available
+VA,51141,Patrick County,2023,50938,ACS 2023 5-year B19013,available
+VA,51141,Patrick County,2024,53038,ACS 2024 5-year B19013,available
+VA,51143,Pittsylvania County,2015,41824,ACS 2015 5-year B19013,available
+VA,51143,Pittsylvania County,2016,43087,ACS 2016 5-year B19013,available
+VA,51143,Pittsylvania County,2017,44356,ACS 2017 5-year B19013,available
+VA,51143,Pittsylvania County,2018,45382,ACS 2018 5-year B19013,available
+VA,51143,Pittsylvania County,2019,47690,ACS 2019 5-year B19013,available
+VA,51143,Pittsylvania County,2020,49520,ACS 2020 5-year B19013,available
+VA,51143,Pittsylvania County,2021,49486,ACS 2021 5-year B19013,available
+VA,51143,Pittsylvania County,2022,52619,ACS 2022 5-year B19013,available
+VA,51143,Pittsylvania County,2023,54115,ACS 2023 5-year B19013,available
+VA,51143,Pittsylvania County,2024,54085,ACS 2024 5-year B19013,available
+VA,51145,Powhatan County,2015,77896,ACS 2015 5-year B19013,available
+VA,51145,Powhatan County,2016,77684,ACS 2016 5-year B19013,available
+VA,51145,Powhatan County,2017,80441,ACS 2017 5-year B19013,available
+VA,51145,Powhatan County,2018,83914,ACS 2018 5-year B19013,available
+VA,51145,Powhatan County,2019,89090,ACS 2019 5-year B19013,available
+VA,51145,Powhatan County,2020,93833,ACS 2020 5-year B19013,available
+VA,51145,Powhatan County,2021,101395,ACS 2021 5-year B19013,available
+VA,51145,Powhatan County,2022,108089,ACS 2022 5-year B19013,available
+VA,51145,Powhatan County,2023,110667,ACS 2023 5-year B19013,available
+VA,51145,Powhatan County,2024,110537,ACS 2024 5-year B19013,available
+VA,51147,Prince Edward County,2015,41697,ACS 2015 5-year B19013,available
+VA,51147,Prince Edward County,2016,42283,ACS 2016 5-year B19013,available
+VA,51147,Prince Edward County,2017,44147,ACS 2017 5-year B19013,available
+VA,51147,Prince Edward County,2018,46189,ACS 2018 5-year B19013,available
+VA,51147,Prince Edward County,2019,47202,ACS 2019 5-year B19013,available
+VA,51147,Prince Edward County,2020,44253,ACS 2020 5-year B19013,available
+VA,51147,Prince Edward County,2021,49019,ACS 2021 5-year B19013,available
+VA,51147,Prince Edward County,2022,57304,ACS 2022 5-year B19013,available
+VA,51147,Prince Edward County,2023,55082,ACS 2023 5-year B19013,available
+VA,51147,Prince Edward County,2024,56315,ACS 2024 5-year B19013,available
+VA,51149,Prince George County,2015,61857,ACS 2015 5-year B19013,available
+VA,51149,Prince George County,2016,64805,ACS 2016 5-year B19013,available
+VA,51149,Prince George County,2017,68461,ACS 2017 5-year B19013,available
+VA,51149,Prince George County,2018,67001,ACS 2018 5-year B19013,available
+VA,51149,Prince George County,2019,71912,ACS 2019 5-year B19013,available
+VA,51149,Prince George County,2020,75123,ACS 2020 5-year B19013,available
+VA,51149,Prince George County,2021,78895,ACS 2021 5-year B19013,available
+VA,51149,Prince George County,2022,80318,ACS 2022 5-year B19013,available
+VA,51149,Prince George County,2023,88225,ACS 2023 5-year B19013,available
+VA,51149,Prince George County,2024,84897,ACS 2024 5-year B19013,available
+VA,51153,Prince William County,2015,98657,ACS 2015 5-year B19013,available
+VA,51153,Prince William County,2016,98546,ACS 2016 5-year B19013,available
+VA,51153,Prince William County,2017,101059,ACS 2017 5-year B19013,available
+VA,51153,Prince William County,2018,103445,ACS 2018 5-year B19013,available
+VA,51153,Prince William County,2019,107132,ACS 2019 5-year B19013,available
+VA,51153,Prince William County,2020,107707,ACS 2020 5-year B19013,available
+VA,51153,Prince William County,2021,113831,ACS 2021 5-year B19013,available
+VA,51153,Prince William County,2022,123193,ACS 2022 5-year B19013,available
+VA,51153,Prince William County,2023,128873,ACS 2023 5-year B19013,available
+VA,51153,Prince William County,2024,131402,ACS 2024 5-year B19013,available
+VA,51155,Pulaski County,2015,47495,ACS 2015 5-year B19013,available
+VA,51155,Pulaski County,2016,49469,ACS 2016 5-year B19013,available
+VA,51155,Pulaski County,2017,49691,ACS 2017 5-year B19013,available
+VA,51155,Pulaski County,2018,52638,ACS 2018 5-year B19013,available
+VA,51155,Pulaski County,2019,53866,ACS 2019 5-year B19013,available
+VA,51155,Pulaski County,2020,53689,ACS 2020 5-year B19013,available
+VA,51155,Pulaski County,2021,55446,ACS 2021 5-year B19013,available
+VA,51155,Pulaski County,2022,59740,ACS 2022 5-year B19013,available
+VA,51155,Pulaski County,2023,60767,ACS 2023 5-year B19013,available
+VA,51155,Pulaski County,2024,62028,ACS 2024 5-year B19013,available
+VA,51157,Rappahannock County,2015,57210,ACS 2015 5-year B19013,available
+VA,51157,Rappahannock County,2016,58026,ACS 2016 5-year B19013,available
+VA,51157,Rappahannock County,2017,62541,ACS 2017 5-year B19013,available
+VA,51157,Rappahannock County,2018,68438,ACS 2018 5-year B19013,available
+VA,51157,Rappahannock County,2019,74284,ACS 2019 5-year B19013,available
+VA,51157,Rappahannock County,2020,82077,ACS 2020 5-year B19013,available
+VA,51157,Rappahannock County,2021,90307,ACS 2021 5-year B19013,available
+VA,51157,Rappahannock County,2022,98663,ACS 2022 5-year B19013,available
+VA,51157,Rappahannock County,2023,98125,ACS 2023 5-year B19013,available
+VA,51157,Rappahannock County,2024,83380,ACS 2024 5-year B19013,available
+VA,51159,Richmond County,2015,47288,ACS 2015 5-year B19013,available
+VA,51159,Richmond County,2016,44919,ACS 2016 5-year B19013,available
+VA,51159,Richmond County,2017,47341,ACS 2017 5-year B19013,available
+VA,51159,Richmond County,2018,49831,ACS 2018 5-year B19013,available
+VA,51159,Richmond County,2019,49517,ACS 2019 5-year B19013,available
+VA,51159,Richmond County,2020,53298,ACS 2020 5-year B19013,available
+VA,51159,Richmond County,2021,57697,ACS 2021 5-year B19013,available
+VA,51159,Richmond County,2022,62708,ACS 2022 5-year B19013,available
+VA,51159,Richmond County,2023,64184,ACS 2023 5-year B19013,available
+VA,51159,Richmond County,2024,66304,ACS 2024 5-year B19013,available
+VA,51161,Roanoke County,2015,60519,ACS 2015 5-year B19013,available
+VA,51161,Roanoke County,2016,60380,ACS 2016 5-year B19013,available
+VA,51161,Roanoke County,2017,62134,ACS 2017 5-year B19013,available
+VA,51161,Roanoke County,2018,65467,ACS 2018 5-year B19013,available
+VA,51161,Roanoke County,2019,68948,ACS 2019 5-year B19013,available
+VA,51161,Roanoke County,2020,70076,ACS 2020 5-year B19013,available
+VA,51161,Roanoke County,2021,74622,ACS 2021 5-year B19013,available
+VA,51161,Roanoke County,2022,80872,ACS 2022 5-year B19013,available
+VA,51161,Roanoke County,2023,82931,ACS 2023 5-year B19013,available
+VA,51161,Roanoke County,2024,83709,ACS 2024 5-year B19013,available
+VA,51163,Rockbridge County,2015,48901,ACS 2015 5-year B19013,available
+VA,51163,Rockbridge County,2016,52478,ACS 2016 5-year B19013,available
+VA,51163,Rockbridge County,2017,53918,ACS 2017 5-year B19013,available
+VA,51163,Rockbridge County,2018,54805,ACS 2018 5-year B19013,available
+VA,51163,Rockbridge County,2019,54600,ACS 2019 5-year B19013,available
+VA,51163,Rockbridge County,2020,54133,ACS 2020 5-year B19013,available
+VA,51163,Rockbridge County,2021,57828,ACS 2021 5-year B19013,available
+VA,51163,Rockbridge County,2022,61903,ACS 2022 5-year B19013,available
+VA,51163,Rockbridge County,2023,63975,ACS 2023 5-year B19013,available
+VA,51163,Rockbridge County,2024,65469,ACS 2024 5-year B19013,available
+VA,51165,Rockingham County,2015,53744,ACS 2015 5-year B19013,available
+VA,51165,Rockingham County,2016,55029,ACS 2016 5-year B19013,available
+VA,51165,Rockingham County,2017,57651,ACS 2017 5-year B19013,available
+VA,51165,Rockingham County,2018,59817,ACS 2018 5-year B19013,available
+VA,51165,Rockingham County,2019,61864,ACS 2019 5-year B19013,available
+VA,51165,Rockingham County,2020,64496,ACS 2020 5-year B19013,available
+VA,51165,Rockingham County,2021,67484,ACS 2021 5-year B19013,available
+VA,51165,Rockingham County,2022,73232,ACS 2022 5-year B19013,available
+VA,51165,Rockingham County,2023,78468,ACS 2023 5-year B19013,available
+VA,51165,Rockingham County,2024,80693,ACS 2024 5-year B19013,available
+VA,51167,Russell County,2015,35045,ACS 2015 5-year B19013,available
+VA,51167,Russell County,2016,38370,ACS 2016 5-year B19013,available
+VA,51167,Russell County,2017,40083,ACS 2017 5-year B19013,available
+VA,51167,Russell County,2018,39482,ACS 2018 5-year B19013,available
+VA,51167,Russell County,2019,39758,ACS 2019 5-year B19013,available
+VA,51167,Russell County,2020,38564,ACS 2020 5-year B19013,available
+VA,51167,Russell County,2021,41100,ACS 2021 5-year B19013,available
+VA,51167,Russell County,2022,44088,ACS 2022 5-year B19013,available
+VA,51167,Russell County,2023,49020,ACS 2023 5-year B19013,available
+VA,51167,Russell County,2024,50012,ACS 2024 5-year B19013,available
+VA,51169,Scott County,2015,37240,ACS 2015 5-year B19013,available
+VA,51169,Scott County,2016,38017,ACS 2016 5-year B19013,available
+VA,51169,Scott County,2017,38725,ACS 2017 5-year B19013,available
+VA,51169,Scott County,2018,39144,ACS 2018 5-year B19013,available
+VA,51169,Scott County,2019,39820,ACS 2019 5-year B19013,available
+VA,51169,Scott County,2020,41540,ACS 2020 5-year B19013,available
+VA,51169,Scott County,2021,42561,ACS 2021 5-year B19013,available
+VA,51169,Scott County,2022,44535,ACS 2022 5-year B19013,available
+VA,51169,Scott County,2023,45136,ACS 2023 5-year B19013,available
+VA,51169,Scott County,2024,46349,ACS 2024 5-year B19013,available
+VA,51171,Shenandoah County,2015,49406,ACS 2015 5-year B19013,available
+VA,51171,Shenandoah County,2016,50450,ACS 2016 5-year B19013,available
+VA,51171,Shenandoah County,2017,53934,ACS 2017 5-year B19013,available
+VA,51171,Shenandoah County,2018,54921,ACS 2018 5-year B19013,available
+VA,51171,Shenandoah County,2019,57252,ACS 2019 5-year B19013,available
+VA,51171,Shenandoah County,2020,56114,ACS 2020 5-year B19013,available
+VA,51171,Shenandoah County,2021,58609,ACS 2021 5-year B19013,available
+VA,51171,Shenandoah County,2022,62149,ACS 2022 5-year B19013,available
+VA,51171,Shenandoah County,2023,64437,ACS 2023 5-year B19013,available
+VA,51171,Shenandoah County,2024,67191,ACS 2024 5-year B19013,available
+VA,51173,Smyth County,2015,37983,ACS 2015 5-year B19013,available
+VA,51173,Smyth County,2016,38906,ACS 2016 5-year B19013,available
+VA,51173,Smyth County,2017,40544,ACS 2017 5-year B19013,available
+VA,51173,Smyth County,2018,40425,ACS 2018 5-year B19013,available
+VA,51173,Smyth County,2019,40932,ACS 2019 5-year B19013,available
+VA,51173,Smyth County,2020,41088,ACS 2020 5-year B19013,available
+VA,51173,Smyth County,2021,42588,ACS 2021 5-year B19013,available
+VA,51173,Smyth County,2022,45061,ACS 2022 5-year B19013,available
+VA,51173,Smyth County,2023,46859,ACS 2023 5-year B19013,available
+VA,51173,Smyth County,2024,49883,ACS 2024 5-year B19013,available
+VA,51175,Southampton County,2015,48962,ACS 2015 5-year B19013,available
+VA,51175,Southampton County,2016,51032,ACS 2016 5-year B19013,available
+VA,51175,Southampton County,2017,53681,ACS 2017 5-year B19013,available
+VA,51175,Southampton County,2018,54611,ACS 2018 5-year B19013,available
+VA,51175,Southampton County,2019,61348,ACS 2019 5-year B19013,available
+VA,51175,Southampton County,2020,63034,ACS 2020 5-year B19013,available
+VA,51175,Southampton County,2021,65079,ACS 2021 5-year B19013,available
+VA,51175,Southampton County,2022,67813,ACS 2022 5-year B19013,available
+VA,51175,Southampton County,2023,68465,ACS 2023 5-year B19013,available
+VA,51175,Southampton County,2024,70795,ACS 2024 5-year B19013,available
+VA,51177,Spotsylvania County,2015,78125,ACS 2015 5-year B19013,available
+VA,51177,Spotsylvania County,2016,79742,ACS 2016 5-year B19013,available
+VA,51177,Spotsylvania County,2017,81434,ACS 2017 5-year B19013,available
+VA,51177,Spotsylvania County,2018,85330,ACS 2018 5-year B19013,available
+VA,51177,Spotsylvania County,2019,88628,ACS 2019 5-year B19013,available
+VA,51177,Spotsylvania County,2020,90913,ACS 2020 5-year B19013,available
+VA,51177,Spotsylvania County,2021,98973,ACS 2021 5-year B19013,available
+VA,51177,Spotsylvania County,2022,105068,ACS 2022 5-year B19013,available
+VA,51177,Spotsylvania County,2023,109576,ACS 2023 5-year B19013,available
+VA,51177,Spotsylvania County,2024,112738,ACS 2024 5-year B19013,available
+VA,51179,Stafford County,2015,97144,ACS 2015 5-year B19013,available
+VA,51179,Stafford County,2016,97528,ACS 2016 5-year B19013,available
+VA,51179,Stafford County,2017,103005,ACS 2017 5-year B19013,available
+VA,51179,Stafford County,2018,106773,ACS 2018 5-year B19013,available
+VA,51179,Stafford County,2019,111108,ACS 2019 5-year B19013,available
+VA,51179,Stafford County,2020,112247,ACS 2020 5-year B19013,available
+VA,51179,Stafford County,2021,119818,ACS 2021 5-year B19013,available
+VA,51179,Stafford County,2022,128036,ACS 2022 5-year B19013,available
+VA,51179,Stafford County,2023,133792,ACS 2023 5-year B19013,available
+VA,51179,Stafford County,2024,137807,ACS 2024 5-year B19013,available
+VA,51181,Surry County,2015,53673,ACS 2015 5-year B19013,available
+VA,51181,Surry County,2016,56632,ACS 2016 5-year B19013,available
+VA,51181,Surry County,2017,54656,ACS 2017 5-year B19013,available
+VA,51181,Surry County,2018,54844,ACS 2018 5-year B19013,available
+VA,51181,Surry County,2019,57962,ACS 2019 5-year B19013,available
+VA,51181,Surry County,2020,56525,ACS 2020 5-year B19013,available
+VA,51181,Surry County,2021,61105,ACS 2021 5-year B19013,available
+VA,51181,Surry County,2022,68655,ACS 2022 5-year B19013,available
+VA,51181,Surry County,2023,71458,ACS 2023 5-year B19013,available
+VA,51181,Surry County,2024,78041,ACS 2024 5-year B19013,available
+VA,51183,Sussex County,2015,39194,ACS 2015 5-year B19013,available
+VA,51183,Sussex County,2016,37917,ACS 2016 5-year B19013,available
+VA,51183,Sussex County,2017,44608,ACS 2017 5-year B19013,available
+VA,51183,Sussex County,2018,45801,ACS 2018 5-year B19013,available
+VA,51183,Sussex County,2019,49487,ACS 2019 5-year B19013,available
+VA,51183,Sussex County,2020,51701,ACS 2020 5-year B19013,available
+VA,51183,Sussex County,2021,56968,ACS 2021 5-year B19013,available
+VA,51183,Sussex County,2022,59195,ACS 2022 5-year B19013,available
+VA,51183,Sussex County,2023,62821,ACS 2023 5-year B19013,available
+VA,51183,Sussex County,2024,63530,ACS 2024 5-year B19013,available
+VA,51185,Tazewell County,2015,37664,ACS 2015 5-year B19013,available
+VA,51185,Tazewell County,2016,38238,ACS 2016 5-year B19013,available
+VA,51185,Tazewell County,2017,40309,ACS 2017 5-year B19013,available
+VA,51185,Tazewell County,2018,40978,ACS 2018 5-year B19013,available
+VA,51185,Tazewell County,2019,42099,ACS 2019 5-year B19013,available
+VA,51185,Tazewell County,2020,42207,ACS 2020 5-year B19013,available
+VA,51185,Tazewell County,2021,42937,ACS 2021 5-year B19013,available
+VA,51185,Tazewell County,2022,46508,ACS 2022 5-year B19013,available
+VA,51185,Tazewell County,2023,45788,ACS 2023 5-year B19013,available
+VA,51185,Tazewell County,2024,47313,ACS 2024 5-year B19013,available
+VA,51187,Warren County,2015,61454,ACS 2015 5-year B19013,available
+VA,51187,Warren County,2016,63734,ACS 2016 5-year B19013,available
+VA,51187,Warren County,2017,65353,ACS 2017 5-year B19013,available
+VA,51187,Warren County,2018,68189,ACS 2018 5-year B19013,available
+VA,51187,Warren County,2019,69116,ACS 2019 5-year B19013,available
+VA,51187,Warren County,2020,70109,ACS 2020 5-year B19013,available
+VA,51187,Warren County,2021,72840,ACS 2021 5-year B19013,available
+VA,51187,Warren County,2022,79313,ACS 2022 5-year B19013,available
+VA,51187,Warren County,2023,84331,ACS 2023 5-year B19013,available
+VA,51187,Warren County,2024,84682,ACS 2024 5-year B19013,available
+VA,51191,Washington County,2015,43310,ACS 2015 5-year B19013,available
+VA,51191,Washington County,2016,43835,ACS 2016 5-year B19013,available
+VA,51191,Washington County,2017,44844,ACS 2017 5-year B19013,available
+VA,51191,Washington County,2018,46262,ACS 2018 5-year B19013,available
+VA,51191,Washington County,2019,48495,ACS 2019 5-year B19013,available
+VA,51191,Washington County,2020,50928,ACS 2020 5-year B19013,available
+VA,51191,Washington County,2021,54737,ACS 2021 5-year B19013,available
+VA,51191,Washington County,2022,59116,ACS 2022 5-year B19013,available
+VA,51191,Washington County,2023,62774,ACS 2023 5-year B19013,available
+VA,51191,Washington County,2024,64552,ACS 2024 5-year B19013,available
+VA,51193,Westmoreland County,2015,47911,ACS 2015 5-year B19013,available
+VA,51193,Westmoreland County,2016,51566,ACS 2016 5-year B19013,available
+VA,51193,Westmoreland County,2017,55688,ACS 2017 5-year B19013,available
+VA,51193,Westmoreland County,2018,54268,ACS 2018 5-year B19013,available
+VA,51193,Westmoreland County,2019,53853,ACS 2019 5-year B19013,available
+VA,51193,Westmoreland County,2020,53790,ACS 2020 5-year B19013,available
+VA,51193,Westmoreland County,2021,53113,ACS 2021 5-year B19013,available
+VA,51193,Westmoreland County,2022,56647,ACS 2022 5-year B19013,available
+VA,51193,Westmoreland County,2023,59766,ACS 2023 5-year B19013,available
+VA,51193,Westmoreland County,2024,63398,ACS 2024 5-year B19013,available
+VA,51195,Wise County,2015,37407,ACS 2015 5-year B19013,available
+VA,51195,Wise County,2016,36352,ACS 2016 5-year B19013,available
+VA,51195,Wise County,2017,38255,ACS 2017 5-year B19013,available
+VA,51195,Wise County,2018,38345,ACS 2018 5-year B19013,available
+VA,51195,Wise County,2019,38888,ACS 2019 5-year B19013,available
+VA,51195,Wise County,2020,41285,ACS 2020 5-year B19013,available
+VA,51195,Wise County,2021,44884,ACS 2021 5-year B19013,available
+VA,51195,Wise County,2022,47541,ACS 2022 5-year B19013,available
+VA,51195,Wise County,2023,50740,ACS 2023 5-year B19013,available
+VA,51195,Wise County,2024,52943,ACS 2024 5-year B19013,available
+VA,51197,Wythe County,2015,41360,ACS 2015 5-year B19013,available
+VA,51197,Wythe County,2016,42888,ACS 2016 5-year B19013,available
+VA,51197,Wythe County,2017,46119,ACS 2017 5-year B19013,available
+VA,51197,Wythe County,2018,48043,ACS 2018 5-year B19013,available
+VA,51197,Wythe County,2019,49364,ACS 2019 5-year B19013,available
+VA,51197,Wythe County,2020,51639,ACS 2020 5-year B19013,available
+VA,51197,Wythe County,2021,52726,ACS 2021 5-year B19013,available
+VA,51197,Wythe County,2022,53921,ACS 2022 5-year B19013,available
+VA,51197,Wythe County,2023,55359,ACS 2023 5-year B19013,available
+VA,51197,Wythe County,2024,57745,ACS 2024 5-year B19013,available
+VA,51199,York County,2015,81749,ACS 2015 5-year B19013,available
+VA,51199,York County,2016,83410,ACS 2016 5-year B19013,available
+VA,51199,York County,2017,86781,ACS 2017 5-year B19013,available
+VA,51199,York County,2018,90367,ACS 2018 5-year B19013,available
+VA,51199,York County,2019,92069,ACS 2019 5-year B19013,available
+VA,51199,York County,2020,93356,ACS 2020 5-year B19013,available
+VA,51199,York County,2021,96144,ACS 2021 5-year B19013,available
+VA,51199,York County,2022,105154,ACS 2022 5-year B19013,available
+VA,51199,York County,2023,108326,ACS 2023 5-year B19013,available
+VA,51199,York County,2024,109956,ACS 2024 5-year B19013,available
+VA,51510,Alexandria city,2015,89134,ACS 2015 5-year B19013,available
+VA,51510,Alexandria city,2016,89200,ACS 2016 5-year B19013,available
+VA,51510,Alexandria city,2017,93370,ACS 2017 5-year B19013,available
+VA,51510,Alexandria city,2018,96733,ACS 2018 5-year B19013,available
+VA,51510,Alexandria city,2019,100939,ACS 2019 5-year B19013,available
+VA,51510,Alexandria city,2020,102227,ACS 2020 5-year B19013,available
+VA,51510,Alexandria city,2021,105450,ACS 2021 5-year B19013,available
+VA,51510,Alexandria city,2022,113179,ACS 2022 5-year B19013,available
+VA,51510,Alexandria city,2023,113638,ACS 2023 5-year B19013,available
+VA,51510,Alexandria city,2024,119681,ACS 2024 5-year B19013,available
+VA,51520,Bristol city,2015,35368,ACS 2015 5-year B19013,available
+VA,51520,Bristol city,2016,35801,ACS 2016 5-year B19013,available
+VA,51520,Bristol city,2017,37844,ACS 2017 5-year B19013,available
+VA,51520,Bristol city,2018,37904,ACS 2018 5-year B19013,available
+VA,51520,Bristol city,2019,37500,ACS 2019 5-year B19013,available
+VA,51520,Bristol city,2020,39679,ACS 2020 5-year B19013,available
+VA,51520,Bristol city,2021,43879,ACS 2021 5-year B19013,available
+VA,51520,Bristol city,2022,45250,ACS 2022 5-year B19013,available
+VA,51520,Bristol city,2023,44706,ACS 2023 5-year B19013,available
+VA,51520,Bristol city,2024,50404,ACS 2024 5-year B19013,available
+VA,51530,Buena Vista city,2015,29097,ACS 2015 5-year B19013,available
+VA,51530,Buena Vista city,2016,29109,ACS 2016 5-year B19013,available
+VA,51530,Buena Vista city,2017,33672,ACS 2017 5-year B19013,available
+VA,51530,Buena Vista city,2018,34273,ACS 2018 5-year B19013,available
+VA,51530,Buena Vista city,2019,32455,ACS 2019 5-year B19013,available
+VA,51530,Buena Vista city,2020,36634,ACS 2020 5-year B19013,available
+VA,51530,Buena Vista city,2021,42156,ACS 2021 5-year B19013,available
+VA,51530,Buena Vista city,2022,48783,ACS 2022 5-year B19013,available
+VA,51530,Buena Vista city,2023,54458,ACS 2023 5-year B19013,available
+VA,51530,Buena Vista city,2024,57833,ACS 2024 5-year B19013,available
+VA,51540,Charlottesville city,2015,49775,ACS 2015 5-year B19013,available
+VA,51540,Charlottesville city,2016,50727,ACS 2016 5-year B19013,available
+VA,51540,Charlottesville city,2017,54739,ACS 2017 5-year B19013,available
+VA,51540,Charlottesville city,2018,58933,ACS 2018 5-year B19013,available
+VA,51540,Charlottesville city,2019,59471,ACS 2019 5-year B19013,available
+VA,51540,Charlottesville city,2020,59598,ACS 2020 5-year B19013,available
+VA,51540,Charlottesville city,2021,63470,ACS 2021 5-year B19013,available
+VA,51540,Charlottesville city,2022,67177,ACS 2022 5-year B19013,available
+VA,51540,Charlottesville city,2023,69829,ACS 2023 5-year B19013,available
+VA,51540,Charlottesville city,2024,74824,ACS 2024 5-year B19013,available
+VA,51550,Chesapeake city,2015,68620,ACS 2015 5-year B19013,available
+VA,51550,Chesapeake city,2016,69978,ACS 2016 5-year B19013,available
+VA,51550,Chesapeake city,2017,72214,ACS 2017 5-year B19013,available
+VA,51550,Chesapeake city,2018,75790,ACS 2018 5-year B19013,available
+VA,51550,Chesapeake city,2019,78640,ACS 2019 5-year B19013,available
+VA,51550,Chesapeake city,2020,81261,ACS 2020 5-year B19013,available
+VA,51550,Chesapeake city,2021,85563,ACS 2021 5-year B19013,available
+VA,51550,Chesapeake city,2022,92703,ACS 2022 5-year B19013,available
+VA,51550,Chesapeake city,2023,94189,ACS 2023 5-year B19013,available
+VA,51550,Chesapeake city,2024,95373,ACS 2024 5-year B19013,available
+VA,51570,Colonial Heights city,2015,50304,ACS 2015 5-year B19013,available
+VA,51570,Colonial Heights city,2016,49639,ACS 2016 5-year B19013,available
+VA,51570,Colonial Heights city,2017,50952,ACS 2017 5-year B19013,available
+VA,51570,Colonial Heights city,2018,53716,ACS 2018 5-year B19013,available
+VA,51570,Colonial Heights city,2019,54550,ACS 2019 5-year B19013,available
+VA,51570,Colonial Heights city,2020,60522,ACS 2020 5-year B19013,available
+VA,51570,Colonial Heights city,2021,65570,ACS 2021 5-year B19013,available
+VA,51570,Colonial Heights city,2022,72216,ACS 2022 5-year B19013,available
+VA,51570,Colonial Heights city,2023,76250,ACS 2023 5-year B19013,available
+VA,51570,Colonial Heights city,2024,76505,ACS 2024 5-year B19013,available
+VA,51580,Covington city,2015,34746,ACS 2015 5-year B19013,available
+VA,51580,Covington city,2016,34703,ACS 2016 5-year B19013,available
+VA,51580,Covington city,2017,35546,ACS 2017 5-year B19013,available
+VA,51580,Covington city,2018,39432,ACS 2018 5-year B19013,available
+VA,51580,Covington city,2019,40655,ACS 2019 5-year B19013,available
+VA,51580,Covington city,2020,41024,ACS 2020 5-year B19013,available
+VA,51580,Covington city,2021,41242,ACS 2021 5-year B19013,available
+VA,51580,Covington city,2022,45737,ACS 2022 5-year B19013,available
+VA,51580,Covington city,2023,42724,ACS 2023 5-year B19013,available
+VA,51580,Covington city,2024,41944,ACS 2024 5-year B19013,available
+VA,51590,Danville city,2015,32315,ACS 2015 5-year B19013,available
+VA,51590,Danville city,2016,33721,ACS 2016 5-year B19013,available
+VA,51590,Danville city,2017,34951,ACS 2017 5-year B19013,available
+VA,51590,Danville city,2018,36301,ACS 2018 5-year B19013,available
+VA,51590,Danville city,2019,37203,ACS 2019 5-year B19013,available
+VA,51590,Danville city,2020,37147,ACS 2020 5-year B19013,available
+VA,51590,Danville city,2021,38904,ACS 2021 5-year B19013,available
+VA,51590,Danville city,2022,41484,ACS 2022 5-year B19013,available
+VA,51590,Danville city,2023,42778,ACS 2023 5-year B19013,available
+VA,51590,Danville city,2024,44423,ACS 2024 5-year B19013,available
+VA,51595,Emporia city,2015,28601,ACS 2015 5-year B19013,available
+VA,51595,Emporia city,2016,27169,ACS 2016 5-year B19013,available
+VA,51595,Emporia city,2017,27426,ACS 2017 5-year B19013,available
+VA,51595,Emporia city,2018,30857,ACS 2018 5-year B19013,available
+VA,51595,Emporia city,2019,27063,ACS 2019 5-year B19013,available
+VA,51595,Emporia city,2020,30058,ACS 2020 5-year B19013,available
+VA,51595,Emporia city,2021,36111,ACS 2021 5-year B19013,available
+VA,51595,Emporia city,2022,41442,ACS 2022 5-year B19013,available
+VA,51595,Emporia city,2023,49375,ACS 2023 5-year B19013,available
+VA,51595,Emporia city,2024,51899,ACS 2024 5-year B19013,available
+VA,51600,Fairfax city,2015,105297,ACS 2015 5-year B19013,available
+VA,51600,Fairfax city,2016,104065,ACS 2016 5-year B19013,available
+VA,51600,Fairfax city,2017,106870,ACS 2017 5-year B19013,available
+VA,51600,Fairfax city,2018,111574,ACS 2018 5-year B19013,available
+VA,51600,Fairfax city,2019,116979,ACS 2019 5-year B19013,available
+VA,51600,Fairfax city,2020,109708,ACS 2020 5-year B19013,available
+VA,51600,Fairfax city,2021,118492,ACS 2021 5-year B19013,available
+VA,51600,Fairfax city,2022,128708,ACS 2022 5-year B19013,available
+VA,51600,Fairfax city,2023,132774,ACS 2023 5-year B19013,available
+VA,51600,Fairfax city,2024,132348,ACS 2024 5-year B19013,available
+VA,51610,Falls Church city,2015,120522,ACS 2015 5-year B19013,available
+VA,51610,Falls Church city,2016,115244,ACS 2016 5-year B19013,available
+VA,51610,Falls Church city,2017,114795,ACS 2017 5-year B19013,available
+VA,51610,Falls Church city,2018,124796,ACS 2018 5-year B19013,available
+VA,51610,Falls Church city,2019,127610,ACS 2019 5-year B19013,available
+VA,51610,Falls Church city,2020,146922,ACS 2020 5-year B19013,available
+VA,51610,Falls Church city,2021,155071,ACS 2021 5-year B19013,available
+VA,51610,Falls Church city,2022,164536,ACS 2022 5-year B19013,available
+VA,51610,Falls Church city,2023,154734,ACS 2023 5-year B19013,available
+VA,51610,Falls Church city,2024,143262,ACS 2024 5-year B19013,available
+VA,51620,Franklin city,2015,32399,ACS 2015 5-year B19013,available
+VA,51620,Franklin city,2016,38333,ACS 2016 5-year B19013,available
+VA,51620,Franklin city,2017,38760,ACS 2017 5-year B19013,available
+VA,51620,Franklin city,2018,40375,ACS 2018 5-year B19013,available
+VA,51620,Franklin city,2019,40417,ACS 2019 5-year B19013,available
+VA,51620,Franklin city,2020,49811,ACS 2020 5-year B19013,available
+VA,51620,Franklin city,2021,49424,ACS 2021 5-year B19013,available
+VA,51620,Franklin city,2022,57537,ACS 2022 5-year B19013,available
+VA,51620,Franklin city,2023,65125,ACS 2023 5-year B19013,available
+VA,51620,Franklin city,2024,63245,ACS 2024 5-year B19013,available
+VA,51630,Fredericksburg city,2015,51762,ACS 2015 5-year B19013,available
+VA,51630,Fredericksburg city,2016,53980,ACS 2016 5-year B19013,available
+VA,51630,Fredericksburg city,2017,57258,ACS 2017 5-year B19013,available
+VA,51630,Fredericksburg city,2018,63274,ACS 2018 5-year B19013,available
+VA,51630,Fredericksburg city,2019,65641,ACS 2019 5-year B19013,available
+VA,51630,Fredericksburg city,2020,69528,ACS 2020 5-year B19013,available
+VA,51630,Fredericksburg city,2021,72293,ACS 2021 5-year B19013,available
+VA,51630,Fredericksburg city,2022,83445,ACS 2022 5-year B19013,available
+VA,51630,Fredericksburg city,2023,85368,ACS 2023 5-year B19013,available
+VA,51630,Fredericksburg city,2024,86071,ACS 2024 5-year B19013,available
+VA,51640,Galax city,2015,30604,ACS 2015 5-year B19013,available
+VA,51640,Galax city,2016,31110,ACS 2016 5-year B19013,available
+VA,51640,Galax city,2017,31311,ACS 2017 5-year B19013,available
+VA,51640,Galax city,2018,31938,ACS 2018 5-year B19013,available
+VA,51640,Galax city,2019,33575,ACS 2019 5-year B19013,available
+VA,51640,Galax city,2020,35184,ACS 2020 5-year B19013,available
+VA,51640,Galax city,2021,39808,ACS 2021 5-year B19013,available
+VA,51640,Galax city,2022,44612,ACS 2022 5-year B19013,available
+VA,51640,Galax city,2023,41438,ACS 2023 5-year B19013,available
+VA,51640,Galax city,2024,38675,ACS 2024 5-year B19013,available
+VA,51650,Hampton city,2015,49190,ACS 2015 5-year B19013,available
+VA,51650,Hampton city,2016,49890,ACS 2016 5-year B19013,available
+VA,51650,Hampton city,2017,52021,ACS 2017 5-year B19013,available
+VA,51650,Hampton city,2018,54550,ACS 2018 5-year B19013,available
+VA,51650,Hampton city,2019,56287,ACS 2019 5-year B19013,available
+VA,51650,Hampton city,2020,57041,ACS 2020 5-year B19013,available
+VA,51650,Hampton city,2021,59380,ACS 2021 5-year B19013,available
+VA,51650,Hampton city,2022,64430,ACS 2022 5-year B19013,available
+VA,51650,Hampton city,2023,67758,ACS 2023 5-year B19013,available
+VA,51650,Hampton city,2024,69621,ACS 2024 5-year B19013,available
+VA,51660,Harrisonburg city,2015,38750,ACS 2015 5-year B19013,available
+VA,51660,Harrisonburg city,2016,40494,ACS 2016 5-year B19013,available
+VA,51660,Harrisonburg city,2017,43009,ACS 2017 5-year B19013,available
+VA,51660,Harrisonburg city,2018,43893,ACS 2018 5-year B19013,available
+VA,51660,Harrisonburg city,2019,46679,ACS 2019 5-year B19013,available
+VA,51660,Harrisonburg city,2020,49117,ACS 2020 5-year B19013,available
+VA,51660,Harrisonburg city,2021,51055,ACS 2021 5-year B19013,available
+VA,51660,Harrisonburg city,2022,56050,ACS 2022 5-year B19013,available
+VA,51660,Harrisonburg city,2023,59752,ACS 2023 5-year B19013,available
+VA,51660,Harrisonburg city,2024,62254,ACS 2024 5-year B19013,available
+VA,51670,Hopewell city,2015,39064,ACS 2015 5-year B19013,available
+VA,51670,Hopewell city,2016,40814,ACS 2016 5-year B19013,available
+VA,51670,Hopewell city,2017,40712,ACS 2017 5-year B19013,available
+VA,51670,Hopewell city,2018,40497,ACS 2018 5-year B19013,available
+VA,51670,Hopewell city,2019,39030,ACS 2019 5-year B19013,available
+VA,51670,Hopewell city,2020,43262,ACS 2020 5-year B19013,available
+VA,51670,Hopewell city,2021,44209,ACS 2021 5-year B19013,available
+VA,51670,Hopewell city,2022,50661,ACS 2022 5-year B19013,available
+VA,51670,Hopewell city,2023,48681,ACS 2023 5-year B19013,available
+VA,51670,Hopewell city,2024,54729,ACS 2024 5-year B19013,available
+VA,51678,Lexington city,2015,34017,ACS 2015 5-year B19013,available
+VA,51678,Lexington city,2016,34464,ACS 2016 5-year B19013,available
+VA,51678,Lexington city,2017,37309,ACS 2017 5-year B19013,available
+VA,51678,Lexington city,2018,36466,ACS 2018 5-year B19013,available
+VA,51678,Lexington city,2019,42632,ACS 2019 5-year B19013,available
+VA,51678,Lexington city,2020,50714,ACS 2020 5-year B19013,available
+VA,51678,Lexington city,2021,66114,ACS 2021 5-year B19013,available
+VA,51678,Lexington city,2022,93651,ACS 2022 5-year B19013,available
+VA,51678,Lexington city,2023,89598,ACS 2023 5-year B19013,available
+VA,51678,Lexington city,2024,84517,ACS 2024 5-year B19013,available
+VA,51680,Lynchburg city,2015,39589,ACS 2015 5-year B19013,available
+VA,51680,Lynchburg city,2016,40728,ACS 2016 5-year B19013,available
+VA,51680,Lynchburg city,2017,41971,ACS 2017 5-year B19013,available
+VA,51680,Lynchburg city,2018,43374,ACS 2018 5-year B19013,available
+VA,51680,Lynchburg city,2019,46409,ACS 2019 5-year B19013,available
+VA,51680,Lynchburg city,2020,49201,ACS 2020 5-year B19013,available
+VA,51680,Lynchburg city,2021,54015,ACS 2021 5-year B19013,available
+VA,51680,Lynchburg city,2022,56243,ACS 2022 5-year B19013,available
+VA,51680,Lynchburg city,2023,59808,ACS 2023 5-year B19013,available
+VA,51680,Lynchburg city,2024,57947,ACS 2024 5-year B19013,available
+VA,51683,Manassas city,2015,72890,ACS 2015 5-year B19013,available
+VA,51683,Manassas city,2016,74371,ACS 2016 5-year B19013,available
+VA,51683,Manassas city,2017,77551,ACS 2017 5-year B19013,available
+VA,51683,Manassas city,2018,78462,ACS 2018 5-year B19013,available
+VA,51683,Manassas city,2019,81493,ACS 2019 5-year B19013,available
+VA,51683,Manassas city,2020,86227,ACS 2020 5-year B19013,available
+VA,51683,Manassas city,2021,101934,ACS 2021 5-year B19013,available
+VA,51683,Manassas city,2022,110559,ACS 2022 5-year B19013,available
+VA,51683,Manassas city,2023,117919,ACS 2023 5-year B19013,available
+VA,51683,Manassas city,2024,113590,ACS 2024 5-year B19013,available
+VA,51685,Manassas Park city,2015,73528,ACS 2015 5-year B19013,available
+VA,51685,Manassas Park city,2016,75027,ACS 2016 5-year B19013,available
+VA,51685,Manassas Park city,2017,79131,ACS 2017 5-year B19013,available
+VA,51685,Manassas Park city,2018,80667,ACS 2018 5-year B19013,available
+VA,51685,Manassas Park city,2019,88046,ACS 2019 5-year B19013,available
+VA,51685,Manassas Park city,2020,81639,ACS 2020 5-year B19013,available
+VA,51685,Manassas Park city,2021,90544,ACS 2021 5-year B19013,available
+VA,51685,Manassas Park city,2022,91673,ACS 2022 5-year B19013,available
+VA,51685,Manassas Park city,2023,100668,ACS 2023 5-year B19013,available
+VA,51685,Manassas Park city,2024,103250,ACS 2024 5-year B19013,available
+VA,51690,Martinsville city,2015,29587,ACS 2015 5-year B19013,available
+VA,51690,Martinsville city,2016,31719,ACS 2016 5-year B19013,available
+VA,51690,Martinsville city,2017,33545,ACS 2017 5-year B19013,available
+VA,51690,Martinsville city,2018,33224,ACS 2018 5-year B19013,available
+VA,51690,Martinsville city,2019,34371,ACS 2019 5-year B19013,available
+VA,51690,Martinsville city,2020,36166,ACS 2020 5-year B19013,available
+VA,51690,Martinsville city,2021,36832,ACS 2021 5-year B19013,available
+VA,51690,Martinsville city,2022,39127,ACS 2022 5-year B19013,available
+VA,51690,Martinsville city,2023,42434,ACS 2023 5-year B19013,available
+VA,51690,Martinsville city,2024,46727,ACS 2024 5-year B19013,available
+VA,51700,Newport News city,2015,50077,ACS 2015 5-year B19013,available
+VA,51700,Newport News city,2016,50089,ACS 2016 5-year B19013,available
+VA,51700,Newport News city,2017,51082,ACS 2017 5-year B19013,available
+VA,51700,Newport News city,2018,51884,ACS 2018 5-year B19013,available
+VA,51700,Newport News city,2019,53215,ACS 2019 5-year B19013,available
+VA,51700,Newport News city,2020,54511,ACS 2020 5-year B19013,available
+VA,51700,Newport News city,2021,57463,ACS 2021 5-year B19013,available
+VA,51700,Newport News city,2022,63355,ACS 2022 5-year B19013,available
+VA,51700,Newport News city,2023,66718,ACS 2023 5-year B19013,available
+VA,51700,Newport News city,2024,69634,ACS 2024 5-year B19013,available
+VA,51710,Norfolk city,2015,44480,ACS 2015 5-year B19013,available
+VA,51710,Norfolk city,2016,45268,ACS 2016 5-year B19013,available
+VA,51710,Norfolk city,2017,47137,ACS 2017 5-year B19013,available
+VA,51710,Norfolk city,2018,49146,ACS 2018 5-year B19013,available
+VA,51710,Norfolk city,2019,51590,ACS 2019 5-year B19013,available
+VA,51710,Norfolk city,2020,53026,ACS 2020 5-year B19013,available
+VA,51710,Norfolk city,2021,56244,ACS 2021 5-year B19013,available
+VA,51710,Norfolk city,2022,60998,ACS 2022 5-year B19013,available
+VA,51710,Norfolk city,2023,64017,ACS 2023 5-year B19013,available
+VA,51710,Norfolk city,2024,66109,ACS 2024 5-year B19013,available
+VA,51720,Norton city,2015,27731,ACS 2015 5-year B19013,available
+VA,51720,Norton city,2016,26000,ACS 2016 5-year B19013,available
+VA,51720,Norton city,2017,26971,ACS 2017 5-year B19013,available
+VA,51720,Norton city,2018,28071,ACS 2018 5-year B19013,available
+VA,51720,Norton city,2019,29000,ACS 2019 5-year B19013,available
+VA,51720,Norton city,2020,30518,ACS 2020 5-year B19013,available
+VA,51720,Norton city,2021,35592,ACS 2021 5-year B19013,available
+VA,51720,Norton city,2022,36974,ACS 2022 5-year B19013,available
+VA,51720,Norton city,2023,38497,ACS 2023 5-year B19013,available
+VA,51720,Norton city,2024,41495,ACS 2024 5-year B19013,available
+VA,51730,Petersburg city,2015,31798,ACS 2015 5-year B19013,available
+VA,51730,Petersburg city,2016,32169,ACS 2016 5-year B19013,available
+VA,51730,Petersburg city,2017,33939,ACS 2017 5-year B19013,available
+VA,51730,Petersburg city,2018,36135,ACS 2018 5-year B19013,available
+VA,51730,Petersburg city,2019,38679,ACS 2019 5-year B19013,available
+VA,51730,Petersburg city,2020,43029,ACS 2020 5-year B19013,available
+VA,51730,Petersburg city,2021,44890,ACS 2021 5-year B19013,available
+VA,51730,Petersburg city,2022,46930,ACS 2022 5-year B19013,available
+VA,51730,Petersburg city,2023,50741,ACS 2023 5-year B19013,available
+VA,51730,Petersburg city,2024,50698,ACS 2024 5-year B19013,available
+VA,51735,Poquoson city,2015,83735,ACS 2015 5-year B19013,available
+VA,51735,Poquoson city,2016,84643,ACS 2016 5-year B19013,available
+VA,51735,Poquoson city,2017,88328,ACS 2017 5-year B19013,available
+VA,51735,Poquoson city,2018,96831,ACS 2018 5-year B19013,available
+VA,51735,Poquoson city,2019,97118,ACS 2019 5-year B19013,available
+VA,51735,Poquoson city,2020,100696,ACS 2020 5-year B19013,available
+VA,51735,Poquoson city,2021,112026,ACS 2021 5-year B19013,available
+VA,51735,Poquoson city,2022,114503,ACS 2022 5-year B19013,available
+VA,51735,Poquoson city,2023,120919,ACS 2023 5-year B19013,available
+VA,51735,Poquoson city,2024,120972,ACS 2024 5-year B19013,available
+VA,51740,Portsmouth city,2015,45676,ACS 2015 5-year B19013,available
+VA,51740,Portsmouth city,2016,47050,ACS 2016 5-year B19013,available
+VA,51740,Portsmouth city,2017,48727,ACS 2017 5-year B19013,available
+VA,51740,Portsmouth city,2018,50224,ACS 2018 5-year B19013,available
+VA,51740,Portsmouth city,2019,52175,ACS 2019 5-year B19013,available
+VA,51740,Portsmouth city,2020,53213,ACS 2020 5-year B19013,available
+VA,51740,Portsmouth city,2021,54020,ACS 2021 5-year B19013,available
+VA,51740,Portsmouth city,2022,57154,ACS 2022 5-year B19013,available
+VA,51740,Portsmouth city,2023,58972,ACS 2023 5-year B19013,available
+VA,51740,Portsmouth city,2024,60491,ACS 2024 5-year B19013,available
+VA,51750,Radford city,2015,29912,ACS 2015 5-year B19013,available
+VA,51750,Radford city,2016,31457,ACS 2016 5-year B19013,available
+VA,51750,Radford city,2017,36082,ACS 2017 5-year B19013,available
+VA,51750,Radford city,2018,36743,ACS 2018 5-year B19013,available
+VA,51750,Radford city,2019,36297,ACS 2019 5-year B19013,available
+VA,51750,Radford city,2020,34576,ACS 2020 5-year B19013,available
+VA,51750,Radford city,2021,44360,ACS 2021 5-year B19013,available
+VA,51750,Radford city,2022,51039,ACS 2022 5-year B19013,available
+VA,51750,Radford city,2023,52791,ACS 2023 5-year B19013,available
+VA,51750,Radford city,2024,57348,ACS 2024 5-year B19013,available
+VA,51760,Richmond city,2015,40758,ACS 2015 5-year B19013,available
+VA,51760,Richmond city,2016,41187,ACS 2016 5-year B19013,available
+VA,51760,Richmond city,2017,42356,ACS 2017 5-year B19013,available
+VA,51760,Richmond city,2018,45117,ACS 2018 5-year B19013,available
+VA,51760,Richmond city,2019,47250,ACS 2019 5-year B19013,available
+VA,51760,Richmond city,2020,51421,ACS 2020 5-year B19013,available
+VA,51760,Richmond city,2021,54795,ACS 2021 5-year B19013,available
+VA,51760,Richmond city,2022,59606,ACS 2022 5-year B19013,available
+VA,51760,Richmond city,2023,62671,ACS 2023 5-year B19013,available
+VA,51760,Richmond city,2024,64587,ACS 2024 5-year B19013,available
+VA,51770,Roanoke city,2015,39930,ACS 2015 5-year B19013,available
+VA,51770,Roanoke city,2016,39201,ACS 2016 5-year B19013,available
+VA,51770,Roanoke city,2017,41483,ACS 2017 5-year B19013,available
+VA,51770,Roanoke city,2018,43028,ACS 2018 5-year B19013,available
+VA,51770,Roanoke city,2019,44230,ACS 2019 5-year B19013,available
+VA,51770,Roanoke city,2020,45664,ACS 2020 5-year B19013,available
+VA,51770,Roanoke city,2021,48476,ACS 2021 5-year B19013,available
+VA,51770,Roanoke city,2022,51523,ACS 2022 5-year B19013,available
+VA,51770,Roanoke city,2023,52671,ACS 2023 5-year B19013,available
+VA,51770,Roanoke city,2024,55378,ACS 2024 5-year B19013,available
+VA,51775,Salem city,2015,50068,ACS 2015 5-year B19013,available
+VA,51775,Salem city,2016,52351,ACS 2016 5-year B19013,available
+VA,51775,Salem city,2017,53990,ACS 2017 5-year B19013,available
+VA,51775,Salem city,2018,57185,ACS 2018 5-year B19013,available
+VA,51775,Salem city,2019,57165,ACS 2019 5-year B19013,available
+VA,51775,Salem city,2020,63411,ACS 2020 5-year B19013,available
+VA,51775,Salem city,2021,66472,ACS 2021 5-year B19013,available
+VA,51775,Salem city,2022,68402,ACS 2022 5-year B19013,available
+VA,51775,Salem city,2023,66716,ACS 2023 5-year B19013,available
+VA,51775,Salem city,2024,66725,ACS 2024 5-year B19013,available
+VA,51790,Staunton city,2015,40842,ACS 2015 5-year B19013,available
+VA,51790,Staunton city,2016,42948,ACS 2016 5-year B19013,available
+VA,51790,Staunton city,2017,46435,ACS 2017 5-year B19013,available
+VA,51790,Staunton city,2018,48049,ACS 2018 5-year B19013,available
+VA,51790,Staunton city,2019,52611,ACS 2019 5-year B19013,available
+VA,51790,Staunton city,2020,52292,ACS 2020 5-year B19013,available
+VA,51790,Staunton city,2021,53041,ACS 2021 5-year B19013,available
+VA,51790,Staunton city,2022,59731,ACS 2022 5-year B19013,available
+VA,51790,Staunton city,2023,62586,ACS 2023 5-year B19013,available
+VA,51790,Staunton city,2024,65581,ACS 2024 5-year B19013,available
+VA,51800,Suffolk city,2015,65499,ACS 2015 5-year B19013,available
+VA,51800,Suffolk city,2016,65435,ACS 2016 5-year B19013,available
+VA,51800,Suffolk city,2017,68089,ACS 2017 5-year B19013,available
+VA,51800,Suffolk city,2018,70664,ACS 2018 5-year B19013,available
+VA,51800,Suffolk city,2019,74884,ACS 2019 5-year B19013,available
+VA,51800,Suffolk city,2020,79899,ACS 2020 5-year B19013,available
+VA,51800,Suffolk city,2021,81883,ACS 2021 5-year B19013,available
+VA,51800,Suffolk city,2022,87758,ACS 2022 5-year B19013,available
+VA,51800,Suffolk city,2023,90089,ACS 2023 5-year B19013,available
+VA,51800,Suffolk city,2024,92666,ACS 2024 5-year B19013,available
+VA,51810,Virginia Beach city,2015,66634,ACS 2015 5-year B19013,available
+VA,51810,Virginia Beach city,2016,67719,ACS 2016 5-year B19013,available
+VA,51810,Virginia Beach city,2017,70500,ACS 2017 5-year B19013,available
+VA,51810,Virginia Beach city,2018,74186,ACS 2018 5-year B19013,available
+VA,51810,Virginia Beach city,2019,76610,ACS 2019 5-year B19013,available
+VA,51810,Virginia Beach city,2020,78136,ACS 2020 5-year B19013,available
+VA,51810,Virginia Beach city,2021,81810,ACS 2021 5-year B19013,available
+VA,51810,Virginia Beach city,2022,87544,ACS 2022 5-year B19013,available
+VA,51810,Virginia Beach city,2023,90685,ACS 2023 5-year B19013,available
+VA,51810,Virginia Beach city,2024,92968,ACS 2024 5-year B19013,available
+VA,51820,Waynesboro city,2015,45643,ACS 2015 5-year B19013,available
+VA,51820,Waynesboro city,2016,45097,ACS 2016 5-year B19013,available
+VA,51820,Waynesboro city,2017,42112,ACS 2017 5-year B19013,available
+VA,51820,Waynesboro city,2018,45738,ACS 2018 5-year B19013,available
+VA,51820,Waynesboro city,2019,45011,ACS 2019 5-year B19013,available
+VA,51820,Waynesboro city,2020,43480,ACS 2020 5-year B19013,available
+VA,51820,Waynesboro city,2021,47238,ACS 2021 5-year B19013,available
+VA,51820,Waynesboro city,2022,52519,ACS 2022 5-year B19013,available
+VA,51820,Waynesboro city,2023,56364,ACS 2023 5-year B19013,available
+VA,51820,Waynesboro city,2024,59994,ACS 2024 5-year B19013,available
+VA,51830,Williamsburg city,2015,48639,ACS 2015 5-year B19013,available
+VA,51830,Williamsburg city,2016,50091,ACS 2016 5-year B19013,available
+VA,51830,Williamsburg city,2017,54606,ACS 2017 5-year B19013,available
+VA,51830,Williamsburg city,2018,56163,ACS 2018 5-year B19013,available
+VA,51830,Williamsburg city,2019,57463,ACS 2019 5-year B19013,available
+VA,51830,Williamsburg city,2020,59288,ACS 2020 5-year B19013,available
+VA,51830,Williamsburg city,2021,65297,ACS 2021 5-year B19013,available
+VA,51830,Williamsburg city,2022,66815,ACS 2022 5-year B19013,available
+VA,51830,Williamsburg city,2023,70206,ACS 2023 5-year B19013,available
+VA,51830,Williamsburg city,2024,75604,ACS 2024 5-year B19013,available
+VA,51840,Winchester city,2015,45363,ACS 2015 5-year B19013,available
+VA,51840,Winchester city,2016,46466,ACS 2016 5-year B19013,available
+VA,51840,Winchester city,2017,49330,ACS 2017 5-year B19013,available
+VA,51840,Winchester city,2018,53797,ACS 2018 5-year B19013,available
+VA,51840,Winchester city,2019,58818,ACS 2019 5-year B19013,available
+VA,51840,Winchester city,2020,61102,ACS 2020 5-year B19013,available
+VA,51840,Winchester city,2021,61321,ACS 2021 5-year B19013,available
+VA,51840,Winchester city,2022,62495,ACS 2022 5-year B19013,available
+VA,51840,Winchester city,2023,64648,ACS 2023 5-year B19013,available
+VA,51840,Winchester city,2024,63974,ACS 2024 5-year B19013,available
