@@ -2,8 +2,13 @@ state,state_fips,include_pipeline
 DE,10,true
 FL,12,true
 GA,13,true
+MA,25,true
 MD,24,true
+ME,23,true
+NH,33,true
 NJ,34,true
+NY,36,true
 NC,37,true
+RI,44,true
 SC,45,true
 VA,51,true
