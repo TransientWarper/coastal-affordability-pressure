@@ -60,8 +60,9 @@ are used for output labeling only; joins and validation use `county_fips`.
 
 ## manual/pipeline_states.csv
 
-State manifest for the multistate county-reference layer and future pipeline
-expansion. Defines which states are included in the southeastern pilot scope.
+State manifest for the multistate county-reference layer and pipeline
+expansion. Defines which states are included in the eight-state Atlantic
+pipeline scope.
 
 | Field | Type | Description |
 |---|---|---|
@@ -69,24 +70,29 @@ expansion. Defines which states are included in the southeastern pilot scope.
 | state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
 | include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
 
-### Validated record (southeastern pilot)
+### Validated record (eight-state Atlantic pipeline)
 
 | state | state_fips | include_pipeline |
 |---|---|---|
+| DE | 10 | true |
 | FL | 12 | true |
 | GA | 13 | true |
-| SC | 45 | true |
+| MD | 24 | true |
+| NJ | 34 | true |
 | NC | 37 | true |
+| SC | 45 | true |
+| VA | 51 | true |
 
-Four enabled states; all rows currently have `include_pipeline=true`.
+Eight enabled states; all rows currently have `include_pipeline=true`.
 
 ---
 
 ## manual/pipeline_counties.csv
 
-Authoritative multistate county reference for the four-state southeastern pilot
-(Florida, Georgia, South Carolina, North Carolina). County FIPS—not county
-name—is the authoritative join and selection key.
+Authoritative multistate county reference for the eight-state Atlantic pipeline
+(Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
+Delaware, and New Jersey). County FIPS—not county name—is the authoritative
+join and selection key.
 
 | Field | Type | Description |
 |---|---|---|
@@ -102,17 +108,32 @@ name—is the authoritative join and selection key.
 - **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
 - **Generation script:** `src/build_pipeline_county_reference.py`
 - **State filter:** enabled `state_fips` values from `pipeline_states.csv`
-- **Row count:** 372 (one row per county in the enabled states)
+- **Row count:** 553 (one row per county equivalent in the enabled states)
+
+### County-equivalent scope
+
+The generated reference follows the county-equivalent inventory in Census
+TIGER 2023. Virginia includes 95 counties (LSAD `06`) and 38 independent
+cities (LSAD `25`) as separate county equivalents (133 total). Former
+independent cities that no longer appear in TIGER 2023—Bedford city (`51515`,
+consolidated in 2013) and South Boston city (`51850`, reverted in 1995)—are
+not included. Maryland includes 23 counties plus Baltimore city (`24510`) as a
+county equivalent (24 total). Delaware and New Jersey include all counties in
+each state.
 
 ### Expected state counts
 
-| state | state_fips | counties |
+| state | state_fips | county equivalents |
 |---|---|---:|
 | FL | 12 | 67 |
 | GA | 13 | 159 |
 | SC | 45 | 46 |
 | NC | 37 | 100 |
-| **Total** | | **372** |
+| VA | 51 | 133 |
+| MD | 24 | 24 |
+| DE | 10 | 3 |
+| NJ | 34 | 21 |
+| **Total** | | **553** |
 
 ### Role
 

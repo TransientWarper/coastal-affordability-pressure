@@ -1,4 +1,7 @@
 state,state_fips,county_fips,county_name
+DE,10,10001,Kent County
+DE,10,10003,New Castle County
+DE,10,10005,Sussex County
 FL,12,12001,Alachua County
 FL,12,12003,Baker County
 FL,12,12005,Bay County
@@ -225,6 +228,51 @@ GA,13,13315,Wilcox County
 GA,13,13317,Wilkes County
 GA,13,13319,Wilkinson County
 GA,13,13321,Worth County
+MD,24,24001,Allegany County
+MD,24,24003,Anne Arundel County
+MD,24,24005,Baltimore County
+MD,24,24009,Calvert County
+MD,24,24011,Caroline County
+MD,24,24013,Carroll County
+MD,24,24015,Cecil County
+MD,24,24017,Charles County
+MD,24,24019,Dorchester County
+MD,24,24021,Frederick County
+MD,24,24023,Garrett County
+MD,24,24025,Harford County
+MD,24,24027,Howard County
+MD,24,24029,Kent County
+MD,24,24031,Montgomery County
+MD,24,24033,Prince George's County
+MD,24,24035,Queen Anne's County
+MD,24,24037,St. Mary's County
+MD,24,24039,Somerset County
+MD,24,24041,Talbot County
+MD,24,24043,Washington County
+MD,24,24045,Wicomico County
+MD,24,24047,Worcester County
+MD,24,24510,Baltimore city
+NJ,34,34001,Atlantic County
+NJ,34,34003,Bergen County
+NJ,34,34005,Burlington County
+NJ,34,34007,Camden County
+NJ,34,34009,Cape May County
+NJ,34,34011,Cumberland County
+NJ,34,34013,Essex County
+NJ,34,34015,Gloucester County
+NJ,34,34017,Hudson County
+NJ,34,34019,Hunterdon County
+NJ,34,34021,Mercer County
+NJ,34,34023,Middlesex County
+NJ,34,34025,Monmouth County
+NJ,34,34027,Morris County
+NJ,34,34029,Ocean County
+NJ,34,34031,Passaic County
+NJ,34,34033,Salem County
+NJ,34,34035,Somerset County
+NJ,34,34037,Sussex County
+NJ,34,34039,Union County
+NJ,34,34041,Warren County
 NC,37,37001,Alamance County
 NC,37,37003,Alexander County
 NC,37,37005,Alleghany County
@@ -371,3 +419,136 @@ SC,45,45085,Sumter County
 SC,45,45087,Union County
 SC,45,45089,Williamsburg County
 SC,45,45091,York County
+VA,51,51001,Accomack County
+VA,51,51003,Albemarle County
+VA,51,51005,Alleghany County
+VA,51,51007,Amelia County
+VA,51,51009,Amherst County
+VA,51,51011,Appomattox County
+VA,51,51013,Arlington County
+VA,51,51015,Augusta County
+VA,51,51017,Bath County
+VA,51,51019,Bedford County
+VA,51,51021,Bland County
+VA,51,51023,Botetourt County
+VA,51,51025,Brunswick County
+VA,51,51027,Buchanan County
+VA,51,51029,Buckingham County
+VA,51,51031,Campbell County
+VA,51,51033,Caroline County
+VA,51,51035,Carroll County
+VA,51,51036,Charles City County
+VA,51,51037,Charlotte County
+VA,51,51041,Chesterfield County
+VA,51,51043,Clarke County
+VA,51,51045,Craig County
+VA,51,51047,Culpeper County
+VA,51,51049,Cumberland County
+VA,51,51051,Dickenson County
+VA,51,51053,Dinwiddie County
+VA,51,51057,Essex County
+VA,51,51059,Fairfax County
+VA,51,51061,Fauquier County
+VA,51,51063,Floyd County
+VA,51,51065,Fluvanna County
+VA,51,51067,Franklin County
+VA,51,51069,Frederick County
+VA,51,51071,Giles County
+VA,51,51073,Gloucester County
+VA,51,51075,Goochland County
+VA,51,51077,Grayson County
+VA,51,51079,Greene County
+VA,51,51081,Greensville County
+VA,51,51083,Halifax County
+VA,51,51085,Hanover County
+VA,51,51087,Henrico County
+VA,51,51089,Henry County
+VA,51,51091,Highland County
+VA,51,51093,Isle of Wight County
+VA,51,51095,James City County
+VA,51,51097,King and Queen County
+VA,51,51099,King George County
+VA,51,51101,King William County
+VA,51,51103,Lancaster County
+VA,51,51105,Lee County
+VA,51,51107,Loudoun County
+VA,51,51109,Louisa County
+VA,51,51111,Lunenburg County
+VA,51,51113,Madison County
+VA,51,51115,Mathews County
+VA,51,51117,Mecklenburg County
+VA,51,51119,Middlesex County
+VA,51,51121,Montgomery County
+VA,51,51125,Nelson County
+VA,51,51127,New Kent County
+VA,51,51131,Northampton County
+VA,51,51133,Northumberland County
+VA,51,51135,Nottoway County
+VA,51,51137,Orange County
+VA,51,51139,Page County
+VA,51,51141,Patrick County
+VA,51,51143,Pittsylvania County
+VA,51,51145,Powhatan County
+VA,51,51147,Prince Edward County
+VA,51,51149,Prince George County
+VA,51,51153,Prince William County
+VA,51,51155,Pulaski County
+VA,51,51157,Rappahannock County
+VA,51,51159,Richmond County
+VA,51,51161,Roanoke County
+VA,51,51163,Rockbridge County
+VA,51,51165,Rockingham County
+VA,51,51167,Russell County
+VA,51,51169,Scott County
+VA,51,51171,Shenandoah County
+VA,51,51173,Smyth County
+VA,51,51175,Southampton County
+VA,51,51177,Spotsylvania County
+VA,51,51179,Stafford County
+VA,51,51181,Surry County
+VA,51,51183,Sussex County
+VA,51,51185,Tazewell County
+VA,51,51187,Warren County
+VA,51,51191,Washington County
+VA,51,51193,Westmoreland County
+VA,51,51195,Wise County
+VA,51,51197,Wythe County
+VA,51,51199,York County
+VA,51,51510,Alexandria city
+VA,51,51520,Bristol city
+VA,51,51530,Buena Vista city
+VA,51,51540,Charlottesville city
+VA,51,51550,Chesapeake city
+VA,51,51570,Colonial Heights city
+VA,51,51580,Covington city
+VA,51,51590,Danville city
+VA,51,51595,Emporia city
+VA,51,51600,Fairfax city
+VA,51,51610,Falls Church city
+VA,51,51620,Franklin city
+VA,51,51630,Fredericksburg city
+VA,51,51640,Galax city
+VA,51,51650,Hampton city
+VA,51,51660,Harrisonburg city
+VA,51,51670,Hopewell city
+VA,51,51678,Lexington city
+VA,51,51680,Lynchburg city
+VA,51,51683,Manassas city
+VA,51,51685,Manassas Park city
+VA,51,51690,Martinsville city
+VA,51,51700,Newport News city
+VA,51,51710,Norfolk city
+VA,51,51720,Norton city
+VA,51,51730,Petersburg city
+VA,51,51735,Poquoson city
+VA,51,51740,Portsmouth city
+VA,51,51750,Radford city
+VA,51,51760,Richmond city
+VA,51,51770,Roanoke city
+VA,51,51775,Salem city
+VA,51,51790,Staunton city
+VA,51,51800,Suffolk city
+VA,51,51810,Virginia Beach city
+VA,51,51820,Waynesboro city
+VA,51,51830,Williamsburg city
+VA,51,51840,Winchester city

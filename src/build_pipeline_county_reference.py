@@ -2,8 +2,9 @@
 Build multistate county reference CSV from TIGER 2023 county boundaries.
 
 Reads enabled states from data/manual/pipeline_states.csv and writes
-data/manual/pipeline_counties.csv for the four-state southeastern pilot
-(Florida, Georgia, South Carolina, North Carolina).
+data/manual/pipeline_counties.csv for the eight-state Atlantic pipeline
+(Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
+Delaware, and New Jersey).
 """
 
 from pathlib import Path
@@ -23,14 +24,18 @@ TIGER_ZIP = PROJECT_ROOT / "data" / "raw" / "census_tiger" / "cb_2023_us_county_
 STATE_MANIFEST_COLUMNS = ["state", "state_fips", "include_pipeline"]
 COUNTY_REFERENCE_COLUMNS = ["state", "state_fips", "county_fips", "county_name"]
 
-EXPECTED_ENABLED_STATES = {"FL", "GA", "SC", "NC"}
+EXPECTED_ENABLED_STATES = {"DE", "FL", "GA", "MD", "NJ", "NC", "SC", "VA"}
 EXPECTED_STATE_COUNTS = {
     "FL": 67,
     "GA": 159,
     "SC": 46,
     "NC": 100,
+    "VA": 133,
+    "MD": 24,
+    "DE": 3,
+    "NJ": 21,
 }
-EXPECTED_TOTAL_COUNTIES = 372
+EXPECTED_TOTAL_COUNTIES = 553
 
 REQUIRED_TIGER_COLUMNS = ["STUSPS", "STATEFP", "GEOID", "NAMELSAD", "geometry"]
 
