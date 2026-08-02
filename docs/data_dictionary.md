@@ -340,9 +340,11 @@ applied.
 
 ## processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv
 
-FIPS-based annualized Zillow ZHVI for the four-state southeastern pipeline
-reference (Florida, Georgia, South Carolina, North Carolina). One row per county
-per year.
+FIPS-based annualized Zillow ZHVI for the eight-state Atlantic pipeline
+reference (Florida, Georgia, South Carolina, North Carolina, Virginia,
+Maryland, Delaware, and New Jersey). One row per county equivalent per year.
+Virginia independent cities and Baltimore city (`24510`) are included as
+county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -360,8 +362,8 @@ per year.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 3,720 rows (372 counties × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100)
+- **Expected scale:** 5,530 rows (553 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 - **Selection key:** five-digit `county_fips` matched to Zillow
@@ -389,6 +391,19 @@ The pipeline builds a complete county-year panel from
 10 county-year rows with null `typical_home_value`, `zillow_months_available = 0`,
 and `zillow_data_status = source_data_unavailable`.
 
+### Status distribution (validated)
+
+| zillow_data_status | row count |
+|---|---:|
+| `complete_12_months` | 5,468 |
+| `partial_10_11_months` | 25 |
+| `partial_1_9_months` | 2 |
+| `source_data_unavailable` | 35 |
+
+All 553 reference county equivalents are present in the committed Zillow raw
+file. Missing county-years reflect absent monthly observations in the source,
+not absent counties.
+
 ### Relationship to Florida output
 
 The Florida subset (`state = FL`) matches the committed
@@ -401,6 +416,11 @@ for a small number of Florida counties.
 
 The existing Florida output file is not overwritten by the pipeline build path
 beyond the unchanged Florida transformation stage.
+
+### Relationship to prior four-state output
+
+The FL, GA, SC, and NC subset (3,720 rows) is unchanged from the committed
+four-state pipeline output prior to the eight-state expansion.
 
 ### Generation
 

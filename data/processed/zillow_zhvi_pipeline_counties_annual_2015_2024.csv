@@ -1,4 +1,34 @@
 state,county_fips,county_name,year,typical_home_value,zillow_months_available,home_value_source,home_value_year_method,zillow_data_status
+DE,10001,Kent County,2015,199265.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2016,207846.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2017,213062.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2018,220202.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2019,231577.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2020,246739.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2021,285268.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2022,322785.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2023,339460.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10001,Kent County,2024,356784.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2015,220132.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2016,233045.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2017,244268.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2018,251456.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2019,256476.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2020,262087.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2021,295095.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2022,321713.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2023,338174.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10003,New Castle County,2024,355060.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2015,295984.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2016,303581.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2017,316566.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2018,323994.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2019,335637.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2020,350925.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2021,418331.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2022,483636.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2023,491084.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+DE,10005,Sussex County,2024,492890.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 FL,12001,Alachua County,2015,159898.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 FL,12001,Alachua County,2016,169945.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 FL,12001,Alachua County,2017,183486.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
@@ -2259,6 +2289,456 @@ GA,13321,Worth County,2021,138588.61,12,Zillow ZHVI county,annual_mean_zhvi,comp
 GA,13321,Worth County,2022,154828.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 GA,13321,Worth County,2023,157947.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 GA,13321,Worth County,2024,167228.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2015,98022.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2016,97368.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2017,98184.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2018,100691.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2019,108110.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2020,113521.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2021,127320.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2022,138136.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2023,141646.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24001,Allegany County,2024,145565.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2015,345511.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2016,351338.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2017,362772.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2018,372772.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2019,380914.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2020,396472.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2021,439909.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2022,471617.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2023,483589.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24003,Anne Arundel County,2024,499187.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2015,242505.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2016,248108.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2017,255267.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2018,262948.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2019,271619.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2020,282658.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2021,313763.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2022,338173.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2023,346067.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24005,Baltimore County,2024,355833.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2015,328886.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2016,334814.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2017,344610.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2018,352640.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2019,363812.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2020,379419.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2021,424567.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2022,451829.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2023,458616.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24009,Calvert County,2024,470143.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2015,184899.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2016,192097.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2017,199241.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2018,210478.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2019,224301.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2020,240206.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2021,280230.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2022,304476.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2023,307247.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24011,Caroline County,2024,323783.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2015,319597.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2016,325983.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2017,334797.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2018,345584.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2019,356176.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2020,371658.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2021,417164.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2022,447764.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2023,461573.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24013,Carroll County,2024,479704.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2015,231520.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2016,233645.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2017,241062.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2018,250535.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2019,263527.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2020,278761.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2021,316158.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2022,342657.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2023,354915.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24015,Cecil County,2024,373201.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2015,285821.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2016,296473.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2017,309255.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2018,323640.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2019,335878.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2020,352182.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2021,402279.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2022,435132.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2023,439365.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24017,Charles County,2024,451011.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2015,152530.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2016,156552.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2017,159993.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2018,172767.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2019,182062.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2020,194639.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2021,225045.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2022,249090.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2023,257225.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24019,Dorchester County,2024,268770.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2015,315560.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2016,322481.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2017,331465.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2018,342057.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2019,354078.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2020,368191.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2021,417338.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2022,459043.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2023,473895.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24021,Frederick County,2024,495530.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2015,205178.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2016,208548.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2017,210453.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2018,216657.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2019,224405.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2020,236425.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2021,286435.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2022,326192.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2023,330062.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24023,Garrett County,2024,336711.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2015,276268.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2016,282324.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2017,288313.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2018,296755.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2019,305733.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2020,320554.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2021,356342.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2022,384820.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2023,400827.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24025,Harford County,2024,413701.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2015,447168.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2016,451592.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2017,462239.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2018,470748.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2019,480882.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2020,495980.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2021,543609.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2022,588896.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2023,606497.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24027,Howard County,2024,632263.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2015,234566.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2016,233908.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2017,236086.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2018,249029.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2019,258176.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2020,273477.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2021,322467.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2022,351623.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2023,359373.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24029,Kent County,2024,376386.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2015,444013.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2016,450778.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2017,461517.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2018,474645.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2019,489346.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2020,507672.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2021,560799.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2022,594042.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2023,599360.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24031,Montgomery County,2024,622173.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2015,263330.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2016,282717.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2017,300564.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2018,314907.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2019,328241.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2020,349355.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2021,394033.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2022,417743.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2023,421521.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24033,Prince George's County,2024,431005.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2015,323368.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2016,326978.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2017,337828.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2018,350850.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2019,362562.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2020,376073.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2021,427988.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2022,465026.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2023,479275.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24035,Queen Anne's County,2024,503839.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2015,292706.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2016,291726.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2017,299473.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2018,307423.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2019,317121.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2020,334316.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2021,373237.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2022,398115.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2023,405322.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24037,St. Mary's County,2024,416218.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2015,118035.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2016,116850.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2017,118920.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2018,123208.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2019,129414.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2020,140540.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2021,163994.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2022,181436.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2023,186976.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24039,Somerset County,2024,198190.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2015,314669.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2016,320812.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2017,327782.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2018,336869.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2019,344341.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2020,357498.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2021,412865.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2022,454246.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2023,465975.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24041,Talbot County,2024,489108.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2015,196507.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2016,200723.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2017,206863.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2018,213990.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2019,224415.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2020,237460.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2021,270502.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2022,296888.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2023,307258.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24043,Washington County,2024,320708.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2015,157550.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2016,158425.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2017,163377.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2018,171568.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2019,180092.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2020,190860.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2021,215680.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2022,239581.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2023,252093.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24045,Wicomico County,2024,269147.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2015,245157.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2016,246089.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2017,253121.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2018,264285.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2019,274830.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2020,288024.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2021,345332.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2022,405244.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2023,424880.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24047,Worcester County,2024,439266.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2015,111671.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2016,114802.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2017,120951.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2018,131590.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2019,142761.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2020,150146.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2021,171120.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2022,185383.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2023,185774.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+MD,24510,Baltimore city,2024,192563.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2015,192324.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2016,184370.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2017,179726.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2018,188733.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2019,203923.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2020,220439.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2021,262176.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2022,301571.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2023,326380.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34001,Atlantic County,2024,355752.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2015,470232.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2016,484523.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2017,500947.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2018,515125.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2019,521857.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2020,540878.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2021,593770.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2022,635460.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2023,660276.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34003,Bergen County,2024,712050.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2015,230536.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2016,235805.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2017,238486.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2018,243327.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2019,252980.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2020,270054.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2021,306509.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2022,345230.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2023,370772.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34005,Burlington County,2024,404323.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2015,172211.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2016,174298.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2017,176892.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2018,180899.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2019,190552.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2020,208361.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2021,245722.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2022,280396.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2023,302010.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34007,Camden County,2024,330258.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2015,378618.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2016,387790.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2017,400004.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2018,415164.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2019,433353.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2020,465429.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2021,570430.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2022,674844.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2023,695363.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34009,Cape May County,2024,727289.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2015,153474.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2016,156010.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2017,156323.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2018,153901.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2019,159626.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2020,171918.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2021,200971.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2022,227997.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2023,246887.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34011,Cumberland County,2024,264996.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2015,361062.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2016,375476.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2017,391934.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2018,409958.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2019,427234.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2020,454219.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2021,506622.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2022,545481.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2023,573939.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34013,Essex County,2024,626346.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2015,206545.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2016,211339.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2017,213014.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2018,213683.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2019,220116.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2020,236183.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2021,273155.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2022,310723.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2023,333197.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34015,Gloucester County,2024,360260.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2015,365999.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2016,400346.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2017,435135.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2018,474454.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2019,492865.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2020,516307.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2021,554565.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2022,581369.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2023,587308.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34017,Hudson County,2024,621019.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2015,407019.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2016,412226.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2017,420894.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2018,427849.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2019,432304.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2020,444227.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2021,496107.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2022,537138.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2023,558727.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34019,Hunterdon County,2024,605943.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2015,248539.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2016,255239.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2017,260413.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2018,270457.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2019,279153.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2020,294176.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2021,329687.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2022,369564.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2023,399880.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34021,Mercer County,2024,437320.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2015,321246.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2016,332387.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2017,340454.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2018,355842.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2019,372951.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2020,391467.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2021,432109.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2022,467613.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2023,495564.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34023,Middlesex County,2024,541907.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2015,397814.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2016,412605.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2017,428009.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2018,449968.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2019,463930.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2020,480256.89,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+NJ,34025,Monmouth County,2021,559761.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2022,634370.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2023,669933.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34025,Monmouth County,2024,726470.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2015,443073.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2016,453350.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2017,459890.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2018,470812.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2019,476403.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2020,486416.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2021,535718.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2022,577188.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2023,609302.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34027,Morris County,2024,664745.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2015,266822.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2016,275636.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2017,284475.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2018,293776.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2019,303210.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2020,319560.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2021,381906.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2022,447443.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2023,471839.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34029,Ocean County,2024,511263.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2015,309385.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2016,323142.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2017,332180.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2018,348844.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2019,368978.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2020,391928.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2021,443375.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2022,480461.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2023,507664.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34031,Passaic County,2024,552262.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2015,169259.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2016,169279.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2017,169843.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2018,167915.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2019,169132.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2020,186260.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2021,220912.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2022,249614.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2023,268222.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34033,Salem County,2024,288339.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2015,410320.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2016,418701.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2017,429501.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2018,441627.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2019,447781.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2020,460402.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2021,503270.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2022,548557.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2023,580945.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34035,Somerset County,2024,637004.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2015,234844.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2016,239879.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2017,240023.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2018,247007.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2019,261699.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2020,280438.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2021,330677.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2022,362413.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2023,382582.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34037,Sussex County,2024,420568.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2015,349310.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2016,359872.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2017,380681.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2018,403161.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2019,418918.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2020,439384.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2021,496081.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2022,536625.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2023,564311.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34039,Union County,2024,607288.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2015,242455.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2016,247242.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2017,250477.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2018,256069.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2019,263620.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2020,280981.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2021,327332.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2022,359074.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2023,376248.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+NJ,34041,Warren County,2024,406484.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 NC,37001,Alamance County,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
 NC,37001,Alamance County,2016,148782.96,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
 NC,37001,Alamance County,2017,156048.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
@@ -3719,3 +4199,1333 @@ SC,45091,York County,2021,311725.54,12,Zillow ZHVI county,annual_mean_zhvi,compl
 SC,45091,York County,2022,368760.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 SC,45091,York County,2023,379810.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
 SC,45091,York County,2024,396540.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2015,159196.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2016,160340.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2017,162421.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2018,169707.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2019,170782.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2020,181777.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2021,208471.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2022,221414.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2023,238985.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51001,Accomack County,2024,249179.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2015,329832.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2016,342330.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2017,357048.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2018,373432.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2019,386465.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2020,402605.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2021,441103.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2022,488533.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2023,510192.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51003,Albemarle County,2024,539051.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
+VA,51005,Alleghany County,2016,115785.66,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+VA,51005,Alleghany County,2017,116613.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2018,117045.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2019,123211.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2020,129366.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2021,148083.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2022,160088.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2023,166768.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51005,Alleghany County,2024,178606.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2015,153056.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2016,160034.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2017,172844.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2018,181514.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2019,190086.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2020,205324.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2021,235364.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2022,268035.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2023,283252.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51007,Amelia County,2024,297431.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2015,151705.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2016,157441.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2017,163666.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2018,169228.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2019,176580.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2020,185604.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2021,209331.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2022,233315.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2023,248728.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51009,Amherst County,2024,261873.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2015,149467.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2016,155645.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2017,160789.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2018,169354.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2019,174749.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2020,187806.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2021,216811.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2022,243642.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2023,257016.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51011,Appomattox County,2024,267925.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2015,587858.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2016,598763.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2017,616574.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2018,633399.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2019,672461.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2020,719112.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2021,754827.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2022,778432.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2023,775940.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51013,Arlington County,2024,810009.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2015,217976.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2016,221858.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2017,227823.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2018,236505.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2019,251329.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2020,268003.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2021,294832.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2022,326405.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2023,325103.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51015,Augusta County,2024,338121.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
+VA,51017,Bath County,2016,157326.06,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+VA,51017,Bath County,2017,157952.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2018,158449.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2019,159745.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2020,165526.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2021,192422.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2022,205357.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2023,209923.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51017,Bath County,2024,218516.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2015,195167.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2016,200877.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2017,206658.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2018,212334.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2019,221421.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2020,235162.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2021,267199.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2022,299574.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2023,317368.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51019,Bedford County,2024,334723.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2015,114738.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2016,118734.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2017,121782.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2018,128990.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2019,130810.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2020,134744.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2021,154852.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2022,168973.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2023,165917.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51021,Bland County,2024,171093.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2015,194967.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2016,198429.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2017,201855.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2018,206416.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2019,218300.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2020,232784.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2021,258543.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2022,287083.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2023,290241.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51023,Botetourt County,2024,301103.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2015,166913.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2016,154177.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2017,151445.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2018,143751.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2019,143856.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2020,152480.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2021,163925.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2022,170138.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2023,167573.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51025,Brunswick County,2024,160895.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2015,71112.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2016,72436.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2017,71829.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2018,73587.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2019,75381.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2020,79249.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2021,88736.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2022,89059.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2023,91419.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51027,Buchanan County,2024,91443.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2015,140642.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2016,153591.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2017,156281.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2018,168144.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2019,178278.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2020,195095.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2021,223144.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2022,239300.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2023,241279.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51029,Buckingham County,2024,255328.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2015,152646.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2016,156556.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2017,159086.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2018,165134.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2019,174375.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2020,186956.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2021,210577.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2022,235987.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2023,253626.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51031,Campbell County,2024,266747.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2015,185809.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2016,196541.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2017,209718.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2018,222601.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2019,231858.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2020,247194.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2021,287940.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2022,324524.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2023,337878.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51033,Caroline County,2024,348288.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2015,123977.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2016,130963.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2017,133017.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2018,134382.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2019,141151.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2020,152083.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2021,165049.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2022,179103.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2023,185256.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51035,Carroll County,2024,193955.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2015,163266.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2016,166938.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2017,171886.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2018,178664.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2019,185840.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2020,201722.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2021,230309.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2022,256353.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2023,262520.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51036,Charles City County,2024,273587.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2015,102905.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2016,106444.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2017,107816.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2018,131393.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2019,125038.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2020,135106.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2021,154601.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2022,165407.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2023,170150.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51037,Charlotte County,2024,169799.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2015,220194.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2016,231775.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2017,243706.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2018,254043.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2019,266256.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2020,280855.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2021,322307.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2022,362426.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2023,382282.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51041,Chesterfield County,2024,401770.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2015,352648.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2016,368508.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2017,378652.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2018,378944.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2019,379448.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2020,407831.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2021,471735.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2022,514803.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2023,521814.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51043,Clarke County,2024,547748.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2015,144723.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2016,148827.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2017,152913.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2018,160565.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2019,163551.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2020,176873.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2021,198429.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2022,209431.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2023,213907.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51045,Craig County,2024,218994.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2015,263054.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2016,278123.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2017,289681.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2018,303797.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2019,315232.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2020,333268.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2021,387758.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2022,427704.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2023,440830.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51047,Culpeper County,2024,466724.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2015,134001.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2016,145528.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2017,152470.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2018,161008.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2019,164450.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2020,174744.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2021,208796.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2022,239560.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2023,249311.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51049,Cumberland County,2024,259890.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2015,71015.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2016,73272.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2017,73193.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2018,74792.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2019,68248.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2020,73723.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2021,87451.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2022,95817.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2023,95017.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51051,Dickenson County,2024,103770.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2015,127393.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2016,136392.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2017,142531.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2018,151413.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2019,161560.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2020,176028.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2021,205203.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2022,247783.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2023,272276.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51053,Dinwiddie County,2024,281685.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2015,171902.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2016,176702.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2017,180194.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2018,186876.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2019,192614.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2020,204555.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2021,240505.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2022,274376.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2023,284586.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51057,Essex County,2024,293656.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2015,515931.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2016,523324.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2017,537866.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2018,555230.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2019,573865.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2020,606771.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2021,665725.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2022,711798.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2023,720012.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51059,Fairfax County,2024,765979.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2015,379709.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2016,394062.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2017,408773.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2018,425689.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2019,436572.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2020,457619.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2021,521457.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2022,572039.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2023,587490.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51061,Fauquier County,2024,611704.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2015,149520.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2016,156921.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2017,161262.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2018,164962.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2019,170596.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2020,183721.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2021,209253.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2022,235836.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2023,247542.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51063,Floyd County,2024,253643.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2015,206342.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2016,215275.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2017,222227.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2018,234096.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2019,243487.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2020,257537.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2021,297924.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2022,335804.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2023,349619.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51065,Fluvanna County,2024,371342.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2015,195037.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2016,199802.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2017,208188.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2018,214531.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2019,223549.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2020,240359.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2021,277769.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2022,310840.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2023,324133.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51067,Franklin County,2024,346034.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2015,246971.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2016,256727.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2017,269337.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2018,279562.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2019,292208.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2020,307639.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2021,352866.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2022,396366.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2023,404592.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51069,Frederick County,2024,419839.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2015,112857.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2016,116697.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2017,117868.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2018,122640.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2019,130679.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2020,140201.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2021,162687.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2022,179684.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2023,187779.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51071,Giles County,2024,194343.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2015,221675.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2016,227818.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2017,234645.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2018,240487.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2019,245321.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2020,258641.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2021,290709.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2022,323144.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2023,336853.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51073,Gloucester County,2024,353757.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2015,352133.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2016,365099.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2017,380839.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2018,394134.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2019,403578.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2020,425940.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2021,479642.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2022,508316.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2023,499783.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51075,Goochland County,2024,555384.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2015,110211.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2016,115738.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2017,118177.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2018,120034.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2019,125271.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2020,133004.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2021,158142.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2022,179358.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2023,180865.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51077,Grayson County,2024,196292.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2015,215219.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2016,225069.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2017,236768.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2018,249828.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2019,256324.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2020,269285.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2021,304316.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2022,333221.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2023,345129.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51079,Greene County,2024,365500.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2015,87194.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2016,87476.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2017,89284.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2018,92699.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2019,97969.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2020,105904.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2021,128339.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2022,140138.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2023,145606.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51081,Greensville County,2024,155693.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2015,87636.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2016,89144.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2017,89143.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2018,91744.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2019,96814.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2020,102278.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2021,113323.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2022,125813.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2023,133912.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51083,Halifax County,2024,140252.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2015,264718.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2016,276292.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2017,287630.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2018,299596.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2019,309412.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2020,324414.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2021,358092.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2022,390510.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2023,410727.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51085,Hanover County,2024,439614.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2015,217160.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2016,227757.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2017,239842.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2018,252796.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2019,264399.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2020,280339.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2021,315619.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2022,353110.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2023,373351.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51087,Henrico County,2024,391659.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2015,99529.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2016,101733.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2017,101242.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2018,102426.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2019,100760.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2020,104305.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2021,118546.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2022,135385.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2023,148902.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51089,Henry County,2024,154071.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
+VA,51091,Highland County,2016,180758.66,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+VA,51091,Highland County,2017,187687.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2018,189655.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2019,189572.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2020,194542.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2021,224467.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2022,249791.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2023,261041.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51091,Highland County,2024,280696.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2015,255063.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2016,265723.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2017,275087.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2018,279740.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2019,289754.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2020,303640.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2021,329744.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2022,359070.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2023,368887.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51093,Isle of Wight County,2024,373436.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2015,310297.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2016,315299.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2017,321573.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2018,327855.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2019,331529.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2020,340846.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2021,375042.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2022,418328.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2023,445079.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51095,James City County,2024,469433.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2015,150496.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2016,160527.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2017,165734.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2018,177289.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2019,181801.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2020,191478.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2021,221775.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2022,249742.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2023,255451.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51097,King and Queen County,2024,269832.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2015,278485.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2016,288627.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2017,300460.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2018,309824.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2019,321173.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2020,337291.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2021,384303.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2022,428131.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2023,434742.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51099,King George County,2024,457381.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2015,187826.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2016,194444.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2017,204421.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2018,214877.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2019,223586.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2020,237762.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2021,271041.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2022,306135.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2023,320081.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51101,King William County,2024,341047.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2015,242889.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2016,240786.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2017,244631.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2018,251852.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2019,254108.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2020,261846.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2021,309173.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2022,351057.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2023,360226.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51103,Lancaster County,2024,369861.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2015,80264.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2016,83308.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2017,84848.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2018,84063.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2019,79467.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2020,83937.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2021,91673.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2022,94755.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2023,96065.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51105,Lee County,2024,102082.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2015,485308.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2016,489794.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2017,505597.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2018,527096.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2019,547508.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2020,578143.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2021,654354.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2022,727619.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2023,738428.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51107,Loudoun County,2024,782067.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2015,216013.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2016,224991.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2017,237626.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2018,249636.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2019,262602.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2020,280454.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2021,324561.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2022,361418.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2023,377534.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51109,Louisa County,2024,399390.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2015,91745.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2016,96951.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2017,100405.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2018,104495.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2019,105100.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2020,111011.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2021,128551.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2022,139862.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2023,142832.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51111,Lunenburg County,2024,146904.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2015,225032.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2016,236048.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2017,245188.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2018,254832.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2019,265676.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2020,283703.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2021,337461.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2022,375470.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2023,379709.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51113,Madison County,2024,403710.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2015,251593.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2016,255763.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2017,252803.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2018,254940.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2019,261091.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2020,277456.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2021,301571.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2022,319633.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2023,322406.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51115,Mathews County,2024,345132.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2015,111656.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2016,115513.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2017,116828.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2018,124781.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2019,125122.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2020,131011.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2021,154636.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2022,175507.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2023,183240.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51117,Mecklenburg County,2024,204470.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2015,237489.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2016,240462.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2017,241516.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2018,244780.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2019,250503.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2020,259602.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2021,302282.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2022,342312.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2023,355878.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51119,Middlesex County,2024,372363.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2015,192008.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2016,199053.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2017,206199.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2018,218227.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2019,229424.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2020,246881.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2021,281107.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2022,311516.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2023,322377.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51121,Montgomery County,2024,334009.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2015,198256.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2016,202374.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2017,209187.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2018,216425.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2019,220085.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2020,231169.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2021,281358.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2022,326970.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2023,343034.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51125,Nelson County,2024,354269.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2015,257813.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2016,268308.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2017,278853.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2018,287631.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2019,299271.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2020,312736.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2021,353088.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2022,392113.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2023,402013.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51127,New Kent County,2024,423074.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2015,162735.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2016,160039.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2017,162808.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2018,168658.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2019,169095.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2020,181920.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2021,226687.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2022,262080.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2023,274962.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51131,Northampton County,2024,288195.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2015,230975.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2016,236937.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2017,242066.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2018,250199.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2019,259284.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2020,274539.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2021,314362.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2022,351133.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2023,351447.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51133,Northumberland County,2024,363001.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2015,105696.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2016,112480.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2017,114368.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2018,118248.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2019,119727.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2020,118933.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2021,136508.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2022,159229.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2023,169636.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51135,Nottoway County,2024,164518.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2015,207666.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2016,214864.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2017,222412.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2018,230755.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2019,239983.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2020,256124.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2021,305192.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2022,345232.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2023,354288.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51137,Orange County,2024,372983.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2015,151119.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2016,157787.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2017,163921.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2018,171296.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2019,179199.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2020,194210.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2021,231826.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2022,266956.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2023,278990.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51139,Page County,2024,295292.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2015,138323.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2016,136932.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2017,139313.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2018,143227.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2019,144986.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2020,155574.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2021,174229.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2022,186405.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2023,192837.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51141,Patrick County,2024,198770.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2015,112088.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2016,119870.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2017,121662.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2018,122733.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2019,128117.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2020,135689.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2021,152885.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2022,174663.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2023,183158.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51143,Pittsylvania County,2024,193952.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2015,278131.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2016,298289.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2017,313980.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2018,327410.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2019,338364.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2020,358450.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2021,401610.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2022,432250.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2023,430866.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51145,Powhatan County,2024,466583.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2015,163083.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2016,161885.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2017,165199.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2018,169996.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2019,174734.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2020,181586.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2021,205197.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2022,217664.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2023,229065.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51147,Prince Edward County,2024,231976.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2015,185560.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2016,192009.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2017,200640.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2018,209573.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2019,218213.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2020,233517.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2021,267929.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2022,306152.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2023,328238.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51149,Prince George County,2024,340457.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2015,353195.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2016,360874.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2017,375244.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2018,391161.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2019,404245.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2020,427620.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2021,483445.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2022,532056.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2023,541946.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51153,Prince William County,2024,571986.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2015,151209.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2016,152509.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2017,152374.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2018,156122.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2019,164197.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2020,175005.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2021,192600.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2022,210580.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2023,217353.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51155,Pulaski County,2024,219321.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2015,357962.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2016,368489.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2017,371165.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2018,382001.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2019,386655.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2020,407342.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2021,470041.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2022,510059.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2023,521299.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51157,Rappahannock County,2024,555189.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2015,147036.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2016,148180.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2017,151935.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2018,158489.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2019,161770.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2020,169667.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2021,189928.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2022,214744.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2023,225272.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51159,Richmond County,2024,235063.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2015,181115.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2016,184852.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2017,190365.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2018,196141.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2019,207784.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2020,224707.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2021,255993.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2022,286197.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2023,304370.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51161,Roanoke County,2024,319978.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2015,204272.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2016,206641.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2017,211610.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2018,220337.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2019,224666.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2020,236640.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2021,271297.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2022,295815.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2023,298563.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51163,Rockbridge County,2024,318357.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2015,206701.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2016,214174.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2017,218615.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2018,225324.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2019,230994.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2020,246118.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2021,278608.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2022,307757.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2023,333144.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51165,Rockingham County,2024,346594.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2015,98668.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2016,97599.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2017,95914.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2018,98937.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2019,103542.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2020,111882.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2021,124046.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2022,133994.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2023,139616.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51167,Russell County,2024,144651.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2015,83669.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2016,85288.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2017,90720.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2018,93719.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2019,99079.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2020,106107.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2021,121183.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2022,141399.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2023,148025.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51169,Scott County,2024,163587.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2015,191422.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2016,196763.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2017,201051.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2018,209500.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2019,219054.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2020,233706.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2021,269751.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2022,305678.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2023,319338.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51171,Shenandoah County,2024,339319.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2015,93738.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2016,94812.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2017,97395.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2018,100031.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2019,104707.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2020,109799.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2021,124990.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2022,138912.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2023,145993.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51173,Smyth County,2024,155325.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2015,158654.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2016,163325.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2017,168400.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2018,172176.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2019,178450.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2020,191272.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2021,218328.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2022,245564.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2023,249445.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51175,Southampton County,2024,270051.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2015,276954.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2016,285145.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2017,296107.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2018,306951.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2019,313382.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2020,330367.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2021,375725.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2022,411594.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2023,425793.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51177,Spotsylvania County,2024,448746.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2015,318602.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2016,326930.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2017,341006.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2018,352677.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2019,363013.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2020,385022.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2021,443861.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2022,491589.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2023,502035.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51179,Stafford County,2024,526327.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2015,172203.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2016,179159.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2017,183728.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2018,190338.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2019,197346.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2020,213362.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2021,242447.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2022,258569.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2023,269172.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51181,Surry County,2024,279571.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2015,112325.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2016,113755.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2017,118681.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2018,116500.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2019,120167.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2020,128341.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2021,139151.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2022,161124.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2023,177585.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51183,Sussex County,2024,184332.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2015,98204.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2016,97693.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2017,96676.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2018,95355.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2019,98214.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2020,103191.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2021,115187.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2022,126023.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2023,133880.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51185,Tazewell County,2024,141826.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2015,207709.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2016,217377.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2017,227867.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2018,239616.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2019,251349.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2020,263344.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2021,305334.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2022,339207.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2023,349521.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51187,Warren County,2024,374531.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2015,139616.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2016,140312.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2017,143643.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2018,148369.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2019,156243.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2020,163954.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2021,185256.85,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2022,212344.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2023,231726.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51191,Washington County,2024,253739.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2015,207167.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2016,210993.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2017,209828.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2018,212372.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2019,222361.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2020,236036.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2021,257564.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2022,291348.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2023,297154.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51193,Westmoreland County,2024,308064.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2015,88871.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2016,82217.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2017,84050.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2018,90337.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2019,90384.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2020,91279.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2021,105049.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2022,118779.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2023,125143.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51195,Wise County,2024,129798.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2015,117419.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2016,121978.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2017,126597.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2018,129876.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2019,134949.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2020,142407.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2021,159449.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2022,179979.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2023,192331.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51197,Wythe County,2024,204210.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2015,303595.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2016,309874.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2017,317691.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2018,323314.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2019,329014.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2020,341920.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2021,368096.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2022,403301.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2023,424630.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51199,York County,2024,447781.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2015,478910.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2016,489305.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2017,502554.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2018,519445.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2019,543807.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2020,586125.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2021,622450.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2022,641107.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2023,641535.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51510,Alexandria city,2024,665013.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2015,93299.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2016,92733.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2017,96260.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2018,100906.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2019,106847.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2020,113708.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2021,131641.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2022,154561.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2023,170419.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51520,Bristol city,2024,185075.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
+VA,51530,Buena Vista city,2016,101968.13,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+VA,51530,Buena Vista city,2017,98480.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2018,102800.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2019,107538.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2020,115987.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2021,136941.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2022,153478.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2023,160250.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51530,Buena Vista city,2024,173783.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2015,290223.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2016,305423.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2017,323696.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2018,344471.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2019,365213.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2020,380193.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2021,423172.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2022,462891.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2023,469531.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51540,Charlottesville city,2024,487512.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2015,255384.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2016,262972.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2017,271185.74,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2018,276796.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2019,283614.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2020,298693.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2021,334278.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2022,370066.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2023,385970.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51550,Chesapeake city,2024,403085.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2015,142997.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2016,148614.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2017,158986.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2018,168240.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2019,177995.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2020,189021.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2021,215052.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2022,253859.23,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2023,276707.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51570,Colonial Heights city,2024,282545.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
+VA,51580,Covington city,2016,53409.88,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+VA,51580,Covington city,2017,54739.51,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2018,56731.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2019,55151.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2020,61772.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2021,74049.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2022,83612.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2023,88650.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51580,Covington city,2024,98503.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2015,68479.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2016,67230.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2017,66955.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2018,68900.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2019,72565.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2020,78127.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2021,92273.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2022,109965.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2023,119784.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51590,Danville city,2024,136703.09,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2015,69166.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2016,71772.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2017,73147.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2018,72561.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2019,76067.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2020,82871.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2021,100046.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2022,128321.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2023,140583.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51595,Emporia city,2024,155546.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2015,507438.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2016,520960.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2017,536469.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2018,551995.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2019,564605.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2020,592480.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2021,653108.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2022,691231.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2023,708062.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51600,Fairfax city,2024,756070.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2015,754113.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2016,769678.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2017,784537.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2018,805007.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2019,828910.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2020,869265.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2021,952314.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2022,1008748.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2023,1025458.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51610,Falls Church city,2024,1080104.66,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2015,125037.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2016,128370.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2017,128233.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2018,132309.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2019,138678.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2020,146042.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2021,171453.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2022,198666.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2023,210893.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51620,Franklin city,2024,219355.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2015,295591.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2016,300891.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2017,314513.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2018,324414.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2019,336934.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2020,352102.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2021,398379.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2022,433526.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2023,440089.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51630,Fredericksburg city,2024,461224.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2015,,0,Zillow ZHVI county,annual_mean_zhvi,source_data_unavailable
+VA,51640,Galax city,2016,87881.56,11,Zillow ZHVI county,annual_mean_zhvi,partial_10_11_months
+VA,51640,Galax city,2017,93175.92,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2018,95815.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2019,102777.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2020,109862.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2021,127289.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2022,145648.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2023,153711.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51640,Galax city,2024,155611.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2015,161875.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2016,165109.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2017,167545.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2018,172470.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2019,179318.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2020,191997.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2021,218965.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2022,245961.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2023,263095.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51650,Hampton city,2024,280596.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2015,200824.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2016,205688.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2017,213811.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2018,222085.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2019,230563.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2020,246049.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2021,272700.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2022,294322.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2023,301006.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51660,Harrisonburg city,2024,308881.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2015,91385.08,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2016,100980.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2017,109280.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2018,117227.43,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2019,126429.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2020,137172.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2021,159544.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2022,197825.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2023,221824.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51670,Hopewell city,2024,215469.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2015,215520.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2016,214517.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2017,216904.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2018,220560.27,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2019,226802.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2020,241674.36,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2021,276259.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2022,307414.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2023,311541.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51678,Lexington city,2024,328590.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2015,132191.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2016,136289.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2017,141881.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2018,149288.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2019,157869.54,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2020,168358.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2021,188228.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2022,212772.76,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2023,232745.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51680,Lynchburg city,2024,245583.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2015,289149.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2016,299622.21,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2017,313216.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2018,324869.87,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2019,337735.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2020,357394.07,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2021,402813.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2022,441740.52,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2023,455610.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51683,Manassas city,2024,483893.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2015,262378.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2016,273749.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2017,288286.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2018,300582.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2019,313251.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2020,337111.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2021,378232.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2022,412164.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2023,422094.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51685,Manassas Park city,2024,448348.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2015,64967.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2016,64104.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2017,64689.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2018,62162.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2019,62651.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2020,68420.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2021,79916.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2022,96536.41,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2023,105775.64,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51690,Martinsville city,2024,111706.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2015,168877.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2016,173185.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2017,176619.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2018,181406.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2019,186549.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2020,198050.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2021,224871.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2022,251070.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2023,267896.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51700,Newport News city,2024,285786.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2015,192737.58,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2016,196098.03,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2017,201172.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2018,207708.86,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2019,214986.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2020,229249.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2021,259926.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2022,282819.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2023,294728.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51710,Norfolk city,2024,310659.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2015,76145.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2016,76769.99,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2017,77675.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2018,79541.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2019,79027.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2020,86071.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2021,101714.06,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2022,115760.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2023,116738.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51720,Norton city,2024,126982.97,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2015,49039.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2016,54126.46,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2017,60094.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2018,71150.78,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2019,83293.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2020,93339.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2021,118570.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2022,167103.84,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2023,206066.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51730,Petersburg city,2024,200339.55,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2015,300015.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2016,302444.59,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2017,310597.04,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2018,320750.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2019,327921.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2020,343888.95,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2021,379547.18,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2022,411183.88,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2023,429525.63,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51735,Poquoson city,2024,447063.91,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2015,151302.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2016,154540.42,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2017,157798.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2018,163146.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2019,171815.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2020,184042.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2021,209688.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2022,233181.44,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2023,244610.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51740,Portsmouth city,2024,262627.37,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2015,152266.96,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2016,158875.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2017,160631.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2018,165952.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2019,174139.73,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2020,187987.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2021,210856.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2022,229620.2,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2023,242438.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51750,Radford city,2024,252053.62,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2015,180214.45,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2016,194056.14,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2017,210210.4,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2018,228656.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2019,244309.32,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2020,260646.28,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2021,297878.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2022,336567.05,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2023,349044.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51760,Richmond city,2024,365699.1,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2015,110577.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2016,111838.7,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2017,117386.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2018,122973.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2019,129387.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2020,141423.31,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2021,161754.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2022,183522.11,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2023,202085.5,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51770,Roanoke city,2024,218633.98,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2015,161617.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2016,163934.57,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2017,167465.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2018,173807.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2019,182234.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2020,194758.89,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2021,216721.15,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2022,242166.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2023,261071.75,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51775,Salem city,2024,275469.39,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2015,154248.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2016,159206.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2017,163758.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2018,168065.47,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2019,178306.35,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2020,193411.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2021,215643.77,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2022,241757.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2023,258153.24,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51790,Staunton city,2024,272301.61,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2015,228774.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2016,234485.29,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2017,242872.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2018,251586.83,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2019,256249.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2020,271006.93,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2021,306633.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2022,340792.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2023,357791.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51800,Suffolk city,2024,376099.38,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2015,263015.25,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2016,268274.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2017,274521.48,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2018,280894.17,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2019,289900.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2020,305935.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2021,342584.79,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2022,371900.9,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2023,390688.16,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51810,Virginia Beach city,2024,411070.19,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2015,164120.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2016,167587.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2017,174318.6,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2018,182340.49,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2019,192222.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2020,205934.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2021,233827.67,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2022,260766.26,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2023,274290.8,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51820,Waynesboro city,2024,287293.68,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2015,279892.0,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2016,285102.33,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2017,290589.82,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2018,293787.13,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2019,295378.3,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2020,302786.02,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2021,331690.65,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2022,364890.94,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2023,383504.81,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51830,Williamsburg city,2024,404481.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2015,195077.71,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2016,205470.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2017,217128.01,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2018,229126.69,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2019,237307.12,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2020,248804.34,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2021,283839.72,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2022,315998.56,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2023,330039.53,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months
+VA,51840,Winchester city,2024,343698.22,12,Zillow ZHVI county,annual_mean_zhvi,complete_12_months

@@ -1,6 +1,6 @@
 """
 Transform Zillow county ZHVI data for Miami-Dade County, selected counties, Florida,
-and the four-state pipeline county reference.
+and the eight-state pipeline county reference.
 
 Input:
 - data/raw/zillow_zhvi/zillow_zhvi_county_raw.csv
@@ -11,7 +11,7 @@ Outputs:
 - data/processed/zillow_zhvi_miami_dade_annual_2015_2024.csv  (V0, unchanged behavior)
 - data/processed/zillow_zhvi_selected_counties_annual_2015_2024.csv  (pipeline expansion)
 - data/processed/zillow_zhvi_florida_counties_annual_2015_2024.csv  (statewide expansion)
-- data/processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv  (four-state expansion)
+- data/processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv  (eight-state expansion)
 """
 
 from pathlib import Path
@@ -56,13 +56,17 @@ EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_PIPELINE_ROWS = 30
 EXPECTED_FL_COUNTIES = 67
 EXPECTED_FL_ROWS = 670
-EXPECTED_PIPELINE_REF_COUNTIES = 372
-EXPECTED_PIPELINE_REF_ROWS = 3720
+EXPECTED_PIPELINE_REF_COUNTIES = 553
+EXPECTED_PIPELINE_REF_ROWS = 5530
 EXPECTED_PIPELINE_STATE_COUNTS = {
     "FL": 67,
     "GA": 159,
     "SC": 46,
     "NC": 100,
+    "VA": 133,
+    "MD": 24,
+    "DE": 3,
+    "NJ": 21,
 }
 MIN_COMPARABLE_MONTHS = 10
 FULL_YEAR_MONTHS = 12
@@ -762,7 +766,7 @@ def pass_line(message: str) -> None:
 
 
 def load_pipeline_county_reference() -> pd.DataFrame:
-    """Load and validate the four-state pipeline county reference."""
+    """Load and validate the eight-state pipeline county reference."""
     if not PIPELINE_COUNTY_REFERENCE_PATH.exists():
         raise FileNotFoundError(
             f"Pipeline county reference not found: {PIPELINE_COUNTY_REFERENCE_PATH}"
@@ -1034,7 +1038,7 @@ def validate_pipeline_counties_output(
     pipeline_final: pd.DataFrame,
     reference: pd.DataFrame,
 ) -> None:
-    """Validate the four-state pipeline Zillow output before write."""
+    """Validate the eight-state pipeline Zillow output before write."""
     if list(pipeline_final.columns) != PIPELINE_OUTPUT_COLUMNS:
         raise ValueError(
             f"Unexpected pipeline output columns: {list(pipeline_final.columns)}"
@@ -1054,9 +1058,9 @@ def validate_pipeline_counties_output(
     pass_line("10 rows for every county")
 
     if not pipeline_final.groupby("year").size().eq(EXPECTED_PIPELINE_REF_COUNTIES).all():
-        raise ValueError("Each year must have exactly 372 county rows.")
+        raise ValueError("Each year must have exactly 553 county rows.")
 
-    pass_line("372 rows for every year")
+    pass_line("553 rows for every year")
 
     if set(pipeline_final["year"]) != EXPECTED_YEARS:
         raise ValueError(
