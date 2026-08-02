@@ -641,8 +641,10 @@ Built by `src/fetch_acs_income.py` from:
 
 ## processed/coastal_affordability_pipeline_2015_2024.csv
 
-Four-state pipeline affordability table joining validated Zillow home values and
-ACS median household income. One row per county per year.
+Eight-state Atlantic pipeline affordability table joining validated Zillow home
+values and ACS median household income. One row per county equivalent per year.
+Virginia independent cities and Baltimore city (`24510`) are included as county
+equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -665,8 +667,8 @@ ACS median household income. One row per county per year.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 3,720 rows (372 counties × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100)
+- **Expected scale:** 5,530 rows (553 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21)
 - **Years:** 2015–2024
 - **Join keys:** `county_fips` and `year` only; county name is not used for joining
 
@@ -698,6 +700,18 @@ Baseline-change and growth-index fields are deferred to a later checkpoint.
 
 Original `zillow_data_status` and `acs_data_status` columns are retained.
 
+### Status distribution (validated)
+
+| affordability_data_status | row count |
+|---|---:|
+| `available_complete` | 5,468 |
+| `available_partial` | 27 |
+| `source_data_unavailable` | 35 |
+
+The 35 unavailable county-years reflect absent Zillow monthly observations in
+the source (ACS income is available for all rows). The 27 partial county-years
+reflect partial Zillow month coverage with usable annual means.
+
 ### Missing-value policy
 
 Missing home values are never imputed, interpolated, forward-filled, or
@@ -710,6 +724,11 @@ The Florida subset (`state = FL`) matches the committed
 `coastal_affordability_florida_2015_2024.csv` on shared analytical columns.
 Output labels use `pipeline_counties.csv`, which matches `florida_counties.csv`
 for Florida counties.
+
+### Relationship to prior four-state output
+
+The FL, GA, SC, and NC subset (3,720 rows) is unchanged from the committed
+four-state pipeline affordability output prior to the eight-state expansion.
 
 ### Generation
 
