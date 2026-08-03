@@ -381,13 +381,13 @@ applied.
 
 ## processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv
 
-FIPS-based annualized Zillow ZHVI for the thirteen-state Atlantic pipeline
-reference (Florida, Georgia, South Carolina, North Carolina, Virginia,
-Maryland, Delaware, New Jersey, New York, Rhode Island, Massachusetts, New
-Hampshire, and Maine). Connecticut is excluded (see `pipeline_counties.csv`).
-One row per county equivalent per year. Virginia independent cities and
-Baltimore city (`24510`) are included as county equivalents, matching
-`pipeline_counties.csv`.
+FIPS-based annualized Zillow ZHVI for the eighteen-state pipeline reference
+(Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
+Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
+Maine, Pennsylvania, West Virginia, Ohio, Kentucky, and Tennessee).
+Connecticut is excluded (see `pipeline_counties.csv`). One row per county
+equivalent per year. Virginia independent cities and Baltimore city (`24510`)
+are included as county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -405,14 +405,15 @@ Baltimore city (`24510`) are included as county equivalents, matching
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 6,600 rows (660 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16)
+- **Expected scale:** 10,850 rows (1,085 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 - **Selection key:** five-digit `county_fips` matched to Zillow
   `StateCodeFIPS` + `MunicipalCodeFIPS`; county name is not used for selection
 
 Connecticut is excluded from the reference and therefore from this output.
+Missing monthly observations are not interpolated, imputed, or backfilled.
 
 ### Annualization method
 
@@ -438,27 +439,29 @@ and `zillow_data_status = source_data_unavailable`.
 
 ### Status distribution (validated)
 
-Status counts are derived from the transformed output at build time. After the
-thirteen-state expansion, all 660 reference county equivalents are present in
-the committed Zillow raw file. Missing county-years reflect absent monthly
-observations in the source, not absent counties.
+Status counts are derived from the transformed output at build time. All 1,085
+reference county equivalents are present in the committed Zillow raw file.
+Missing county-years reflect absent monthly observations in the source, not
+absent counties.
 
 | zillow_data_status | row count |
 |---|---:|
-| `complete_12_months` | 6,536 |
-| `partial_10_11_months` | 27 |
-| `partial_1_9_months` | 2 |
-| `source_data_unavailable` | 35 |
+| `complete_12_months` | 10,679 |
+| `partial_10_11_months` | 70 |
+| `partial_1_9_months` | 6 |
+| `source_data_unavailable` | 95 |
 
-Northern partial-coverage exceptions (expected):
+West Virginia and Kentucky contain the largest source-data gap clusters among
+the five newly added states. Many county-years in those states have zero source
+months in early years (especially 2015) or partial 10–11 month coverage when
+monthly observations resume. These gaps remain explicit and unimputed.
+
+Prior thirteen-state partial-coverage exceptions (unchanged):
 
 | state | county_fips | county_name | year | months | status |
 |---|---|---|---|---:|---|
 | NY | 36021 | Columbia County | 2020 | 11 | `partial_10_11_months` |
 | NH | 33003 | Carroll County | 2020 | 11 | `partial_10_11_months` |
-
-New York, Rhode Island, Massachusetts, and Maine otherwise have complete
-12-month coverage for all county-years in the panel.
 
 ### Relationship to Florida output
 
@@ -481,6 +484,10 @@ four-state pipeline output prior to the eight-state expansion.
 The DE, FL, GA, MD, NJ, NC, SC, and VA subset (5,530 rows) is unchanged from
 the committed eight-state pipeline output prior to the thirteen-state
 expansion.
+
+The DE, FL, GA, MA, MD, ME, NC, NH, NJ, NY, RI, SC, and VA subset (6,600 rows)
+is unchanged from the committed thirteen-state pipeline output prior to the
+eighteen-state expansion.
 
 ### Generation
 
