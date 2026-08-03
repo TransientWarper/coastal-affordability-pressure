@@ -61,7 +61,7 @@ are used for output labeling only; joins and validation use `county_fips`.
 ## manual/pipeline_states.csv
 
 State manifest for the multistate county-reference layer and pipeline
-expansion. Defines which states are included in the eighteen-state pipeline
+expansion. Defines which states are included in the twenty-three-state pipeline
 scope.
 
 | Field | Type | Description |
@@ -70,17 +70,21 @@ scope.
 | state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
 | include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
 
-### Validated record (eighteen-state pipeline)
+### Validated record (twenty-three-state pipeline)
 
 | state | state_fips | include_pipeline |
 |---|---|---|
 | DE | 10 | true |
 | FL | 12 | true |
 | GA | 13 | true |
+| IL | 17 | true |
+| IN | 18 | true |
 | KY | 21 | true |
 | MA | 25 | true |
 | MD | 24 | true |
 | ME | 23 | true |
+| MI | 26 | true |
+| MN | 27 | true |
 | NH | 33 | true |
 | NJ | 34 | true |
 | NY | 36 | true |
@@ -91,9 +95,10 @@ scope.
 | SC | 45 | true |
 | TN | 47 | true |
 | VA | 51 | true |
+| WI | 55 | true |
 | WV | 54 | true |
 
-Eighteen enabled states; all rows currently have `include_pipeline=true`.
+Twenty-three enabled states; all rows currently have `include_pipeline=true`.
 
 Connecticut is intentionally absent. Census replaced Connecticut's former
 eight counties with nine planning regions as official county equivalents
@@ -108,12 +113,13 @@ approved.
 
 ## manual/pipeline_counties.csv
 
-Authoritative multistate county reference for the eighteen-state pipeline
+Authoritative multistate county reference for the twenty-three-state pipeline
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
-Maine, Pennsylvania, West Virginia, Ohio, Kentucky, and Tennessee).
-Connecticut is excluded (see `pipeline_states.csv`). County FIPS—not county
-name—is the authoritative join and selection key.
+Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
+Indiana, Michigan, Wisconsin, and Minnesota). Connecticut is excluded (see
+`pipeline_states.csv`). County FIPS—not county name—is the authoritative join
+and selection key.
 
 | Field | Type | Description |
 |---|---|---|
@@ -129,7 +135,7 @@ name—is the authoritative join and selection key.
 - **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
 - **Generation script:** `src/build_pipeline_county_reference.py`
 - **State filter:** enabled `state_fips` values from `pipeline_states.csv`
-- **Row count:** 1,085 (one row per county equivalent in the enabled states)
+- **Row count:** 1,521 (one row per county equivalent in the enabled states)
 
 ### County-equivalent scope
 
@@ -144,9 +150,11 @@ each state. New York, Rhode Island, Massachusetts, New Hampshire, and Maine
 include all TIGER 2023 county equivalents in each state. Pennsylvania, West
 Virginia, Ohio, Kentucky, and Tennessee include all TIGER 2023 county
 equivalents in each state (all LSAD `06` counties; no independent cities).
-Connecticut is not included because its TIGER 2023 planning regions, Zillow
-former-county FIPS, and likely ACS geography vintage are not comparable across
-2015–2024 under the existing method.
+Illinois, Indiana, Michigan, Wisconsin, and Minnesota include all TIGER 2023
+county equivalents in each state (all LSAD `06` counties; no independent
+cities). Connecticut is not included because its TIGER 2023 planning regions,
+Zillow former-county FIPS, and likely ACS geography vintage are not comparable
+across 2015–2024 under the existing method.
 
 Zillow, ACS, and affordability processed outputs still reflect earlier
 validated scopes until their separate expansion checkpoints. This reference
@@ -174,7 +182,12 @@ checkpoint does not update Zillow status counts.
 | OH | 39 | 88 |
 | KY | 21 | 120 |
 | TN | 47 | 95 |
-| **Total** | | **1,085** |
+| IL | 17 | 102 |
+| IN | 18 | 92 |
+| MI | 26 | 83 |
+| WI | 55 | 72 |
+| MN | 27 | 87 |
+| **Total** | | **1,521** |
 
 ### Role
 
