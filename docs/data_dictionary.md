@@ -61,8 +61,8 @@ are used for output labeling only; joins and validation use `county_fips`.
 ## manual/pipeline_states.csv
 
 State manifest for the multistate county-reference layer and pipeline
-expansion. Defines which states are included in the thirteen-state Atlantic
-pipeline scope.
+expansion. Defines which states are included in the eighteen-state pipeline
+scope.
 
 | Field | Type | Description |
 |---|---|---|
@@ -70,13 +70,14 @@ pipeline scope.
 | state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
 | include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
 
-### Validated record (thirteen-state Atlantic pipeline)
+### Validated record (eighteen-state pipeline)
 
 | state | state_fips | include_pipeline |
 |---|---|---|
 | DE | 10 | true |
 | FL | 12 | true |
 | GA | 13 | true |
+| KY | 21 | true |
 | MA | 25 | true |
 | MD | 24 | true |
 | ME | 23 | true |
@@ -84,11 +85,15 @@ pipeline scope.
 | NJ | 34 | true |
 | NY | 36 | true |
 | NC | 37 | true |
+| OH | 39 | true |
+| PA | 42 | true |
 | RI | 44 | true |
 | SC | 45 | true |
+| TN | 47 | true |
 | VA | 51 | true |
+| WV | 54 | true |
 
-Thirteen enabled states; all rows currently have `include_pipeline=true`.
+Eighteen enabled states; all rows currently have `include_pipeline=true`.
 
 Connecticut is intentionally absent. Census replaced Connecticut's former
 eight counties with nine planning regions as official county equivalents
@@ -103,11 +108,12 @@ approved.
 
 ## manual/pipeline_counties.csv
 
-Authoritative multistate county reference for the thirteen-state Atlantic
-pipeline (Florida, Georgia, South Carolina, North Carolina, Virginia,
-Maryland, Delaware, New Jersey, New York, Rhode Island, Massachusetts, New
-Hampshire, and Maine). Connecticut is excluded (see `pipeline_states.csv`).
-County FIPS—not county name—is the authoritative join and selection key.
+Authoritative multistate county reference for the eighteen-state pipeline
+(Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
+Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
+Maine, Pennsylvania, West Virginia, Ohio, Kentucky, and Tennessee).
+Connecticut is excluded (see `pipeline_states.csv`). County FIPS—not county
+name—is the authoritative join and selection key.
 
 | Field | Type | Description |
 |---|---|---|
@@ -123,7 +129,7 @@ County FIPS—not county name—is the authoritative join and selection key.
 - **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
 - **Generation script:** `src/build_pipeline_county_reference.py`
 - **State filter:** enabled `state_fips` values from `pipeline_states.csv`
-- **Row count:** 660 (one row per county equivalent in the enabled states)
+- **Row count:** 1,085 (one row per county equivalent in the enabled states)
 
 ### County-equivalent scope
 
@@ -135,10 +141,16 @@ consolidated in 2013) and South Boston city (`51850`, reverted in 1995)—are
 not included. Maryland includes 23 counties plus Baltimore city (`24510`) as a
 county equivalent (24 total). Delaware and New Jersey include all counties in
 each state. New York, Rhode Island, Massachusetts, New Hampshire, and Maine
-include all TIGER 2023 county equivalents in each state. Connecticut is not
-included because its TIGER 2023 planning regions, Zillow former-county FIPS,
-and likely ACS geography vintage are not comparable across 2015–2024 under the
-existing method.
+include all TIGER 2023 county equivalents in each state. Pennsylvania, West
+Virginia, Ohio, Kentucky, and Tennessee include all TIGER 2023 county
+equivalents in each state (all LSAD `06` counties; no independent cities).
+Connecticut is not included because its TIGER 2023 planning regions, Zillow
+former-county FIPS, and likely ACS geography vintage are not comparable across
+2015–2024 under the existing method.
+
+Zillow, ACS, and affordability processed outputs still reflect earlier
+validated scopes until their separate expansion checkpoints. This reference
+checkpoint does not update Zillow status counts.
 
 ### Expected state counts
 
@@ -157,7 +169,12 @@ existing method.
 | MA | 25 | 14 |
 | NH | 33 | 10 |
 | ME | 23 | 16 |
-| **Total** | | **660** |
+| PA | 42 | 67 |
+| WV | 54 | 55 |
+| OH | 39 | 88 |
+| KY | 21 | 120 |
+| TN | 47 | 95 |
+| **Total** | | **1,085** |
 
 ### Role
 

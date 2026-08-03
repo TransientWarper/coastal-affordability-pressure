@@ -2,11 +2,12 @@
 Build multistate county reference CSV from TIGER 2023 county boundaries.
 
 Reads enabled states from data/manual/pipeline_states.csv and writes
-data/manual/pipeline_counties.csv for the thirteen-state Atlantic pipeline
-(Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
-Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
-and Maine). Connecticut is excluded because TIGER 2023, Zillow, and ACS
-geographies are not longitudinally compatible under the existing method.
+data/manual/pipeline_counties.csv for the eighteen-state pipeline (Florida,
+Georgia, South Carolina, North Carolina, Virginia, Maryland, Delaware, New
+Jersey, New York, Rhode Island, Massachusetts, New Hampshire, Maine,
+Pennsylvania, West Virginia, Ohio, Kentucky, and Tennessee). Connecticut is
+excluded because TIGER 2023, Zillow, and ACS geographies are not
+longitudinally compatible under the existing method.
 """
 
 from pathlib import Path
@@ -30,6 +31,7 @@ EXPECTED_ENABLED_STATES = {
     "DE",
     "FL",
     "GA",
+    "KY",
     "MA",
     "MD",
     "ME",
@@ -37,9 +39,13 @@ EXPECTED_ENABLED_STATES = {
     "NJ",
     "NY",
     "NC",
+    "OH",
+    "PA",
     "RI",
     "SC",
+    "TN",
     "VA",
+    "WV",
 }
 EXPECTED_STATE_COUNTS = {
     "FL": 67,
@@ -55,8 +61,13 @@ EXPECTED_STATE_COUNTS = {
     "MA": 14,
     "NH": 10,
     "ME": 16,
+    "PA": 67,
+    "WV": 55,
+    "OH": 88,
+    "KY": 120,
+    "TN": 95,
 }
-EXPECTED_TOTAL_COUNTIES = 660
+EXPECTED_TOTAL_COUNTIES = 1085
 
 REQUIRED_TIGER_COLUMNS = ["STUSPS", "STATEFP", "GEOID", "NAMELSAD", "geometry"]
 
