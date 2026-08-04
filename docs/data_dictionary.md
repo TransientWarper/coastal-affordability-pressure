@@ -639,11 +639,14 @@ row per county per year.
 
 ## processed/acs_b19013_pipeline_counties_2015_2024.csv
 
-FIPS-based ACS 5-year median household income for the eight-state Atlantic
+FIPS-based ACS 5-year median household income for the twenty-three-state
 pipeline reference (Florida, Georgia, South Carolina, North Carolina,
-Virginia, Maryland, Delaware, and New Jersey). One row per county equivalent
-per year. Virginia independent cities and Baltimore city (`24510`) are included
-as county equivalents, matching `pipeline_counties.csv`.
+Virginia, Maryland, Delaware, New Jersey, New York, Rhode Island,
+Massachusetts, New Hampshire, Maine, Pennsylvania, West Virginia, Ohio,
+Kentucky, Tennessee, Illinois, Indiana, Michigan, Wisconsin, and Minnesota).
+Connecticut is excluded (see `pipeline_counties.csv`). One row per county
+equivalent per year. Virginia independent cities and Baltimore city (`24510`)
+are included as county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -659,10 +662,12 @@ as county equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 5,530 rows (553 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21)
+- **Expected scale:** 15,210 rows (1,521 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
+
+Connecticut is excluded from the reference and therefore from this output.
 
 ### Census acquisition
 
@@ -673,9 +678,22 @@ as county equivalents, matching `pipeline_counties.csv`.
   - `get=NAME,B19013_001E`
   - `for=county:*`
   - `in=state:{state_fips}`
-- **Total requests:** 80 (8 states × 10 years)
+- **Total requests:** 230 (23 states × 10 years)
 - **FIPS construction:** `state` (2-digit) + `county` (3-digit), zero-padded to
   five characters
+
+### ACS concept and comparability
+
+- **Table / variable:** B19013 / `B19013_001E`
+- **Concept:** median household income in the past 12 months
+- **Estimate type:** 5-year pooled ACS estimates for all release years
+- **Dollars:** nominal (not inflation-adjusted)
+- **Margins of error:** not fetched (`B19013_001M` omitted)
+- **Temporal overlap:** each release year uses a 5-year pooled window; adjacent
+  release years share overlapping survey years
+
+Each `year` value is an ACS **release year** for a 5-year pooled estimate, not a
+single-year point-in-time measurement.
 
 ### acs_data_status
 
@@ -694,10 +712,10 @@ values are never imputed or interpolated.
 
 | acs_data_status | row count |
 |---|---:|
-| `available` | 5,530 |
+| `available` | 15,210 |
 | `source_data_unavailable` | 0 |
 
-All 553 reference county equivalents returned valid income for every release
+All 1,521 reference county equivalents returned valid income for every release
 year (2015–2024). No suppressed or unavailable county-years in the current
 output.
 
@@ -710,10 +728,11 @@ The Florida subset (`state = FL`) matches the committed
 `pipeline_counties.csv`, which may differ in spelling from
 `florida_counties.csv` for a small number of Florida counties.
 
-### Relationship to prior four-state output
+### Relationship to prior eight-state output
 
-The FL, GA, SC, and NC subset (3,720 rows) is unchanged from the committed
-four-state pipeline ACS output prior to the eight-state expansion.
+The prior eight-state subset (5,530 rows) is unchanged from the committed
+eight-state pipeline ACS output (`d68a0ba`) prior to the twenty-three-state
+expansion.
 
 ### Generation
 
