@@ -787,11 +787,11 @@ Built by `src/fetch_acs_income.py` from:
 
 ## processed/coastal_affordability_pipeline_2015_2024.csv
 
-Twenty-three-state pipeline affordability table joining validated Zillow home
+Twenty-nine-state pipeline affordability table joining validated Zillow home
 values and ACS median household income. Connecticut is excluded (see
 `pipeline_counties.csv`). One row per county equivalent per year. Virginia
-independent cities and Baltimore city (`24510`) are included as county
-equivalents, matching `pipeline_counties.csv`.
+independent cities, Baltimore city (`24510`), and St. Louis city (`29510`) are
+included as county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -814,8 +814,8 @@ equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 15,210 rows (1,521 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87)
+- **Expected scale:** 20,520 rows (2,052 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66)
 - **Years:** 2015–2024
 - **Join keys:** `county_fips` and `year` only; county name is not used for joining
 
@@ -856,19 +856,21 @@ Original `zillow_data_status` and `acs_data_status` columns are retained.
 
 | affordability_data_status | row count |
 |---|---:|
-| `available_complete` | 14,961 |
-| `available_partial` | 113 |
-| `source_data_unavailable` | 136 |
+| `available_complete` | 19,343 |
+| `available_partial` | 338 |
+| `source_data_unavailable` | 839 |
 
-**Populated ratios:** 15,074 county-years have non-null
-`home_value_to_income_ratio`. **Null ratios:** 136 county-years have null
+**Populated ratios:** 19,681 county-years have non-null
+`home_value_to_income_ratio`. **Null ratios:** 839 county-years have null
 ratios, all inherited from Zillow `source_data_unavailable` rows. ACS
 contributes zero unavailable rows and zero null-ratio rows in the current
-output. Missing home values are never imputed.
+output. Thirty-two Plains reference county equivalents are absent from Zillow
+raw but retained in the panel with null home values and null ratios. Missing
+home values are never imputed.
 
-The 113 partial county-years reflect partial Zillow month coverage with usable
-annual means. The 136 unavailable county-years reflect absent Zillow monthly
-observations in the source.
+The 338 partial county-years reflect partial Zillow month coverage with usable
+annual means. The 839 unavailable county-years reflect absent Zillow monthly
+observations in the source or counties absent from Zillow raw.
 
 ### Missing-value policy
 
@@ -888,6 +890,10 @@ for Florida counties.
 The prior eight-state subset (5,530 rows) is unchanged from the committed
 eight-state pipeline affordability output (`0c55ff3`) prior to the
 twenty-three-state expansion.
+
+The full twenty-three-state subset (15,210 rows) is unchanged from the committed
+Great Lakes pipeline affordability output (`b0b9ef3`) prior to the
+twenty-nine-state expansion.
 
 ### Generation
 

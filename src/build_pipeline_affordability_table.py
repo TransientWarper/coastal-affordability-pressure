@@ -1,8 +1,8 @@
 """
-Build twenty-three-state pipeline coastal affordability table.
+Build twenty-nine-state pipeline coastal affordability table.
 
-Joins validated 15,210-row Zillow and ACS county-year outputs for the
-pipeline reference (23 states, Connecticut excluded), 2015-2024.
+Joins validated 20,520-row Zillow and ACS county-year outputs for the
+pipeline reference (29 states, Connecticut excluded), 2015-2024.
 """
 
 from pathlib import Path
@@ -28,21 +28,26 @@ OUTPUT_PATH = PROCESSED_DIR / "coastal_affordability_pipeline_2015_2024.csv"
 START_YEAR = 2015
 END_YEAR = 2024
 EXPECTED_YEARS = set(range(START_YEAR, END_YEAR + 1))
-EXPECTED_PIPELINE_COUNTIES = 1521
-EXPECTED_PIPELINE_ROWS = 15210
+EXPECTED_PIPELINE_COUNTIES = 2052
+EXPECTED_PIPELINE_ROWS = 20520
 EXPECTED_STATE_ROW_COUNTS = {
     "DE": 30,
     "FL": 670,
     "GA": 1590,
+    "IA": 990,
     "IL": 1020,
     "IN": 920,
+    "KS": 1050,
     "KY": 1200,
     "MA": 140,
     "MD": 240,
     "ME": 160,
     "MI": 830,
     "MN": 870,
+    "MO": 1150,
     "NC": 1000,
+    "ND": 530,
+    "NE": 930,
     "NH": 100,
     "NJ": 210,
     "NY": 620,
@@ -50,15 +55,16 @@ EXPECTED_STATE_ROW_COUNTS = {
     "PA": 670,
     "RI": 50,
     "SC": 460,
+    "SD": 660,
     "TN": 950,
     "VA": 1330,
     "WI": 720,
     "WV": 550,
 }
 EXPECTED_AFFORDABILITY_STATUS_COUNTS = {
-    "available_complete": 14961,
-    "available_partial": 113,
-    "source_data_unavailable": 136,
+    "available_complete": 19343,
+    "available_partial": 338,
+    "source_data_unavailable": 839,
 }
 
 ZILLOW_STATUS_COMPLETE = "complete_12_months"
@@ -348,9 +354,9 @@ def validate_output(final: pd.DataFrame, reference: pd.DataFrame) -> None:
     pass_line("every county has 10 rows")
 
     if not final.groupby("year").size().eq(EXPECTED_PIPELINE_COUNTIES).all():
-        raise ValueError("Final output must contain exactly 1521 rows per year.")
+        raise ValueError("Final output must contain exactly 2052 rows per year.")
 
-    pass_line("every year has 1521 rows")
+    pass_line("every year has 2052 rows")
 
     state_counts = final.groupby("state").size().to_dict()
     if state_counts != EXPECTED_STATE_ROW_COUNTS:
@@ -686,7 +692,7 @@ def print_coverage_summary(
 
 
 def main() -> None:
-    """Build the twenty-three-state pipeline affordability table."""
+    """Build the twenty-nine-state pipeline affordability table."""
     reference = load_pipeline_reference()
     zillow = load_and_validate_zillow(reference)
     acs = load_and_validate_acs(reference)
