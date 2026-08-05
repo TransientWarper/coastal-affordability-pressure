@@ -1,6 +1,6 @@
 """
 Transform Zillow county ZHVI data for Miami-Dade County, selected counties, Florida,
-and the twenty-three-state pipeline county reference.
+and the twenty-nine-state pipeline county reference.
 
 Input:
 - data/raw/zillow_zhvi/zillow_zhvi_county_raw.csv
@@ -11,7 +11,7 @@ Outputs:
 - data/processed/zillow_zhvi_miami_dade_annual_2015_2024.csv  (V0, unchanged behavior)
 - data/processed/zillow_zhvi_selected_counties_annual_2015_2024.csv  (pipeline expansion)
 - data/processed/zillow_zhvi_florida_counties_annual_2015_2024.csv  (statewide expansion)
-- data/processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv  (twenty-three-state expansion)
+- data/processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv  (twenty-nine-state expansion)
 """
 
 from pathlib import Path
@@ -56,32 +56,38 @@ EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_PIPELINE_ROWS = 30
 EXPECTED_FL_COUNTIES = 67
 EXPECTED_FL_ROWS = 670
-EXPECTED_PIPELINE_REF_COUNTIES = 1521
-EXPECTED_PIPELINE_REF_ROWS = 15210
+EXPECTED_PIPELINE_REF_COUNTIES = 2052
+EXPECTED_PIPELINE_REF_ROWS = 20520
 EXPECTED_PIPELINE_STATE_COUNTS = {
+    "DE": 3,
     "FL": 67,
     "GA": 159,
-    "SC": 46,
-    "NC": 100,
-    "VA": 133,
-    "MD": 24,
-    "DE": 3,
-    "NJ": 21,
-    "NY": 62,
-    "RI": 5,
-    "MA": 14,
-    "NH": 10,
-    "ME": 16,
-    "PA": 67,
-    "WV": 55,
-    "OH": 88,
-    "KY": 120,
-    "TN": 95,
+    "IA": 99,
     "IL": 102,
     "IN": 92,
+    "KS": 105,
+    "KY": 120,
+    "MA": 14,
+    "MD": 24,
+    "ME": 16,
     "MI": 83,
-    "WI": 72,
     "MN": 87,
+    "MO": 115,
+    "NC": 100,
+    "ND": 53,
+    "NE": 93,
+    "NH": 10,
+    "NJ": 21,
+    "NY": 62,
+    "OH": 88,
+    "PA": 67,
+    "RI": 5,
+    "SC": 46,
+    "SD": 66,
+    "TN": 95,
+    "VA": 133,
+    "WI": 72,
+    "WV": 55,
 }
 MIN_COMPARABLE_MONTHS = 10
 FULL_YEAR_MONTHS = 12
@@ -781,7 +787,7 @@ def pass_line(message: str) -> None:
 
 
 def load_pipeline_county_reference() -> pd.DataFrame:
-    """Load and validate the twenty-three-state pipeline county reference."""
+    """Load and validate the twenty-nine-state pipeline county reference."""
     if not PIPELINE_COUNTY_REFERENCE_PATH.exists():
         raise FileNotFoundError(
             f"Pipeline county reference not found: {PIPELINE_COUNTY_REFERENCE_PATH}"
@@ -980,6 +986,12 @@ def validate_pipeline_florida_regression(
             f"found {len(pipeline_fl)}."
         )
 
+    for frame in (pipeline_fl, committed_fl):
+        frame["typical_home_value"] = pd.to_numeric(
+            frame["typical_home_value"],
+            errors="coerce",
+        )
+
     pd.testing.assert_frame_equal(
         pipeline_fl[FLORIDA_REGRESSION_COLUMNS],
         committed_fl[FLORIDA_REGRESSION_COLUMNS],
@@ -1053,7 +1065,7 @@ def validate_pipeline_counties_output(
     pipeline_final: pd.DataFrame,
     reference: pd.DataFrame,
 ) -> None:
-    """Validate the twenty-three-state pipeline Zillow output before write."""
+    """Validate the twenty-nine-state pipeline Zillow output before write."""
     if list(pipeline_final.columns) != PIPELINE_OUTPUT_COLUMNS:
         raise ValueError(
             f"Unexpected pipeline output columns: {list(pipeline_final.columns)}"
@@ -1073,9 +1085,9 @@ def validate_pipeline_counties_output(
     pass_line("10 rows for every county")
 
     if not pipeline_final.groupby("year").size().eq(EXPECTED_PIPELINE_REF_COUNTIES).all():
-        raise ValueError("Each year must have exactly 1,521 county rows.")
+        raise ValueError("Each year must have exactly 2,052 county rows.")
 
-    pass_line("1,521 rows for every year")
+    pass_line("2,052 rows for every year")
 
     if set(pipeline_final["year"]) != EXPECTED_YEARS:
         raise ValueError(

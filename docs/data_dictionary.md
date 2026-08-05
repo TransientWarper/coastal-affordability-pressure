@@ -414,14 +414,15 @@ applied.
 
 ## processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv
 
-FIPS-based annualized Zillow ZHVI for the twenty-three-state pipeline reference
+FIPS-based annualized Zillow ZHVI for the twenty-nine-state pipeline reference
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
 Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
-Indiana, Michigan, Wisconsin, and Minnesota). Connecticut is excluded (see
+Indiana, Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska,
+North Dakota, and South Dakota). Connecticut is excluded (see
 `pipeline_counties.csv`). One row per county equivalent per year. Virginia
-independent cities and Baltimore city (`24510`) are included as county
-equivalents, matching `pipeline_counties.csv`.
+independent cities, Baltimore city (`24510`), and St. Louis city (`29510`) are
+included as county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -439,8 +440,8 @@ equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 15,210 rows (1,521 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87)
+- **Expected scale:** 20,520 rows (2,052 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 - **Selection key:** five-digit `county_fips` matched to Zillow
@@ -471,25 +472,33 @@ The pipeline builds a complete county-year panel from
 10 county-year rows with null `typical_home_value`, `zillow_months_available = 0`,
 and `zillow_data_status = source_data_unavailable`.
 
+Thirty-two reference county equivalents are absent from the committed Zillow
+raw file: Missouri (2), Nebraska (4), North Dakota (10), and South Dakota (16).
+Oglala Lakota County (`46102`) is retained in the reference and output as
+unavailable rather than dropped. Historical Shannon County (`46113`) is not in
+the reference. St. Louis city (`29510`) is present in Zillow raw with complete
+12-month coverage for all county-years.
+
 ### Status distribution (validated)
 
-Status counts are derived from the transformed output at build time. All 1,521
-reference county equivalents are present in the committed Zillow raw file.
-Missing county-years reflect absent monthly observations in the source, not
-absent counties.
+Status counts are derived from the transformed output at build time. Among the
+six newly added Plains states, North Dakota and South Dakota contain the largest
+source-sparsity clusters, including counties absent from Zillow raw and
+multi-year unavailable runs in present counties. Missing monthly observations
+are not interpolated, imputed, or backfilled.
 
 | zillow_data_status | row count |
 |---|---:|
-| `complete_12_months` | 14,961 |
-| `partial_10_11_months` | 102 |
-| `partial_1_9_months` | 11 |
-| `source_data_unavailable` | 136 |
+| `complete_12_months` | 19,343 |
+| `partial_10_11_months` | 314 |
+| `partial_1_9_months` | 24 |
+| `source_data_unavailable` | 839 |
 
-Illinois contains the largest source-sparsity cluster among the five newly
-added Great Lakes states, including multi-year unavailable runs in Alexander
-County (`17003`), Lawrence County (`17101`), and Pulaski County (`17153`).
-Indiana has complete 12-month coverage for all county-years in the panel.
-Missing monthly observations are not interpolated, imputed, or backfilled.
+Illinois contains the largest source-sparsity cluster among the five Great Lakes
+states added in the prior expansion, including multi-year unavailable runs in
+Alexander County (`17003`), Lawrence County (`17101`), and Pulaski County
+(`17153`). Indiana has complete 12-month coverage for all county-years in the
+panel.
 
 Prior eighteen-state partial-coverage exceptions (unchanged):
 
@@ -527,6 +536,10 @@ eighteen-state expansion.
 The DE, FL, GA, KY, MA, MD, ME, NC, NH, NJ, NY, OH, PA, RI, SC, TN, VA, and
 WV subset (10,850 rows) is unchanged from the committed eighteen-state pipeline
 output prior to the twenty-three-state expansion.
+
+The full twenty-three-state subset (15,210 rows) is unchanged from the committed
+Great Lakes pipeline output (`98dd1ee`) prior to the twenty-nine-state
+expansion.
 
 ### Generation
 
