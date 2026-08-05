@@ -61,7 +61,7 @@ are used for output labeling only; joins and validation use `county_fips`.
 ## manual/pipeline_states.csv
 
 State manifest for the multistate county-reference layer and pipeline
-expansion. Defines which states are included in the twenty-three-state pipeline
+expansion. Defines which states are included in the twenty-nine-state pipeline
 scope.
 
 | Field | Type | Description |
@@ -70,7 +70,7 @@ scope.
 | state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
 | include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
 
-### Validated record (twenty-three-state pipeline)
+### Validated record (twenty-nine-state pipeline)
 
 | state | state_fips | include_pipeline |
 |---|---|---|
@@ -79,26 +79,32 @@ scope.
 | GA | 13 | true |
 | IL | 17 | true |
 | IN | 18 | true |
+| IA | 19 | true |
+| KS | 20 | true |
 | KY | 21 | true |
 | MA | 25 | true |
 | MD | 24 | true |
 | ME | 23 | true |
 | MI | 26 | true |
 | MN | 27 | true |
+| MO | 29 | true |
+| NE | 31 | true |
 | NH | 33 | true |
 | NJ | 34 | true |
 | NY | 36 | true |
 | NC | 37 | true |
+| ND | 38 | true |
 | OH | 39 | true |
 | PA | 42 | true |
 | RI | 44 | true |
 | SC | 45 | true |
+| SD | 46 | true |
 | TN | 47 | true |
 | VA | 51 | true |
 | WI | 55 | true |
 | WV | 54 | true |
 
-Twenty-three enabled states; all rows currently have `include_pipeline=true`.
+Twenty-nine enabled states; all rows currently have `include_pipeline=true`.
 
 Connecticut is intentionally absent. Census replaced Connecticut's former
 eight counties with nine planning regions as official county equivalents
@@ -113,11 +119,12 @@ approved.
 
 ## manual/pipeline_counties.csv
 
-Authoritative multistate county reference for the twenty-three-state pipeline
+Authoritative multistate county reference for the twenty-nine-state pipeline
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
 Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
-Indiana, Michigan, Wisconsin, and Minnesota). Connecticut is excluded (see
+Indiana, Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska,
+North Dakota, and South Dakota). Connecticut is excluded (see
 `pipeline_states.csv`). County FIPS—not county name—is the authoritative join
 and selection key.
 
@@ -135,7 +142,7 @@ and selection key.
 - **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
 - **Generation script:** `src/build_pipeline_county_reference.py`
 - **State filter:** enabled `state_fips` values from `pipeline_states.csv`
-- **Row count:** 1,521 (one row per county equivalent in the enabled states)
+- **Row count:** 2,052 (one row per county equivalent in the enabled states)
 
 ### County-equivalent scope
 
@@ -152,7 +159,14 @@ Virginia, Ohio, Kentucky, and Tennessee include all TIGER 2023 county
 equivalents in each state (all LSAD `06` counties; no independent cities).
 Illinois, Indiana, Michigan, Wisconsin, and Minnesota include all TIGER 2023
 county equivalents in each state (all LSAD `06` counties; no independent
-cities). Connecticut is not included because its TIGER 2023 planning regions,
+cities). Iowa and Kansas include all TIGER 2023 county equivalents in each
+state (all LSAD `06` counties; no independent cities). Missouri includes 114
+counties (LSAD `06`) plus St. Louis city (`29510`, LSAD `25`) as a county
+equivalent (115 total). Nebraska, North Dakota, and South Dakota include all
+TIGER 2023 county equivalents in each state (all LSAD `06` counties; no
+independent cities). South Dakota includes Oglala Lakota County (`46102`);
+historical Shannon County (`46113`) is not in TIGER 2023 and is not included.
+Connecticut is not included because its TIGER 2023 planning regions,
 Zillow former-county FIPS, and likely ACS geography vintage are not comparable
 across 2015–2024 under the existing method.
 
@@ -187,7 +201,13 @@ checkpoint does not update Zillow status counts.
 | MI | 26 | 83 |
 | WI | 55 | 72 |
 | MN | 27 | 87 |
-| **Total** | | **1,521** |
+| IA | 19 | 99 |
+| KS | 20 | 105 |
+| MO | 29 | 115 |
+| NE | 31 | 93 |
+| ND | 38 | 53 |
+| SD | 46 | 66 |
+| **Total** | | **2,052** |
 
 ### Role
 
