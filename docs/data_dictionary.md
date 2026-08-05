@@ -746,9 +746,10 @@ Built by `src/fetch_acs_income.py` from:
 
 ## processed/coastal_affordability_pipeline_2015_2024.csv
 
-Eight-state Atlantic pipeline affordability table joining validated Zillow home
-values and ACS median household income. One row per county equivalent per year.
-Virginia independent cities and Baltimore city (`24510`) are included as county
+Twenty-three-state pipeline affordability table joining validated Zillow home
+values and ACS median household income. Connecticut is excluded (see
+`pipeline_counties.csv`). One row per county equivalent per year. Virginia
+independent cities and Baltimore city (`24510`) are included as county
 equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
@@ -772,10 +773,12 @@ equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 5,530 rows (553 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21)
+- **Expected scale:** 15,210 rows (1,521 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87)
 - **Years:** 2015–2024
 - **Join keys:** `county_fips` and `year` only; county name is not used for joining
+
+Connecticut is excluded from the reference and therefore from this output.
 
 ### Source inputs
 
@@ -793,6 +796,9 @@ The ratio is stored rounded to four decimal places. It is a unitless multiple:
 home value expressed as a multiple of median household income. It is not stored
 as a percentage. When `typical_home_value` is null, the ratio is left null.
 
+ACS median household income values are nominal dollars from overlapping 5-year
+ACS release windows. Margins of error are not included in the income input.
+
 Baseline-change and growth-index fields are deferred to a later checkpoint.
 
 ### affordability_data_status
@@ -809,13 +815,19 @@ Original `zillow_data_status` and `acs_data_status` columns are retained.
 
 | affordability_data_status | row count |
 |---|---:|
-| `available_complete` | 5,468 |
-| `available_partial` | 27 |
-| `source_data_unavailable` | 35 |
+| `available_complete` | 14,961 |
+| `available_partial` | 113 |
+| `source_data_unavailable` | 136 |
 
-The 35 unavailable county-years reflect absent Zillow monthly observations in
-the source (ACS income is available for all rows). The 27 partial county-years
-reflect partial Zillow month coverage with usable annual means.
+**Populated ratios:** 15,074 county-years have non-null
+`home_value_to_income_ratio`. **Null ratios:** 136 county-years have null
+ratios, all inherited from Zillow `source_data_unavailable` rows. ACS
+contributes zero unavailable rows and zero null-ratio rows in the current
+output. Missing home values are never imputed.
+
+The 113 partial county-years reflect partial Zillow month coverage with usable
+annual means. The 136 unavailable county-years reflect absent Zillow monthly
+observations in the source.
 
 ### Missing-value policy
 
@@ -830,10 +842,11 @@ The Florida subset (`state = FL`) matches the committed
 Output labels use `pipeline_counties.csv`, which matches `florida_counties.csv`
 for Florida counties.
 
-### Relationship to prior four-state output
+### Relationship to prior eight-state output
 
-The FL, GA, SC, and NC subset (3,720 rows) is unchanged from the committed
-four-state pipeline affordability output prior to the eight-state expansion.
+The prior eight-state subset (5,530 rows) is unchanged from the committed
+eight-state pipeline affordability output (`0c55ff3`) prior to the
+twenty-three-state expansion.
 
 ### Generation
 
