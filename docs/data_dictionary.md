@@ -672,14 +672,17 @@ row per county per year.
 
 ## processed/acs_b19013_pipeline_counties_2015_2024.csv
 
-FIPS-based ACS 5-year median household income for the twenty-three-state
+FIPS-based ACS 5-year median household income for the twenty-nine-state
 pipeline reference (Florida, Georgia, South Carolina, North Carolina,
 Virginia, Maryland, Delaware, New Jersey, New York, Rhode Island,
 Massachusetts, New Hampshire, Maine, Pennsylvania, West Virginia, Ohio,
-Kentucky, Tennessee, Illinois, Indiana, Michigan, Wisconsin, and Minnesota).
+Kentucky, Tennessee, Illinois, Indiana, Michigan, Wisconsin, Minnesota,
+Iowa, Kansas, Missouri, Nebraska, North Dakota, and South Dakota).
 Connecticut is excluded (see `pipeline_counties.csv`). One row per county
-equivalent per year. Virginia independent cities and Baltimore city (`24510`)
-are included as county equivalents, matching `pipeline_counties.csv`.
+equivalent per year. Virginia independent cities, Baltimore city (`24510`),
+and St. Louis city (`29510`) are included as county equivalents, matching
+`pipeline_counties.csv`. Oglala Lakota County (`46102`) is included;
+historical Shannon County (`46113`) is not.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -695,8 +698,8 @@ are included as county equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 15,210 rows (1,521 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87)
+- **Expected scale:** 20,520 rows (2,052 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 
@@ -711,7 +714,7 @@ Connecticut is excluded from the reference and therefore from this output.
   - `get=NAME,B19013_001E`
   - `for=county:*`
   - `in=state:{state_fips}`
-- **Total requests:** 230 (23 states × 10 years)
+- **Total requests:** 290 (29 states × 10 years)
 - **FIPS construction:** `state` (2-digit) + `county` (3-digit), zero-padded to
   five characters
 
@@ -745,12 +748,13 @@ values are never imputed or interpolated.
 
 | acs_data_status | row count |
 |---|---:|
-| `available` | 15,210 |
+| `available` | 20,520 |
 | `source_data_unavailable` | 0 |
 
-All 1,521 reference county equivalents returned valid income for every release
-year (2015–2024). No suppressed or unavailable county-years in the current
-output.
+All 2,052 reference county equivalents returned valid income for every release
+year (2015–2024), including St. Louis city (`29510`) and Oglala Lakota County
+(`46102`). No suppressed or unavailable county-years in the current output.
+Missing values are never imputed or interpolated.
 
 ### Relationship to Florida output
 
@@ -765,6 +769,10 @@ The Florida subset (`state = FL`) matches the committed
 
 The prior eight-state subset (5,530 rows) is unchanged from the committed
 eight-state pipeline ACS output (`d68a0ba`) prior to the twenty-three-state
+expansion.
+
+The full twenty-three-state subset (15,210 rows) is unchanged from the committed
+Great Lakes pipeline ACS output (`d90b65d`) prior to the twenty-nine-state
 expansion.
 
 ### Generation
