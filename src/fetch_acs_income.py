@@ -11,7 +11,7 @@ Inputs:
 Outputs:
 - data/raw/acs_income/acs_b19013_miami_dade_2015_2024.csv  (legacy Miami-Dade)
 - data/processed/acs_b19013_florida_counties_2015_2024.csv  (statewide expansion)
-- data/processed/acs_b19013_pipeline_counties_2015_2024.csv  (29-state expansion)
+- data/processed/acs_b19013_pipeline_counties_2015_2024.csv  (39-state expansion)
 """
 
 from pathlib import Path
@@ -54,9 +54,12 @@ EXPECTED_PIPELINE_FIPS = {"12011", "12086", "12099"}
 EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_FL_COUNTIES = 67
 EXPECTED_FL_ROWS = 670
-EXPECTED_PIPELINE_REF_COUNTIES = 2052
-EXPECTED_PIPELINE_REF_ROWS = 20520
+EXPECTED_PIPELINE_REF_COUNTIES = 2847
+EXPECTED_PIPELINE_REF_ROWS = 28470
 EXPECTED_PIPELINE_STATE_COUNTS = {
+    "AL": 67,
+    "AR": 75,
+    "CO": 64,
     "DE": 3,
     "FL": 67,
     "GA": 159,
@@ -65,29 +68,39 @@ EXPECTED_PIPELINE_STATE_COUNTS = {
     "IN": 92,
     "KS": 105,
     "KY": 120,
+    "LA": 64,
     "MA": 14,
     "MD": 24,
     "ME": 16,
     "MI": 83,
     "MN": 87,
     "MO": 115,
+    "MS": 82,
+    "MT": 56,
     "NC": 100,
     "ND": 53,
     "NE": 93,
     "NH": 10,
     "NJ": 21,
+    "NM": 33,
     "NY": 62,
     "OH": 88,
+    "OK": 77,
     "PA": 67,
     "RI": 5,
     "SC": 46,
     "SD": 66,
     "TN": 95,
+    "TX": 254,
     "VA": 133,
     "WI": 72,
     "WV": 55,
+    "WY": 23,
 }
 EXPECTED_ENABLED_STATES = {
+    "AL",
+    "AR",
+    "CO",
     "DE",
     "FL",
     "GA",
@@ -96,29 +109,36 @@ EXPECTED_ENABLED_STATES = {
     "IN",
     "KS",
     "KY",
+    "LA",
     "MA",
     "MD",
     "ME",
     "MI",
     "MN",
     "MO",
+    "MS",
+    "MT",
     "ND",
     "NE",
     "NH",
     "NJ",
+    "NM",
     "NY",
     "NC",
     "OH",
+    "OK",
     "PA",
     "RI",
     "SC",
     "SD",
     "TN",
+    "TX",
     "VA",
     "WI",
     "WV",
+    "WY",
 }
-EXPECTED_STATE_YEAR_REQUESTS = 290
+EXPECTED_STATE_YEAR_REQUESTS = 390
 MIAMI_LEGACY_FIPS = "12086"
 MIAMI_LEGACY_MD5 = "ef5b8d6f5e911b9bafc087862238ebbf"
 
@@ -574,7 +594,7 @@ def load_pipeline_states() -> pd.DataFrame:
 
 
 def load_pipeline_county_reference() -> pd.DataFrame:
-    """Load and validate the 29-state pipeline county reference."""
+    """Load and validate the 39-state pipeline county reference."""
     if not PIPELINE_COUNTY_REFERENCE_PATH.exists():
         raise FileNotFoundError(
             f"Pipeline county reference not found: {PIPELINE_COUNTY_REFERENCE_PATH}"
@@ -740,7 +760,7 @@ def build_pipeline_output(
     reference: pd.DataFrame,
     acs_records: list[dict],
 ) -> pd.DataFrame:
-    """Build the 29-state pipeline ACS panel from reference and parsed responses."""
+    """Build the 39-state pipeline ACS panel from reference and parsed responses."""
     years = pd.DataFrame({"year": YEARS})
     skeleton = reference.merge(years, how="cross")
 
@@ -842,7 +862,7 @@ def validate_pipeline_output(
     pipeline: pd.DataFrame,
     reference: pd.DataFrame,
 ) -> None:
-    """Validate the 29-state pipeline ACS output before write."""
+    """Validate the 39-state pipeline ACS output before write."""
     if list(pipeline.columns) != PIPELINE_COLUMNS:
         raise ValueError(f"Unexpected pipeline output columns: {list(pipeline.columns)}")
 
@@ -860,9 +880,9 @@ def validate_pipeline_output(
     pass_line("every county has 10 rows")
 
     if not pipeline.groupby("year").size().eq(EXPECTED_PIPELINE_REF_COUNTIES).all():
-        raise ValueError("Each year must have exactly 2052 county rows.")
+        raise ValueError("Each year must have exactly 2847 county rows.")
 
-    pass_line("every year has 2052 rows")
+    pass_line("every year has 2847 rows")
 
     state_year_counts = pipeline.groupby("state").size().to_dict()
     expected_state_year_counts = {
@@ -1120,6 +1140,9 @@ def main() -> None:
     )
 
     PIPELINE_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    pipeline["median_household_income"] = pipeline["median_household_income"].astype(
+        "Int64"
+    )
     pipeline.to_csv(PIPELINE_OUTPUT_PATH, index=False)
     pass_line(f"pipeline output path written ({PIPELINE_OUTPUT_PATH})")
 
