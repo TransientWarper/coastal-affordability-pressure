@@ -461,16 +461,18 @@ applied.
 
 ## processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv
 
-FIPS-based annualized Zillow ZHVI for the thirty-nine-state pipeline reference
+FIPS-based annualized Zillow ZHVI for the forty-seven-state pipeline reference
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
 Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
 Indiana, Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska,
 North Dakota, South Dakota, Alabama, Arkansas, Colorado, Louisiana,
-Mississippi, Montana, New Mexico, Oklahoma, Texas, and Wyoming). Connecticut
+Mississippi, Montana, New Mexico, Oklahoma, Texas, Wyoming, Arizona,
+California, Idaho, Nevada, Oregon, Utah, Vermont, and Washington). Connecticut
 is excluded (see `pipeline_counties.csv`). One row per county equivalent per
-year. Virginia independent cities, Baltimore city (`24510`), and St. Louis city
-(`29510`) are included as county equivalents, matching `pipeline_counties.csv`.
+year. Virginia independent cities, Baltimore city (`24510`), St. Louis city
+(`29510`), and Carson City (`32510`) are included as county equivalents,
+matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -488,8 +490,8 @@ year. Virginia independent cities, Baltimore city (`24510`), and St. Louis city
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 28,470 rows (2,847 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23)
+- **Expected scale:** 30,990 rows (3,099 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23), AZ (15), CA (58), ID (44), NV (17), OR (36), UT (29), VT (14), WA (39)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 - **Selection key:** five-digit `county_fips` matched to Zillow
@@ -520,10 +522,15 @@ The pipeline builds a complete county-year panel from
 10 county-year rows with null `typical_home_value`, `zillow_months_available = 0`,
 and `zillow_data_status = source_data_unavailable`.
 
-Fifty-one reference county equivalents are absent from the committed Zillow
+Fifty-four reference county equivalents are absent from the committed Zillow
 raw file: Missouri (2), Nebraska (4), North Dakota (10), South Dakota (16),
-Arkansas (1), Colorado (2), Mississippi (2), New Mexico (3), and Texas (11).
-Among the ten newly added South and Mountain states, Alabama, Louisiana,
+Arkansas (1), Colorado (2), Mississippi (2), New Mexico (3), Texas (11),
+Idaho (1), Nevada (1), and Utah (1). Among the eight newly added Pacific and
+Western states, Arizona, California, Oregon, Vermont, and Washington have full
+reference-to-raw coverage. Butte County, ID (`16023`), Esmeralda County, NV
+(`32009`), and Piute County, UT (`49031`) are absent from Zillow raw and retain
+10 county-year skeleton rows each with `source_data_unavailable` status. Among
+the ten newly added South and Mountain states, Alabama, Louisiana,
 Montana, Oklahoma, and Wyoming have full reference-to-raw coverage. Oglala
 Lakota County (`46102`) is retained in the reference and output as unavailable
 rather than dropped. Historical Shannon County (`46113`) is not in the
@@ -541,10 +548,10 @@ backfilled.
 
 | zillow_data_status | row count |
 |---|---:|
-| `complete_12_months` | 26,477 |
-| `partial_10_11_months` | 507 |
-| `partial_1_9_months` | 36 |
-| `source_data_unavailable` | 1,450 |
+| `complete_12_months` | 28,911 |
+| `partial_10_11_months` | 522 |
+| `partial_1_9_months` | 38 |
+| `source_data_unavailable` | 1,519 |
 
 Illinois contains the largest source-sparsity cluster among the five Great Lakes
 states added in the prior expansion, including multi-year unavailable runs in
