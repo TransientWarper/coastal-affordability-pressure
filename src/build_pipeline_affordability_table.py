@@ -1,8 +1,8 @@
 """
-Build twenty-nine-state pipeline coastal affordability table.
+Build thirty-nine-state pipeline coastal affordability table.
 
-Joins validated 20,520-row Zillow and ACS county-year outputs for the
-pipeline reference (29 states, Connecticut excluded), 2015-2024.
+Joins validated 28,470-row Zillow and ACS county-year outputs for the
+pipeline reference (39 states, Connecticut excluded), 2015-2024.
 """
 
 from pathlib import Path
@@ -28,9 +28,12 @@ OUTPUT_PATH = PROCESSED_DIR / "coastal_affordability_pipeline_2015_2024.csv"
 START_YEAR = 2015
 END_YEAR = 2024
 EXPECTED_YEARS = set(range(START_YEAR, END_YEAR + 1))
-EXPECTED_PIPELINE_COUNTIES = 2052
-EXPECTED_PIPELINE_ROWS = 20520
+EXPECTED_PIPELINE_COUNTIES = 2847
+EXPECTED_PIPELINE_ROWS = 28470
 EXPECTED_STATE_ROW_COUNTS = {
+    "AL": 670,
+    "AR": 750,
+    "CO": 640,
     "DE": 30,
     "FL": 670,
     "GA": 1590,
@@ -39,32 +42,39 @@ EXPECTED_STATE_ROW_COUNTS = {
     "IN": 920,
     "KS": 1050,
     "KY": 1200,
+    "LA": 640,
     "MA": 140,
     "MD": 240,
     "ME": 160,
     "MI": 830,
     "MN": 870,
     "MO": 1150,
+    "MS": 820,
+    "MT": 560,
     "NC": 1000,
     "ND": 530,
     "NE": 930,
     "NH": 100,
     "NJ": 210,
+    "NM": 330,
     "NY": 620,
     "OH": 880,
+    "OK": 770,
     "PA": 670,
     "RI": 50,
     "SC": 460,
     "SD": 660,
     "TN": 950,
+    "TX": 2540,
     "VA": 1330,
     "WI": 720,
     "WV": 550,
+    "WY": 230,
 }
 EXPECTED_AFFORDABILITY_STATUS_COUNTS = {
-    "available_complete": 19343,
-    "available_partial": 338,
-    "source_data_unavailable": 839,
+    "available_complete": 26474,
+    "available_partial": 543,
+    "source_data_unavailable": 1453,
 }
 
 ZILLOW_STATUS_COMPLETE = "complete_12_months"
@@ -259,9 +269,9 @@ def load_and_validate_acs(reference: pd.DataFrame) -> pd.DataFrame:
 
 
 def calculate_ratio(home_value: pd.Series, income: pd.Series) -> pd.Series:
-    """Calculate home value-to-income ratio, leaving null when home value is null."""
+    """Calculate home value-to-income ratio when both inputs are non-null."""
     ratio = home_value / income
-    ratio = ratio.where(home_value.notna())
+    ratio = ratio.where(home_value.notna() & income.notna())
     return ratio.round(4)
 
 
@@ -354,9 +364,9 @@ def validate_output(final: pd.DataFrame, reference: pd.DataFrame) -> None:
     pass_line("every county has 10 rows")
 
     if not final.groupby("year").size().eq(EXPECTED_PIPELINE_COUNTIES).all():
-        raise ValueError("Final output must contain exactly 2052 rows per year.")
+        raise ValueError("Final output must contain exactly 2847 rows per year.")
 
-    pass_line("every year has 2052 rows")
+    pass_line("every year has 2847 rows")
 
     state_counts = final.groupby("state").size().to_dict()
     if state_counts != EXPECTED_STATE_ROW_COUNTS:
@@ -398,12 +408,11 @@ def validate_output(final: pd.DataFrame, reference: pd.DataFrame) -> None:
 
     pass_line("output labels match pipeline_counties.csv")
 
-    if not final["median_household_income"].notna().all():
-        raise ValueError("median_household_income must be populated for all rows.")
-    if not (final["median_household_income"] > 0).all():
-        raise ValueError("median_household_income must be positive.")
+    non_null_income = final["median_household_income"].dropna()
+    if not (non_null_income > 0).all():
+        raise ValueError("median_household_income must be positive where non-null.")
 
-    pass_line("median household income is positive and non-null")
+    pass_line("median household income is positive where non-null")
 
     valid_home = final["typical_home_value"].dropna()
     if not (valid_home > 0).all():
@@ -437,6 +446,12 @@ def validate_output(final: pd.DataFrame, reference: pd.DataFrame) -> None:
         raise ValueError("Null typical_home_value must produce null ratio.")
 
     pass_line("null typical_home_value produces null ratio")
+
+    null_income = final["median_household_income"].isna()
+    if not final.loc[null_income, "home_value_to_income_ratio"].isna().all():
+        raise ValueError("Null median_household_income must produce null ratio.")
+
+    pass_line("null median_household_income produces null ratio")
 
     unavailable = final["affordability_data_status"] == AFFORDABILITY_STATUS_UNAVAILABLE
     if not final.loc[unavailable, "home_value_to_income_ratio"].isna().all():
@@ -692,7 +707,7 @@ def print_coverage_summary(
 
 
 def main() -> None:
-    """Build the twenty-nine-state pipeline affordability table."""
+    """Build the thirty-nine-state pipeline affordability table."""
     reference = load_pipeline_reference()
     zillow = load_and_validate_zillow(reference)
     acs = load_and_validate_acs(reference)
@@ -709,6 +724,9 @@ def main() -> None:
     print_coverage_summary(final, name_differences)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    final["median_household_income"] = final["median_household_income"].astype(
+        "Int64"
+    )
     final.to_csv(OUTPUT_PATH, index=False)
     pass_line(f"output written ({OUTPUT_PATH})")
 
