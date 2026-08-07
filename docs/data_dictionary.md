@@ -61,7 +61,7 @@ are used for output labeling only; joins and validation use `county_fips`.
 ## manual/pipeline_states.csv
 
 State manifest for the multistate county-reference layer and pipeline
-expansion. Defines which states are included in the twenty-nine-state pipeline
+expansion. Defines which states are included in the thirty-nine-state pipeline
 scope.
 
 | Field | Type | Description |
@@ -70,10 +70,13 @@ scope.
 | state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
 | include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
 
-### Validated record (twenty-nine-state pipeline)
+### Validated record (thirty-nine-state pipeline)
 
 | state | state_fips | include_pipeline |
 |---|---|---|
+| AL | 01 | true |
+| AR | 05 | true |
+| CO | 08 | true |
 | DE | 10 | true |
 | FL | 12 | true |
 | GA | 13 | true |
@@ -82,29 +85,37 @@ scope.
 | IA | 19 | true |
 | KS | 20 | true |
 | KY | 21 | true |
-| MA | 25 | true |
-| MD | 24 | true |
+| LA | 22 | true |
 | ME | 23 | true |
+| MD | 24 | true |
+| MA | 25 | true |
 | MI | 26 | true |
 | MN | 27 | true |
+| MS | 28 | true |
 | MO | 29 | true |
+| MT | 30 | true |
 | NE | 31 | true |
 | NH | 33 | true |
 | NJ | 34 | true |
+| NM | 35 | true |
 | NY | 36 | true |
 | NC | 37 | true |
 | ND | 38 | true |
 | OH | 39 | true |
+| OK | 40 | true |
 | PA | 42 | true |
 | RI | 44 | true |
 | SC | 45 | true |
 | SD | 46 | true |
 | TN | 47 | true |
+| TX | 48 | true |
 | VA | 51 | true |
-| WI | 55 | true |
 | WV | 54 | true |
+| WI | 55 | true |
+| WY | 56 | true |
 
-Twenty-nine enabled states; all rows currently have `include_pipeline=true`.
+Thirty-nine enabled states; all rows currently have `include_pipeline=true`.
+Rows are ordered by `state_fips`.
 
 Connecticut is intentionally absent. Census replaced Connecticut's former
 eight counties with nine planning regions as official county equivalents
@@ -119,14 +130,15 @@ approved.
 
 ## manual/pipeline_counties.csv
 
-Authoritative multistate county reference for the twenty-nine-state pipeline
+Authoritative multistate county reference for the thirty-nine-state pipeline
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
 Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
 Indiana, Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska,
-North Dakota, and South Dakota). Connecticut is excluded (see
-`pipeline_states.csv`). County FIPS—not county name—is the authoritative join
-and selection key.
+North Dakota, South Dakota, Alabama, Arkansas, Colorado, Louisiana,
+Mississippi, Montana, New Mexico, Oklahoma, Texas, and Wyoming). Connecticut
+is excluded (see `pipeline_states.csv`). County FIPS—not county name—is the
+authoritative join and selection key.
 
 | Field | Type | Description |
 |---|---|---|
@@ -142,7 +154,7 @@ and selection key.
 - **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
 - **Generation script:** `src/build_pipeline_county_reference.py`
 - **State filter:** enabled `state_fips` values from `pipeline_states.csv`
-- **Row count:** 2,052 (one row per county equivalent in the enabled states)
+- **Row count:** 2,847 (one row per county equivalent in the enabled states)
 
 ### County-equivalent scope
 
@@ -166,9 +178,13 @@ equivalent (115 total). Nebraska, North Dakota, and South Dakota include all
 TIGER 2023 county equivalents in each state (all LSAD `06` counties; no
 independent cities). South Dakota includes Oglala Lakota County (`46102`);
 historical Shannon County (`46113`) is not in TIGER 2023 and is not included.
-Connecticut is not included because its TIGER 2023 planning regions,
-Zillow former-county FIPS, and likely ACS geography vintage are not comparable
-across 2015–2024 under the existing method.
+Alabama, Arkansas, Colorado, Mississippi, Montana, New Mexico, Oklahoma,
+Texas, and Wyoming include all TIGER 2023 county equivalents in each state
+(all LSAD `06` counties; no independent cities). Louisiana includes all 64
+TIGER 2023 parish county equivalents (LSAD `15`; `NAMELSAD` labels such as
+“Caddo Parish”). Connecticut is not included because its TIGER 2023 planning
+regions, Zillow former-county FIPS, and likely ACS geography vintage are not
+comparable across 2015–2024 under the existing method.
 
 Zillow, ACS, and affordability processed outputs still reflect earlier
 validated scopes until their separate expansion checkpoints. This reference
@@ -207,7 +223,17 @@ checkpoint does not update Zillow status counts.
 | NE | 31 | 93 |
 | ND | 38 | 53 |
 | SD | 46 | 66 |
-| **Total** | | **2,052** |
+| AL | 01 | 67 |
+| AR | 05 | 75 |
+| CO | 08 | 64 |
+| LA | 22 | 64 |
+| MS | 28 | 82 |
+| MT | 30 | 56 |
+| NM | 35 | 33 |
+| OK | 40 | 77 |
+| TX | 48 | 254 |
+| WY | 56 | 23 |
+| **Total** | | **2,847** |
 
 ### Role
 

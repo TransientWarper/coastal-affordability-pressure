@@ -2,13 +2,15 @@
 Build multistate county reference CSV from TIGER 2023 county boundaries.
 
 Reads enabled states from data/manual/pipeline_states.csv and writes
-data/manual/pipeline_counties.csv for the twenty-nine-state pipeline (Florida,
+data/manual/pipeline_counties.csv for the thirty-nine-state pipeline (Florida,
 Georgia, South Carolina, North Carolina, Virginia, Maryland, Delaware, New
 Jersey, New York, Rhode Island, Massachusetts, New Hampshire, Maine,
 Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois, Indiana,
 Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska, North Dakota,
-and South Dakota). Connecticut is excluded because TIGER 2023, Zillow, and ACS
-geographies are not longitudinally compatible under the existing method.
+South Dakota, Alabama, Arkansas, Colorado, Louisiana, Mississippi, Montana, New
+Mexico, Oklahoma, Texas, and Wyoming). Connecticut is excluded because TIGER
+2023, Zillow, and ACS geographies are not longitudinally compatible under the
+existing method.
 """
 
 from pathlib import Path
@@ -29,6 +31,9 @@ STATE_MANIFEST_COLUMNS = ["state", "state_fips", "include_pipeline"]
 COUNTY_REFERENCE_COLUMNS = ["state", "state_fips", "county_fips", "county_name"]
 
 EXPECTED_ENABLED_STATES = {
+    "AL",
+    "AR",
+    "CO",
     "DE",
     "FL",
     "GA",
@@ -37,27 +42,34 @@ EXPECTED_ENABLED_STATES = {
     "IN",
     "KS",
     "KY",
+    "LA",
     "MA",
     "MD",
     "ME",
     "MI",
     "MN",
     "MO",
+    "MS",
+    "MT",
     "ND",
     "NE",
     "NH",
     "NJ",
+    "NM",
     "NY",
     "NC",
     "OH",
+    "OK",
     "PA",
     "RI",
     "SC",
     "SD",
     "TN",
+    "TX",
     "VA",
     "WI",
     "WV",
+    "WY",
 }
 EXPECTED_STATE_COUNTS = {
     "FL": 67,
@@ -89,8 +101,18 @@ EXPECTED_STATE_COUNTS = {
     "NE": 93,
     "ND": 53,
     "SD": 66,
+    "AL": 67,
+    "AR": 75,
+    "CO": 64,
+    "LA": 64,
+    "MS": 82,
+    "MT": 56,
+    "NM": 33,
+    "OK": 77,
+    "TX": 254,
+    "WY": 23,
 }
-EXPECTED_TOTAL_COUNTIES = 2052
+EXPECTED_TOTAL_COUNTIES = 2847
 
 REQUIRED_TIGER_COLUMNS = ["STUSPS", "STATEFP", "GEOID", "NAMELSAD", "geometry"]
 
