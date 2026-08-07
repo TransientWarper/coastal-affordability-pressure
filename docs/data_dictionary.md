@@ -440,15 +440,16 @@ applied.
 
 ## processed/zillow_zhvi_pipeline_counties_annual_2015_2024.csv
 
-FIPS-based annualized Zillow ZHVI for the twenty-nine-state pipeline reference
+FIPS-based annualized Zillow ZHVI for the thirty-nine-state pipeline reference
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
 Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
 Indiana, Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska,
-North Dakota, and South Dakota). Connecticut is excluded (see
-`pipeline_counties.csv`). One row per county equivalent per year. Virginia
-independent cities, Baltimore city (`24510`), and St. Louis city (`29510`) are
-included as county equivalents, matching `pipeline_counties.csv`.
+North Dakota, South Dakota, Alabama, Arkansas, Colorado, Louisiana,
+Mississippi, Montana, New Mexico, Oklahoma, Texas, and Wyoming). Connecticut
+is excluded (see `pipeline_counties.csv`). One row per county equivalent per
+year. Virginia independent cities, Baltimore city (`24510`), and St. Louis city
+(`29510`) are included as county equivalents, matching `pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -466,8 +467,8 @@ included as county equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 20,520 rows (2,052 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66)
+- **Expected scale:** 28,470 rows (2,847 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 - **Selection key:** five-digit `county_fips` matched to Zillow
@@ -498,27 +499,31 @@ The pipeline builds a complete county-year panel from
 10 county-year rows with null `typical_home_value`, `zillow_months_available = 0`,
 and `zillow_data_status = source_data_unavailable`.
 
-Thirty-two reference county equivalents are absent from the committed Zillow
-raw file: Missouri (2), Nebraska (4), North Dakota (10), and South Dakota (16).
-Oglala Lakota County (`46102`) is retained in the reference and output as
-unavailable rather than dropped. Historical Shannon County (`46113`) is not in
-the reference. St. Louis city (`29510`) is present in Zillow raw with complete
+Fifty-one reference county equivalents are absent from the committed Zillow
+raw file: Missouri (2), Nebraska (4), North Dakota (10), South Dakota (16),
+Arkansas (1), Colorado (2), Mississippi (2), New Mexico (3), and Texas (11).
+Among the ten newly added South and Mountain states, Alabama, Louisiana,
+Montana, Oklahoma, and Wyoming have full reference-to-raw coverage. Oglala
+Lakota County (`46102`) is retained in the reference and output as unavailable
+rather than dropped. Historical Shannon County (`46113`) is not in the
+reference. St. Louis city (`29510`) is present in Zillow raw with complete
 12-month coverage for all county-years.
 
 ### Status distribution (validated)
 
 Status counts are derived from the transformed output at build time. Among the
-six newly added Plains states, North Dakota and South Dakota contain the largest
-source-sparsity clusters, including counties absent from Zillow raw and
-multi-year unavailable runs in present counties. Missing monthly observations
-are not interpolated, imputed, or backfilled.
+ten newly added South and Mountain states, Texas contains the largest
+source-sparsity cluster (11 counties absent from Zillow raw). North Dakota and
+South Dakota remain the largest Plains source-sparsity clusters from the prior
+expansion. Missing monthly observations are not interpolated, imputed, or
+backfilled.
 
 | zillow_data_status | row count |
 |---|---:|
-| `complete_12_months` | 19,343 |
-| `partial_10_11_months` | 314 |
-| `partial_1_9_months` | 24 |
-| `source_data_unavailable` | 839 |
+| `complete_12_months` | 26,477 |
+| `partial_10_11_months` | 507 |
+| `partial_1_9_months` | 36 |
+| `source_data_unavailable` | 1,450 |
 
 Illinois contains the largest source-sparsity cluster among the five Great Lakes
 states added in the prior expansion, including multi-year unavailable runs in
@@ -566,6 +571,9 @@ output prior to the twenty-three-state expansion.
 The full twenty-three-state subset (15,210 rows) is unchanged from the committed
 Great Lakes pipeline output (`98dd1ee`) prior to the twenty-nine-state
 expansion.
+
+The full twenty-nine-state subset (20,520 rows) is unchanged from the committed
+Plains pipeline output (`a6d2f01`) prior to the thirty-nine-state expansion.
 
 ### Generation
 
