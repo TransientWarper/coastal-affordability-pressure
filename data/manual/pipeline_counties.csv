@@ -66,6 +66,21 @@ AL,01,01127,Walker County
 AL,01,01129,Washington County
 AL,01,01131,Wilcox County
 AL,01,01133,Winston County
+AZ,04,04001,Apache County
+AZ,04,04003,Cochise County
+AZ,04,04005,Coconino County
+AZ,04,04007,Gila County
+AZ,04,04009,Graham County
+AZ,04,04011,Greenlee County
+AZ,04,04012,La Paz County
+AZ,04,04013,Maricopa County
+AZ,04,04015,Mohave County
+AZ,04,04017,Navajo County
+AZ,04,04019,Pima County
+AZ,04,04021,Pinal County
+AZ,04,04023,Santa Cruz County
+AZ,04,04025,Yavapai County
+AZ,04,04027,Yuma County
 AR,05,05001,Arkansas County
 AR,05,05003,Ashley County
 AR,05,05005,Baxter County
@@ -141,6 +156,64 @@ AR,05,05143,Washington County
 AR,05,05145,White County
 AR,05,05147,Woodruff County
 AR,05,05149,Yell County
+CA,06,06001,Alameda County
+CA,06,06003,Alpine County
+CA,06,06005,Amador County
+CA,06,06007,Butte County
+CA,06,06009,Calaveras County
+CA,06,06011,Colusa County
+CA,06,06013,Contra Costa County
+CA,06,06015,Del Norte County
+CA,06,06017,El Dorado County
+CA,06,06019,Fresno County
+CA,06,06021,Glenn County
+CA,06,06023,Humboldt County
+CA,06,06025,Imperial County
+CA,06,06027,Inyo County
+CA,06,06029,Kern County
+CA,06,06031,Kings County
+CA,06,06033,Lake County
+CA,06,06035,Lassen County
+CA,06,06037,Los Angeles County
+CA,06,06039,Madera County
+CA,06,06041,Marin County
+CA,06,06043,Mariposa County
+CA,06,06045,Mendocino County
+CA,06,06047,Merced County
+CA,06,06049,Modoc County
+CA,06,06051,Mono County
+CA,06,06053,Monterey County
+CA,06,06055,Napa County
+CA,06,06057,Nevada County
+CA,06,06059,Orange County
+CA,06,06061,Placer County
+CA,06,06063,Plumas County
+CA,06,06065,Riverside County
+CA,06,06067,Sacramento County
+CA,06,06069,San Benito County
+CA,06,06071,San Bernardino County
+CA,06,06073,San Diego County
+CA,06,06075,San Francisco County
+CA,06,06077,San Joaquin County
+CA,06,06079,San Luis Obispo County
+CA,06,06081,San Mateo County
+CA,06,06083,Santa Barbara County
+CA,06,06085,Santa Clara County
+CA,06,06087,Santa Cruz County
+CA,06,06089,Shasta County
+CA,06,06091,Sierra County
+CA,06,06093,Siskiyou County
+CA,06,06095,Solano County
+CA,06,06097,Sonoma County
+CA,06,06099,Stanislaus County
+CA,06,06101,Sutter County
+CA,06,06103,Tehama County
+CA,06,06105,Trinity County
+CA,06,06107,Tulare County
+CA,06,06109,Tuolumne County
+CA,06,06111,Ventura County
+CA,06,06113,Yolo County
+CA,06,06115,Yuba County
 CO,08,08001,Adams County
 CO,08,08003,Alamosa County
 CO,08,08005,Arapahoe County
@@ -434,6 +507,50 @@ GA,13,13315,Wilcox County
 GA,13,13317,Wilkes County
 GA,13,13319,Wilkinson County
 GA,13,13321,Worth County
+ID,16,16001,Ada County
+ID,16,16003,Adams County
+ID,16,16005,Bannock County
+ID,16,16007,Bear Lake County
+ID,16,16009,Benewah County
+ID,16,16011,Bingham County
+ID,16,16013,Blaine County
+ID,16,16015,Boise County
+ID,16,16017,Bonner County
+ID,16,16019,Bonneville County
+ID,16,16021,Boundary County
+ID,16,16023,Butte County
+ID,16,16025,Camas County
+ID,16,16027,Canyon County
+ID,16,16029,Caribou County
+ID,16,16031,Cassia County
+ID,16,16033,Clark County
+ID,16,16035,Clearwater County
+ID,16,16037,Custer County
+ID,16,16039,Elmore County
+ID,16,16041,Franklin County
+ID,16,16043,Fremont County
+ID,16,16045,Gem County
+ID,16,16047,Gooding County
+ID,16,16049,Idaho County
+ID,16,16051,Jefferson County
+ID,16,16053,Jerome County
+ID,16,16055,Kootenai County
+ID,16,16057,Latah County
+ID,16,16059,Lemhi County
+ID,16,16061,Lewis County
+ID,16,16063,Lincoln County
+ID,16,16065,Madison County
+ID,16,16067,Minidoka County
+ID,16,16069,Nez Perce County
+ID,16,16071,Oneida County
+ID,16,16073,Owyhee County
+ID,16,16075,Payette County
+ID,16,16077,Power County
+ID,16,16079,Shoshone County
+ID,16,16081,Teton County
+ID,16,16083,Twin Falls County
+ID,16,16085,Valley County
+ID,16,16087,Washington County
 IL,17,17001,Adams County
 IL,17,17003,Alexander County
 IL,17,17005,Bond County
@@ -1586,6 +1703,23 @@ NE,31,31179,Wayne County
 NE,31,31181,Webster County
 NE,31,31183,Wheeler County
 NE,31,31185,York County
+NV,32,32001,Churchill County
+NV,32,32003,Clark County
+NV,32,32005,Douglas County
+NV,32,32007,Elko County
+NV,32,32009,Esmeralda County
+NV,32,32011,Eureka County
+NV,32,32013,Humboldt County
+NV,32,32015,Lander County
+NV,32,32017,Lincoln County
+NV,32,32019,Lyon County
+NV,32,32021,Mineral County
+NV,32,32023,Nye County
+NV,32,32027,Pershing County
+NV,32,32029,Storey County
+NV,32,32031,Washoe County
+NV,32,32033,White Pine County
+NV,32,32510,Carson City
 NH,33,33001,Belknap County
 NH,33,33003,Carroll County
 NH,33,33005,Cheshire County
@@ -2030,6 +2164,42 @@ OK,40,40147,Washington County
 OK,40,40149,Washita County
 OK,40,40151,Woods County
 OK,40,40153,Woodward County
+OR,41,41001,Baker County
+OR,41,41003,Benton County
+OR,41,41005,Clackamas County
+OR,41,41007,Clatsop County
+OR,41,41009,Columbia County
+OR,41,41011,Coos County
+OR,41,41013,Crook County
+OR,41,41015,Curry County
+OR,41,41017,Deschutes County
+OR,41,41019,Douglas County
+OR,41,41021,Gilliam County
+OR,41,41023,Grant County
+OR,41,41025,Harney County
+OR,41,41027,Hood River County
+OR,41,41029,Jackson County
+OR,41,41031,Jefferson County
+OR,41,41033,Josephine County
+OR,41,41035,Klamath County
+OR,41,41037,Lake County
+OR,41,41039,Lane County
+OR,41,41041,Lincoln County
+OR,41,41043,Linn County
+OR,41,41045,Malheur County
+OR,41,41047,Marion County
+OR,41,41049,Morrow County
+OR,41,41051,Multnomah County
+OR,41,41053,Polk County
+OR,41,41055,Sherman County
+OR,41,41057,Tillamook County
+OR,41,41059,Umatilla County
+OR,41,41061,Union County
+OR,41,41063,Wallowa County
+OR,41,41065,Wasco County
+OR,41,41067,Washington County
+OR,41,41069,Wheeler County
+OR,41,41071,Yamhill County
 PA,42,42001,Adams County
 PA,42,42003,Allegheny County
 PA,42,42005,Armstrong County
@@ -2563,6 +2733,49 @@ TX,48,48501,Yoakum County
 TX,48,48503,Young County
 TX,48,48505,Zapata County
 TX,48,48507,Zavala County
+UT,49,49001,Beaver County
+UT,49,49003,Box Elder County
+UT,49,49005,Cache County
+UT,49,49007,Carbon County
+UT,49,49009,Daggett County
+UT,49,49011,Davis County
+UT,49,49013,Duchesne County
+UT,49,49015,Emery County
+UT,49,49017,Garfield County
+UT,49,49019,Grand County
+UT,49,49021,Iron County
+UT,49,49023,Juab County
+UT,49,49025,Kane County
+UT,49,49027,Millard County
+UT,49,49029,Morgan County
+UT,49,49031,Piute County
+UT,49,49033,Rich County
+UT,49,49035,Salt Lake County
+UT,49,49037,San Juan County
+UT,49,49039,Sanpete County
+UT,49,49041,Sevier County
+UT,49,49043,Summit County
+UT,49,49045,Tooele County
+UT,49,49047,Uintah County
+UT,49,49049,Utah County
+UT,49,49051,Wasatch County
+UT,49,49053,Washington County
+UT,49,49055,Wayne County
+UT,49,49057,Weber County
+VT,50,50001,Addison County
+VT,50,50003,Bennington County
+VT,50,50005,Caledonia County
+VT,50,50007,Chittenden County
+VT,50,50009,Essex County
+VT,50,50011,Franklin County
+VT,50,50013,Grand Isle County
+VT,50,50015,Lamoille County
+VT,50,50017,Orange County
+VT,50,50019,Orleans County
+VT,50,50021,Rutland County
+VT,50,50023,Washington County
+VT,50,50025,Windham County
+VT,50,50027,Windsor County
 VA,51,51001,Accomack County
 VA,51,51003,Albemarle County
 VA,51,51005,Alleghany County
@@ -2696,6 +2909,45 @@ VA,51,51810,Virginia Beach city
 VA,51,51820,Waynesboro city
 VA,51,51830,Williamsburg city
 VA,51,51840,Winchester city
+WA,53,53001,Adams County
+WA,53,53003,Asotin County
+WA,53,53005,Benton County
+WA,53,53007,Chelan County
+WA,53,53009,Clallam County
+WA,53,53011,Clark County
+WA,53,53013,Columbia County
+WA,53,53015,Cowlitz County
+WA,53,53017,Douglas County
+WA,53,53019,Ferry County
+WA,53,53021,Franklin County
+WA,53,53023,Garfield County
+WA,53,53025,Grant County
+WA,53,53027,Grays Harbor County
+WA,53,53029,Island County
+WA,53,53031,Jefferson County
+WA,53,53033,King County
+WA,53,53035,Kitsap County
+WA,53,53037,Kittitas County
+WA,53,53039,Klickitat County
+WA,53,53041,Lewis County
+WA,53,53043,Lincoln County
+WA,53,53045,Mason County
+WA,53,53047,Okanogan County
+WA,53,53049,Pacific County
+WA,53,53051,Pend Oreille County
+WA,53,53053,Pierce County
+WA,53,53055,San Juan County
+WA,53,53057,Skagit County
+WA,53,53059,Skamania County
+WA,53,53061,Snohomish County
+WA,53,53063,Spokane County
+WA,53,53065,Stevens County
+WA,53,53067,Thurston County
+WA,53,53069,Wahkiakum County
+WA,53,53071,Walla Walla County
+WA,53,53073,Whatcom County
+WA,53,53075,Whitman County
+WA,53,53077,Yakima County
 WV,54,54001,Barbour County
 WV,54,54003,Berkeley County
 WV,54,54005,Boone County

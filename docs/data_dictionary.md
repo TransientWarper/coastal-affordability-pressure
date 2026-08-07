@@ -61,7 +61,7 @@ are used for output labeling only; joins and validation use `county_fips`.
 ## manual/pipeline_states.csv
 
 State manifest for the multistate county-reference layer and pipeline
-expansion. Defines which states are included in the thirty-nine-state pipeline
+expansion. Defines which states are included in the forty-seven-state pipeline
 scope.
 
 | Field | Type | Description |
@@ -70,16 +70,19 @@ scope.
 | state_fips | string | Two-character Census state FIPS code, zero-padded (e.g. `12`) |
 | include_pipeline | boolean | When true, state counties are included in `pipeline_counties.csv` |
 
-### Validated record (thirty-nine-state pipeline)
+### Validated record (forty-seven-state pipeline)
 
 | state | state_fips | include_pipeline |
 |---|---|---|
 | AL | 01 | true |
+| AZ | 04 | true |
 | AR | 05 | true |
+| CA | 06 | true |
 | CO | 08 | true |
 | DE | 10 | true |
 | FL | 12 | true |
 | GA | 13 | true |
+| ID | 16 | true |
 | IL | 17 | true |
 | IN | 18 | true |
 | IA | 19 | true |
@@ -95,6 +98,7 @@ scope.
 | MO | 29 | true |
 | MT | 30 | true |
 | NE | 31 | true |
+| NV | 32 | true |
 | NH | 33 | true |
 | NJ | 34 | true |
 | NM | 35 | true |
@@ -103,18 +107,22 @@ scope.
 | ND | 38 | true |
 | OH | 39 | true |
 | OK | 40 | true |
+| OR | 41 | true |
 | PA | 42 | true |
 | RI | 44 | true |
 | SC | 45 | true |
 | SD | 46 | true |
 | TN | 47 | true |
 | TX | 48 | true |
+| UT | 49 | true |
+| VT | 50 | true |
 | VA | 51 | true |
+| WA | 53 | true |
 | WV | 54 | true |
 | WI | 55 | true |
 | WY | 56 | true |
 
-Thirty-nine enabled states; all rows currently have `include_pipeline=true`.
+Forty-seven enabled states; all rows currently have `include_pipeline=true`.
 Rows are ordered by `state_fips`.
 
 Connecticut is intentionally absent. Census replaced Connecticut's former
@@ -130,13 +138,14 @@ approved.
 
 ## manual/pipeline_counties.csv
 
-Authoritative multistate county reference for the thirty-nine-state pipeline
+Authoritative multistate county reference for the forty-seven-state pipeline
 (Florida, Georgia, South Carolina, North Carolina, Virginia, Maryland,
 Delaware, New Jersey, New York, Rhode Island, Massachusetts, New Hampshire,
 Maine, Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois,
 Indiana, Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska,
 North Dakota, South Dakota, Alabama, Arkansas, Colorado, Louisiana,
-Mississippi, Montana, New Mexico, Oklahoma, Texas, and Wyoming). Connecticut
+Mississippi, Montana, New Mexico, Oklahoma, Texas, Wyoming, Arizona,
+California, Idaho, Nevada, Oregon, Utah, Vermont, and Washington). Connecticut
 is excluded (see `pipeline_states.csv`). County FIPS—not county name—is the
 authoritative join and selection key.
 
@@ -154,7 +163,7 @@ authoritative join and selection key.
 - **Archive path:** `data/raw/census_tiger/cb_2023_us_county_500k.zip`
 - **Generation script:** `src/build_pipeline_county_reference.py`
 - **State filter:** enabled `state_fips` values from `pipeline_states.csv`
-- **Row count:** 2,847 (one row per county equivalent in the enabled states)
+- **Row count:** 3,099 (one row per county equivalent in the enabled states)
 
 ### County-equivalent scope
 
@@ -182,7 +191,11 @@ Alabama, Arkansas, Colorado, Mississippi, Montana, New Mexico, Oklahoma,
 Texas, and Wyoming include all TIGER 2023 county equivalents in each state
 (all LSAD `06` counties; no independent cities). Louisiana includes all 64
 TIGER 2023 parish county equivalents (LSAD `15`; `NAMELSAD` labels such as
-“Caddo Parish”). Connecticut is not included because its TIGER 2023 planning
+“Caddo Parish”). Arizona, California, Idaho, Oregon, Utah, Vermont, and
+Washington include all TIGER 2023 county equivalents in each state (all LSAD
+`06` counties; no independent cities). Nevada includes 16 counties (LSAD `06`)
+plus Carson City (`32510`, LSAD `00`) as a county equivalent (17 total).
+Connecticut is not included because its TIGER 2023 planning
 regions, Zillow former-county FIPS, and likely ACS geography vintage are not
 comparable across 2015–2024 under the existing method.
 
@@ -233,7 +246,15 @@ checkpoint does not update Zillow status counts.
 | OK | 40 | 77 |
 | TX | 48 | 254 |
 | WY | 56 | 23 |
-| **Total** | | **2,847** |
+| AZ | 04 | 15 |
+| CA | 06 | 58 |
+| ID | 16 | 44 |
+| NV | 32 | 17 |
+| OR | 41 | 36 |
+| UT | 49 | 29 |
+| VT | 50 | 14 |
+| WA | 53 | 39 |
+| **Total** | | **3,099** |
 
 ### Role
 

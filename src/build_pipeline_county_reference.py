@@ -2,14 +2,15 @@
 Build multistate county reference CSV from TIGER 2023 county boundaries.
 
 Reads enabled states from data/manual/pipeline_states.csv and writes
-data/manual/pipeline_counties.csv for the thirty-nine-state pipeline (Florida,
+data/manual/pipeline_counties.csv for the forty-seven-state pipeline (Florida,
 Georgia, South Carolina, North Carolina, Virginia, Maryland, Delaware, New
 Jersey, New York, Rhode Island, Massachusetts, New Hampshire, Maine,
 Pennsylvania, West Virginia, Ohio, Kentucky, Tennessee, Illinois, Indiana,
 Michigan, Wisconsin, Minnesota, Iowa, Kansas, Missouri, Nebraska, North Dakota,
 South Dakota, Alabama, Arkansas, Colorado, Louisiana, Mississippi, Montana, New
-Mexico, Oklahoma, Texas, and Wyoming). Connecticut is excluded because TIGER
-2023, Zillow, and ACS geographies are not longitudinally compatible under the
+Mexico, Oklahoma, Texas, Wyoming, Arizona, California, Idaho, Nevada, Oregon,
+Utah, Vermont, and Washington). Connecticut is excluded because TIGER 2023,
+Zillow, and ACS geographies are not longitudinally compatible under the
 existing method.
 """
 
@@ -33,11 +34,14 @@ COUNTY_REFERENCE_COLUMNS = ["state", "state_fips", "county_fips", "county_name"]
 EXPECTED_ENABLED_STATES = {
     "AL",
     "AR",
+    "AZ",
+    "CA",
     "CO",
     "DE",
     "FL",
     "GA",
     "IA",
+    "ID",
     "IL",
     "IN",
     "KS",
@@ -56,17 +60,22 @@ EXPECTED_ENABLED_STATES = {
     "NH",
     "NJ",
     "NM",
+    "NV",
     "NY",
     "NC",
     "OH",
     "OK",
+    "OR",
     "PA",
     "RI",
     "SC",
     "SD",
     "TN",
     "TX",
+    "UT",
     "VA",
+    "VT",
+    "WA",
     "WI",
     "WV",
     "WY",
@@ -111,8 +120,16 @@ EXPECTED_STATE_COUNTS = {
     "OK": 77,
     "TX": 254,
     "WY": 23,
+    "AZ": 15,
+    "CA": 58,
+    "ID": 44,
+    "NV": 17,
+    "OR": 36,
+    "UT": 29,
+    "VT": 14,
+    "WA": 39,
 }
-EXPECTED_TOTAL_COUNTIES = 2847
+EXPECTED_TOTAL_COUNTIES = 3099
 
 REQUIRED_TIGER_COLUMNS = ["STUSPS", "STATEFP", "GEOID", "NAMELSAD", "geometry"]
 
