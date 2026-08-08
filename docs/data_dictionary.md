@@ -859,11 +859,12 @@ Built by `src/fetch_acs_income.py` from:
 
 ## processed/coastal_affordability_pipeline_2015_2024.csv
 
-Thirty-nine-state pipeline affordability table joining validated Zillow home
+Forty-seven-state pipeline affordability table joining validated Zillow home
 values and ACS median household income. Connecticut is excluded (see
 `pipeline_counties.csv`). One row per county equivalent per year. Virginia
-independent cities, Baltimore city (`24510`), and St. Louis city (`29510`) are
-included as county equivalents, matching `pipeline_counties.csv`.
+independent cities, Baltimore city (`24510`), St. Louis city (`29510`), and
+Carson City (`32510`) are included as county equivalents, matching
+`pipeline_counties.csv`.
 
 | Field | Type | Units | Description |
 |---|---|---|---|
@@ -886,8 +887,8 @@ included as county equivalents, matching `pipeline_counties.csv`.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 28,470 rows (2,847 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23)
+- **Expected scale:** 30,990 rows (3,099 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23), AZ (15), CA (58), ID (44), NV (17), OR (36), UT (29), VT (14), WA (39)
 - **Years:** 2015–2024
 - **Join keys:** `county_fips` and `year` only; county name is not used for joining
 
@@ -929,20 +930,21 @@ Original `zillow_data_status` and `acs_data_status` columns are retained.
 
 | affordability_data_status | row count |
 |---|---:|
-| `available_complete` | 26,474 |
-| `available_partial` | 543 |
-| `source_data_unavailable` | 1,453 |
+| `available_complete` | 28,908 |
+| `available_partial` | 560 |
+| `source_data_unavailable` | 1,522 |
 
-**Populated ratios:** 27,017 county-years have non-null
-`home_value_to_income_ratio`. **Null ratios:** 1,453 county-years have null
-ratios when either Zillow home value or ACS income is unavailable. Seven
+**Populated ratios:** 29,468 county-years have non-null
+`home_value_to_income_ratio`. **Null ratios:** 1,522 county-years have null
+ratios when either Zillow home value or ACS income is unavailable. Eight
 county-years have ACS income suppression with null
 `median_household_income`; three of those also have available Zillow home
-values. Zillow `source_data_unavailable` accounts for 1,450 county-years with
+values. Esmeralda County, NV (`32009`, 2023) has both Zillow and ACS
+unavailable. Zillow `source_data_unavailable` accounts for 1,519 county-years with
 null home values. Missing values are never imputed.
 
-The 543 partial county-years reflect partial Zillow month coverage with usable
-annual means. The 1,453 unavailable county-years reflect absent or suppressed
+The 560 partial county-years reflect partial Zillow month coverage with usable
+annual means. The 1,522 unavailable county-years reflect absent or suppressed
 source observations in Zillow and/or ACS inputs.
 
 ### Missing-value policy
