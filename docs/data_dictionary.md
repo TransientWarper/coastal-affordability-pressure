@@ -734,17 +734,18 @@ row per county per year.
 
 ## processed/acs_b19013_pipeline_counties_2015_2024.csv
 
-FIPS-based ACS 5-year median household income for the thirty-nine-state
+FIPS-based ACS 5-year median household income for the forty-seven-state
 pipeline reference (Florida, Georgia, South Carolina, North Carolina,
 Virginia, Maryland, Delaware, New Jersey, New York, Rhode Island,
 Massachusetts, New Hampshire, Maine, Pennsylvania, West Virginia, Ohio,
 Kentucky, Tennessee, Illinois, Indiana, Michigan, Wisconsin, Minnesota,
 Iowa, Kansas, Missouri, Nebraska, North Dakota, South Dakota, Alabama,
 Arkansas, Colorado, Louisiana, Mississippi, Montana, New Mexico, Oklahoma,
-Texas, and Wyoming). Connecticut is excluded (see `pipeline_counties.csv`). One row per county
+Texas, Wyoming, Arizona, California, Idaho, Nevada, Oregon, Utah, Vermont,
+and Washington). Connecticut is excluded (see `pipeline_counties.csv`). One row per county
 equivalent per year. Virginia independent cities, Baltimore city (`24510`),
-and St. Louis city (`29510`) are included as county equivalents, matching
-`pipeline_counties.csv`. Oglala Lakota County (`46102`) is included;
+St. Louis city (`29510`), and Carson City (`32510`) are included as county
+equivalents, matching `pipeline_counties.csv`. Oglala Lakota County (`46102`) is included;
 historical Shannon County (`46113`) is not.
 
 | Field | Type | Units | Description |
@@ -761,8 +762,8 @@ historical Shannon County (`46113`) is not.
 
 - **Grain:** county-year
 - **Primary key:** (`county_fips`, `year`)
-- **Expected scale:** 28,470 rows (2,847 county equivalents × 10 years)
-- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23)
+- **Expected scale:** 30,990 rows (3,099 county equivalents × 10 years)
+- **Geography:** FL (67), GA (159), SC (46), NC (100), VA (133), MD (24), DE (3), NJ (21), NY (62), RI (5), MA (14), NH (10), ME (16), PA (67), WV (55), OH (88), KY (120), TN (95), IL (102), IN (92), MI (83), WI (72), MN (87), IA (99), KS (105), MO (115), NE (93), ND (53), SD (66), AL (67), AR (75), CO (64), LA (64), MS (82), MT (56), NM (33), OK (77), TX (254), WY (23), AZ (15), CA (58), ID (44), NV (17), OR (36), UT (29), VT (14), WA (39)
 - **Years:** 2015–2024
 - **County reference:** `data/manual/pipeline_counties.csv`
 
@@ -777,7 +778,7 @@ Connecticut is excluded from the reference and therefore from this output.
   - `get=NAME,B19013_001E`
   - `for=county:*`
   - `in=state:{state_fips}`
-- **Total requests:** 390 (39 states × 10 years)
+- **Total requests:** 470 (47 states × 10 years)
 - **FIPS construction:** `state` (2-digit) + `county` (3-digit), zero-padded to
   five characters
 
@@ -811,17 +812,17 @@ values are never imputed or interpolated.
 
 | acs_data_status | row count |
 |---|---:|
-| `available` | 28,463 |
-| `source_data_unavailable` | 7 |
+| `available` | 30,982 |
+| `source_data_unavailable` | 8 |
 
-All 2,847 reference county equivalents appear in every release year (2015–2024).
-Seven county-years have ACS suppression or missing income values and retain
-null `median_household_income` with `source_data_unavailable`: De Baca County,
-NM (`35011`, 2024); Rio Arriba County, NM (`35039`, 2018); Jeff Davis County,
-TX (`48243`, 2020); Kenedy County, TX (`48261`, 2023); Loving County, TX
-(`48301`, 2015, 2021, 2022). These are county-year statuses, not counties
-entirely absent from ACS geography. Missing values are never imputed or
-interpolated.
+All 3,099 reference county equivalents appear in every release year (2015–2024).
+Eight county-years have ACS suppression or missing income values and retain
+null `median_household_income` with `source_data_unavailable`: Esmeralda County,
+NV (`32009`, 2023); De Baca County, NM (`35011`, 2024); Rio Arriba County,
+NM (`35039`, 2018); Jeff Davis County, TX (`48243`, 2020); Kenedy County, TX
+(`48261`, 2023); Loving County, TX (`48301`, 2015, 2021, 2022). These are
+county-year statuses, not counties entirely absent from ACS geography. Missing
+values are never imputed or interpolated.
 
 ### Relationship to Florida output
 

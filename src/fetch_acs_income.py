@@ -11,7 +11,7 @@ Inputs:
 Outputs:
 - data/raw/acs_income/acs_b19013_miami_dade_2015_2024.csv  (legacy Miami-Dade)
 - data/processed/acs_b19013_florida_counties_2015_2024.csv  (statewide expansion)
-- data/processed/acs_b19013_pipeline_counties_2015_2024.csv  (39-state expansion)
+- data/processed/acs_b19013_pipeline_counties_2015_2024.csv  (47-state expansion)
 """
 
 from pathlib import Path
@@ -54,16 +54,19 @@ EXPECTED_PIPELINE_FIPS = {"12011", "12086", "12099"}
 EXPECTED_PIPELINE_COUNTIES = 3
 EXPECTED_FL_COUNTIES = 67
 EXPECTED_FL_ROWS = 670
-EXPECTED_PIPELINE_REF_COUNTIES = 2847
-EXPECTED_PIPELINE_REF_ROWS = 28470
+EXPECTED_PIPELINE_REF_COUNTIES = 3099
+EXPECTED_PIPELINE_REF_ROWS = 30990
 EXPECTED_PIPELINE_STATE_COUNTS = {
     "AL": 67,
     "AR": 75,
+    "AZ": 15,
+    "CA": 58,
     "CO": 64,
     "DE": 3,
     "FL": 67,
     "GA": 159,
     "IA": 99,
+    "ID": 44,
     "IL": 102,
     "IN": 92,
     "KS": 105,
@@ -83,16 +86,21 @@ EXPECTED_PIPELINE_STATE_COUNTS = {
     "NH": 10,
     "NJ": 21,
     "NM": 33,
+    "NV": 17,
     "NY": 62,
     "OH": 88,
     "OK": 77,
+    "OR": 36,
     "PA": 67,
     "RI": 5,
     "SC": 46,
     "SD": 66,
     "TN": 95,
     "TX": 254,
+    "UT": 29,
     "VA": 133,
+    "VT": 14,
+    "WA": 39,
     "WI": 72,
     "WV": 55,
     "WY": 23,
@@ -100,11 +108,14 @@ EXPECTED_PIPELINE_STATE_COUNTS = {
 EXPECTED_ENABLED_STATES = {
     "AL",
     "AR",
+    "AZ",
+    "CA",
     "CO",
     "DE",
     "FL",
     "GA",
     "IA",
+    "ID",
     "IL",
     "IN",
     "KS",
@@ -123,22 +134,27 @@ EXPECTED_ENABLED_STATES = {
     "NH",
     "NJ",
     "NM",
+    "NV",
     "NY",
     "NC",
     "OH",
     "OK",
+    "OR",
     "PA",
     "RI",
     "SC",
     "SD",
     "TN",
     "TX",
+    "UT",
     "VA",
+    "VT",
+    "WA",
     "WI",
     "WV",
     "WY",
 }
-EXPECTED_STATE_YEAR_REQUESTS = 390
+EXPECTED_STATE_YEAR_REQUESTS = 470
 MIAMI_LEGACY_FIPS = "12086"
 MIAMI_LEGACY_MD5 = "ef5b8d6f5e911b9bafc087862238ebbf"
 
@@ -594,7 +610,7 @@ def load_pipeline_states() -> pd.DataFrame:
 
 
 def load_pipeline_county_reference() -> pd.DataFrame:
-    """Load and validate the 39-state pipeline county reference."""
+    """Load and validate the 47-state pipeline county reference."""
     if not PIPELINE_COUNTY_REFERENCE_PATH.exists():
         raise FileNotFoundError(
             f"Pipeline county reference not found: {PIPELINE_COUNTY_REFERENCE_PATH}"
@@ -760,7 +776,7 @@ def build_pipeline_output(
     reference: pd.DataFrame,
     acs_records: list[dict],
 ) -> pd.DataFrame:
-    """Build the 39-state pipeline ACS panel from reference and parsed responses."""
+    """Build the 47-state pipeline ACS panel from reference and parsed responses."""
     years = pd.DataFrame({"year": YEARS})
     skeleton = reference.merge(years, how="cross")
 
@@ -862,7 +878,7 @@ def validate_pipeline_output(
     pipeline: pd.DataFrame,
     reference: pd.DataFrame,
 ) -> None:
-    """Validate the 39-state pipeline ACS output before write."""
+    """Validate the 47-state pipeline ACS output before write."""
     if list(pipeline.columns) != PIPELINE_COLUMNS:
         raise ValueError(f"Unexpected pipeline output columns: {list(pipeline.columns)}")
 
@@ -880,9 +896,9 @@ def validate_pipeline_output(
     pass_line("every county has 10 rows")
 
     if not pipeline.groupby("year").size().eq(EXPECTED_PIPELINE_REF_COUNTIES).all():
-        raise ValueError("Each year must have exactly 2847 county rows.")
+        raise ValueError("Each year must have exactly 3099 county rows.")
 
-    pass_line("every year has 2847 rows")
+    pass_line("every year has 3099 rows")
 
     state_year_counts = pipeline.groupby("state").size().to_dict()
     expected_state_year_counts = {
