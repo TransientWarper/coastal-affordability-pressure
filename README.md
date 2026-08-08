@@ -3,7 +3,7 @@
 A county-level housing affordability pressure pipeline demonstrating
 end-to-end data acquisition, transformation, validation, stable geographic
 joining, GIS output, and analytical communication. The current release is a
-Miami-Dade County, Florida proof of concept covering 2015–2024.
+full, almost 31k row csv covering 47 states (CT, HI and AK excluded for now bc reasons)
 
 ---
 
