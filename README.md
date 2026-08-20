@@ -1,68 +1,125 @@
 # Coastal Affordability Pressure Tracker
 
-A county-level housing affordability pressure pipeline demonstrating
-end-to-end data acquisition, transformation, validation, stable geographic
-joining, GIS output, and analytical communication. The current release is a
-full, almost 31k row csv covering 47 states (CT, HI and AK excluded for now bc reasons)
+A county-year ETL and GIS pipeline that joins Zillow typical home values to ACS median household income, validates the resulting panel, and produces analytical and geospatial outputs. The current primary product covers **47 states**, **3,099 county equivalents**, and **30,990 county-year rows** for **2015–2024**, with explicit missing-data status rather than silent drops or fills.
+
+Miami-Dade County is the original V0 case study and remains the regression anchor as geography expands.
+
+<!-- TODO: insert committed 47-state / national choropleth or map figure here when available -->
 
 ---
 
-## Research Question
+## What the pipeline does
 
-How has the ratio of typical home value to median household income changed in
-Miami-Dade County from 2015 to 2024, and how does that change compare with the
-growth rates of each underlying measure?
+1. Builds a FIPS-based county reference from Census cartographic boundaries and a state manifest.
+2. Acquires county ZHVI (Zillow) and ACS B19013 median household income.
+3. Annualizes monthly ZHVI (mean of available months; no imputation).
+4. Joins on `county_fips` + `year` and computes:
 
----
-
-## Metric
-
-```
+```text
 home_value_to_income_ratio = typical_home_value / median_household_income
 ```
 
-A ratio of 5.0 means a typical home costs five times the county's median
-annual household income. Higher ratios indicate that home values have grown
-faster than incomes, making purchase less accessible to a median-income
-household over time.
+5. Assigns each county-year an explicit data-availability status.
+6. Exports validated CSVs; Florida and Miami-Dade also export GeoPackages.
+7. (Secondary, Miami-Dade only) Compares home-value growth to BEA total personal income.
 
-This metric is descriptive and is not a mortgage-affordability calculation. It
-does not account for interest rates, property taxes, insurance, mortgage terms,
-down-payment requirements, household debt, rental costs, or the distribution of
-incomes and home values within the county.
+The ratio is a **descriptive affordability-pressure metric**. A value of 5.0 means a typical home costs five times median household income. It is **not** a mortgage affordability model: it does not include interest rates, taxes, insurance, loan terms, down payments, debt, rents, or within-county distributions.
 
 ---
 
-## Data Sources
+## Coverage at a glance
 
-| Source | Series | Join key |
-|---|---|---|
-| Zillow ZHVI (county-level) | Typical home value, monthly → annualized | County FIPS |
-| U.S. Census Bureau ACS 5-year estimates, table B19013 | Median household income | County FIPS |
-| U.S. Census Cartographic Boundary file, 2023 vintage | County polygon geometry | GEOID (5-character FIPS string) |
+| Layer                  | Geography                           |   Rows | Primary outputs                                               |
+| ---------------------- | ----------------------------------- | -----: | ------------------------------------------------------------- |
+| **Pipeline (current)** | 47 states, 3,099 county equivalents | 30,990 | `data/processed/coastal_affordability_pipeline_2015_2024.csv` |
+| Florida                | 67 counties                         |    670 | Florida CSV + GeoPackage                                      |
+| Selected pilot         | Miami-Dade, Broward, Palm Beach     |    30* | Intermediate ACS/ZHVI CSVs                                    |
+| V0 case study          | Miami-Dade (`12086`)                |     10 | CSV + GPKG + trend figure                                     |
 
-Miami-Dade County GEOID/FIPS: **12086**
+*Selected-county intermediates are 3 counties × 10 years each (ACS and ZHVI); there is no separate selected-county affordability join table.
 
-Geographic joins use the GEOID string identifier rather than county name to
-avoid matching ambiguity. The 2023 boundary file is used as a consistent
-current geometry across all analytical years; it does not represent
-year-specific historical county boundaries.
+**Years:** 2015–2024 for all layers above.
+
+**Included states:** AL, AR, AZ, CA, CO, DE, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY.
+
+**Outside the pipeline:** Connecticut is excluded because TIGER 2023 planning regions, Zillow’s former-county geography, and ACS panels are not longitudinally compatible under the existing FIPS join. Alaska, Hawaii, and DC are not currently included in the pipeline.
 
 ---
 
-## Pipeline
+## Technical decisions and interesting problems
 
-| Stage | Script |
-|---|---|
-| Fetch ACS income data | `src/fetch_acs_income.py` |
-| Fetch Zillow county ZHVI | `src/fetch_zillow_zhvi.py` |
-| Annualize Zillow ZHVI from monthly values | `src/transform_zillow_zhvi.py` |
-| Join income and home value; validate | `src/build_affordability_table.py` |
-| Join analytical data to county geometry; export GeoPackage | `src/build_county_geospatial.py` |
-| Generate affordability trend figure | `src/create_affordability_figure.py` |
+| Decision                                  | Why it matters                                                                                                                                                         |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Join on FIPS/GEOID, never county name** | Avoids ambiguous and unstable name matching across sources.                                                                                                            |
+| **Incremental geographic expansion**      | V0 → selected FL counties → statewide FL → 47-state panel, with expected counts locked in scripts.                                                                     |
+| **Subset regression checks**              | Later stages re-assert that Miami-Dade and Florida analytical subsets still match committed earlier outputs.                                                           |
+| **Explicit status taxonomy**              | Incomplete source coverage is retained and labeled instead of dropped.                                                                                                 |
+| **No silent imputation**                  | Missing ZHVI months or ACS values are never filled, interpolated, or substituted.                                                                                      |
+| **County equivalents**                    | Independent cities and other Census county equivalents (e.g. VA cities, Baltimore city, St. Louis city, Carson City) are included when present in the TIGER reference. |
+| **Connecticut held out**                  | Documented source-geography collision; excluded until a separate method is defined.                                                                                    |
 
-Each script preserves its raw source files on reruns and explicitly reports
-when it replaces generated output.
+Field definitions, status rules, and per-file schemas: [`docs/data_dictionary.md`](docs/data_dictionary.md).
+
+---
+
+## Pipeline architecture
+
+```mermaid
+flowchart LR
+  A[pipeline_states / TIGER 2023] --> B[pipeline_counties.csv]
+  B --> C[fetch ZHVI + ACS]
+  C --> D[annualize ZHVI]
+  D --> E[join + ratio + status]
+  E --> F[pipeline CSV]
+  E --> G[Florida CSV / GPKG]
+  E --> H[V0 CSV / GPKG / figure]
+  I[BEA CAINC1] --> J[Miami growth comparison]
+```
+
+| Stage                                               | Script                                                                                         |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| County reference                                    | `src/build_pipeline_county_reference.py`                                                       |
+| Fetch ZHVI                                          | `src/fetch_zillow_zhvi.py`                                                                     |
+| Annualize ZHVI (V0 / selected / FL / pipeline)      | `src/transform_zillow_zhvi.py`                                                                 |
+| Fetch ACS (legacy Miami / FL / pipeline)            | `src/fetch_acs_income.py`                                                                      |
+| V0 join                                             | `src/build_affordability_table.py`                                                             |
+| Florida join                                        | `src/build_florida_affordability_table.py`                                                     |
+| 47-state join                                       | `src/build_pipeline_affordability_table.py`                                                    |
+| Miami GeoPackage                                    | `src/build_county_geospatial.py`                                                               |
+| Florida GeoPackage                                  | `src/build_florida_geospatial.py`                                                              |
+| Miami trend figure                                  | `src/create_affordability_figure.py`                                                           |
+| BEA fetch / transform / growth compare (Miami only) | `src/fetch_bea_income.py`, `src/transform_bea_income.py`, `src/build_bea_growth_comparison.py` |
+
+---
+
+## Data sources
+
+| Source                               | Series                                    | Role                                        | Join key     |
+| ------------------------------------ | ----------------------------------------- | ------------------------------------------- | ------------ |
+| Zillow ZHVI (county)                 | Typical home value, monthly → annual mean | Primary home-value input                    | County FIPS  |
+| Census ACS 5-year, table B19013      | Median household income                   | Primary income input                        | County FIPS  |
+| Census cartographic boundaries, 2023 | County / county-equivalent polygons       | Reference + GIS geometry                    | GEOID / FIPS |
+| BEA CAINC1 Line 1                    | Total personal income                     | Secondary Miami-Dade growth comparison only | County FIPS  |
+
+API keys (project-root `.env`, gitignored): `CENSUS_API_KEY` for ACS; `BEA_API_KEY` only for the Miami BEA path.
+
+---
+
+## Validation and missing-data handling
+
+Scripts enforce expected geography counts, year coverage, duplicate-free county-year keys, FIPS formatting, and (where applicable) GeoPackage round-trips and Florida/Miami regression checks.
+
+**Pipeline affordability status** (`affordability_data_status`):
+
+| Status                    |   Rows | Meaning                                                                |
+| ------------------------- | -----: | ---------------------------------------------------------------------- |
+| `available_complete`      | 28,908 | 12 ZHVI months + ACS present; ratio calculated                         |
+| `available_partial`       |    560 | Partial ZHVI month coverage + ACS present; ratio from available months |
+| `source_data_unavailable` |  1,522 | ZHVI and/or ACS missing; ratio null                                    |
+
+Incomplete county-years stay in the panel. Florida documents one approved ZHVI gap: Monroe County (`12087`) 2015 has null home value and ratio (`source_data_unavailable`); 2016 is partial (11 months).
+
+V0 Miami-Dade still requires 10 complete rows with no null analytical fields.
 
 ---
 
@@ -71,111 +128,94 @@ when it replaces generated output.
 From the repository root:
 
 ```bash
-# Create and activate virtual environment
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 
-# Acquire source data
-.venv/bin/python src/fetch_acs_income.py
+# Optional for live ACS / BEA fetches (keys in .env):
+# CENSUS_API_KEY=...
+# BEA_API_KEY=...
+
+# County reference (47-state)
+.venv/bin/python src/build_pipeline_county_reference.py
+
+# Acquire and transform
 .venv/bin/python src/fetch_zillow_zhvi.py
-
-# Transform and build analytical table
 .venv/bin/python src/transform_zillow_zhvi.py
+.venv/bin/python src/fetch_acs_income.py
+
+# Analytical tables
 .venv/bin/python src/build_affordability_table.py
+.venv/bin/python src/build_florida_affordability_table.py
+.venv/bin/python src/build_pipeline_affordability_table.py
 
-# Join to county geometry and export GeoPackage
+# GIS + Miami figure
 .venv/bin/python src/build_county_geospatial.py
-
-# Generate figure
+.venv/bin/python src/build_florida_geospatial.py
 .venv/bin/python src/create_affordability_figure.py
+
+# Optional Miami-only BEA comparison
+.venv/bin/python src/fetch_bea_income.py
+.venv/bin/python src/transform_bea_income.py
+.venv/bin/python src/build_bea_growth_comparison.py
 ```
 
----
-
-## Validation and QA
-
-The following checks are enforced inline by the pipeline scripts:
-
-- **10 county-year rows** — one row per year, 2015–2024
-- **Year coverage** — exactly 2015 through 2024, no gaps
-- **GEOID 12086** — all rows refer to Miami-Dade County
-- **No duplicate county-year rows**
-- **No null analytical values** (income, home value, ratio)
-- **Boundary match** — exactly one GEOID 12086 geometry in the Census file
-- **No missing geometry** in the output GeoDataFrame
-- **Valid geometry** — all features pass Shapely validity check
-- **CRS present** — EPSG:4269 (NAD83 geographic)
-- **GeoPackage round-trip** — output reopened and re-validated after write
-- **Analytical values preserved** through the spatial join
-- **Raw Census boundary ZIP preserved** — not overwritten on reruns;
-  provenance timestamp and file size recorded in
-  `data/raw/census_tiger/source_notes.md`
+Committed processed outputs can be inspected without re-fetching. Live ACS/BEA steps require valid API keys.
 
 ---
 
-## Results
+## Key outputs
+
+| File                                                            | Description                                                              |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `data/processed/coastal_affordability_pipeline_2015_2024.csv`   | 47-state panel, 30,990 county-year rows                                  |
+| `data/processed/coastal_affordability_florida_2015_2024.csv`    | Florida statewide panel, 670 rows                                        |
+| `data/processed/florida_affordability_2015_2024.gpkg`           | Florida GeoPackage, layer `florida_affordability_county_year`, EPSG:4269 |
+| `data/processed/coastal_affordability_county_v0.csv`            | Miami-Dade V0 analytical table, 10 rows                                  |
+| `data/processed/miami_dade_affordability_2015_2024.gpkg`        | Miami-Dade GeoPackage, layer `miami_dade_affordability`, EPSG:4269       |
+| `reports/figures/miami_dade_affordability_trend.png`            | Miami-Dade trend figure                                                  |
+| `data/processed/miami_dade_bea_growth_comparison_2015_2024.csv` | Miami-only BEA growth comparison                                         |
+| `data/manual/pipeline_counties.csv`                             | Authoritative 3,099-row county reference                                 |
+| `docs/data_dictionary.md`                                       | Schemas, status rules, exclusions                                        |
+
+---
+
+## Miami-Dade case study / findings
+
+Original V0 geography (`12086`), still used for regression. Figures below are from `data/processed/coastal_affordability_county_v0.csv` (nominal dollars).
 
 ![Miami-Dade affordability trend](reports/figures/miami_dade_affordability_trend.png)
 
-| Measure | 2015 | 2024 | Change |
-|---|---|---|---|
-| Typical home value | $241,982 | $535,536 | +$293,554 (+121.3%) |
-| Median household income | $43,129 | $71,753 | +$28,624 (+66.4%) |
-| Home-value-to-income ratio | 5.61 | 7.46 | +1.85 (+33.0%) |
+| Measure                    | 2015     | 2024     | Change              |
+| -------------------------- | -------- | -------- | ------------------- |
+| Typical home value         | $242,822 | $537,394 | +$294,572 (+121.3%) |
+| Median household income    | $43,129  | $71,753  | +$28,624 (+66.4%)   |
+| Home-value-to-income ratio | 5.6301   | 7.4895   | +1.8594 (+33.0%)    |
 
-Typical home values increased 121.3%, compared with 66.4% growth in median
-household income. As a result, the home-value-to-income ratio rose from 5.61
-in 2015 to 7.46 in 2024, an increase of 1.85 (33.0%). All figures are in
-nominal dollars.
+Typical home values rose faster than median household income over the period, so the ratio increased. This is descriptive only; the dataset does not identify causes.
 
-These results describe a widening gap between home-value growth and
-income growth over the study period. The dataset does not identify causes.
+A separate Miami-Dade BEA personal-income growth comparison is available in `data/processed/miami_dade_bea_growth_comparison_2015_2024.csv`. It is not part of the 47-state primary pipeline.
 
 ---
 
 ## Limitations
 
-- **Single-county proof of concept.** Results apply to Miami-Dade County only
-  and cannot be generalized.
-- **County-level aggregation** conceals substantial neighborhood and
-  sub-county variation in both home values and incomes.
-- **ZHVI is a modeled estimate,** not a transaction price for every property.
-  It represents a typical value within the county according to Zillow's
-  methodology.
-- **ACS estimates** are derived from survey sampling and carry margins of
-  error; multi-year pooled estimates reflect conditions over a five-year
-  window rather than a single point in time.
-- **Nominal dollars.** No inflation adjustment is applied. Real purchasing
-  power changes are not captured.
-- **The ratio excludes** interest rates, property taxes, insurance, mortgage
-  terms, down-payment requirements, household debt, rental costs, and income
-  distribution within the county.
-- **2023 boundary geometry** is used consistently across 2015–2024 rather than
-  year-specific historical boundaries.
-- **EPSG:4269** (NAD83 geographic) is appropriate for feature storage and
-  display but is not suitable for area or distance calculations without
-  reprojection.
-- **The ratio is descriptive.** It does not establish a causal relationship
-  between home-value growth and any economic, demographic, or policy factor.
+* County-level aggregates conceal sub-county variation.
+* ZHVI is a modeled typical value, not a census of transaction prices or total housing-market capitalization.
+* ACS 5-year estimates are overlapping multi-year windows and carry sampling error (MOEs not stored in this pipeline).
+* Values are nominal; no inflation adjustment.
+* The ratio excludes financing costs, taxes, insurance, rents, and income or price distributions within counties.
+* 2023 boundary geometry is used consistently across 2015–2024 (not year-specific historical boundaries).
+* EPSG:4269 is suitable for storage/display, not for area or distance without reprojection.
+* Incomplete county-years remain in the panel with null ratios where sources are missing.
+* Connecticut is excluded because of source-geography incompatibilities; Alaska, Hawaii, and DC are not currently included.
+* BEA comparison is Miami-Dade only.
 
 ---
 
-## Key Outputs
+## Current status / next steps
 
-| File | Description |
-|---|---|
-| `data/processed/coastal_affordability_county_v0.csv` | Validated analytical dataset, 10 county-year rows |
-| `data/processed/miami_dade_affordability_2015_2024.gpkg` | GIS-ready GeoPackage, layer `miami_dade_affordability`, CRS EPSG:4269 |
-| `data/raw/census_tiger/source_notes.md` | Census boundary provenance — URL, vintage, retrieval date, file size |
-| `reports/figures/miami_dade_affordability_trend.png` | Affordability trend figure |
+**Done:** Reproducible 47-state ACS/ZHVI affordability panel with statused missing data; Florida and Miami-Dade GIS exports; Miami trend figure; Miami BEA comparison path; FIPS reference manifests; regression-checked expansion scripts.
 
----
+**Docs note:** [`docs/data_dictionary.md`](docs/data_dictionary.md) describes the current multi-state system. [`docs/methodology_v0.md`](docs/methodology_v0.md) and [`reports/qa_v0.md`](reports/qa_v0.md) are V0-era and do not fully describe the 47-state pipeline.
 
-## Project Status
-
-The Miami-Dade County proof of concept is complete. The full pipeline from
-data acquisition through validated GIS output and analytical figure is
-implemented and reproducible.
-
-Expanding the pipeline to additional Florida counties or a statewide dataset
-is possible future work and has not been implemented.
+**Plausible next work:** commit a 47-state map artifact; extend geospatial export beyond Florida; refresh V0-era QA/methodology docs; decide and document AK/HI/DC policy; optionally expand BEA beyond Miami-Dade.
